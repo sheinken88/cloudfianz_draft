@@ -1,0 +1,28 @@
+{
+  "name": "cloudfianz-infra",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "synth": "cdk synth",
+    "diff": "cdk diff",
+    "deploy:dns": "cdk deploy DnsStack",
+    "deploy:cert": "cdk deploy CertificateStack",
+    "deploy:prod": "cdk deploy WebsiteStack-prod",
+    "deploy:staging": "cdk deploy WebsiteStack-staging",
+    "deploy:records": "cdk deploy DnsRecordsStack",
+    "deploy:all": "cdk deploy --all",
+    "destroy:staging": "cdk destroy WebsiteStack-staging"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.140.0",
+    "constructs": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "aws-cdk": "^2.140.0",
+    "ts-node": "^10",
+    "typescript": "^5"
+  }
+}

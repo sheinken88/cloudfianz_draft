@@ -1,0 +1,17 @@
+{
+  "name": "cloudfianz",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-cases.mjs",
+    "dev": "npm run build && npx live-server src/ --port=3000 --no-browser",
+    "deploy:staging": "npm run build && node scripts/deploy.mjs staging",
+    "deploy:prod": "npm run build && node scripts/deploy.mjs prod",
+    "infra:install": "cd infra && npm install",
+    "infra:synth": "cd infra && npm run synth",
+    "infra:deploy": "cd infra && npm run deploy:all"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

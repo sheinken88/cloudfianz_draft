@@ -1,0 +1,12 @@
+node_modules/
+infra/node_modules/
+infra/cdk.out/
+.DS_Store
+*.log
+.env
+src/es/
+
+# Videos del hero (pesados; Git LFS o compartir por otro medio)
+src/assets/videos/*.mp4
+src/assets/videos/*.webm
+!src/assets/videos/README.txt

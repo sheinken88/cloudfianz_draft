@@ -1,0 +1,142 @@
+[
+  {
+    "logoImage": "assets/logo_despegar.png",
+    "logoColor": false,
+    "category": { "es": "Extensión de plataforma", "en": "Platform extension" },
+    "title": { "es": "Panel Cotizador ↔ HubSpot", "en": "Quoter Panel ↔ HubSpot" },
+    "description": {
+      "es": "Cotizador customizado conectado con Hubspot y reglas complejas.",
+      "en": "Customized Quoter connected with Hubspot and complex rules."
+    },
+    "stats": [
+      { "value": "500+", "label": { "es": "Cotizaciones de HubSpot", "en": "HubSpot Quotes" } },
+      { "value": "100%", "label": { "es": "Sincronizado", "en": "Synced" } }
+    ],
+    "detail": {
+      "summary": {
+        "es": "Despegar centralizó la gestión de propuestas de Media Sales con un cotizador custom embebido en HubSpot, reemplazando hojas de cálculo, formularios externos y procesos manuales entre ventas y finanzas.",
+        "en": "Despegar centralized Media Sales proposal management with a custom quoting tool embedded in HubSpot, replacing spreadsheets, external forms, and manual handoffs between sales and finance."
+      },
+      "highlights": [
+        { "es": "Cotizador integrado en la vista del deal de HubSpot", "en": "Quoting dashboard integrated in the HubSpot deal view" },
+        { "es": "Distribución de presupuesto por marca y país con validación al 100%", "en": "Budget distribution by brand and country with 100% allocation validation" },
+        { "es": "Generación de quotes e insertion orders desde el CRM", "en": "Quote and insertion order generation directly from the CRM" },
+        { "es": "Pipeline dedicado de Media Sales en HubSpot Sales Hub", "en": "Dedicated Media Sales pipeline in HubSpot Sales Hub" }
+      ],
+      "link": "https://www.digifianz.com/en/blog/despegar-centralizes-media-sales-proposal-management-with-a-custom-hubspot-sales-quoting-tool",
+      "linkLabel": {
+        "es": "Caso completo en Digifianz",
+        "en": "Full case study on Digifianz"
+      }
+    }
+  },
+  {
+    "logoImage": "assets/logo_escala24x7.avif",
+    "logoColor": false,
+    "category": { "es": "Integración", "en": "Integration" },
+    "title": { "es": "HubSpot ↔ AWS Partner Central", "en": "HubSpot ↔ AWS Partner Central" },
+    "description": {
+      "es": "Co-selling automatizado entre HubSpot y AWS Partner Central para Escala 24x7.",
+      "en": "Automated co-sell sync between HubSpot and AWS Partner Central for Escala 24x7."
+    },
+    "stats": [
+      { "value": "100+", "label": { "es": "Oportunidades creadas", "en": "Created opportunities" } },
+      { "value": "100%", "label": { "es": "Tiempo real", "en": "Real time" } }
+    ],
+    "detail": {
+      "summary": {
+        "es": "Integración bidireccional HubSpot ↔ AWS Partner Central que automatiza el ciclo de co-selling de Escala 24x7: oportunidades APN, referrals de AWS, beneficios MDF y montos — sin procesos manuales entre el CRM y el portal de partners.",
+        "en": "Bidirectional HubSpot ↔ AWS Partner Central integration automating Escala 24x7's co-sell lifecycle: APN opportunities, AWS referrals, MDF benefits, and amounts — without manual handoffs between CRM and the partner portal."
+      },
+      "highlights": [
+        { "es": "Creación y actualización de oportunidades APN desde deals de HubSpot", "en": "APN opportunity create and update from HubSpot deals" },
+        { "es": "Referrals e invitaciones de engagement de AWS gestionados en HubSpot", "en": "AWS referral and engagement invitations managed in HubSpot" },
+        { "es": "Sincronización de montos, soluciones, productos AWS y beneficios MDF", "en": "Sync of amounts, solutions, AWS products, and MDF benefits" },
+        { "es": "Arquitectura serverless con Lambda, STS y EventBridge", "en": "Serverless architecture with Lambda, STS, and EventBridge" }
+      ]
+    }
+  },
+  {
+    "logoImage": "assets/logo_photonix.svg",
+    "logoColor": false,
+    "category": { "es": "SaaS a medida", "en": "Custom SaaS" },
+    "title": { "es": "Photonix FSM — Servicio de equipos de radioterapia", "en": "Photonix FSM — Radiotherapy Equipment Service" },
+    "description": {
+      "es": "SaaS para coordinar técnicos, contratos y mantenimiento de aceleradores lineales Varian en hospitales.",
+      "en": "SaaS to coordinate technicians, contracts, and maintenance of Varian linacs across hospital sites."
+    },
+    "stats": [
+      { "value": "OS", "label": { "es": "Multi-día con firma y PDF", "en": "Multi-day with signature & PDF" } },
+      { "value": "AWS", "label": { "es": "Arquitectura serverless", "en": "Serverless architecture" } }
+    ],
+    "detail": {
+      "summary": {
+        "es": "Photonix FSM reemplaza el pizarrón físico, planillas y órdenes en papel con una plataforma cloud para el mantenimiento de equipos de radioterapia Varian (TrueBeam, Clinac, Halcyon, Ethos) en hospitales y clínicas.",
+        "en": "Photonix FSM replaces whiteboards, spreadsheets, and paper work orders with a cloud platform for maintaining Varian radiotherapy equipment (TrueBeam, Clinac, Halcyon, Ethos) at hospitals and clinics."
+      },
+      "highlights": [
+        { "es": "Agenda técnica y casos con estados en tiempo real para técnicos y administración", "en": "Field calendar and cases with real-time status for technicians and admins" },
+        { "es": "Órdenes de servicio multi-día con bitácora, repuestos, viáticos y firma digital", "en": "Multi-day service orders with internal log, parts, travel, and digital signature" },
+        { "es": "Contratos con preventivas por equipo y correctivas globales compartidas", "en": "Contracts with per-equipment preventive visits and shared corrective pool" },
+        { "es": "Alarmas de fábrica e interlocks con alertas de equipos no operativos", "en": "Factory alarms and interlocks with alerts for non-operational equipment" }
+      ]
+    }
+  },
+  {
+    "logoImage": "assets/consorcio-abierto.png",
+    "logoColor": false,
+    "category": { "es": "Integración", "en": "Integration" },
+    "title": { "es": "Facturación HubSpot → Odoo — Properix", "en": "HubSpot → Odoo Billing — Properix" },
+    "description": {
+      "es": "Integración end-to-end para Consorcio Abierto (Properix): clientes, abonos y facturación mensual en Odoo.",
+      "en": "End-to-end integration for Consorcio Abierto (Properix): customers, subscriptions, and monthly Odoo billing."
+    },
+    "stats": [
+      { "value": "6", "label": { "es": "Pasos del pipeline", "en": "Pipeline steps" } },
+      { "value": "4", "label": { "es": "Países LATAM", "en": "LATAM countries" } }
+    ],
+    "detail": {
+      "summary": {
+        "es": "Consorcio Abierto (marca argentina de Properix) unificó ventas y finanzas conectando HubSpot y Odoo: sincronización de clientes, creación automática de abonos por consorcio y un pipeline mensual de 6 pasos que genera facturas con reglas de negocio (UFs, módulos, país, descuentos) y trazabilidad en tickets de auditoría.",
+        "en": "Consorcio Abierto (Properix's Argentina brand) unified sales and finance by connecting HubSpot and Odoo: customer sync, automatic per-building subscription deals, and a 6-step monthly pipeline that generates invoices with business rules (units, modules, country, discounts) and audit tickets."
+      },
+      "highlights": [
+        { "es": "Sincronización bidireccional de clientes HubSpot ↔ Odoo (AR, CO, UY, PY)", "en": "Bidirectional HubSpot ↔ Odoo customer sync (AR, CO, UY, PY)" },
+        { "es": "Creación automática de abonos por consorcio desde deals y cotizaciones", "en": "Automatic per-consortium subscription deals from deals and quotes" },
+        { "es": "Pipeline mensual en AWS con Step Functions, Lambdas y SQS", "en": "Monthly AWS pipeline with Step Functions, Lambdas, and SQS" },
+        { "es": "Auditoría en HubSpot: tickets, notas e incidencias por cada corrida", "en": "HubSpot audit trail: tickets, notes, and incidents per billing run" }
+      ]
+    }
+  },
+  {
+    "logoImage": "assets/logo_ads.png",
+    "logoColor": false,
+    "category": { "es": "Extensión de plataforma", "en": "Platform extension" },
+    "title": { "es": "Panel Cotizador ↔ HubSpot", "en": "Quoter Panel ↔ HubSpot" },
+    "description": {
+      "es": "Panel de cotización integrado en HubSpot para ADS Mexicana, reemplazando procesos en Excel.",
+      "en": "Quote panel integrated in HubSpot for ADS Mexicana, replacing Excel-based workflows."
+    },
+    "stats": [
+      { "value": "5000+", "label": { "es": "Cotizaciones de HubSpot", "en": "HubSpot Quotes" } },
+      { "value": "100%", "label": { "es": "Sincronizado", "en": "Synced" } }
+    ],
+    "detail": {
+      "summary": {
+        "es": "ADS Mexicana migró su proceso de cotización desde Excel a un panel custom conectado a HubSpot, permitiendo generar quotes desde los deals con reglas de pricing, descuentos y rendimiento propias del negocio.",
+        "en": "ADS Mexicana moved their quoting process from Excel to a custom panel connected to HubSpot, enabling quote generation from deals with business-specific pricing, discount, and yield rules."
+      },
+      "highlights": [
+        { "es": "Integración completa con la funcionalidad de quotes de HubSpot", "en": "Full integration with HubSpot's quote functionality" },
+        { "es": "Reemplazo de fórmulas y pestañas de Excel en un solo dashboard", "en": "Replacement of Excel formulas and tabs in a single dashboard" },
+        { "es": "Go-live en menos de 4 semanas con ajustes post-lanzamiento", "en": "Go-live in under 4 weeks with post-launch refinements" },
+        { "es": "Proceso comercial más rápido, preciso y sincronizado en tiempo real", "en": "Faster, more accurate sales process with real-time sync" }
+      ],
+      "link": "https://www.digifianz.com/en/blog/quote-panel-ads-mexicana-case-study",
+      "linkLabel": {
+        "es": "Caso completo en Digifianz",
+        "en": "Full case study on Digifianz"
+      }
+    }
+  }
+]
