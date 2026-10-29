@@ -75,10 +75,10 @@ dialogs.forEach((dialog) => {
 let contentRequest;
 async function openContent(key) {
   const target = document.querySelector('#reader-content');
-  target.innerHTML = '<h1 id="reader-title">Contenido del proyecto</h1><p>Cargando el texto aprobado…</p>';
+  target.innerHTML = '<h1 id="reader-title">Contenido del proyecto</h1><p>Cargando el contenido…</p>';
   showDialog(reader);
   try {
-    contentRequest ??= fetch('content.json').then((response) => {
+    contentRequest ??= fetch('/content.json').then((response) => {
       if (!response.ok) throw new Error('No se pudo cargar el contenido');
       return response.json();
     }).catch((error) => { contentRequest = undefined; throw error; });
@@ -95,6 +95,7 @@ document.addEventListener('click', (event) => {
   if (contentLink) { event.preventDefault(); openContent(contentLink.dataset.content); }
   const contactLink = event.target.closest('[data-reader-contact]');
   if (contactLink) {
+    if (!document.getElementById('contacto')) return;
     event.preventDefault(); reader.close(); infoDialog.close();
     document.getElementById('contacto').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
     document.querySelector('[data-agenda]').focus({ preventScroll: true });
@@ -115,11 +116,11 @@ document.addEventListener('click', (event) => {
   }
 });
 
-document.querySelector('#contact-form').addEventListener('submit', (event) => {
+document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
   event.preventDefault();
   const status = document.querySelector('#form-status');
   status.textContent = 'Prueba completada. En el sitio publicado recibirías la confirmación de tu consulta y el equipo continuaría la conversación por email. Esta prueba no envió ni guardó tus datos.';
   status.hidden = false;
   status.scrollIntoView({ behavior: 'instant', block: 'nearest' });
 });
-document.querySelector('#contact-form').addEventListener('input', () => { document.querySelector('#form-status').hidden = true; });
+document.querySelector('#contact-form')?.addEventListener('input', () => { document.querySelector('#form-status').hidden = true; });

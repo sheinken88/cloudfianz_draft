@@ -1,15 +1,17 @@
-# Segunda propuesta visual · Cloudfianz
+# Propuesta local del sitio · Cloudfianz
 
-Prototipo local de la homepage, revisado el 23 de octubre de 2026. Conserva la paleta, el contenido y el recorrido aprobados; cambia la composición, la tipografía, las imágenes y los componentes de la primera propuesta.
+Prototipo local de Cloudfianz. La homepage conserva la dirección visual revisada el 23 de octubre de 2026 y los cinco casos actualizados el 29 de octubre. La nueva entrega agrega las primeras páginas independientes: Desarrollo de software a medida y caso Despegar.
 
 ## Ver la propuesta
 
 Desde la raíz del repositorio: `npm run dev:proposal`.
 
-- [Revisión con selector de escritorio y móvil](http://127.0.0.1:3001/review.html).
-- [Homepage directa](http://127.0.0.1:3001/index.html).
+- [Revisión con selector de página y de escritorio/móvil](http://127.0.0.1:3001/review.html).
+- [Homepage](http://127.0.0.1:3001/es).
+- [Desarrollo de software a medida](http://127.0.0.1:3001/es/desarrollo-software-a-medida).
+- [Caso Despegar](http://127.0.0.1:3001/es/casos/despegar-cotizador-hubspot).
 
-El selector permite revisar distintos anchos sin modificar la página. El servidor queda limitado a `127.0.0.1:3001`; esta entrega es una vista local para revisión, no un despliegue.
+El selector permite revisar las tres páginas a distintos anchos. El servidor queda limitado a `127.0.0.1:3001`; esta entrega es una vista local para revisión, no un despliegue. Después de editar las fuentes, ejecutar `npm run build:proposal` y recargar el navegador. El servidor no incorpora recarga automática.
 
 ## Dirección visual
 
@@ -23,7 +25,21 @@ La implementación adapta columnas, navegación y selectores a móvil. La valida
 
 ## Contenido y recursos originales
 
-La versión anterior aprobada se conserva en `outputs/homepage-20261022/` del workspace. Los textos vigentes están en `prototype/content/`: incluyen los cinco casos adaptados de los borradores del usuario del 29 de octubre de 2026, su índice y los servicios con ejemplos actualizados. El lector provisional usa `dist/content.json`, que se regenera desde la raíz del repo con `python3 prototype/build-content.py`. Las notas editoriales de implementación quedan fuera del lector.
+La versión anterior aprobada se conserva en `outputs/homepage-20261022/` del workspace. Los textos vigentes están en `prototype/content/`: incluyen los cinco casos adaptados de los borradores del usuario del 29 de octubre de 2026, su índice y los servicios con ejemplos actualizados. Las notas editoriales de implementación quedan fuera de las páginas y del lector.
+
+## Editar y generar
+
+- `templates/home.html`: fuente de la homepage y de la cabecera, pie y diálogos compartidos. No editar directamente el `dist/index.html` generado.
+- `content/*.md`: textos vigentes de servicios y casos, incluidos sus títulos y descripciones SEO.
+- `build-pages.py`: composición de las páginas independientes y generación de la homepage. Ejecuta primero `build-content.py` para regenerar el lector.
+- `page-routes.json`: mapa de los contenidos que ya tienen página propia. Sus enlaces se generan como URLs normales, también dentro de los lectores provisionales.
+- `dist/styles.css`, `dist/pages.css`, `dist/app.js`: estilos e interacciones compartidos; `pages.css` agrega las composiciones de servicio y caso.
+- `dist/review.html` y `dist/review.js`: interfaz local de revisión.
+- `serve.mjs`: servidor local sin dependencias adicionales, con rutas explícitas, redirecciones a URLs sin barra final y respuestas 404 reales. No es infraestructura de producción.
+
+`npm run build:proposal` regenera todos los HTML y `content.json`. `npm run dev:proposal` construye y arranca el servidor. El contenido principal de las páginas está incluido en el HTML: no depende de abrir un modal ni de JavaScript para leerse. Los metadatos canonical y Open Graph apuntan al destino propuesto de producción; el prototipo continúa bloqueado para indexación.
+
+La composición de las dos páginas nuevas se documenta en [DIRECCION-PAGINAS.md](DIRECCION-PAGINAS.md).
 
 - [Fuentes de marca e imágenes de contexto](dist/assets/brand/SOURCES.md): logo Cloudfianz recuperado del archivo usado en las presentaciones, logos oficiales de clientes y Digifianz, dimensiones, procedencia y hashes. Los archivos se conservan intactos.
 - [Fuentes de las capturas Despegar](dist/assets/projects/SOURCES.md): dos capturas públicas del proyecto publicadas por Digifianz. El desenfoque ya pertenece a las imágenes originales.
@@ -32,7 +48,7 @@ Las captions distinguen el trabajo mostrado: Despegar es una captura del proyect
 
 ## Alcance y límites de la revisión
 
-La entrega se limita al diseño de la homepage y no sustituye la web actual en `src/`. Los enlaces a servicios y casos abren los textos aprobados en un lector; no representan el diseño final de esas páginas.
+La entrega incluye la homepage y las primeras páginas de servicio y caso, y no sustituye la web actual en `src/`. Desarrollo de software a medida y Despegar ya tienen URLs propias y navegación entre sí. Los demás servicios, casos e índice continúan en un lector provisional hasta revisar y extender estas bases.
 
 La agenda y el envío del formulario son simulaciones identificadas como tales. El formulario valida los campos y muestra una confirmación de prueba, sin enviar ni guardar los datos ingresados. No hay recepción comercial, reserva de reuniones ni medición conectadas. La política de privacidad permanece como aviso provisional.
 

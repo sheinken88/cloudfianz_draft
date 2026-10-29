@@ -52,3 +52,33 @@ Se reemplazaron los textos de Despegar, Photonix y ConsorcioAbierto y se añadie
 Comprobado: apertura de los cinco casos desde la homepage, índice con cinco entradas, enlaces internos generados válidos (9 contenidos), títulos y descripciones SEO presentes en las fuentes. Revisión visual de las nuevas reseñas en escritorio y a 390 px; sin desborde horizontal. Revisado el titular ampliado de ConsorcioAbierto en móvil y el lector sin desborde; cierre con Escape correcto. Sin errores de consola durante la revisión.
 
 Capturas: `outputs/casos-web-20261029/nuevos-casos-desktop.png` y `nuevos-casos-mobile.png` en el workspace. La edición continúa siendo local; no se desplegó ni se crearon rutas SEO independientes.
+
+## Primeras páginas independientes · 29 de octubre de 2026
+
+Rutas: `/es/desarrollo-software-a-medida` y `/es/casos/despegar-cotizador-hubspot`. Enlazadas desde `/es`, desde los textos relacionados y entre sí. La homepage conserva su composición.
+
+### Verificado
+
+- Inspección visual de ambas aperturas en escritorio a 1440 px, de los proyectos y contratación/FAQ del servicio, y de los resultados del caso. Captura completa del caso inspeccionada, con ambas imágenes cargadas.
+- Caso Despegar revisado visualmente a 390 px. Medición del ancho del documento a 360, 390, 768, 1024 y 1440 px: coincide con el viewport, sin desborde horizontal. Las cinco imágenes cargaron correctamente.
+- Navegación real desde Desarrollo al caso Despegar. Anclas de proyectos y secciones del caso comprobadas. El encabezado de Resultados queda debajo de la cabecera fija.
+- Pestañas de contratación: clic en Diseño y avance con flecha derecha a Implementación; una sola pestaña seleccionada y un solo panel visible. Expansión de una pregunta frecuente comprobada.
+- Lectores de Photonix desde Desarrollo e Integración desde Despegar: contenido cargado desde la ruta absoluta, cierre con Escape y enlaces a las páginas nuevas presentes. Corregida la filtración de los tamaños de titulares de páginas internas hacia estos diálogos.
+- HTML generado: un H1 por página, IDs únicos, descripción y canonical propios, enlaces y recursos locales existentes. Las tres páginas tienen 14, 7 y 5 imágenes, respectivamente, con textos alternativos.
+- HTTP local: las tres rutas devuelven 200; variantes con barra final o `index.html` redirigen con 301 a la URL acordada; se conservan parámetros de consulta. Rutas desconocidas y directorios devuelven 404; URLs malformadas, 400. HEAD no devuelve cuerpo; métodos distintos de GET/HEAD devuelven 405.
+- El servidor envía `X-Robots-Tag: noindex, nofollow` y `/robots.txt` bloquea rastreo. Los HTML incluyen `noindex, nofollow`. No se publicó el sitio.
+- `npm run build:proposal`, comprobación de sintaxis de `app.js`, `review.js` y `serve.mjs`, y comprobación de whitespace de Git.
+
+### Pendiente de completar en navegador
+
+El control del navegador dejó de responder al final de la pasada y no se recuperó al intentar obtener la pestaña ni el inventario. No se considera cerrada la revisión visual de esta entrega.
+
+- Inspección visual del servicio en móvil y tablet.
+- Selector de las tres páginas y modos de dispositivo en `review.html`.
+- Recorrido final de menú móvil y CTA de contacto desde las páginas nuevas, navegación atrás/adelante y lectura de consola.
+
+La implementación responsive y los destinos de contacto están presentes; esta lista distingue lo implementado de lo comprobado visualmente. Agenda, envío, privacidad y medición continúan siendo provisionales.
+
+### Evidencia
+
+`outputs/paginas-web-20261029/` del workspace contiene `despegar-desktop.png`, `despegar-desktop-completa.png`, `despegar-mobile.png` y `despegar-mobile-completa.png`. Las capturas completas conservan el contenido entero para revisar composición y lectura. Los tamaños intermedios se midieron en navegador; no representan pruebas en dispositivos físicos.

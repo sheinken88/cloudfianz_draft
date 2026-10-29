@@ -13,6 +13,7 @@ default_source = Path(__file__).resolve().parent / "content"
 source = Path(sys.argv[1]) if len(sys.argv) > 1 else default_source
 files = sorted(source.glob("servicio-*.md")) + sorted(source.glob("caso-*.md")) + [source / "indice-casos.md"]
 known = {path.stem for path in files}
+routes = json.loads((Path(__file__).resolve().parent / "page-routes.json").read_text())
 
 
 def inline(text):
@@ -22,6 +23,8 @@ def inline(text):
     def link(match):
         label, target = match.groups()
         key = Path(target).stem
+        if key in routes:
+            return f'<a href="{routes[key]}">{label}</a>'
         if key in known:
             return f'<a href="#{key}" data-content="{key}">{label}</a>'
         if target.startswith("https://"):
@@ -54,7 +57,7 @@ for path in files:
             blocks.append("<ul>" + "".join("<li>" + inline(line[2:]) + "</li>" for line in paragraph.splitlines() if line.startswith("- ")) + "</ul>")
         else:
             blocks.append("<p>" + inline(paragraph.replace("\n", " ")) + "</p>")
-    blocks.append('<div class="reader-bottom"><a class="button" href="#contacto" data-reader-contact>Hablemos de tu negocio </a></div>')
+    blocks.append('<div class="reader-bottom"><a class="button" href="/es#contacto" data-reader-contact>Hablemos de tu negocio </a></div>')
     contents[path.stem] = "\n".join(blocks)
 
 target = Path(__file__).resolve().parent / "dist/content.json"

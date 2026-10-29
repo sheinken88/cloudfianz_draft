@@ -31,3 +31,19 @@ mobile.addEventListener('click', () => setMode('mobile'));
 sizes.addEventListener('change', layout);
 new ResizeObserver(layout).observe(preview);
 layout();
+
+const pages = document.querySelector('#page');
+const openPage = document.querySelector('#open-page');
+pages.addEventListener('change', () => {
+  frame.src = pages.value;
+  openPage.href = pages.value;
+});
+frame.addEventListener('load', () => {
+  try {
+    const currentPath = frame.contentWindow.location.pathname;
+    if ([...pages.options].some(option => option.value === currentPath)) {
+      pages.value = currentPath;
+      openPage.href = currentPath;
+    }
+  } catch { /* The preview only tracks pages from this local origin. */ }
+});

@@ -11,7 +11,7 @@ Actualizado el 29 de octubre de 2026. Recupera el mapa aprobado el 22 de octubre
 - [x] Marcas originales y recursos visuales con procedencia documentada.
 - [x] Snapshot local completo `draft-01`, commit `821d63c`, con bundle de respaldo.
 
-Actualmente los servicios y casos se abren en un lector modal. No son páginas independientes. Agenda, formulario y privacidad son demostraciones; no hay recepción real ni analítica conectada.
+Desarrollo de software a medida y Despegar ya tienen páginas independientes, enlazadas desde la homepage y entre sí, listas para revisión. Los demás servicios, casos e índice siguen en un lector provisional. Agenda, formulario y privacidad son demostraciones; no hay recepción real ni analítica conectada.
 
 ## 1. Convertir el prototipo en un sitio con páginas propias
 
@@ -32,13 +32,14 @@ Once páginas comerciales más privacidad:
 | Contacto | `/es/contacto` |
 | Privacidad | `/es/privacidad` |
 
-- [ ] Diseñar e implementar una página de servicio y una de caso como base para revisar los dos tipos de página.
+- [x] Diseñar e implementar una página de servicio y una de caso como base para revisar los dos tipos de página.
+- [ ] Revisar con el usuario Desarrollo de software a medida y Despegar; incorporar los ajustes antes de extender la estructura.
 - [ ] Aplicar esas bases a los otros servicios y casos, con contenido específico.
 - [ ] Crear índice de casos y página de contacto.
 - [ ] Sustituir los lectores modales por enlaces a URLs propias; conservar la lectura y los enlaces cruzados entre servicios, casos y contacto.
 - [ ] Adaptar navegación compartida, pie, estados activos y recorridos móviles.
 
-Siguiente entrega propuesta: Desarrollo de software a medida + caso Despegar, navegables desde la homepage, para revisar estructura y diseño antes de extenderlos. Los ajustes quedan en commits locales posteriores a `draft-01`.
+Entrega actual: Desarrollo de software a medida + caso Despegar, navegables desde la homepage y desde el selector de revisión. La siguiente etapa es ajustar estas dos bases con el feedback y aplicarlas al resto de los servicios y casos. Los ajustes quedan en commits locales posteriores a `draft-01`.
 
 ## 2. Integrar SEO durante la construcción
 
@@ -52,6 +53,8 @@ Siguiente entrega propuesta: Desarrollo de software a medida + caso Despegar, na
 - [ ] Mantener el entorno de revisión fuera del índice; comprobar indexabilidad de producción al publicar.
 
 El mapa original dejó la especialización general de HubSpot coordinada con Digifianz. Cloudfianz se centra en software a medida, integración y automatización, con casos que demuestran su experiencia.
+
+Avance de esta entrega: las dos páginas nuevas incluyen el texto principal, un H1, título, descripción, canonical y Open Graph en su HTML, con enlaces nativos entre sí. La homepage también enlaza a esas URLs. El servidor local unifica las variantes con barra final o `index.html`, conserva los parámetros y devuelve 404 para rutas inexistentes. El resto de los puntos SEO queda pendiente para el sitio completo; el entorno de revisión mantiene `noindex, nofollow` y `robots.txt` con bloqueo de rastreo.
 
 ## 3. Hacer operativo el contacto
 

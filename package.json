@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev:proposal": "live-server prototype/dist --host=127.0.0.1 --port=3001 --no-browser",
+    "build:proposal": "python3 prototype/build-pages.py",
+    "dev:proposal": "npm run build:proposal && node prototype/serve.mjs",
     "build": "node scripts/build-cases.mjs",
     "dev": "npm run build && npx live-server src/ --port=3000 --no-browser",
     "deploy:staging": "npm run build && node scripts/deploy.mjs staging",
