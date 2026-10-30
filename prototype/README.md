@@ -1,6 +1,6 @@
 # Propuesta local del sitio · Cloudfianz
 
-Prototipo local de Cloudfianz. La homepage conserva la dirección visual revisada el 23 de octubre de 2026 y los cinco casos actualizados el 29 de octubre. La nueva entrega agrega las primeras páginas independientes: Desarrollo de software a medida y caso Despegar.
+Prototipo local de Cloudfianz. La homepage conserva la dirección visual revisada el 23 de octubre de 2026 y los cinco casos actualizados el 29 de octubre. Desarrollo de software a medida y Despegar tienen páginas independientes; su composición se revisó el 30 de octubre para mejorar jerarquía y variedad sin cambiar los textos aprobados.
 
 ## Ver la propuesta
 
@@ -31,15 +31,16 @@ La versión anterior aprobada se conserva en `outputs/homepage-20261022/` del wo
 
 - `templates/home.html`: fuente de la homepage y de la cabecera, pie y diálogos compartidos. No editar directamente el `dist/index.html` generado.
 - `content/*.md`: textos vigentes de servicios y casos, incluidos sus títulos y descripciones SEO.
-- `build-pages.py`: composición de las páginas independientes y generación de la homepage. Ejecuta primero `build-content.py` para regenerar el lector.
+- `build-pages.py`: generación de la homepage y las páginas independientes. Ejecuta primero `build-content.py` para regenerar el lector.
+- `page_layouts/service.py` y `page_layouts/case.py`: composiciones de servicio y caso, separadas del generador y alimentadas por los textos vigentes.
 - `page-routes.json`: mapa de los contenidos que ya tienen página propia. Sus enlaces se generan como URLs normales, también dentro de los lectores provisionales.
-- `dist/styles.css`, `dist/pages.css`, `dist/app.js`: estilos e interacciones compartidos; `pages.css` agrega las composiciones de servicio y caso.
+- `dist/styles.css` y `dist/app.js`: base visual e interacciones compartidas. `dist/pages.css` define el sistema de las páginas internas y el servicio; `dist/case-page.css` agrega la composición específica del caso y sólo se carga en esa página.
 - `dist/review.html` y `dist/review.js`: interfaz local de revisión.
 - `serve.mjs`: servidor local sin dependencias adicionales, con rutas explícitas, redirecciones a URLs sin barra final y respuestas 404 reales. No es infraestructura de producción.
 
 `npm run build:proposal` regenera todos los HTML y `content.json`. `npm run dev:proposal` construye y arranca el servidor. El contenido principal de las páginas está incluido en el HTML: no depende de abrir un modal ni de JavaScript para leerse. Los metadatos canonical y Open Graph apuntan al destino propuesto de producción; el prototipo continúa bloqueado para indexación.
 
-La composición de las dos páginas nuevas se documenta en [DIRECCION-PAGINAS.md](DIRECCION-PAGINAS.md).
+La composición vigente se documenta en [DIRECCION-PAGINAS-V2.md](DIRECCION-PAGINAS-V2.md). La [primera dirección](DIRECCION-PAGINAS.md) se conserva como antecedente. El servicio presenta las cuatro formas de contratación completas, sin pestañas; el caso utiliza composiciones distintas para contexto, enfoque, solución, resultados y evolución. Las capturas permiten ampliar el software real; Photonix mantiene la leyenda que identifica su imagen como contexto institucional.
 
 - [Fuentes de marca e imágenes de contexto](dist/assets/brand/SOURCES.md): logo Cloudfianz recuperado del archivo usado en las presentaciones, logos oficiales de clientes y Digifianz, dimensiones, procedencia y hashes. Los archivos se conservan intactos.
 - [Fuentes de las capturas Despegar](dist/assets/projects/SOURCES.md): dos capturas públicas del proyecto publicadas por Digifianz. El desenfoque ya pertenece a las imágenes originales.

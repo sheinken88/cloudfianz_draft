@@ -82,3 +82,36 @@ La implementación responsive y los destinos de contacto están presentes; esta 
 ### Evidencia
 
 `outputs/paginas-web-20261029/` del workspace contiene `despegar-desktop.png`, `despegar-desktop-completa.png`, `despegar-mobile.png` y `despegar-mobile-completa.png`. Las capturas completas conservan el contenido entero para revisar composición y lectura. Los tamaños intermedios se midieron en navegador; no representan pruebas en dispositivos físicos.
+
+## Segunda composición de servicio y caso · 30 de octubre de 2026
+
+Se sustituyó la presentación repetida de título/columna por composiciones específicas: apertura de producto abierta, necesidades en dos niveles, portfolio con tres tratamientos, decisión de lectura acotada, alcance con jerarquía propia y cuatro formas de contratación visibles. Despegar incorpora portada de proyecto, ficha horizontal, contexto lateral, enfoque editorial, solución con evidencia amplia, resultados sobre azul y epílogo compacto.
+
+### Comprobaciones de esta entrega
+
+- Inspección visual de ambas aperturas a 1440 × 1000 y 390 × 844, y de sus capturas completas. Inspección adicional del portfolio, preguntas frecuentes, solución y resultados. Una revisión visual independiente del servicio no encontró solapamientos, cortes de contenido ni problemas bloqueantes.
+- En ambas páginas, el ancho del documento coincide con el viewport a 360, 390, 768, 1024 y 1440 px. La apertura del servicio recorta intencionalmente la captura, dentro de su superficie; la imagen completa aparece en Proyectos y en el caso.
+- Todos los recursos de imagen cargados antes de las capturas completas. Se reutilizan archivos originales; Photonix conserva una leyenda y texto alternativo que distinguen el contexto institucional del trabajo desarrollado.
+- Contenido: comparación normalizada de los 28 párrafos/elementos de lista del servicio y los 24 del caso contra los HTML nuevos, sin faltantes. Las cuatro opciones de contratación están disponibles sin JavaScript. Los textos fuente y metadatos SEO no se modificaron.
+- Menú móvil: apertura, cierre y navegación desde el servicio a `/es#contacto`; menú cerrado al llegar. Navegación atrás/adelante comprobada.
+- Pregunta frecuente abierta y cerrada en el servicio. Lectura de Integración desde Despegar en móvil, diálogo de 358 px dentro del viewport de 390 y cierre con Escape comprobados.
+- Anclas de proyectos, solución y resultados comprobadas; título de Resultados a 225 px frente a una cabecera de 96 px, sin quedar tapado.
+- Consola sin errores ni advertencias en el recorrido de las páginas nuevas.
+- Comprobación estática de las tres páginas: un H1, IDs únicos, enlaces y anclas entre páginas válidos, recursos existentes y metadatos propios. Sintaxis Python válida, construcción completada y whitespace de Git comprobado.
+- La homepage conserva su HTML generado y sus estilos. El CSS de Despegar sólo se carga en la ruta del caso. Agenda, formulario, política y analítica conservan su alcance provisional.
+
+### Pendiente y límites
+
+La revisión móvil del servicio y la navegación directa pendientes del 29 de octubre quedaron completadas. El selector `review.html` sigue pendiente de validación visual: al intentar adquirir su pestaña existente, que mostraba una página de error, la política de URL del navegador bloqueó la observación por protocolo no permitido. No se intentó eludir el bloqueo. Las páginas comerciales se revisaron directamente por HTTP local. El selector no cambió en esta entrega.
+
+Esta revisión no equivale a una auditoría integral de accesibilidad, rendimiento o dispositivos físicos. El sitio sigue siendo local y fuera del índice.
+
+### Capturas
+
+Carpeta `outputs/paginas-visual-v2-20261030/` del workspace:
+
+- `servicio-desktop.png` y `servicio-desktop-completa.png`.
+- `servicio-mobile.png` y `servicio-mobile-completa.png`.
+- `despegar-desktop.png` y `despegar-desktop-completa.png`.
+- `despegar-mobile.png` y `despegar-mobile-completa.png`.
+- `despegar-resultados-desktop.png` y `despegar-resultados-mobile.png`.

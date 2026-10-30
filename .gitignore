@@ -10,3 +10,6 @@ src/es/
 src/assets/videos/*.mp4
 src/assets/videos/*.webm
 !src/assets/videos/README.txt
+
+# Local Python page builders
+__pycache__/

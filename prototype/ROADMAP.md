@@ -1,6 +1,6 @@
 # Plan de continuidad del sitio
 
-Actualizado el 29 de octubre de 2026. Recupera el mapa aprobado el 22 de octubre y lo ajusta a los cinco casos entregados el 29 de octubre. Mercado: Argentina y Latinoamérica en español.
+Actualizado el 30 de octubre de 2026. Recupera el mapa aprobado el 22 de octubre y lo ajusta a los cinco casos entregados el 29 de octubre. Mercado: Argentina y Latinoamérica en español.
 
 ## Punto de partida
 
@@ -40,6 +40,8 @@ Once páginas comerciales más privacidad:
 - [ ] Adaptar navegación compartida, pie, estados activos y recorridos móviles.
 
 Entrega actual: Desarrollo de software a medida + caso Despegar, navegables desde la homepage y desde el selector de revisión. La siguiente etapa es ajustar estas dos bases con el feedback y aplicarlas al resto de los servicios y casos. Los ajustes quedan en commits locales posteriores a `draft-01`.
+
+Revisión del 30 de octubre: se rediseñaron ambas páginas para variar las composiciones y dar mayor jerarquía al software real y los resultados. Los textos y metadatos aprobados se conservan. La contratación muestra las cuatro opciones independientes sin ocultarlas en pestañas. Esta segunda propuesta queda para revisión antes de extender el diseño.
 
 ## 2. Integrar SEO durante la construcción
 
