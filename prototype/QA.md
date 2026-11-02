@@ -156,3 +156,11 @@ Esta revisión sustituye el resumen asimétrico y elimina el índice a pedido de
 - Construcción `npm run build:proposal`, IDs únicos, un H1, recursos locales existentes y `git diff --check` verificados. Homepage, página de servicio y estilos/scripts compartidos idénticos. En `content.json` sólo cambia el caso Despegar. Sin errores de aplicación observados; Chrome muestra advertencias de una extensión externa (`locatorjs`), ajenas al sitio.
 - Evidencia en `outputs/despegar-caso-v3-20261102/` del workspace: `desktop-completa.jpg`, `mobile-completa.jpg`, `producto-desktop.jpg`, `resultados-desktop.jpg`, `hero-mobile.jpg`, `proceso-mobile.jpg` y `resultados-mobile.jpg`. Los viewports de navegador no sustituyen pruebas en dispositivos físicos.
 - Trabajo y versionado locales. El sitio sigue fuera del índice y no se publica. Las imágenes reutilizadas en otras páginas quedan fuera de esta revisión.
+
+## Captura original en el hero aprobado · 2 de noviembre de 2026
+
+- Se añade la vista general original del cotizador al hero: dos columnas equilibradas en desktop y captura debajo del texto en tablet/mobile. Título fluido de 40–48 px en dos columnas; se conserva la escala anterior al apilar. Imagen íntegra, con dimensiones explícitas, prioridad alta de carga y enlace de ampliación.
+- Inspección visual a 1440 × 1000, 1200 × 900 y 390 × 844. El hero completo cabe en el viewport de 390 × 844. Sin desborde horizontal en 360, 390, 768, 1024, 1200 y 1440 px. Captura cargada con sus dimensiones originales de 1633 × 887 px.
+- Ampliación activada con Enter: apertura del PNG original en una nueva pestaña verificada. Se conserva el foco visible y el aviso de nueva pestaña.
+- Construcción y `git diff --check` completados. Comparación contra el commit anterior: textos del hero, metadatos y todo el HTML posterior al hero idénticos. Homepage, servicio, contenido fuente, estilos/scripts compartidos y bytes de la imagen original sin cambios.
+- Evidencia: `outputs/despegar-hero-producto-20261102/hero-desktop.jpg` y `hero-mobile.jpg` en el workspace. Cambio versionado localmente, sin publicación remota.

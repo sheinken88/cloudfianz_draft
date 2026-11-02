@@ -37,3 +37,15 @@ El resumen de tres columnas repetía apertura y resultados: se elimina como bloq
 Se descartan otro conjunto de cards de funcionalidades y gráficos de mejora sin cifras verificadas. La evidencia visual es la captura completa del cotizador y el detalle de su catálogo, ambos originales del documento interno. El detalle se encuadra únicamente con CSS y permite abrir la captura completa. No se utiliza la imagen de facturación que contiene datos de contactos. El mensaje de tiempo no se duplica en el resumen y no se agregan porcentajes.
 
 En móvil: lectura lineal, proceso vertical, capturas ampliables y títulos contenidos. Se mantiene eliminada la navegación interna. El CTA y las otras páginas del sitio conservan su implementación.
+
+## Ajuste de la portada tras aprobar el diseño
+
+Se incorpora la vista general original del cotizador en el hero. La identidad, los textos y el relato aprobado se conservan. Paleta azul `#0B1D3A`, blanco `#FFFFFF`, menta `#E8F4F0` y gris azulado `#C1CFDB`; Manrope para el título e Inter para descripción y enlace. Dos columnas de proporciones próximas, alineadas al centro vertical, con 56 px entre texto e imagen y título fluido de 40–48 px. Debajo de 1200 px se apilan y recuperan la escala tipográfica anterior.
+
+```
+[logo + disciplina          ][                                  ]
+[título                     ][ captura completa del cotizador   ]
+[descripción                ][                  ampliar captura ]
+```
+
+La captura es la evidencia visual: no se agregan métricas, ilustraciones, dispositivos ficticios ni controles decorativos. El PNG mantiene su proporción y enlaza el original. La solución conserva su vista grande para explicar las funcionalidades. En mobile la captura sigue al texto, a todo el ancho disponible. Revisión del brief: la composición suma únicamente el producto solicitado, sin nuevos mensajes que compitan con la apertura aprobada.

@@ -53,10 +53,16 @@ def build_case(meta, intro, sections, routes):
 <section class="case-hero" aria-labelledby="case-title">
   <div class="container">
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es#casos">Casos</a></li><li aria-current="page">Despegar Ads</li></ol></nav>
-    <div class="case-hero-copy">
-      <div class="case-identity"><div class="case-client-logo"><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"></div><p>Desarrollo a medida e integración</p></div>
-      <h1 id="case-title">{html.escape(meta['H1'])}</h1>
-      <div class="case-hero-summary">{opening[0]}</div>
+    <div class="case-hero-layout">
+      <div class="case-hero-copy">
+        <div class="case-identity"><div class="case-client-logo"><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"></div><p>Desarrollo a medida e integración</p></div>
+        <h1 id="case-title">{html.escape(meta['H1'])}</h1>
+        <div class="case-hero-summary">{opening[0]}</div>
+      </div>
+      <figure class="case-hero-product">
+        <a class="case-hero-capture" href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Ampliar vista del cotizador en el hero (nueva pestaña)"><img src="/assets/projects/despegar-cotizador-original.png" alt="Cotizador de Despegar: presupuesto, distribución por marca y país y selección de productos en una campaña de prueba." width="1633" height="887" fetchpriority="high" decoding="async"></a>
+        <figcaption><a href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Ver captura del hero a tamaño completo (nueva pestaña)">Ampliar captura</a></figcaption>
+      </figure>
     </div>
   </div>
 </section>

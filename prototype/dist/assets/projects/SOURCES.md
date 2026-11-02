@@ -9,7 +9,7 @@
 
 Se descargó directamente la imagen incrustada mediante Google Docs, sin exportar ni volver a comprimir el documento. El archivo se conserva byte por byte, sin generación, retoques, cambios de texto ni reconstrucción de controles. La vista incluye una campaña identificada como `C2RIO -test`. Se comprobó visualmente la legibilidad de los textos y la coherencia de sus controles, frente a las alteraciones del archivo publicado.
 
-La captura completa se muestra con su proporción original y se puede abrir a tamaño completo. En la revisión integral del caso se trasladó del hero al capítulo de Solución, donde constituye la vista principal del producto.
+La captura completa se muestra con su proporción original y se puede abrir a tamaño completo. En la revisión integral del caso se trasladó del hero al capítulo de Solución, donde constituye la vista principal del producto. Tras aprobar ese diseño, el usuario pidió añadirla también al hero: se reutiliza el mismo archivo como presentación junto al título, conservando la vista grande en Solución.
 
 ## Catálogo del cotizador · original recuperado el 2 de noviembre de 2026
 
