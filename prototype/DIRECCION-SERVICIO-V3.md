@@ -1,5 +1,7 @@
 # Software a medida: una decisión más clara · 2 de noviembre de 2026
 
+Esta propuesta fue reemplazada por `DIRECCION-SERVICIO-V4.md` tras la revisión del usuario: se recupera la profundidad y la arquitectura anterior, con ajustes puntuales de diseño. Se conserva este documento como registro de la iteración.
+
 ## Dirección
 
 La página debe ayudar a reconocer un problema, comprobar experiencia y decidir cómo empezar. Se conserva el H1 y se concentra la promesa en entender la operación antes de elegir una solución. Se reduce el relato, no las condiciones que el cliente necesita conocer.

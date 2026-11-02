@@ -1,4 +1,4 @@
-/* Business needs → evidence → a clear way to start. Scoped to the service page. */
+/* Original service architecture, with restrained visual refinements. */
 .service-hero-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center;gap:60px;padding-block:30px 70px}
 .service-page .service-hero h1{font-size:clamp(44px,3.9vw,56px);line-height:1.12;letter-spacing:-1.9px;max-width:610px}
 .service-hero-copy>p{font-size:17px;color:var(--muted);margin-top:25px;max-width:550px}
@@ -10,61 +10,54 @@
 .service-product figcaption{display:grid;grid-template-columns:124px minmax(0,1fr);gap:26px;align-items:start;margin-top:22px}
 .service-product figcaption>img{width:124px;height:auto;margin-top:4px}
 .service-product figcaption p{font-size:13px;line-height:1.7;color:var(--muted)}
-.service-product figcaption p+p{margin-top:8px}
-.service-product figcaption a,.service-project-copy a{display:inline-flex;align-items:center;min-height:44px;color:var(--navy);font-weight:600;text-decoration:underline;text-underline-offset:5px}
-.service-product figcaption a:hover,.service-project-copy a:hover{color:#08796f}
-.service-problems,.service-evidence,.service-method,.service-contracts,.service-close{padding-block:70px;scroll-margin-top:25px}
-.service-page :is(.service-problems,.service-evidence,.service-method,.service-contracts,.service-close) h2{font-size:42px;line-height:1.17;letter-spacing:-1.25px;text-wrap:pretty}
-.service-problems{border-top:1px solid var(--line)}
-.service-problem-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px;margin-top:36px}
-.service-page .service-problem-grid h3{font-size:27px;line-height:1.25;letter-spacing:-.65px;text-wrap:pretty;max-width:340px}
-.service-problem-grid article>p{font-size:16px;color:var(--muted);margin-top:17px}
-.service-example{font-size:14px;color:#08796f;margin-top:17px;max-width:350px}
-.service-evidence{background:var(--mist)}
-.service-case-pair{display:grid;grid-template-columns:1fr 1fr;gap:90px;margin-top:36px}
-.service-client{font-size:14px;font-weight:600;color:#08796f;margin-bottom:12px}
-.service-page .service-case-pair h3{font-size:30px;line-height:1.25;letter-spacing:-.8px;max-width:500px;text-wrap:pretty}
-.service-project-copy{font-size:16px;color:var(--muted);max-width:550px;margin-top:18px}
-.service-project-copy p+p{margin-top:12px}
-.service-project-copy a{font-size:14px}
-.service-method{background:var(--navy);color:#fff}
-.service-method-intro{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:start}
-.service-page .service-method h2{color:#fff;max-width:430px}
-.service-method-intro p{font-size:17px;color:#c1cfdb;max-width:650px}
-.service-method-intro a{color:#89e1d3;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
-.service-method-intro a:hover{color:#fff}
-.service-process{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none;padding:0;margin:45px 0 0;gap:0}
-.service-process>li{position:relative;padding:28px 50px 0 0;border-top:1px solid #426269}
-.service-process>li:last-child{padding-right:0}
-.service-process>li::before{content:'';position:absolute;top:-4px;left:0;width:7px;height:7px;background:#89e1d3;border-radius:50%}
-.service-page .service-process h3{font-size:25px;letter-spacing:-.6px;color:#fff;margin-bottom:16px}
-.service-process p{font-size:15px;line-height:1.8;color:#c1cfdb;max-width:370px}
-.service-method-backing{display:grid;grid-template-columns:160px minmax(0,760px);gap:44px;align-items:center;margin-top:38px;padding-top:28px;border-top:1px solid #355060}
-.service-method-backing img{width:150px;height:auto}
-.service-method-backing p{font-size:14px;line-height:1.75;color:#c1cfdb}
-.service-contracts-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:90px;align-items:start}
-.service-contracts-intro h2{max-width:640px}
-.service-contracts-intro>p{font-size:16px;color:var(--muted);max-width:480px}
-.service-contract-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:38px;margin-top:37px}
-.service-page .service-contract-grid h3{font-size:24px;letter-spacing:-.5px;margin-bottom:16px}
-.service-contract-grid p{font-size:15px;line-height:1.75;color:var(--muted)}
-.service-close{background:var(--mint)}
-.service-close-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px;align-items:start}
-.service-next>p{font-size:17px;color:#466359;max-width:440px;margin-top:23px}
-.service-next-actions{display:flex;flex-direction:column;align-items:start;gap:12px;margin-top:28px}
-.service-next-actions .text-link{font-size:13px}
-.service-page .service-questions>h3{font-size:26px;letter-spacing:-.6px;margin-bottom:20px}
-.service-questions details{border-bottom:1px solid #b7cdc7}
-.service-questions details:first-of-type{border-top:1px solid #b7cdc7}
-.service-questions summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:66px;padding-block:18px;font-size:15px;font-weight:550;line-height:1.6;cursor:pointer;color:var(--navy)}
-.service-questions summary::-webkit-details-marker{display:none}
-.service-questions summary>span{position:relative;display:block;flex:none;width:12px;height:12px}
-.service-questions summary>span::before,.service-questions summary>span::after{content:'';position:absolute;background:currentColor}
-.service-questions summary>span::before{width:12px;height:1px;top:5px;left:0}
-.service-questions summary>span::after{width:1px;height:12px;left:5px;top:0}
-.service-questions details[open] summary>span::after{display:none}
-.service-answer{font-size:15px;line-height:1.8;color:#466359;padding:0 30px 22px 0}
-.service-answer p+p{margin-top:16px}
+.service-product figcaption .text-link{font-size:13px;margin-top:5px}
+
+/* Keep the full explanations; adjust scale and rhythm instead of removing copy. */
+.service-page .page-section{padding-block:76px}
+.service-page .page-section h2{font-size:42px;line-height:1.17;letter-spacing:-1.25px;text-wrap:pretty}
+.service-page .service-section-intro{margin-bottom:34px}
+.service-page .service-section-intro>h2{max-width:890px}
+.service-page .service-section-intro>p{margin-top:23px}
+.service-page .application-lead{padding:38px 42px;gap:64px;margin-top:34px}
+.service-page .application-lead h3{font-size:34px;letter-spacing:-1px}
+.service-page .application-pair{padding:34px 42px 0;gap:72px}
+.service-page .application-pair h3{margin-bottom:18px}
+
+/* One portfolio, three stories. The hero is only a preview of Despegar. */
+.service-page #proyecto-despegar,.service-page #criterio,.service-page #alcance{scroll-margin-top:25px}
+.service-page .service-projects h2{margin-bottom:38px}
+.service-page .service-feature{gap:56px}
+.service-page .service-feature>figure{padding:25px 25px 18px}
+.service-feature>figure>a{display:block;cursor:zoom-in}
+.service-feature>figure>a img{width:100%;height:auto;border-radius:5px;box-shadow:0 12px 28px #143d2918}
+.service-page .service-feature figcaption{margin-top:10px}
+.service-feature figcaption a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px}
+.service-page .service-feature h3{font-size:31px;letter-spacing:-.8px;margin-bottom:20px}
+.service-page .service-feature p{margin-top:17px}
+.service-page .service-feature p>a,.service-page .project-companions p>a{display:inline-flex;align-items:center;min-height:44px;font-weight:550;font-size:14px}
+.service-page .project-companions{margin-top:48px;gap:42px}
+.service-page .project-photonix-story{gap:25px}
+.service-page .project-ads-story{padding-left:32px}
+
+/* Criterion, scope and independent offers each answer a different question. */
+.service-page .decision-copy{max-width:860px}
+.service-page .decision-copy h2{max-width:800px;margin-bottom:27px}
+.service-page .delivery-section h2{max-width:840px}
+.service-page .delivery-copy{gap:80px;margin-top:34px}
+.service-page .delivery-copy p:first-child{font-size:22px;line-height:1.6}
+.service-page .service-engagement .service-section-intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start;margin-bottom:32px}
+.service-page .service-engagement .service-section-intro>p{margin:0;max-width:650px}
+.service-page .service-offers article{padding-block:25px 28px}
+.service-page .service-offers h3{font-size:27px;margin-bottom:15px}
+.service-page .faq{gap:76px;padding-top:30px}
+.service-page .faq-list summary{font-size:15px;padding-block:19px;min-height:64px}
+.service-page .faq-list details>p{font-size:15px}
+.service-page .service-backing{padding-block:36px}
+.service-page .service-backing>.container{grid-template-columns:190px 1fr;gap:64px}
+.service-page .service-backing img{width:180px}
+.service-page .service-backing p{font-size:16px;max-width:820px}
+.service-page .page-contact{padding-block:76px}
+.service-page .page-contact h2{font-size:42px;line-height:1.17;letter-spacing:-1.25px}
 
 @media(max-width:1199px){
   .service-hero-grid{gap:36px;padding-block:25px 58px}
@@ -72,15 +65,18 @@
   .service-product-image{padding:12px}
   .service-product figcaption{grid-template-columns:100px minmax(0,1fr);gap:20px}
   .service-product figcaption>img{width:100px}
-  .service-problems,.service-evidence,.service-method,.service-contracts,.service-close{padding-block:60px}
-  .service-page :is(.service-problems,.service-evidence,.service-method,.service-contracts,.service-close) h2{font-size:38px}
-  .service-problem-grid{gap:36px}
-  .service-page .service-problem-grid h3{font-size:25px}
-  .service-case-pair,.service-method-intro,.service-contracts-intro{gap:55px}
-  .service-process>li{padding-right:32px}
-  .service-contract-grid{gap:28px}
-  .service-page .service-contract-grid h3{font-size:22px}
-  .service-close-grid{gap:60px}
+  .service-page .page-section,.service-page .page-contact{padding-block:64px}
+  .service-page .page-section h2,.service-page .page-contact h2{font-size:38px}
+  .service-page .application-lead{gap:40px;padding:32px}
+  .service-page .application-lead h3{font-size:31px}
+  .service-page .application-pair{padding-inline:32px;gap:48px}
+  .service-page .service-feature{gap:36px}
+  .service-page .service-feature h3{font-size:28px}
+  .service-page .project-companions{gap:35px}
+  .service-page .project-ads-story{padding-left:28px}
+  .service-page .delivery-copy{gap:55px}
+  .service-page .service-engagement .service-section-intro{gap:48px}
+  .service-page .faq{gap:50px;padding-top:26px}
 }
 
 @media(max-width:799px){
@@ -91,29 +87,16 @@
   .service-product{max-width:680px}
   .service-product figcaption{grid-template-columns:124px minmax(0,1fr);gap:26px}
   .service-product figcaption>img{width:124px}
-  .service-problems,.service-evidence,.service-method,.service-contracts,.service-close{padding-block:50px}
-  .service-problem-grid{grid-template-columns:1fr;gap:29px;margin-top:30px}
-  .service-problem-grid article{max-width:620px}
-  .service-page .service-problem-grid h3{max-width:none;font-size:26px}
-  .service-problem-grid article>p{margin-top:12px}
-  .service-example{max-width:none;margin-top:10px}
-  .service-case-pair{gap:35px;margin-top:30px}
-  .service-page .service-case-pair h3{font-size:27px}
-  .service-method-intro,.service-contracts-intro{grid-template-columns:1fr;gap:22px}
-  .service-page .service-method h2{max-width:600px}
-  .service-process{grid-template-columns:1fr;margin-top:30px}
-  .service-process>li,.service-process>li:last-child{padding:0 0 26px 28px;border-top:0;border-left:1px solid #426269}
-  .service-process>li:last-child{padding-bottom:0;border-left-color:transparent}
-  .service-process>li::before{left:-4px;top:10px}
-  .service-process p{max-width:600px}
-  .service-page .service-process h3{font-size:24px;margin-bottom:12px}
-  .service-method-backing{gap:30px;margin-top:28px;padding-top:24px;grid-template-columns:135px 1fr}
-  .service-method-backing img{width:125px}
-  .service-contracts-intro>p{max-width:600px}
-  .service-contract-grid{grid-template-columns:1fr 1fr;gap:28px 40px;margin-top:30px}
-  .service-close-grid{grid-template-columns:1fr;gap:40px}
-  .service-next>p{max-width:570px}
-  .service-next-actions{flex-direction:row;align-items:center;gap:24px}
+  .service-page .page-section,.service-page .page-contact{padding-block:56px}
+  .service-page .page-section h2,.service-page .page-contact h2{font-size:36px}
+  .service-page .application-lead{gap:20px;padding:30px}
+  .service-page .application-pair{padding:30px 0 0;gap:35px}
+  .service-page .service-feature h3{font-size:30px}
+  .service-page .project-companions{margin-top:38px}
+  .service-page .delivery-copy{gap:25px;margin-top:28px}
+  .service-page .service-engagement .service-section-intro{grid-template-columns:1fr;gap:20px}
+  .service-page .faq{gap:30px;padding-top:24px}
+  .service-page .service-backing>.container{grid-template-columns:1fr;gap:23px}
 }
 
 @media(max-width:479px){
@@ -124,19 +107,18 @@
   .service-product-image{padding:8px;border-radius:5px}
   .service-product figcaption{grid-template-columns:1fr;gap:14px;margin-top:18px}
   .service-product figcaption p{font-size:14px}
-  .service-product figcaption p+p{margin-top:4px}
-  .service-problems,.service-evidence,.service-method,.service-contracts,.service-close{padding-block:42px}
-  .service-page :is(.service-problems,.service-evidence,.service-method,.service-contracts,.service-close) h2{font-size:32px;letter-spacing:-.8px}
-  .service-page .service-problem-grid h3{font-size:25px}
-  .service-case-pair{grid-template-columns:1fr;gap:32px}
-  .service-page .service-case-pair h3{font-size:28px}
-  .service-method-intro p{font-size:16px}
-  .service-method-backing{grid-template-columns:1fr;gap:18px}
-  .service-contract-grid{grid-template-columns:1fr;gap:24px}
-  .service-page .service-contract-grid h3{font-size:24px;margin-bottom:10px}
-  .service-next>p{font-size:16px;margin-top:18px}
-  .service-next-actions{flex-direction:column;align-items:start;gap:12px;margin-top:22px}
-  .service-next-actions .button{width:100%}
-  .service-questions summary{font-size:14px;gap:18px;padding-block:17px}
-  .service-answer{font-size:14px;padding-right:20px}
+  .service-page .page-section,.service-page .page-contact{padding-block:48px}
+  .service-page .page-section h2,.service-page .page-contact h2{font-size:32px;letter-spacing:-.8px}
+  .service-page .service-section-intro{margin-bottom:28px}
+  .service-page .application-lead{padding:27px 25px;margin-top:28px}
+  .service-page .application-lead h3{font-size:29px}
+  .service-page .application-pair{gap:30px}
+  .service-page .service-feature>figure{padding:18px 18px 12px}
+  .service-page .service-feature h3{font-size:28px}
+  .service-page .project-ads-story{padding:28px 0 0}
+  .service-page .delivery-copy p:first-child{font-size:21px}
+  .service-page .service-offers h3{font-size:26px}
+  .service-page .faq{padding-top:16px}
+  .service-page .faq-list summary,.service-page .faq-list details>p{font-size:14px}
+  .service-page .service-backing img{width:160px}
 }
