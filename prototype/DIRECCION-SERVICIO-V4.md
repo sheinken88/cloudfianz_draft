@@ -62,3 +62,19 @@ Retoque localizado, sin cambiar textos ni estructura. Se mantiene el bloque de v
 ```
 
 El ajuste usa la misma retícula de dos columnas, medianil e inset en los tres bloques, con títulos de 30 px y cuerpos de 16 px. El fondo ya distingue la aplicación principal: no necesita además un título desproporcionado. El título del bloque mint se alinea arriba con su explicación. El espaciado inferior mantiene el ritmo y la alineación vertical; en móvil se conservan los mismos márgenes interiores y una columna de lectura. Se revisó el plan contra el pedido: no se agregan tarjetas, iconos, líneas, imágenes ni nuevos mensajes.
+
+### Segunda revisión: hacer visible la relación entre las aplicaciones
+
+El ajuste anterior resultó demasiado tenue. Se mantiene el orden y el contenido, pero la composición comunica ahora que las tres situaciones pertenecen a la misma propuesta: introducción en dos columnas equilibradas y un único fondo mint que reúne ventas, operación y nuevos servicios. No se crean tarjetas individuales. Se utiliza una sola separación horizontal dentro del grupo para distinguir la aplicación principal del par complementario.
+
+```
+[Título de la sección       ][Introducción                    ]
+┌ Fondo mint común, radios de 8 px ───────────────────────────┐
+│ [Ventas: título           ][Explicación                    ] │
+│ ────────────────────────────────────────────────────────── │
+│ [Operación                ][Nuevo servicio                 ]│
+│ [Explicación              ][Explicación                    ]│
+└────────────────────────────────────────────────────────────┘
+```
+
+Se conservan navy #0B1D3A, mint #E8F4F0, blanco #FFFFFF y gris #55616F; Manrope e Inter. H2 de 38 px en desktop, H3 de 30 px, cuerpo de 16–17 px. En móvil, introducción y aplicaciones se apilan con un mismo eje de lectura. La diferencia debe percibirse en la composición completa, sin depender de comparar unos pocos píxeles de espaciado.

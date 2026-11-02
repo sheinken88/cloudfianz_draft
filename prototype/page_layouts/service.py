@@ -54,8 +54,10 @@ def build_service(meta, intro, sections, routes):
 </section>
 <section class="container service-needs page-section" aria-labelledby="needs-heading">
   <div class="service-section-intro"><h2 id="needs-heading">{needs_title}</h2>{needs_intro}</div>
-  <article class="application-lead"><h3>{lead_title}</h3><div>{lead_copy}</div></article>
-  <div class="application-pair">{supporting}</div>
+  <div class="service-applications">
+    <article class="application-lead"><h3>{lead_title}</h3><div>{lead_copy}</div></article>
+    <div class="application-pair">{supporting}</div>
+  </div>
 </section>
 <section class="service-projects page-section" id="proyectos" aria-labelledby="projects-heading">
   <div class="container">
