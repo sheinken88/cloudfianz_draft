@@ -346,3 +346,14 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Verificaciones `node --check` de app.js y serve.mjs, y `git diff --check`: correctas.
 - Evidencia de revisión: `/Users/sheinken/Desktop/Cloudfianz/outputs/homepage-narrativa-20261102/` (fuera del repositorio).
 - Formulario, agenda, privacidad y analítica siguen pendientes de conexión para publicación; esta iteración no publica ni envía consultas.
+
+## Ajuste editorial del inicio · 2 de noviembre de 2026
+
+- Build y verificación de IDs, H1, imágenes, estilos y anchors: correctos.
+- Tres relatos destacados: Despegar, REVIANZ y ConsorcioAbierto. Recuperan la presentación amplia anterior; no se restauran las capturas públicas alteradas de Despegar.
+- Se retira el bloque de ejemplos de Photonix y ADS Mexicana. Sus casos siguen disponibles en el índice.
+- Hero con InvoiceMatchFlowMockup de REVIANZ, datos ilustrativos identificados. Caso REVIANZ con ScopeDefinitionMockup y enlace al sitio del producto.
+- Digifianz en sección independiente de ancho completo, logo original y mayor jerarquía.
+- Revisado visualmente en 1280 y 390 px; sin desbordes a 320, 390, 768 y 1280 px.
+- Cambios acotados a la homepage, su CSS y la inserción de su mockup en el build; no hay cambios generados en páginas internas.
+- Capturas: `/Users/sheinken/Desktop/Cloudfianz/outputs/homepage-editorial-20261102/`.
