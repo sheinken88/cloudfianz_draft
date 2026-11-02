@@ -8,7 +8,7 @@ La homepage presenta la amplitud de Cloudfianz y orienta a servicios, casos o co
 
 Paleta existente: navy #0B1D3A, teal #12B5A5, mint #E8F4F0, gris #F5F7FA, blanco #FFFFFF, texto secundario #55616F. Manrope para títulos e Inter para lectura y controles.
 
-Hero con promesa de negocio a la izquierda y un mockup conceptual de cotización, operación y resultados a la derecha. Tres entradas de servicio visibles y equivalentes. Portfolio de tres proyectos con el formato editorial amplio de la versión anterior: Despegar y ConsorcioAbierto con imagen y relato en dos columnas; REVIANZ con contenido sobre su mockup. Criterio de trabajo breve, sección institucional de Digifianz y contacto como cierre. Sin carruseles ni pestañas que oculten las capacidades principales.
+Hero con promesa de negocio a la izquierda y un nuevo mockup del cotizador de Despegar en una notebook a la derecha. Tres entradas de servicio visibles y equivalentes. Portfolio de tres proyectos con el formato editorial amplio de la versión anterior: Despegar y ConsorcioAbierto con imagen y relato en dos columnas; REVIANZ con contenido sobre su mockup. Criterio de trabajo breve, sección institucional de Digifianz y contacto como cierre. Sin carruseles ni pestañas que oculten las capacidades principales.
 
 ## Revisión del plan
 
@@ -34,3 +34,8 @@ Se mantiene la arquitectura de capacidades y la selección de tres casos, pero s
 ## Mockup conceptual del hero
 
 A pedido del usuario se reemplaza la imagen de ConsorcioAbierto por una composición original generada con la herramienta integrada de imágenes. Presenta cotización, operación y resultados con la paleta de Cloudfianz. Es una representación conceptual, sin logos de clientes ni métricas, y se acompaña con «Una muestra de lo que podemos construir». El resto de la homepage conserva su composición. El prompt y la procedencia quedan en `dist/assets/hero/`.
+
+
+## Hero con Despegar en una notebook
+
+El usuario descartó el mockup conceptual y pidió una imagen nueva del caso Despegar. Se creó una composición de producto con una notebook, usando la herramienta integrada de generación de imágenes. La pantalla visible se superpone en CSS con una vista derivada de la captura original. A pedido explícito del usuario se retiran la marca Digifianz del encabezado y las cuatro líneas azules laterales de las filas de marcas. La captura original queda intacta para el resto del sitio. El mockup y su pie enlazan al caso. No se modifica el relato ni el resto de la homepage.

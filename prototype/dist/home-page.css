@@ -4,7 +4,7 @@
 .home-page main :is(h1,h2,h3){text-wrap:balance}
 .home-section{padding-block:108px}
 
-/* A conceptual product composition brings the breadth of our work into the hero. */
+/* New device mockup with a product view adapted to the user's presentation requests. */
 .home-hero{background:var(--navy);color:#fff;padding-block:72px 80px}
 .home-opening{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center}
 .home-opening-content,.home-hero-visual{min-width:0}
@@ -15,8 +15,13 @@
 .home-opening-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:30px}
 .home-opening-actions .text-link{font-size:13px;min-height:35px}
 .home-hero-visual{max-width:510px;width:100%;justify-self:end}
-.home-capabilities-figure>img{display:block;width:100%;height:auto;aspect-ratio:1;mix-blend-mode:lighten}
-.home-capabilities-figure>figcaption{font-size:12px;line-height:1.7;color:#adc4d2;margin-top:12px;text-align:center}
+.home-despegar-stage{display:block;position:relative;aspect-ratio:1254/1003;overflow:hidden;border-radius:6px;isolation:isolate;background:var(--navy)}
+.home-despegar-device{position:absolute;left:0;top:-12.5%;display:block;width:100%;height:auto;mix-blend-mode:lighten}
+/* Coordinates match the generated screen aperture; contain preserves the UI proportions. */
+.home-despegar-screen{position:absolute;left:7.4%;top:14.45%;width:85.2%;height:63.6%;object-fit:contain;object-position:center;background:#f1f5f9;border-radius:3px}
+.home-despegar-stage:focus-visible{outline:2px solid var(--teal);outline-offset:6px}
+.home-despegar-figure>figcaption{display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:12px;line-height:1.7;color:#adc4d2;margin-top:18px}
+.home-despegar-figure>figcaption>a{flex:none;color:#fff;text-underline-offset:5px;padding-block:8px}
 
 
 

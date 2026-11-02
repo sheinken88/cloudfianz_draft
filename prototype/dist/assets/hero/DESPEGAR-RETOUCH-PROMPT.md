@@ -1,0 +1,7 @@
+# User-requested retouch — built-in image generation
+
+Use case: precise-object-edit
+Edit target: this original screenshot of the Despegar quotation tool. Make ONLY these two small cosmetic changes for a marketing mockup:
+1. Remove the small white "digifianz" wordmark and paper-plane symbol from the top navy header, near the right side just before the "Cotización Simple" button. Fill that area seamlessly with the exact original solid navy header color. Keep the Despegar logo at the left untouched.
+2. Remove ONLY the thin bright-blue vertical accent strips at the LEFT EDGE of the four light-grey rows in "Distribución por Marca" (Despegar, Hotel DO, Liverpool, Passagens Aereas). Replace each narrow strip with the adjacent row's pale grey surface color so the rows have clean neutral edges. Do not add a replacement border or other decoration.
+Preserve the original screenshot's 1633:887 aspect ratio, framing, complete content, layout and every other pixel as closely as possible. Keep all existing Spanish words, numbers, controls, font sizes, logos except the specified removed Digifianz mark, spacing and colors unchanged. In particular retain the blue country-section headers on the right and all buttons; only the thin left-side row accents must disappear. Do not recreate, simplify, redesign, or invent any interface. No new text, no crop, no device, no shadow or mockup frame: return only the corrected screenshot.
