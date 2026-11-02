@@ -2,15 +2,15 @@
 
 **URL propuesta:** `/es/casos`
 **Title:** Casos de software, integración y automatización | Cloudfianz
-**Meta description:** Conocé cómo Despegar, ConsorcioAbierto, Photonix, Escala24x7 y ADS Mexicana mejoran sus procesos comerciales y operativos con Cloudfianz.
+**Meta description:** Conocé cómo Despegar, ConsorcioAbierto, Photonix, Escala24x7, ADS Mexicana y Digifianz mejoran sus procesos comerciales y operativos con Cloudfianz.
 
 ## Apertura
 
 **Texto de contexto:** Cloudfianz, la unidad de desarrollo de software de Digifianz
 
-**H1:** Cinco necesidades de negocio. Cinco soluciones en funcionamiento.
+**H1:** Necesidades de negocio. Soluciones en funcionamiento.
 
-Cotizar más rápido, facturar con reglas complejas, coordinar servicios o mantener oportunidades actualizadas. Estos proyectos muestran cómo el desarrollo de software y la integración de sistemas pueden mejorar el trabajo de una empresa.
+Cotizar más rápido, facturar con reglas complejas, coordinar servicios, seguir la rentabilidad de proyectos o mantener oportunidades actualizadas. Estos proyectos muestran cómo el desarrollo de software y la integración de sistemas pueden mejorar el trabajo de una empresa.
 
 ## Despegar Ads
 
@@ -19,6 +19,14 @@ Cotizar más rápido, facturar con reglas complejas, coordinar servicios o mante
 Un cotizador incorpora las reglas de más de ocho marcas y ocho países, automatiza cálculos y genera órdenes de inserción. El equipo pasó de preparar propuestas en horas a resolverlas en minutos.
 
 [Conocé el caso Despegar](caso-despegar.md).
+
+## REVIANZ para Digifianz
+
+**Título:** Proyectos, facturación y rentabilidad en una misma plataforma.
+
+La solución desarrollada por Cloudfianz reúne el seguimiento financiero de los proyectos, la facturación y la colaboración con equipos externos. Digifianz conecta el trabajo y sus números en un mismo entorno.
+
+[Conocé el caso REVIANZ](caso-revianz.md).
 
 ## ConsorcioAbierto
 

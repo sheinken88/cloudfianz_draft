@@ -38,7 +38,7 @@ Revisamos cómo funciona el proceso: qué lo inicia, quién participa, qué info
 
 Para priorizar, consideramos el impacto esperado, la frecuencia del trabajo, los sistemas disponibles y la claridad de las reglas. Según el caso, la solución puede apoyarse en funciones existentes, integraciones o software a medida.
 
-## Dos ejemplos de aplicación
+## Ejemplos de aplicación
 
 ### ConsorcioAbierto: del acuerdo comercial a la facturación mensual
 
@@ -51,6 +51,12 @@ Un flujo conecta las membresías de HubSpot con Odoo y genera más de 15.000 fac
 Un cotizador conectado con HubSpot automatiza cálculos y permite ajustar una propuesta a un presupuesto objetivo dentro de los límites de precios definidos. La cotización se devuelve al CRM para continuar el proceso comercial.
 
 [Conocé el caso Despegar](caso-despegar.md).
+
+### REVIANZ: reglas de proyecto conectadas con costos y facturación
+
+En la plataforma desarrollada para Digifianz, los servicios y las asignaciones alimentan el cálculo de costos y rentabilidad. La facturación y los pagos a colaboradores siguen ese contexto, con instancias de revisión y aprobación.
+
+[Conocé el caso REVIANZ](caso-revianz.md).
 
 ## Controles y responsables dentro del flujo
 

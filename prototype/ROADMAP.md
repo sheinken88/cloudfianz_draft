@@ -1,21 +1,21 @@
 # Plan de continuidad del sitio
 
-Actualizado el 30 de octubre de 2026. Recupera el mapa aprobado el 22 de octubre y lo ajusta a los cinco casos entregados el 29 de octubre. Mercado: Argentina y Latinoamérica en español.
+Actualizado el 2 de noviembre de 2026. Recupera el mapa aprobado el 22 de octubre y lo ajusta a los cinco casos entregados el 29 de octubre y al caso REVIANZ incorporado el 2 de noviembre. Mercado: Argentina y Latinoamérica en español.
 
 ## Punto de partida
 
 - [x] Mensaje centrado en resultados de negocio y pertenencia a Digifianz.
 - [x] Investigación SEO cualitativa y mapa de lanzamiento. No hay mediciones de volumen, dificultad o tráfico proyectado.
-- [x] Textos de tres servicios y cinco casos, con índice actualizado.
+- [x] Textos de tres servicios y seis casos, con índice actualizado.
 - [x] Primera base visual de la homepage en escritorio y móvil; queda abierta a mejoras.
 - [x] Marcas originales y recursos visuales con procedencia documentada.
 - [x] Snapshot local completo `draft-01`, commit `821d63c`, con bundle de respaldo.
 
-Desarrollo de software a medida y Despegar ya tienen páginas independientes, enlazadas desde la homepage y entre sí, listas para revisión. Los demás servicios, casos e índice siguen en un lector provisional. Agenda, formulario y privacidad son demostraciones; no hay recepción real ni analítica conectada.
+Desarrollo de software a medida, Despegar y REVIANZ ya tienen páginas independientes, enlazadas desde la homepage y entre sí, listas para revisión. Los demás servicios, casos e índice siguen en un lector provisional. Agenda, formulario y privacidad son demostraciones; no hay recepción real ni analítica conectada.
 
 ## 1. Convertir el prototipo en un sitio con páginas propias
 
-Once páginas comerciales más privacidad:
+Doce páginas comerciales más privacidad:
 
 | Página | Ruta propuesta |
 | --- | --- |
@@ -29,6 +29,7 @@ Once páginas comerciales más privacidad:
 | Photonix | `/es/casos/photonix-servicio-tecnico` |
 | Escala24x7 | `/es/casos/escala24x7-hubspot-aws-partner-central` |
 | ADS Mexicana | `/es/casos/ads-mexicana-cotizador-hubspot` |
+| REVIANZ para Digifianz | `/es/casos/revianz-gestion-financiera-proyectos` |
 | Contacto | `/es/contacto` |
 | Privacidad | `/es/privacidad` |
 
@@ -102,3 +103,7 @@ Blog, página propia de equipo con perfiles personales, páginas por país o ind
 - Reglas de versionado: [VERSIONADO.md](VERSIONADO.md).
 
 Este documento actualiza el alcance de tres a cinco casos; los documentos históricos se conservan sin reescribirlos.
+
+## Incorporación de REVIANZ · 2 de noviembre de 2026
+
+Caso desarrollado para Digifianz, con página propia, metadatos y capturas originales del entorno de demostración. Se incorpora al inicio, al portfolio de desarrollo a medida, al índice y al contenido de automatización. El índice y automatización conservan su lector provisional. No se modifican los casos anteriores ni se atribuyen métricas de mejora sin datos. Esta incorporación amplía el mapa a seis casos y queda para revisión local.

@@ -31,3 +31,16 @@ https://www.digifianz.com/es/blog/como-despegar-centralizo-sus-propuestas-de-med
 - `despegar-distribucion.png`: https://www.digifianz.com/hs-fs/hubfs/aacea83b-7a19-4688-a174-e02b6f491343.png?height=775&name=aacea83b-7a19-4688-a174-e02b6f491343.png&width=1600
 
 Son los archivos descargados de la publicación; no se modificaron localmente. La procedencia pública no permite certificar que sean capturas originales sin alteraciones. En la revisión del 2 de noviembre se detectaron textos y cifras visualmente alterados en `despegar-cotizador.png`; no se atribuye la causa sin evidencia. Ambos archivos dejan de utilizarse en la página del caso. La afirmación anterior de que los campos estaban simplemente desenfocados se retira por falta de verificación.
+
+# Imágenes del proyecto REVIANZ · 2 de noviembre de 2026
+
+Capturas originales del centro de ayuda del producto, conservadas byte por byte. Se usa el entorno de demostración; los importes visibles no se presentan como resultados de Digifianz. Las pantallas conservan sus textos originales (español e inglés). No se utilizan las recreaciones de marketing ni la imagen ilustrada del hero.
+
+- `revianz-rentabilidad-original.jpg`: `/Users/sheinken/Desktop/Digifianz/boom2.0/boom2.0_frontend/public/learning/es/read-business-reports/03-profitability-by-scope-20260809.jpg`. SHA-256: `cf6912573ce3535f62884021c6a3dd55f030dab86d549e92e9091a895d70e2c9`.
+
+- `revianz-margen-original.jpg`: `/Users/sheinken/Desktop/Digifianz/boom2.0/boom2.0_frontend/public/learning/es/create-first-scope/09-review-preview-20260805-v2.jpg`. SHA-256: `d5ff83af20679bb8447f794b5b79e4f34b2bd228cbfa51a1f9ad34bde3b3697a`.
+
+- `revianz-facturacion-original.jpg`: `/Users/sheinken/Desktop/Digifianz/boom2.0/boom2.0_frontend/public/learning/es/bill-a-client/01-generate-draft-20260805.jpg`. SHA-256: `f01d5729e59935357f9fbbd28bd70a9bdd1f8660596bd602df30a36f59872704`.
+
+
+Ubicaciones de uso: reporte de rentabilidad en inicio, portfolio de software y apertura del caso; detalle de margen y generación de factura en el caso. Todas ofrecen ampliación del original. Fuentes de contenido: README y documentación de funcionalidades implementadas de Boom2.0; sitio público https://revianz.com/en; descripción del proyecto aportada por el usuario. No se consultaron datos de producción.

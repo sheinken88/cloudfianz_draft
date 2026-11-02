@@ -1,4 +1,4 @@
-"""Build the local homepage and the first two standalone pages from current copy."""
+"""Build the local homepage and standalone pages from current copy."""
 import html
 import json
 from pathlib import Path
@@ -53,7 +53,7 @@ def page(key, body, kind):
     meta, _, _ = document(key)
     title, description = html.escape(meta['Title'], quote=True), html.escape(meta['Meta description'], quote=True)
     canonical = 'https://cloudfianz.com' + routes[key]
-    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css'}
+    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css'}
     extra_css = f'<link rel="stylesheet" href="/{page_styles[kind]}">'
     return f'''<!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#0B1D3A">
@@ -75,8 +75,13 @@ from page_layouts.case import build_case
 meta, intro, sections = document('caso-despegar')
 case_body = build_case(meta, intro, sections, routes)
 
-for key, body, kind in [('servicio-desarrollo-software', service_body, 'service-page'), ('caso-despegar', case_body, 'case-page')]:
+from page_layouts.revianz import build_revianz
+
+meta, intro, sections = document('caso-revianz')
+revianz_body = build_revianz(meta, intro, sections, routes)
+
+for key, body, kind in [('servicio-desarrollo-software', service_body, 'service-page'), ('caso-despegar', case_body, 'case-page'), ('caso-revianz', revianz_body, 'revianz-page')]:
     output = DIST / routes[key].lstrip('/') / 'index.html'
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(page(key, body, kind))
-print('Built homepage and 2 standalone pages.')
+print('Built homepage and 3 standalone pages.')

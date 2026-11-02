@@ -18,7 +18,7 @@ def build_service(meta, intro, sections, routes):
     projects_title, projects = section('Proyectos')
     parts = re.split(r'<h3>(.*?)</h3>', projects)
     projects = [(parts[i], parts[i + 1]) for i in range(1, len(parts), 2)]
-    despegar, photonix, ads = projects
+    despegar, revianz, photonix, ads = projects
     ads_title = ads[0].replace('más de 50 cotizaciones diarias', '<span>más de 50 cotizaciones diarias</span>')
     choice_title, choice = section('Elegimos')
     delivery_title, delivery = section('Una primera')
@@ -61,6 +61,10 @@ def build_service(meta, intro, sections, routes):
     <article class="service-feature" id="proyecto-despegar">
       <figure><a href="/assets/projects/despegar-catalogo-original.png" target="_blank" rel="noopener" aria-label="Ampliar captura original del catálogo de Despegar (nueva pestaña)"><img src="/assets/projects/despegar-catalogo-original.png" alt="Catálogo de productos para Despegar Brasil dentro del cotizador, con buscador, formatos y precios unitarios." width="1641" height="883" loading="lazy" decoding="async"></a><figcaption>Catálogo del cotizador de Despegar. <a href="/assets/projects/despegar-catalogo-original.png" target="_blank" rel="noopener" aria-label="Ver captura completa del catálogo (nueva pestaña)">Ampliar captura</a></figcaption></figure>
       <div class="service-feature-copy"><img class="service-feature-logo" src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52" loading="lazy"><h3>{despegar[0]}</h3>{despegar[1]}</div>
+    </article>
+    <article class="revianz-preview" id="proyecto-revianz" aria-labelledby="revianz-service-title">
+      <div class="revianz-preview-heading"><div><p class="revianz-project-context">Desarrollo de software a medida</p><h3 id="revianz-service-title">{revianz[0]}</h3></div><div class="revianz-preview-copy">{revianz[1]}</div></div>
+      <figure><a class="revianz-preview-capture" href="/assets/projects/revianz-rentabilidad-original.jpg" target="_blank" rel="noopener" aria-label="Ampliar reporte de rentabilidad de REVIANZ (nueva pestaña)"><img src="/assets/projects/revianz-rentabilidad-original.jpg" alt="Reporte de REVIANZ que relaciona ingresos, costos, comisiones y rentabilidad de cada proyecto, con datos de demostración." width="1920" height="650" loading="lazy" decoding="async"></a><figcaption>REVIANZ · Reporte de rentabilidad. Datos de demostración. <a href="/assets/projects/revianz-rentabilidad-original.jpg" target="_blank" rel="noopener" aria-label="Ampliar captura de REVIANZ (nueva pestaña)">Ampliar captura</a></figcaption></figure>
     </article>
     <div class="project-companions">
       <article class="project-photonix-story"><figure><img src="/assets/brand/photonix-ethos-official.jpg" alt="Equipo de radioterapia Ethos, en una imagen institucional publicada por Photonix." width="1920" height="1080" loading="lazy"><figcaption>Equipamiento de radioterapia. Imagen institucional de Photonix.</figcaption></figure><div><h3>{photonix[0]}</h3>{photonix[1]}</div></article>

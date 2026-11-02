@@ -50,6 +50,12 @@ Un cotizador conectado con HubSpot reúne reglas de precios y distribución de p
 
 [Conocé el caso Despegar](caso-despegar.md).
 
+### REVIANZ: proyectos y seguimiento financiero para Digifianz
+
+Cloudfianz desarrolló una plataforma que conecta servicios, equipos, costos, rentabilidad y facturación. Digifianz puede seguir la operación de sus proyectos y coordinar colaboradores externos desde el mismo entorno.
+
+[Conocé el caso REVIANZ](caso-revianz.md).
+
 ### Photonix: una plataforma para coordinar el servicio técnico
 
 La plataforma reúne agenda, contratos y órdenes de servicio para el mantenimiento de equipos de radioterapia. Técnicos y administración cuentan con un entorno compartido para registrar y consultar el trabajo.
