@@ -14,8 +14,11 @@ def build_service(meta, intro, sections, routes):
     parts = re.split(r'<h3>(.*?)</h3>', needs)
     needs_intro = parts[0]
     applications = [(parts[i], parts[i + 1]) for i in range(1, len(parts), 2)]
-    lead_title, lead_copy = applications[0]
-    supporting = ''.join(f'<article><h3>{title}</h3>{copy}</article>' for title, copy in applications[1:])
+    application_columns = []
+    for title, copy in applications:
+        description, example = paragraphs(copy)
+        example = example.removeprefix('<p><strong>Ejemplo:</strong> ').removesuffix('</p>')
+        application_columns.append(f'<article class="service-application"><h3>{title}</h3><div class="application-description">{description}</div><div class="application-example"><p class="application-example-label">Por ejemplo</p><p>{example}</p></div></article>')
     projects_title, projects = section('Proyectos')
     parts = re.split(r'<h3>(.*?)</h3>', projects)
     projects = [(parts[i], parts[i + 1]) for i in range(1, len(parts), 2)]
@@ -54,10 +57,7 @@ def build_service(meta, intro, sections, routes):
 </section>
 <section class="container service-needs page-section" aria-labelledby="needs-heading">
   <div class="service-section-intro"><h2 id="needs-heading">{needs_title}</h2>{needs_intro}</div>
-  <div class="service-applications">
-    <article class="application-lead"><h3>{lead_title}</h3><div>{lead_copy}</div></article>
-    <div class="application-pair">{supporting}</div>
-  </div>
+  <div class="service-applications">{''.join(application_columns)}</div>
 </section>
 <section class="service-projects page-section" id="proyectos" aria-labelledby="projects-heading">
   <div class="container">

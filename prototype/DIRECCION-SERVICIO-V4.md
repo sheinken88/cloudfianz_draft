@@ -78,3 +78,18 @@ El ajuste anterior resultó demasiado tenue. Se mantiene el orden y el contenido
 ```
 
 Se conservan navy #0B1D3A, mint #E8F4F0, blanco #FFFFFF y gris #55616F; Manrope e Inter. H2 de 38 px en desktop, H3 de 30 px, cuerpo de 16–17 px. En móvil, introducción y aplicaciones se apilan con un mismo eje de lectura. La diferencia debe percibirse en la composición completa, sin depender de comparar unos pocos píxeles de espaciado.
+
+### Tres situaciones con el mismo peso
+
+Se adopta la propuesta del usuario: tres columnas iguales, sin destacar la primera. Se elimina la superficie mint conjunta y se acorta cada descripción a 2–3 líneas, acompañada por un ejemplo funcional explícito. La introducción se reduce a una frase.
+
+Paleta: blanco #FFFFFF, navy #0B1D3A, gris #55616F, línea #DCE3E9 y acento #08796F para identificar los ejemplos. Manrope 28 px para los tres títulos, Inter 16 px para descripciones y 15 px para ejemplos. Sin tarjetas, iconos ni fondos de color.
+
+```
+[Título de sección             ][Introducción breve             ]
+[Venta y atención       ][Operación que creció ][Nuevo servicio ]
+[Descripción breve     ][Descripción breve    ][Descripción    ]
+[Ejemplo: cotizador    ][Ejemplo: panel       ][Ejemplo: portal]
+```
+
+Los ejemplos concretan el tipo de solución: cotizador conectado al CRM, panel de proyectos y facturación, portal para solicitar y seguir servicios. Son ejemplos de aplicaciones, sin atribuir un proyecto o resultado no documentado. Las descripciones se verifican visualmente sin truncamiento ni ocultar contenido. Debajo de 900 px se apilan los tres conceptos para conservar el ancho de lectura.

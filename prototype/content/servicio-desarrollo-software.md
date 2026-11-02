@@ -20,19 +20,25 @@ Desarrollamos herramientas para mejorar tus procesos comerciales, organizar la o
 
 ## Cuando tus herramientas limitan lo que tu negocio puede hacer
 
-Una herramienta puede haber acompañado bien a tu empresa y empezar a quedar corta. Las reglas comerciales cambian, aparecen nuevos servicios o la operación necesita información que hoy está distribuida entre varios lugares.
+Tu negocio cambia. Tus herramientas también deberían acompañar esa evolución.
 
 ### Mejorar la forma de vender y atender
 
-Un cotizador que contemple tus reglas de precios, una herramienta para gestionar pedidos o un portal donde tus clientes consulten sus operaciones pueden facilitar pasos importantes de la relación comercial. Definimos qué necesita hacer cada persona y dónde una solución propia puede mejorar esa experiencia.
+Vendé con tus reglas y ofrecé una mejor atención a tus clientes.
+
+**Ejemplo:** Un cotizador con precios y descuentos propios, conectado al CRM.
 
 ### Organizar una operación que creció
 
-Cuando coordinar personas, servicios y documentación exige reconstruir información todos los días, una plataforma a medida puede reunir el trabajo y darle seguimiento. Diseñamos los flujos, los permisos y las vistas que necesita cada equipo para cumplir su función.
+Coordiná equipos y procesos con información compartida.
+
+**Ejemplo:** Un panel de proyectos que reúne responsables, costos y facturación.
 
 ### Habilitar un nuevo servicio o canal
 
-Si querés ofrecer un servicio digital o incorporar una nueva forma de atender a tus clientes, te ayudamos a definir una primera versión. Priorizamos las funciones necesarias para ponerla en uso y evaluar cómo responde al objetivo del negocio.
+Lanzá un servicio digital y validalo con una primera versión.
+
+**Ejemplo:** Un portal donde tus clientes solicitan servicios y consultan su estado.
 
 ## Elegimos la solución a partir del problema
 

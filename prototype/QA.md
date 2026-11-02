@@ -258,3 +258,11 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Inspección visual a 1440 y 390 px; comprobación adicional a 1024 px, sin desborde. Desktop: sección de 800 px de alto. Prueba visual en `outputs/servicio-necesidades-v2-20261102/necesidades-desktop.jpg`.
 - Se encontró que la pestaña existente del navegador integrado aún tenía una versión anterior del servicio (sin REVIANZ ni el respaldo ampliado). Se recargó y comprobó en DOM la nueva agrupación y el caso REVIANZ. Se dejó visible la sección actualizada en la pestaña del usuario. El servidor ya usa `Cache-Control: no-store`; no se cambiaron políticas de caché.
 - Construcción y `git diff --check` correctos. Comparación del HTML: fuera de la sección de necesidades no cambia nada; dentro, el texto es idéntico. No cambian el Markdown, `content.json`, las otras páginas ni estilos compartidos.
+
+## Servicio: tres columnas con ejemplos · 2 de noviembre de 2026
+
+- Se adopta la distribución solicitada: tres columnas equivalentes con título, descripción breve y ejemplo. Se elimina el fondo mint, la primera fila destacada y el reparto 1+2. La introducción se reduce a una frase. Las ediciones están también en el Markdown y el lector de contenido.
+- Ejemplos concretos de aplicación: cotizador con reglas propias conectado al CRM, panel de proyectos con responsables/costos/facturación y portal de solicitud y seguimiento de servicios. Se presentan como ejemplos, sin atribuir clientes ni resultados nuevos.
+- Validación del layout en anchos CSS reales de 1440, 1200, 900, 853 y 390 px. Se ajustó la copia para respetar el máximo de tres líneas incluso a 900 px, el ancho mínimo de la distribución de tres columnas. En la versión final las tres descripciones ocupan dos líneas a 900 y 1440 px. Los ejemplos comienzan en el mismo eje vertical. Sin desbordes horizontales observados; debajo de 900 px se apilan. No hay truncamiento ni contenido oculto.
+- Captura final en Chrome a 1440 px, sección de aproximadamente 572 px de alto (antes 800 px). Evidencia: `outputs/servicio-necesidades-columnas-20261102/desktop.png`. Navegador integrado recargado y viewport temporal restablecido.
+- Construcción, IDs únicos y `git diff --check` correctos. HTML del servicio idéntico fuera de necesidades; en `content.json` cambia únicamente desarrollo de software. Inicio y casos sin cambios.
