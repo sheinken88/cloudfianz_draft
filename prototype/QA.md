@@ -232,3 +232,8 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - La traducción de `shareFlow` se copia del proyecto original, con su empresa de ejemplo, estados e iconos. Ilustración con nombre accesible, leyenda y contenido visual oculto al lector de pantalla para evitar duplicación.
 - Construcción y comparación contra HEAD: HTML del caso idéntico fuera de la sección de contexto; `content.json`, inicio, servicio y Despegar sin modificaciones. Cuatro mockups accesibles e IDs únicos en el caso. `git diff --check` sin errores.
 - Inspección visual a 1440 × 783 y 390 × 844, comprobación adicional a 360 × 800: sin desborde horizontal y sin errores de consola observados. Viewport restablecido. Capturas desktop y móvil en `outputs/revianz-contexto-20261102/` del workspace. Cambio local, sin publicación.
+
+## REVIANZ: enlace al producto · 2 de noviembre de 2026
+
+- Enlace “Visitar revianz.com” agregado al preview del inicio, al proyecto en desarrollo de software y a los datos del producto en el hero del caso. Conserva el enlace interno para leer el caso. Destino HTTPS, apertura en nueva pestaña anunciada en el nombre accesible y `rel="noopener noreferrer"`.
+- Construcción y `git diff --check` completados. Verificados los tres enlaces generados. Apertura desde el servicio comprobada en Chrome: carga la página pública de REVIANZ en una pestaña nueva. A 390 px, enlaces con área de 44 px de alto y sin desborde horizontal. Captura en `outputs/revianz-enlace-20261102/enlace-desktop.jpg`.

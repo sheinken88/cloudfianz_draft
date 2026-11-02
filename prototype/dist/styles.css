@@ -37,6 +37,7 @@ dialog{color:var(--ink);border:0;border-radius:12px;box-shadow:0 25px 100px #000
 .revianz-preview-copy p+p{margin-top:18px}
 .revianz-preview-copy a{display:inline-flex;align-items:center;min-height:44px;color:var(--navy);font-weight:550;font-size:14px;text-decoration:underline;text-underline-offset:5px}
 .revianz-preview-copy>.text-link{margin-top:20px}
+.revianz-preview-actions{display:flex;align-items:center;flex-wrap:wrap;gap:4px 28px;margin-top:18px}
 .revianz-preview figure{margin:32px 0 0}
 
 

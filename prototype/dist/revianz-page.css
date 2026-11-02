@@ -9,6 +9,8 @@
 .rv-facts{margin:0;display:grid;gap:22px;font-size:14px}
 .rv-facts dt{color:#a6bacb;font-size:12px;margin-bottom:5px}
 .rv-facts dd{margin:0;color:#fff;line-height:1.6}
+.rv-product-link{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:5px;color:#b7d9d3}
+.rv-product-link:hover{color:#fff}
 .rv-demo-note{font-size:12px;color:#b7c8d7;margin-top:4px;max-width:900px}
 .rv-context-section{padding-block:76px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:80px;align-items:center;scroll-margin-top:96px}
 .rv-context-copy{max-width:660px}

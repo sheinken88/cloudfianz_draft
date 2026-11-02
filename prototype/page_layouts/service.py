@@ -20,6 +20,7 @@ def build_service(meta, intro, sections, routes):
     parts = re.split(r'<h3>(.*?)</h3>', projects)
     projects = [(parts[i], parts[i + 1]) for i in range(1, len(parts), 2)]
     despegar, revianz, photonix, ads = projects
+    revianz_copy = re.sub(r'<p>(<a [^>]+>Conocé el caso REVIANZ</a>)\.</p>', r'<div class="revianz-preview-actions">\1<a href="https://revianz.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar revianz.com (nueva pestaña)">Visitar revianz.com</a></div>', revianz[1])
     ads_title = ads[0].replace('más de 50 cotizaciones diarias', '<span>más de 50 cotizaciones diarias</span>')
     choice_title, choice = section('Elegimos')
     delivery_title, delivery = section('Una primera')
@@ -64,7 +65,7 @@ def build_service(meta, intro, sections, routes):
       <div class="service-feature-copy"><img class="service-feature-logo" src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52" loading="lazy"><h3>{despegar[0]}</h3>{despegar[1]}</div>
     </article>
     <article class="revianz-preview" id="proyecto-revianz" aria-labelledby="revianz-service-title">
-      <div class="revianz-preview-heading"><div><p class="revianz-project-context">Desarrollo de software a medida</p><h3 id="revianz-service-title">{revianz[0]}</h3></div><div class="revianz-preview-copy">{revianz[1]}</div></div>
+      <div class="revianz-preview-heading"><div><p class="revianz-project-context">Desarrollo de software a medida</p><h3 id="revianz-service-title">{revianz[0]}</h3></div><div class="revianz-preview-copy">{revianz_copy}</div></div>
       {mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.')}
     </article>
     <div class="project-companions">

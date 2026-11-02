@@ -29,7 +29,7 @@ def build_revianz(meta, intro, sections, routes):
 <section class="rv-hero">
   <div class="container">
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es#casos">Casos</a></li><li aria-current="page">REVIANZ para Digifianz</li></ol></nav>
-    <div class="rv-cover"><div><p class="rv-context">REVIANZ · Desarrollado para Digifianz</p><h1>{html.escape(meta['H1'])}</h1><div class="rv-summary">{opening}</div></div><dl class="rv-facts"><div><dt>Cliente</dt><dd>Digifianz</dd></div><div><dt>Trabajo de Cloudfianz</dt><dd>Desarrollo de software a medida</dd></div><div><dt>Producto</dt><dd>Gestión operativa y financiera de proyectos</dd></div></dl></div>
+    <div class="rv-cover"><div><p class="rv-context">REVIANZ · Desarrollado para Digifianz</p><h1>{html.escape(meta['H1'])}</h1><div class="rv-summary">{opening}</div></div><dl class="rv-facts"><div><dt>Cliente</dt><dd>Digifianz</dd></div><div><dt>Trabajo de Cloudfianz</dt><dd>Desarrollo de software a medida</dd></div><div><dt>Producto</dt><dd>Gestión operativa y financiera de proyectos<br><a class="rv-product-link" href="https://revianz.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar revianz.com (nueva pestaña)">Visitar revianz.com</a></dd></div></dl></div>
     {report}
     <p class="rv-demo-note">Vistas ilustrativas del producto. Los importes no representan resultados financieros de Digifianz.</p>
   </div>
