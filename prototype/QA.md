@@ -191,3 +191,11 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Construcción, whitespace de Git, IDs únicos, un H1 y recursos locales comprobados. H1 y metadatos SEO sin cambios. Homepage, página del caso Despegar y CSS/JS compartidos idénticos. En `content.json` sólo cambia el servicio de software.
 - Evidencia en `outputs/servicio-profundidad-20261102/`: `hero-desktop.jpg`, `hero-mobile.jpg`, `portfolio-desktop.jpg`, `portfolio-mobile.jpg`, `criterio-alcance-desktop.jpg`, `desktop-completa.jpg` y `mobile-completa.jpg`. Verificación mediante viewports de navegador; no dispositivos físicos.
 - Se conserva todo el historial en una nueva iteración local. Sin push ni despliegue; los destinos de contacto y los casos todavía mostrados en lector mantienen su alcance provisional.
+
+## Mayor presencia del respaldo de Digifianz · 2 de noviembre de 2026
+
+- El respaldo conserva su ubicación antes del contacto y gana título, dos párrafos breves, mayor presencia del logo oficial y enlace institucional. Explica la relación de marcas y cómo la experiencia de Digifianz conecta objetivos comerciales, operación y decisiones técnicas.
+- Se incorpora la credencial textual “Elite Partner de HubSpot”, verificada en el directorio oficial de HubSpot el 2 de noviembre de 2026: https://ecosystem.hubspot.com/es/marketplace/solutions/digifianz. Sin cifras, personas ni insignias nuevas.
+- Inspección visual en Chrome a 1440 × 1000 y 390 × 844. Franja de 297 px en desktop y 553 px en móvil; título de 36 y 30 px respectivamente. Logo cargado, sin desborde horizontal. Enlace institucional con destino HTTPS, nueva pestaña anunciada y área de 44 px de alto. Viewport temporal restablecido al finalizar.
+- Construcción y comparación contra HEAD: el HTML y el Markdown del servicio sólo cambian en el respaldo. Homepage, Despegar y estilos/scripts compartidos idénticos. El ajuste de estilos está en el CSS exclusivo del servicio.
+- Capturas en `outputs/servicio-respaldo-digifianz-20261102/`: `respaldo-desktop.jpg` y `respaldo-mobile.jpg`. Verificación mediante viewports de navegador; sin publicación remota.

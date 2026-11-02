@@ -104,7 +104,9 @@ Podemos contratar soporte para incidentes, mantenimiento y ajustes menores. Las 
 
 ## El respaldo de Digifianz
 
-Cloudfianz es la unidad de desarrollo de software de Digifianz. Combinamos la comprensión de los procesos comerciales con el desarrollo de herramientas para las necesidades de cada empresa.
+Cloudfianz es la unidad de desarrollo de software de Digifianz, una empresa consolidada en procesos comerciales y tecnología.
+
+Sumamos esa experiencia al desarrollo a medida para conectar objetivos comerciales, operación y decisiones técnicas en una misma solución.
 
 ## ¿Qué necesita hacer tu empresa que hoy le resulta difícil?
 
