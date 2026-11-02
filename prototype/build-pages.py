@@ -14,6 +14,7 @@ from page_layouts.revianz_mockups import mockup
 
 home = (ROOT / 'templates/home.html').read_text()
 home = home.replace('<!-- REVIANZ_SCOPE_MOCKUP -->', mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.'))
+home = home.replace('<!-- HOME_REVIANZ_INVOICE -->', mockup('invoice', 'Mockup de REVIANZ. Datos ilustrativos.'))
 
 
 def absolute_assets(text):
@@ -56,7 +57,7 @@ def page(key, body, kind):
     meta, _, _ = document(key)
     title, description = html.escape(meta['Title'], quote=True), html.escape(meta['Meta description'], quote=True)
     canonical = 'https://cloudfianz.com' + routes[key]
-    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css'}
+    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css', 'capability-page': 'capability-page.css'}
     extra_css = f'<link rel="stylesheet" href="/{page_styles[kind]}">'
     if kind in ['service-page', 'revianz-page']:
         extra_css += '<link rel="stylesheet" href="/revianz-mockups.css">'
@@ -85,8 +86,15 @@ from page_layouts.revianz import build_revianz
 meta, intro, sections = document('caso-revianz')
 revianz_body = build_revianz(meta, intro, sections, routes)
 
-for key, body, kind in [('servicio-desarrollo-software', service_body, 'service-page'), ('caso-despegar', case_body, 'case-page'), ('caso-revianz', revianz_body, 'revianz-page')]:
+from page_layouts.capability import build_capability
+
+pages = [('servicio-desarrollo-software', service_body, 'service-page'), ('caso-despegar', case_body, 'case-page'), ('caso-revianz', revianz_body, 'revianz-page')]
+for key in ['servicio-integracion-sistemas', 'servicio-automatizacion-procesos']:
+    meta, intro, sections = document(key)
+    pages.append((key, build_capability(key, meta, intro, sections), 'capability-page'))
+
+for key, body, kind in pages:
     output = DIST / routes[key].lstrip('/') / 'index.html'
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(page(key, body, kind))
-print('Built homepage and 3 standalone pages.')
+print(f'Built homepage and {len(pages)} standalone pages.')

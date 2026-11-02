@@ -332,3 +332,17 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Se comprobó el recorrido por clic: URL correcta, formulario presente y comienzo de la sección visible en mobile (aproximadamente 84 px desde el borde superior). No se completó ni envió el formulario. Sigue siendo un prototipo sin recepción conectada.
 - Inspección visual a 1440 y 390 px; comprobación a 360 px sin desbordes. Botón de unos 58 px de alto, foco blanco visible mediante Tab desde la última FAQ. Capturas en `outputs/cta-final-20261102/desktop.png` y `mobile.png`. Viewport restablecido y pestaña temporal cerrada.
 - Build y diff check correctos. Comparación automática confirma HTML idéntico fuera del CTA final y un único enlace al formulario. Sólo cambia software en el contenido JSON; otras páginas y JS intactos. Navegador integrado recargado y dejado en `#conversemos`.
+
+## Inicio con narrativa propia · 2 de noviembre de 2026
+
+- Build `npm run build:proposal`: inicio y cinco páginas nativas, sin errores.
+- Verificación de las seis páginas: un H1 por página, IDs únicos, assets locales existentes, destinos internos y contenidos del lector válidos.
+- Desktop 1280 px: hero de marca, tres servicios visibles, tres casos con el texto antes de la imagen, criterio y respaldo de Digifianz, contacto. La página de software mantiene sus estilos y contenido; sus enlaces relacionados ahora apuntan a las dos nuevas páginas nativas.
+- Responsive: sin desborde horizontal a 320, 390, 468, 768 y 1280 px. Se corrigió la altura del mockup de REVIANZ a 320 px para evitar cortar su contenido.
+- Mobile 390 px: menú abre y se cierra al navegar; índice accesible con los seis casos; agenda de prueba abre y su alternativa lleva al formulario y enfoca Nombre.
+- Formulario probado con datos ficticios. La confirmación informa que no se envió ni guardó información, como corresponde a esta propuesta local.
+- Integración y automatización: rutas nativas verificadas en desktop y mobile, cinco preguntas en cada una y acordeones funcionales.
+- Se sustituyó la captura pública antigua de Despegar en el inicio por `despegar-cotizador-original.png`. Logos originales y mockup de REVIANZ conservados; las imágenes de contexto y las cifras ilustrativas están identificadas.
+- Verificaciones `node --check` de app.js y serve.mjs, y `git diff --check`: correctas.
+- Evidencia de revisión: `/Users/sheinken/Desktop/Cloudfianz/outputs/homepage-narrativa-20261102/` (fuera del repositorio).
+- Formulario, agenda, privacidad y analítica siguen pendientes de conexión para publicación; esta iteración no publica ni envía consultas.

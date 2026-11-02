@@ -57,3 +57,7 @@ Se portó su composición a HTML/SVG estático en `page_layouts/revianz_mockups.
 ### Colaboración en el contexto del caso
 
 Se incorpora `ShareScopeFlowMockup` de la misma fuente a la sección “Mantener conectados el trabajo y sus números”. Conserva la empresa de ejemplo Northstar Studio, sus tres servicios seleccionados, la traducción oficial `shareFlow` y los iconos Share2/Check usados por el componente original (Lucide). Es una ilustración estática del flujo de colaboración, no un registro de un cliente real.
+
+## Homepage: revisión narrativa del 2 de noviembre de 2026
+
+La homepage también retira las dos imágenes públicas anteriores y utiliza `despegar-cotizador-original.png` en la selección de proyectos. El encuadre se realiza en CSS sin modificar la captura. REVIANZ usa `InvoiceMatchFlowMockup`, con sus datos ilustrativos y su identificación visible.
