@@ -275,3 +275,9 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Se verifican apertura de los lectores Photonix e índice completo, acceso directo del hero al caso Despegar y retorno. FAQ operable con Enter, con una sola pregunta abierta a la vez. Recursos locales, rutas, anchors y lectores validados; IDs únicos y un H1 en el documento inicial. No se enviaron formularios.
 - `npm run build:proposal` y `git diff --check` correctos. Comparación con HEAD confirma H1/title/meta/canonical y bloques de necesidades, FAQ, respaldo y contacto íntegros (cambia su orden). En `content.json` sólo cambia software; inicio y casos individuales no cambian.
 - Evidencia en `outputs/servicio-narrativa-20261102/`: página desktop completa; proyectos, proceso y cierre en desktop/mobile; hero mobile. Se recargó la pestaña del navegador integrado y se comprobó el nuevo orden y los dos artículos de portfolio. Queda en el inicio del servicio, lista para revisión local. No se publicó el sitio.
+
+## Necesidades: aire y jerarquía · 2 de noviembre de 2026
+
+- Encabezado y bajada sobre un mismo eje, separados de las tres aplicaciones; subtítulos secundarios y ejemplos con fondo gris suave e inset propio. Texto y HTML intactos. Alineación de títulos, descripciones y ejemplos mediante subgrid.
+- Inspección visual a 1440 y 390 px; comprobación adicional a 900 y 768 px sin desborde horizontal. En desktop los ejemplos comparten eje superior; en mobile se apilan con separación entre aplicaciones. Evidencia: `outputs/necesidades-aire-20261102/desktop.png` y `mobile.png`.
+- Build y diff check correctos; sólo cambian los estilos de necesidades y la documentación. Viewport de Chrome restablecido y pestaña del navegador integrado recargada con los estilos nuevos.

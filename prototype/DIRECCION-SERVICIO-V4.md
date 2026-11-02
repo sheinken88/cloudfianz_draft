@@ -119,3 +119,19 @@ Paleta existente: navy #0B1D3A, verde #12B5A5, blanco #FFFFFF, fondo suave #F5F7
 Despegar aparece una sola vez en el hero, con acceso directo a su caso. El portfolio desarrolla REVIANZ y Photonix, con la misma lógica de necesidad, solución y cambio, pero con jerarquía principal/secundaria. ADS conserva su contenido y acceso en el índice general. El mockup oficial de REVIANZ se identifica como ilustrativo; la foto de Photonix como institucional.
 
 Se fusionan criterio y alcance en una secuencia editorial sin tarjetas ni controles nuevos. Los números representan pasos reales; los párrafos conservan evaluación de alternativas, costos de operación, definición de alcance, validación y traspaso. Contratación explica puntos de entrada y entregables independientes, sin repetir el proceso. Digifianz precede a las FAQ y el contacto. Revisión contra el pedido: se mantiene la profundidad donde aporta decisión, las necesidades breves aprobadas y la identidad visual, evitando nuevos bloques promocionales o repetir los casos.
+
+### Necesidades: separar lectura y ejemplos
+
+El usuario percibe la sección comprimida. Se conserva todo el texto y las tres columnas, pero se cambia su composición: encabezado y bajada sobre el mismo eje, ancho de lectura acotado y separación de 64 px antes de las aplicaciones. Los subtítulos pasan a 26 px frente al encabezado de 42 px. Descripciones y ejemplos comparten ejes horizontales mediante subgrid; cada ejemplo tiene una superficie suave #F5F7FA e inset propio, sin encerrar la aplicación completa en una tarjeta. Se conservan navy #0B1D3A, gris #55616F, acento #08796F, blanco, Manrope e Inter. En móvil las aplicaciones se apilan con 44 px entre ellas.
+
+```
+[Título, ancho de lectura acotado                         ]
+[Bajada                                                  ]
+
+[Venta y atención     ][Operación         ][Nuevo servicio]
+[Descripción         ][Descripción       ][Descripción   ]
+
+[ Ejemplo en gris    ][ Ejemplo en gris  ][ Ejemplo gris ]
+```
+
+La intervención distingue tres niveles de lectura sin agregar contenido, números ni iconos. El espacio se concentra entre grupos, en vez de aumentar todas las separaciones por igual.
