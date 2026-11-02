@@ -287,3 +287,9 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Marca y título descriptivo diferenciados; contexto y cambio debajo en dos columnas. Botón principal al caso y enlace secundario al sitio. En móvil, título, explicación, acciones y mockup en ese orden.
 - Inspección visual a 1440 y 390 px; revisión a 1024 y 768 px sin desbordes. Viewport restablecido. Evidencia en `outputs/portfolio-apertura-20261102/desktop.png` y `mobile.png`.
 - Build y diff check correctos. Comparación HTML confirma cambios exclusivamente dentro del artículo REVIANZ; se conservan párrafos, mockup, URL del caso y enlace externo HTTPS con nueva pestaña y noopener/noreferrer. Contenido JSON y demás páginas intactos.
+
+## Portfolio: apertura con menos carga textual · 2 de noviembre de 2026
+
+- Encabezado reducido a «Nuestro trabajo», sin la bajada genérica. Separación de 64 px respecto del caso (44 px en mobile). El mockup sigue al título; explicación y acciones se leen debajo del producto.
+- Inspección visual a 1440 y 390 px, sin desbordes horizontales. Capturas en `outputs/portfolio-ritmo-20261102/desktop.png` y `mobile.png`. Viewport restablecido y pestaña del navegador integrado recargada con el nuevo orden.
+- Build y diff check correctos. Comparación automática confirma HTML idéntico fuera del portfolio y conservación exacta de los párrafos y del mockup REVIANZ. En `content.json` sólo cambia el servicio de software.

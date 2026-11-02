@@ -68,10 +68,12 @@ def build_service(meta, intro, sections, routes):
     <article class="revianz-preview" id="proyecto-revianz" aria-labelledby="revianz-service-title">
       <div class="service-case-overview">
         <h3 id="revianz-service-title">{revianz_title}</h3>
+      </div>
+      {mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.')}
+      <div class="service-case-details">
         <div class="revianz-preview-copy">{revianz_copy}</div>
         <div class="service-case-actions"><a class="button button-dark" href="{routes['caso-revianz']}">Conocé el caso REVIANZ</a><a class="text-link" href="https://revianz.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar revianz.com (nueva pestaña)">Visitar revianz.com</a></div>
       </div>
-      {mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.')}
     </article>
     <article class="service-project-secondary" aria-labelledby="photonix-service-title">
       <figure><img src="/assets/brand/photonix-ethos-official.jpg" alt="Equipo de radioterapia Ethos, en una imagen institucional publicada por Photonix." width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Equipamiento de radioterapia. Imagen institucional de Photonix.</figcaption></figure>

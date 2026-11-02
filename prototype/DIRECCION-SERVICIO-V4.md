@@ -146,3 +146,7 @@ Se elimina el vacío bajo el título del caso. La marca se distingue del título
 [Contexto y solución               ][Cambio              ]
 [Mockup oficial                                         ]
 ```
+
+### Portfolio: separar presentación y explicación
+
+La iteración anterior seguía acumulando título de sección, bajada, marca, título del caso, acciones y dos párrafos antes de mostrar el producto. Se elimina la bajada genérica y el encabezado se reduce a «Nuestro trabajo». Se conserva un intervalo de 64 px antes del caso. El mockup pasa inmediatamente después del título REVIANZ; la explicación y los enlaces se leen debajo del producto. Así el visual interrumpe la acumulación de texto sin recortar el caso. Se mantienen los colores, fuentes y escalas existentes; no se agregan tarjetas ni separadores. Móvil conserva el mismo orden de lectura.

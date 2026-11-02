@@ -40,9 +40,7 @@ Lanzá un servicio digital y validalo con una primera versión.
 
 **Ejemplo:** Un portal donde tus clientes solicitan servicios y consultan su estado.
 
-## Nuestro trabajo, en operaciones reales
-
-Cada proyecto responde a una forma de trabajar. Estas soluciones muestran cómo conectamos las necesidades del negocio con herramientas de uso cotidiano.
+## Nuestro trabajo
 
 ### REVIANZ: proyectos y seguimiento financiero para Digifianz
 
