@@ -198,3 +198,19 @@ La FAQ pasa de título lateral + lista angosta a una composición centrada de ha
 ```
 
 El acordeón nativo sigue operable sin JS y por teclado. No se agregan preguntas, CTA ni texto de relleno: el contacto ya sigue a continuación. El cambio de escala y el estado abierto aportan ritmo sin convertir cada pregunta en una tarjeta independiente. En móvil conserva una sola columna y las respuestas disponen de todo el ancho interior.
+
+
+### CTA final: una invitación y un siguiente paso
+
+El cierre retoma el resultado de negocio y reduce la elección a una sola acción: «Contanos qué necesitás», enlazada directamente al formulario existente en `/es#consulta`. No promete agendamiento automático, gratuidad, tiempos de respuesta ni una duración de reunión. Se explica que la conversación sirve para evaluar el encaje y acordar el próximo paso; se admite tanto una necesidad por explorar como un proyecto definido.
+
+Composición: franja navy #0B1D3A, encabezado Manrope 52 px a la izquierda, explicación Inter 18 px y botón teal #12B5A5 a la derecha; texto blanco #FFFFFF y secundario #C1CFDB. Grid 1.15/0.85 con alineación vertical centrada. Sin tarjetas adicionales ni iconos; el único acento conduce al contacto. En mobile se apilan encabezado, contexto y acción, con botón ancho y título de 36 px.
+
+```
+[Hablemos de lo que tu negocio   ][Qué conversamos y qué sigue]
+[necesita hacer mejor.          ][Contanos qué necesitás      ]
+[Podés venir con una necesidad  ]
+[por explorar o algo definido.  ]
+```
+
+Revisión: el contraste distingue el final de las FAQ y las modalidades. Se evita agregar otra lista de beneficios, servicios o garantías. El formulario continúa siendo la propuesta local existente, sin recepción conectada; esta iteración mejora presentación y acceso, no publica ni activa servicios externos.

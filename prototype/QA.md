@@ -324,3 +324,11 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Verificados Enter para abrir, cierre de la respuesta anterior por el atributo name, Espacio para cerrar y clic para reabrir. Foco de teclado visible. Acordeón nativo sin dependencia de JS.
 - Revisión visual a 1440 y 390 px; comprobación adicional a 360 px sin desbordes. Evidencia en `outputs/faq-editorial-20261102/desktop.png` y `mobile.png`. Viewport restablecido y pestaña temporal cerrada. Navegador integrado recargado y dejado en `#preguntas-frecuentes`.
 - Build y diff check correctos. Comparación automática confirma HTML idéntico fuera de FAQ y texto completo sin cambios. Markdown, contenido JSON, otras páginas y JS intactos.
+
+
+## CTA final: invitación y contacto directo · 2 de noviembre de 2026
+
+- Franja navy con título enfocado en negocio, contexto del próximo paso y tranquilidad para quienes aún no definieron el proyecto. Una sola acción «Contanos qué necesitás» lleva directamente al formulario existente `/es#consulta`.
+- Se comprobó el recorrido por clic: URL correcta, formulario presente y comienzo de la sección visible en mobile (aproximadamente 84 px desde el borde superior). No se completó ni envió el formulario. Sigue siendo un prototipo sin recepción conectada.
+- Inspección visual a 1440 y 390 px; comprobación a 360 px sin desbordes. Botón de unos 58 px de alto, foco blanco visible mediante Tab desde la última FAQ. Capturas en `outputs/cta-final-20261102/desktop.png` y `mobile.png`. Viewport restablecido y pestaña temporal cerrada.
+- Build y diff check correctos. Comparación automática confirma HTML idéntico fuera del CTA final y un único enlace al formulario. Sólo cambia software en el contenido JSON; otras páginas y JS intactos. Navegador integrado recargado y dejado en `#conversemos`.

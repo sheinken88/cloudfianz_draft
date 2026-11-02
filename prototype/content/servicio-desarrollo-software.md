@@ -132,9 +132,10 @@ El diseño se entrega documentado para permitir esa continuidad. En la implement
 
 Podemos contratar soporte para incidentes, mantenimiento y ajustes menores. Las funcionalidades nuevas se evalúan según su alcance, y acordamos su presupuesto y calendario antes de incorporarlas.
 
-## ¿Qué necesita hacer tu empresa que hoy le resulta difícil?
+## Hablemos de lo que tu negocio necesita hacer mejor.
 
-Contanos qué querés mejorar, cómo lo resolvés hoy y qué resultado buscás. Evaluemos qué solución puede aportar más valor.
+Contanos qué querés mejorar y cómo lo resolvés hoy. Evaluemos juntos si podemos ayudarte y cuál sería el próximo paso.
 
-**Botón:** Hablemos de tu negocio  
-**Alternativa:** Prefiero enviar una consulta
+Podés empezar con una necesidad por explorar o con un proyecto que ya está definido.
+
+**Botón:** Contanos qué necesitás
