@@ -14,7 +14,6 @@ from page_layouts.revianz_mockups import mockup
 
 home = (ROOT / 'templates/home.html').read_text()
 home = home.replace('<!-- REVIANZ_SCOPE_MOCKUP -->', mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.'))
-home = home.replace('<!-- HOME_REVIANZ_HERO -->', mockup('invoice', 'Desarrollado para Digifianz. Mockup de REVIANZ con datos ilustrativos.'))
 
 
 def absolute_assets(text):

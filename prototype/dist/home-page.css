@@ -15,16 +15,22 @@
 .home-opening-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:30px}
 .home-opening-actions .text-link{font-size:13px;min-height:35px}
 .home-hero-visual{max-width:510px;width:100%;justify-self:end}
-.home-hero-product-name{display:flex;justify-content:space-between;align-items:baseline;gap:20px;font-size:14px;font-weight:600;margin-bottom:18px;color:#fff}
-.home-hero-product-name>span{font-size:12px;font-weight:400;color:#b8ccd8;text-align:right}
-.home-hero-visual .revianz-mockup-stage{padding:30px;border:0;background:#dcece5}
-.home-hero-visual .revianz-mockup .rm-paper{padding:28px;border-radius:15px;box-shadow:none}
-.home-hero-visual .revianz-mockup .rm-title{font-size:19px}
-.home-hero-visual .rm-invoice-heading{gap:16px;flex-wrap:wrap;margin-bottom:26px}
-.home-hero-visual .rm-invoice-row{padding:22px 18px}
-.home-hero-visual .rm-invoice-row>div{font-size:14px}
-.home-hero-visual .revianz-mockup .rm-invoice-row p{font-size:12px}
-.home-hero-visual .rv-mockup-figure figcaption{font-size:11px;line-height:1.7;color:#adc4d2;margin-top:15px;max-width:450px}
+.home-consorcio-stage{display:flex;flex-direction:column;align-items:start;gap:30px;padding:36px 34px 0;background:#dcece5;border-radius:18px;overflow:hidden}
+.home-consorcio-logo{width:235px;height:auto}
+.home-consorcio-stage>p{font-family:var(--heading);font-size:30px;font-weight:600;letter-spacing:-.8px;line-height:1.3;color:var(--navy)}
+.home-consorcio-screen{width:130%;max-width:none;height:auto;align-self:start;margin-top:8px;margin-bottom:-1px}
+.home-consorcio-figure>figcaption{font-size:11px;line-height:1.7;color:#adc4d2;margin-top:15px}
+
+
+
+
+
+
+
+
+
+
+
 
 .home-proof{display:flex;align-items:center;gap:70px;padding-block:40px;border-bottom:1px solid var(--line)}
 .home-proof>p{font-size:13px;line-height:1.6;color:var(--muted);flex:0 0 225px}
@@ -88,12 +94,12 @@
 .home-page #consulta{scroll-margin-top:120px}
 
 @media(max-width:1199px){
-  .home-opening{gap:45px;grid-template-columns:1.15fr 1fr}.home-opening h1{font-size:49px}.home-hero-visual .revianz-mockup-stage{padding:22px}.home-hero-visual .revianz-mockup .rm-paper{padding:24px}.home-hero-product-name{display:block}.home-hero-product-name>span{display:block;text-align:left;margin-top:4px}
+  .home-opening{gap:45px;grid-template-columns:1.15fr 1fr}.home-opening h1{font-size:49px}
   .home-proof{gap:35px}.home-proof>p{flex-basis:180px}.home-client-logos{gap:30px}.home-section-heading{gap:55px}.home-service-paths{gap:32px}.home-service-path h3{font-size:26px}
   .home-work .revianz-preview-heading{gap:45px}.home-work .revianz-preview h3{font-size:32px}.home-judgment-intro{gap:52px}.home-backing-layout{gap:58px}.home-backing-brand>img{width:245px}.home-backing-copy h2{font-size:42px}.home-page .contact-inner{gap:50px}
 }
 @media(max-width:959px){
-  .home-opening{grid-template-columns:1fr;gap:46px}.home-opening h1{font-size:60px;max-width:780px}.home-opening-copy{max-width:650px}.home-hero-visual{max-width:550px;justify-self:start}.home-hero-product-name{display:flex}.home-hero-product-name>span{margin-top:0;text-align:right}
+  .home-opening{grid-template-columns:1fr;gap:46px}.home-opening h1{font-size:60px;max-width:780px}.home-opening-copy{max-width:650px}.home-hero-visual{max-width:550px;justify-self:start}
   .home-proof{display:block}.home-proof>p{margin-bottom:24px}.home-client-logos{justify-content:start;gap:65px}.home-section-heading{grid-template-columns:1fr;gap:24px;margin-bottom:48px}.home-section-heading>p{max-width:600px}.home-service-paths{gap:26px}.home-service-path h3{font-size:24px}.home-service-path>p{font-size:15px}.home-service-path .text-link{font-size:12px}
   .home-judgment-intro{grid-template-columns:1fr;gap:28px}.home-judgment-intro>div{max-width:700px}.home-backing-layout{grid-template-columns:.65fr 1.35fr;gap:40px}.home-backing-copy h2{font-size:38px}
 }
@@ -105,9 +111,16 @@
   .home-page .contact{padding-block:72px}.home-page .contact-copy{padding-top:0}.home-page .contact-copy h2{font-size:44px;max-width:580px}.home-next-step{margin-top:26px}.home-page #consulta{scroll-margin-top:100px}
 }
 @media(max-width:599px){
-  .home-opening h1{font-size:42px;letter-spacing:-1.6px;line-height:1.12}.home-affiliation{font-size:12px;max-width:290px}.home-opening-actions{flex-direction:column;align-items:start;gap:16px}.home-opening-actions>.button{width:100%}.home-hero-product-name{display:block}.home-hero-product-name>span{text-align:left;margin-top:4px}.home-hero-visual .revianz-mockup-stage{padding:18px}.home-hero-visual .revianz-mockup .rm-paper{padding:21px 18px}.home-hero-visual .rm-invoice-row{padding:18px 14px}.home-hero-visual .rm-invoice-row>div{font-size:13px}.home-hero-visual .revianz-mockup .rm-invoice-row p{font-size:11px}.home-hero-visual .revianz-mockup .rm-title{font-size:18px}
+  .home-opening h1{font-size:42px;letter-spacing:-1.6px;line-height:1.12}.home-affiliation{font-size:12px;max-width:290px}.home-opening-actions{flex-direction:column;align-items:start;gap:16px}.home-opening-actions>.button{width:100%}
   .home-client-logos{flex-wrap:wrap;gap:22px 30px;justify-content:start}.home-client-logos a{min-height:42px}.home-client-logos img{max-width:135px}.home-client-logos a:nth-child(2) img{max-width:165px}.home-client-logos a:nth-child(3) img{max-width:125px}.home-proof>p{font-size:12px}
   .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:35px}.home-section-heading>p{font-size:16px}.home-work-heading{display:block}.home-work-heading>.text-link{margin-top:24px;font-size:13px}.home-work .revianz-preview h3{font-size:30px}.home-work .despegar-image,.home-work .properix-image{aspect-ratio:1.12}.home-portfolio-footer>p{font-size:16px}.home-portfolio-footer>.text-link{font-size:13px}
   .home-judgment-intro>div>p{font-size:16px}.home-judgment-intro>div>.home-engagement-note{font-size:14px}.home-backing-brand{display:block}.home-backing-brand>img{width:230px}.home-backing-brand>.text-link{margin-top:18px}.home-backing-copy h2{font-size:35px;letter-spacing:-1.2px}.home-backing-copy p{font-size:16px;margin-top:24px}
   .home-page .contact-copy h2{font-size:39px}.home-page .contact-copy>p{font-size:16px}.home-page .contact-inner{gap:35px}.home-next-step h3{font-size:19px}.home-page .contact-copy>.text-link{min-height:44px;display:inline-flex;align-items:center;margin-top:18px}.home-page .contact-form-wrap{padding:28px 24px}.home-page .field label{font-size:13px}.home-page .field-help{font-size:12px}.home-page .demo-note{font-size:11px}
+}
+
+@media(max-width:599px){
+  .home-consorcio-stage{padding:28px 24px 0;gap:24px;border-radius:14px}
+  .home-consorcio-logo{width:210px}
+  .home-consorcio-stage>p{font-size:27px}
+  .home-consorcio-screen{width:140%;margin-top:3px}
 }

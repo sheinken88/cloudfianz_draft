@@ -357,3 +357,7 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Revisado visualmente en 1280 y 390 px; sin desbordes a 320, 390, 768 y 1280 px.
 - Cambios acotados a la homepage, su CSS y la inserción de su mockup en el build; no hay cambios generados en páginas internas.
 - Capturas: `/Users/sheinken/Desktop/Cloudfianz/outputs/homepage-editorial-20261102/`.
+
+### Hero con ConsorcioAbierto
+
+Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto del cliente y su logo original. Encuadre CSS verificado visualmente en 1280 y 390 px, sin desbordes también en 320 px. Build y diff sin errores. El resto de las secciones y páginas conserva su implementación.
