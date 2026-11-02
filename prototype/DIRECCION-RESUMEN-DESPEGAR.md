@@ -24,3 +24,9 @@ El índice ocupa 56 px y se fija bajo la cabecera sólo en escritorio. La secci�
 ## Revisión frente al brief
 
 Se descartan tres tarjetas iguales, otra tabla sin bordes y una barra de pestañas con botones: conservarían la fragmentación que señaló el usuario. El resultado de negocio justifica la asimetría y el tamaño principal. El índice se agrupa a la izquierda y pierde los separadores de sección; el término “Producto” evita repetir “La solución” junto al resumen. No se agregan cifras, iconos, flechas ni mensajes comerciales. El hero y los capítulos conservan su diseño, salvo el espacio de transición y la compensación necesaria para las anclas.
+
+## Revisión compacta solicitada por el usuario
+
+Esta revisión reemplaza la composición anterior: tres columnas en orden negocio, solución y cambio, dentro de una única franja gris muy claro `#F5F7FA`. Manrope de 20 px para las tres descripciones; el cambio se destaca únicamente por peso 600 y su etiqueta verde `#08796F`. Padding vertical de 36 px, separación horizontal de 48 px y ningún divisor. En móvil estrecho los tres conceptos se apilan, con descripciones de 18 px y separación de 20 px. Los textos permanecen íntegros.
+
+Se elimina el índice completo, incluyendo su JavaScript, estilos, envoltorio y compensaciones de scroll. El resumen vuelve a ser información secundaria entre hero y relato. Frente al brief, se descarta el titular de 42 px y el vacío lateral: esta franja debe ocupar poco espacio, con las tres piezas alineadas y sin competir con la apertura.

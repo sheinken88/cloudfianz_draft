@@ -49,16 +49,13 @@ def build_case(meta, intro, sections, routes):
   </div>
 </section>
 
-<section class="case-project-facts container" id="resumen" aria-label="Resumen del proyecto">
-  <dl>
-    <div class="case-project-change"><dt>El cambio</dt><dd>De horas de preparación a cotizaciones en minutos</dd></div>
+<section class="case-project-facts" id="resumen" aria-label="Resumen del proyecto">
+  <dl class="container">
     <div><dt>El negocio</dt><dd>Publicidad digital en Latinoamérica</dd></div>
     <div><dt>La solución</dt><dd>Cotizador a medida conectado a HubSpot</dd></div>
+    <div class="case-project-change"><dt>El cambio</dt><dd>De horas de preparación a cotizaciones en minutos</dd></div>
   </dl>
 </section>
-
-<div class="case-story">
-<nav class="story-navigation" aria-label="Índice del caso"><div class="container"><span>Recorrer el caso</span><ul><li><a href="#problema">Desafío</a></li><li><a href="#diseno">Enfoque</a></li><li><a href="#solucion">Producto</a></li><li><a href="#resultados">Resultados</a></li></ul></div></nav>
 
 <section class="story-challenge container" id="problema" aria-labelledby="problema-title">
   <aside class="story-context"><h2>El contexto de Despegar Ads</h2><div class="page-prose">{opening[1]}</div></aside>
@@ -89,7 +86,6 @@ def build_case(meta, intro, sections, routes):
 </section>
 
 <section class="story-evolution container" id="evolucion" aria-labelledby="evolucion-title"><h2 id="evolucion-title">{evolution_title}</h2><div class="page-prose">{evolution}</div></section>
-</div>
 
 <section class="page-contact" aria-labelledby="next-title"><div class="container page-contact-inner"><div><h2 id="next-title">{contact_title}</h2>{contact_copy}</div><div class="page-contact-actions"><a class="button button-dark" href="/es#contacto">Hablemos de tu negocio</a><a class="text-link" href="/es#consulta">Prefiero enviar una consulta</a></div></div></section>
 '''

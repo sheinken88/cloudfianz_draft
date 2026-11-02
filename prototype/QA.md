@@ -134,3 +134,13 @@ Carpeta `outputs/paginas-visual-v2-20261030/` del workspace:
 - Comparación del HTML: hero y los cinco capítulos idénticos; homepage y servicio idénticos; IDs únicos. La transición al primer capítulo reduce su espacio superior y las anclas compensan el índice fijo. No cambian los textos, imágenes ni metadatos del caso.
 - `npm run build:proposal`, `node --check prototype/dist/case-navigation.js` y `git diff --check` completados. La regla existente de movimiento reducido conserva el desplazamiento inmediato para esa preferencia.
 - Capturas en `outputs/despegar-resumen-20261102/` del workspace: `resumen-desktop.jpg`, `resumen-mobile.jpg` e `indice-sticky-desktop.jpg`. Se conserva el versionado local sin publicación remota.
+
+## Franja compacta de Despegar · revisión del 2 de noviembre de 2026
+
+Esta revisión sustituye el resumen asimétrico y elimina el índice a pedido del usuario.
+
+- Franja de tres columnas en desktop, en orden negocio, solución y cambio. Las tres descripciones usan 20 px; el cambio se diferencia por peso 600 y etiqueta verde. Fondo gris claro, sin divisores, tarjetas ni titulares de gran escala. Altura comprobada: 156 px a 1440 px de ancho.
+- Eliminados el HTML del índice, su envoltorio, todos sus estilos, el archivo `case-navigation.js`, su carga y la compensación adicional para el índice fijo. Las anclas existentes de los capítulos siguen disponibles.
+- Revisión visual en Chrome a 1440 × 1000 y 390 × 844. En móvil, conceptos apilados con texto de 18 px; franja de 266 px a 390 px. Anchos de documento comprobados a 360, 390 y 1440 px sin desborde horizontal.
+- Construcción y `git diff --check` completados. Comparación contra la versión anterior: tres conceptos íntegros, hero y capítulos sin cambios de HTML, contacto intacto, homepage y servicio idénticos. Ajustado únicamente el espacio de transición al primer capítulo.
+- Capturas: `outputs/despegar-franja-20261102/franja-desktop.jpg` y `franja-mobile.jpg` en el workspace. Trabajo local, sin push ni despliegue.

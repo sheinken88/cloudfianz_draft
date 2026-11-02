@@ -54,14 +54,13 @@ def page(key, body, kind):
     title, description = html.escape(meta['Title'], quote=True), html.escape(meta['Meta description'], quote=True)
     canonical = 'https://cloudfianz.com' + routes[key]
     extra_css = '<link rel="stylesheet" href="/case-page.css">' if kind == 'case-page' else ''
-    extra_script = '<script src="/case-navigation.js" defer></script>' if kind == 'case-page' else ''
     return f'''<!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#0B1D3A">
 <title>{title}</title><meta name="description" content="{description}"><link rel="canonical" href="{canonical}">
 <meta property="og:title" content="{title}"><meta property="og:description" content="{description}"><meta property="og:type" content="website"><meta property="og:url" content="{canonical}"><meta property="og:locale" content="es_AR">
 <link rel="icon" href="/assets/brand/cloudfianz-symbol.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css">{extra_css}<script src="/app.js" defer></script>{extra_script}</head>
+<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css">{extra_css}<script src="/app.js" defer></script></head>
 <body class="inner-page {kind}"><a class="skip-link" href="#principal">Ir al contenido</a>{header}<main id="principal">{body}</main>{footer}{dialogs}</body></html>'''
 
 
