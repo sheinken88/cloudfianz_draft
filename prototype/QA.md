@@ -244,3 +244,10 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - CTA de 16 px y 58 px de alto, con contraste navy/mint. Conserva HTTPS, nueva pestaña, `noopener noreferrer` y nombre accesible que anuncia la apertura. En móvil se presenta después de los beneficios, a ancho completo.
 - Inspección visual en Chrome a 1440 × 783 y 390 × 844; comprobación adicional a 1024 × 768. Sin desbordes horizontales ni errores de consola observados. Viewport restablecido al finalizar. Evidencia en `outputs/revianz-cierre-20261102/cierre-desktop.jpg` y `cierre-mobile.jpg` del workspace.
 - Construcción, IDs únicos y `git diff --check` correctos. Comparación del HTML contra HEAD: cambios exclusivamente dentro de la sección de resultados; en `content.json` sólo cambia el caso REVIANZ. Inicio, servicio, Despegar, hero del caso y CTA de contacto permanecen idénticos.
+
+## Servicio: equilibrio de necesidades · 2 de noviembre de 2026
+
+- Retoque exclusivo de `.application-lead` y `.application-pair` en el CSS del servicio. Se conserva contenido y estructura: aplicación de ventas destacada en mint y dos aplicaciones complementarias sobre blanco. Los tres subtítulos comparten tamaño, interlínea y saltos equilibrados; cuerpos de 16 px con interlínea de 28 px.
+- Retícula de dos columnas iguales con medianil de 64 px e inset de 40 px en desktop. Título principal del bloque alineado arriba y explicación sobre el mismo eje que la segunda columna inferior. En móvil se igualan los insets de lectura; debajo de 640 px las aplicaciones complementarias usan una sola columna.
+- Inspección en Chrome a 1440, 768 y 390 px. Desktop: subtítulos de 30 px y 75 px de altura; tablet: títulos inferiores de 28 px y 70 px de altura; móvil: tres subtítulos de 26 px, mismo eje horizontal y ancho de 302 px. Sin desbordes en tablet/móvil. Capturas de sección completa en `outputs/servicio-necesidades-20261102/necesidades-desktop.jpg` y `necesidades-mobile.jpg`. Viewport restablecido.
+- Construcción y `git diff --check` correctos. HTML generado, Markdown, contenido JSON y demás estilos permanecen idénticos. Versionado local.

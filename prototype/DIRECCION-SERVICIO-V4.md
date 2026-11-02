@@ -49,3 +49,16 @@ El título y la relación explícita con una empresa consolidada aportan presenc
 ### Ajuste de redundancia
 
 El logo identifica la empresa; el título explica el aporte: “Experiencia de negocio detrás del software”. La relación entre Cloudfianz y Digifianz sigue explícita en el primer párrafo. El enlace pasa a “Conocé la empresa”, con nombre accesible que conserva el texto visible y especifica el destino. Se mantienen la composición, los tokens y las proporciones anteriores; esta revisión sólo edita dos etiquetas para que cada elemento cumpla una función distinta.
+
+## Equilibrio de la sección de necesidades
+
+Retoque localizado, sin cambiar textos ni estructura. Se mantiene el bloque de ventas con fondo mint y las dos aplicaciones complementarias sobre blanco. Paleta existente: navy #0B1D3A, mint #E8F4F0, blanco #FFFFFF, gris #55616F y verde de lectura #3E5D54. Manrope para títulos, Inter para cuerpo.
+
+```
+[Título e introducción, sin cambios de contenido          ]
+[Venta: título          ][Explicación                    ]  fondo mint
+[Operación              ][Nuevo servicio                 ]
+[Explicación            ][Explicación                    ]
+```
+
+El ajuste usa la misma retícula de dos columnas, medianil e inset en los tres bloques, con títulos de 30 px y cuerpos de 16 px. El fondo ya distingue la aplicación principal: no necesita además un título desproporcionado. El título del bloque mint se alinea arriba con su explicación. El espaciado inferior mantiene el ritmo y la alineación vertical; en móvil se conservan los mismos márgenes interiores y una columna de lectura. Se revisó el plan contra el pedido: no se agregan tarjetas, iconos, líneas, imágenes ni nuevos mensajes.
