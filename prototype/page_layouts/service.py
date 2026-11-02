@@ -45,7 +45,7 @@ def build_service(meta, intro, sections, routes):
         approach_panels.append(f'<div class="approach-panel" id="approach-panel-{i}" role="tabpanel" aria-labelledby="approach-tab-{i}" tabindex="0"><h3>{title}</h3><div class="approach-panel-body"><div class="approach-step-copy">{description}</div><aside class="approach-delivery" aria-labelledby="approach-delivery-{i}"><h4 id="approach-delivery-{i}">{delivery_label}</h4><p>{delivery_copy}</p></aside></div></div>')
     faq_title, faq = section('Antes de empezar')
     parts = re.split(r'<h3>(.*?)</h3>', faq)
-    faqs = ''.join(f'<details name="service-questions"><summary>{parts[i]}<span class="plus" aria-hidden="true"></span></summary>{parts[i + 1]}</details>' for i in range(1, len(parts), 2))
+    faqs = ''.join(f'<details name="service-questions"{" open" if i == 1 else ""}><summary>{parts[i]}<span class="plus" aria-hidden="true"></span></summary>{parts[i + 1]}</details>' for i in range(1, len(parts), 2))
     backing_title, backing = section('Experiencia de negocio')
     cta_title, cta = section('¿Qué necesita')
     return f'''
@@ -97,6 +97,6 @@ def build_service(meta, intro, sections, routes):
   </div>
 </section>
 <section class="service-backing" id="respaldo" aria-labelledby="backing-heading"><div class="container"><div class="service-backing-brand"><img src="/assets/brand/digifianz-official.svg" alt="Digifianz" width="226" height="80" loading="lazy"><p class="service-backing-credential">Elite Partner de HubSpot</p><a class="text-link light-link" href="https://www.digifianz.com/es/" target="_blank" rel="noopener noreferrer" aria-label="Conocé la empresa: Digifianz (nueva pestaña)">Conocé la empresa</a></div><div class="service-backing-copy"><h2 id="backing-heading">{backing_title}</h2>{backing}</div></div></section>
-<section class="container faq page-section" aria-labelledby="questions-heading"><div class="section-intro"><h2 id="questions-heading">{faq_title}</h2></div><div class="faq-list">{faqs}</div></section>
+<section class="container faq service-faq page-section" id="preguntas-frecuentes" aria-labelledby="questions-heading"><div class="section-intro"><h2 id="questions-heading">{faq_title}</h2></div><div class="faq-list">{faqs}</div></section>
 <section class="page-contact" aria-labelledby="next-title"><div class="container page-contact-inner"><div><h2 id="next-title">{cta_title}</h2>{cta}</div><div class="page-contact-actions"><a class="button button-dark" href="/es#contacto">Hablemos de tu negocio</a><a class="text-link" href="/es#consulta">Prefiero enviar una consulta</a></div></div></section>
 '''

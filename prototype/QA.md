@@ -316,3 +316,11 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Verificados selección de las cuatro modalidades y navegación por teclado. Revisión visual a 1440 y 390 px; medidas a 360 y 900 px sin desbordes y nombres de tarjetas dentro del espacio disponible. Sin errores de consola observados. Capturas finales en `outputs/modalidades-unificadas-20261102/desktop.png` y `mobile.png`.
 - Build y diff check correctos. Comprobación automática: HTML idéntico fuera de las dos secciones unificadas, cuatro paneles y entregables, IDs únicos; sólo cambia software en `content.json`. Se actualizó el Markdown fuente para mantener consistente el lector de contenido. JS sin cambios.
 - Navegador integrado recargado en la sección unificada; viewport de pruebas restablecido y pestaña temporal de Chrome cerrada. El respaldo de Digifianz sigue inmediatamente después del bloque unificado.
+
+
+## FAQ: jerarquía y lectura · 2 de noviembre de 2026
+
+- Encabezado sobre una columna centrada de hasta 1040 px; preguntas de 18 px, respuesta de 16 px y controles más/menos de 32 px. Pregunta abierta sobre mint, primera respuesta visible por defecto. Las cinco preguntas y respuestas se conservan exactamente.
+- Verificados Enter para abrir, cierre de la respuesta anterior por el atributo name, Espacio para cerrar y clic para reabrir. Foco de teclado visible. Acordeón nativo sin dependencia de JS.
+- Revisión visual a 1440 y 390 px; comprobación adicional a 360 px sin desbordes. Evidencia en `outputs/faq-editorial-20261102/desktop.png` y `mobile.png`. Viewport restablecido y pestaña temporal cerrada. Navegador integrado recargado y dejado en `#preguntas-frecuentes`.
+- Build y diff check correctos. Comparación automática confirma HTML idéntico fuera de FAQ y texto completo sin cambios. Markdown, contenido JSON, otras páginas y JS intactos.

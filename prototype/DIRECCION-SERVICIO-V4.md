@@ -183,3 +183,18 @@ El título del detalle ocupa todo el ancho. Debajo, la explicación queda a la i
 ```
 
 Revisión: el entregable justifica la segunda columna y conecta el proceso con una decisión comercial. Se conserva la profundidad sobre alternativas, alcances, criterios de mejora, validación, transferencia y mantenimiento; se editan repeticiones. La siguiente sección pasa a ser el respaldo de Digifianz.
+
+
+### FAQ: una columna de lectura y estados claros
+
+La FAQ pasa de título lateral + lista angosta a una composición centrada de hasta 1040 px, con encabezado encima. Preguntas de 18 px y respuestas de 16 px, Manrope/Inter y los colores existentes: navy #0B1D3A, mint #E8F4F0, mist #F5F7FA, blanco y gris #55616F. La pregunta abierta usa fondo mint; el control más/menos tiene un área circular de 32 px, centrada en la fila. La primera respuesta abre por defecto y sólo una puede permanecer abierta.
+
+```
+[Antes de empezar                                      ]
+[Pregunta abierta                                   − ]
+[Respuesta con ancho de lectura cómodo                 ]
+[Pregunta                                           + ]
+[Pregunta                                           + ]
+```
+
+El acordeón nativo sigue operable sin JS y por teclado. No se agregan preguntas, CTA ni texto de relleno: el contacto ya sigue a continuación. El cambio de escala y el estado abierto aportan ritmo sin convertir cada pregunta en una tarjeta independiente. En móvil conserva una sola columna y las respuestas disponen de todo el ancho interior.

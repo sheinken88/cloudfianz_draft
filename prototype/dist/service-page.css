@@ -81,9 +81,20 @@
 .approach-step-copy a{color:#08796f;text-decoration:underline;text-underline-offset:4px}
 @media(prefers-reduced-motion:reduce){.approach-tabs>button{transition:none}}
 
-.service-page .faq{gap:76px}
-.service-page .faq-list summary{font-size:15px;padding-block:19px;min-height:64px}
-.service-page .faq-list details>p{font-size:15px}
+/* A focused reading column; the open answer carries the visual emphasis. */
+.service-page .service-faq{display:block;max-width:1040px;scroll-margin-top:24px}
+.service-faq .section-intro{margin-bottom:36px}
+.service-faq .faq-list{border-top:0}
+.service-faq .faq-list details{padding-inline:26px;border-bottom:1px solid var(--line)}
+.service-faq .faq-list details[open]{background:var(--mint);border-color:transparent;border-radius:8px}
+.service-faq .faq-list summary{font-size:18px;font-weight:550;line-height:1.5;padding:24px 0;min-height:80px;gap:28px}
+.service-faq .faq-list summary:focus-visible{outline-offset:3px;border-radius:3px}
+.service-faq .faq-list details>p{font-size:16px;line-height:1.8;padding:0 56px 28px 0;max-width:86ch}
+.service-faq .plus{width:32px;height:32px;border-radius:50%;background:var(--mist);color:var(--navy)}
+.service-faq .plus::before,.service-faq .plus::after{width:12px;height:1.5px;left:10px;top:15px}
+.service-faq details[open] .plus{background:var(--navy);color:#fff}
+@media(hover:hover){.service-faq summary:hover{color:#08796f}.service-faq summary:hover .plus{background:var(--navy);color:#fff}}
+@media(prefers-reduced-motion:reduce){.service-faq .plus::after{transition:none}}
 .service-page .service-backing{padding-block:54px;scroll-margin-top:25px}
 .service-page .service-backing>.container{grid-template-columns:250px minmax(0,1fr);gap:78px;align-items:center}
 .service-page .service-backing img{width:210px}
@@ -116,7 +127,6 @@
   .approach-panel{padding:32px}
   .approach-panel-body{gap:32px}
   .approach-delivery{padding:24px}
-  .service-page .faq{gap:50px}
   .service-page .service-backing>.container{grid-template-columns:220px minmax(0,1fr);gap:48px}
 }
 
@@ -154,7 +164,6 @@
   .approach-panel-body{grid-template-columns:1fr;gap:24px;margin-top:22px}
   .approach-delivery p{max-width:60ch}
   .service-page .approach-panel h3{max-width:560px;font-size:28px}
-  .service-page .faq{gap:30px}
   .service-page .service-backing{padding-block:46px}
   .service-page .service-backing>.container{grid-template-columns:1fr;gap:28px}
 }
@@ -182,7 +191,12 @@
   .approach-panel{padding:26px 22px}
   .service-page .approach-panel h3{font-size:25px}
   .approach-step-copy{font-size:16px}
-  .service-page .faq-list summary,.service-page .faq-list details>p{font-size:14px}
+  .service-faq .section-intro{margin-bottom:26px}
+  .service-faq .faq-list details{padding-inline:18px}
+  .service-faq .faq-list summary{font-size:17px;min-height:76px;padding-block:22px;gap:16px}
+  .service-faq .faq-list details>p{font-size:16px;padding:0 0 24px}
+  .service-faq .plus{width:28px;height:28px}
+  .service-faq .plus::before,.service-faq .plus::after{left:8px;top:13px}
   .service-page .service-backing{padding-block:42px}
   .service-page .service-backing img{width:175px}
   .service-page .service-backing h2{font-size:30px;letter-spacing:-.6px;margin-bottom:16px}
