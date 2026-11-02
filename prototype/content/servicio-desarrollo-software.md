@@ -58,63 +58,51 @@ Los técnicos pueden registrar el servicio y obtener la firma del cliente desde 
 
 [Conocé el caso Photonix](caso-photonix.md).
 
-## Del problema de negocio a una solución en uso
-
-Los proyectos cambian; el criterio se mantiene. Entendemos cómo trabaja tu empresa, acordamos qué necesita mejorar y validamos la solución con quienes la van a usar.
-
-### Entender antes de elegir
-
-Revisamos el proceso, las personas que participan y las herramientas que ya usás. Comparamos las posibilidades de configurar un sistema existente, conectarlo con otros o desarrollar una función propia.
-
-La decisión contempla el uso cotidiano, la convivencia con el resto de tu operación, los costos de funcionamiento y el mantenimiento posterior.
-
-Si necesitás conectar herramientas existentes, conocé nuestro servicio de [integración de sistemas](servicio-integracion-sistemas.md).
-
-### Diseñar un alcance con un resultado definido
-
-Acordamos qué mejora buscamos y cómo vamos a observarla: el tiempo de una operación, la capacidad de atender solicitudes, el desempeño comercial o la calidad de la información disponible.
-
-Definimos quiénes usarán la solución, qué podrán hacer, qué sistemas intervienen y qué condiciones debe cumplir la entrega. Así delimitamos una primera versión y qué puede quedar para más adelante.
-
-### Construir y validar con tu equipo
-
-Durante la implementación revisamos el funcionamiento con quienes conocen el proceso. Probamos los recorridos de uso, las reglas y las integraciones contra el alcance acordado.
-
-Estas revisiones permiten ajustar la solución con contexto y comprobar su utilidad antes de la entrega.
-
-### Poner en uso y evaluar
-
-Comprobamos las condiciones acordadas y realizamos el traspaso a quienes van a operar la solución. Entregamos la documentación y el código o configuración que correspondan a lo contratado.
-
-Los criterios definidos al inicio permiten observar la mejora y decidir, con información, qué conviene evolucionar después.
-
 ## Cómo podés trabajar con nosotros
 
 Podés empezar por lo que tu proyecto necesita. Cada servicio se puede contratar por separado, con entregables, presupuesto, calendario y responsabilidades acordados antes de avanzar.
 
 ### Auditoría
 
-Para decidir qué mejorar primero y comparar alternativas sobre un proceso concreto.
+**Entender antes de elegir**
+
+Para decidir qué mejorar primero, revisamos el proceso, las personas que participan y las herramientas que ya usás. Comparamos las posibilidades de configurar un sistema existente, conectarlo con otros o desarrollar una función propia.
+
+La recomendación contempla el uso cotidiano, la convivencia con el resto de tu operación, los costos de funcionamiento y el mantenimiento posterior.
+
+Si necesitás conectar herramientas existentes, conocé nuestro servicio de [integración de sistemas](servicio-integracion-sistemas.md).
 
 **Recibís:** un diagnóstico con prioridades y una recomendación fundamentada.
 
 ### Diseño
 
-Para convertir un objetivo claro en una solución con alcance y criterios de construcción definidos.
+**Definir el alcance y el resultado que buscamos**
 
-**Recibís:** documentación que permite continuar con Cloudfianz o con otro equipo.
+Convertimos un objetivo de negocio en una solución con criterios de construcción claros. Acordamos qué mejora buscamos y cómo vamos a observarla: el tiempo de una operación, la capacidad de atender solicitudes, el desempeño comercial o la calidad de la información.
+
+Definimos quiénes usarán la solución, qué podrán hacer, qué sistemas intervienen y qué condiciones debe cumplir la entrega. Así delimitamos una primera versión y qué puede quedar para más adelante.
+
+**Recibís:** documentación del alcance y los criterios de construcción que permite continuar con Cloudfianz o con otro equipo.
 
 ### Implementación
 
-Para construir cuando ya contás con un diseño suficiente. Evaluamos los insumos antes de acordar el desarrollo.
+**Construir, validar y poner en uso**
 
-**Recibís:** la versión acordada, con pruebas y transferencia a quienes la van a utilizar.
+Podemos empezar cuando ya contás con un diseño suficiente. Evaluamos los insumos antes de acordar el desarrollo.
+
+Durante la implementación revisamos el funcionamiento con quienes conocen el proceso. Probamos los recorridos de uso, las reglas y las integraciones contra el alcance acordado. Así ajustamos la solución con contexto y comprobamos su utilidad antes de la entrega.
+
+Al ponerla en uso, verificamos las condiciones acordadas. Los criterios definidos al inicio permiten observar la mejora y decidir, con información, qué conviene evolucionar después.
+
+**Recibís:** la versión acordada, con pruebas, documentación y el código o configuración que correspondan a lo contratado, junto con la transferencia a quienes la van a operar.
 
 ### Soporte
 
-Para acompañar una solución en funcionamiento y sostener su operación cotidiana.
+**Sostener la operación cotidiana**
 
-**Incluye:** una capacidad mensual acordada para incidentes, mantenimiento y ajustes menores.
+Acompañamos una solución que ya está en funcionamiento. Acordamos una capacidad mensual de trabajo para atender las necesidades de su operación.
+
+**Incluye:** atención de incidentes, mantenimiento y ajustes menores dentro de la capacidad acordada.
 
 ## Experiencia de negocio detrás del software
 

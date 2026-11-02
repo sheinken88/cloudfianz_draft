@@ -167,3 +167,19 @@ Paleta: navy #0B1D3A para selección, blanco #FFFFFF como base, mist #F5F7FA par
 ```
 
 Revisión del criterio: las tarjetas funcionan como controles de un solo recorrido, no como cuatro servicios autónomos. Sólo una tiene contraste fuerte. No se fragmenta la explicación en resúmenes nuevos ni se añaden entregables que compitan con contratación. En mobile las opciones forman una grilla 2×2 y el panel se apila; el teclado conserva navegación con flechas, Inicio/Fin y Tab. Sin animaciones automáticas.
+
+
+### Abordaje y contratación: una única decisión
+
+Se conserva la interacción de tarjetas y se unifican metodología y modalidades en «Cómo podés trabajar con nosotros». Las cuatro opciones son Auditoría, Diseño, Implementación y Soporte, contratables por separado. Cada panel reúne el criterio de trabajo y su entregable. Validación, puesta en uso y transferencia pertenecen a Implementación; Soporte cubre la operación posterior. Se retiran los números para no sugerir un paquete obligatorio de cuatro etapas.
+
+El título del detalle ocupa todo el ancho. Debajo, la explicación queda a la izquierda y un bloque de entregable a la derecha; ya no hay una columna vacía reservada al título. Altura natural según el contenido, sin mínimo artificial. En mobile título, explicación y entregable se apilan. Se mantienen navy #0B1D3A, mint #E8F4F0, mist #F5F7FA, blanco #FFFFFF y gris #55616F; Manrope para títulos e Inter para lectura.
+
+```
+[Cómo podés trabajar con nosotros][Inicio según necesidad]
+[Auditoría][Diseño][Implementación][Soporte]
+[Título de la modalidad seleccionada                     ]
+[Cómo lo abordamos / cuándo sirve       ][Qué recibís    ]
+```
+
+Revisión: el entregable justifica la segunda columna y conecta el proceso con una decisión comercial. Se conserva la profundidad sobre alternativas, alcances, criterios de mejora, validación, transferencia y mantenimiento; se editan repeticiones. La siguiente sección pasa a ser el respaldo de Digifianz.

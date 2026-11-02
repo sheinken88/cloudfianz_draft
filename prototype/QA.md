@@ -307,3 +307,12 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Verificados clic, navegación con flechas, Home/End y Tab al panel con foco visible. Apertura y cierre del lector de integración correctos. Sin errores de consola observados.
 - Revisión visual a 1440 y 390 px en Chrome; comprobación adicional a 900 px sin desbordes. Capturas en `outputs/proceso-interactivo-20261102/desktop.png` y `mobile.png`. Viewports temporales restablecidos y pestaña de pruebas cerrada. Navegador integrado recargado y dejado en `#como-abordamos`.
 - Build, sintaxis JS y diff check correctos. Comprobación automática de IDs únicos, conservación exacta de textos y ausencia de cambios fuera de la sección. Transiciones de color desactivadas con preferencia de movimiento reducido.
+
+
+## Unificación de abordaje y contratación · 2 de noviembre de 2026
+
+- Una sola sección «Cómo podés trabajar con nosotros», con Auditoría, Diseño, Implementación y Soporte contratables por separado. Cada opción integra criterio de trabajo y entregable. Implementación reúne validación, puesta en uso y transferencia; soporte mantiene capacidad mensual para incidentes, mantenimiento y ajustes menores.
+- Título de panel a todo el ancho, explicación a la izquierda y entregable destacado a la derecha. Se elimina altura mínima y numeración secuencial. En mobile se apilan explicación y entregable; etiquetas ajustadas para caber a 360 px.
+- Verificados selección de las cuatro modalidades y navegación por teclado. Revisión visual a 1440 y 390 px; medidas a 360 y 900 px sin desbordes y nombres de tarjetas dentro del espacio disponible. Sin errores de consola observados. Capturas finales en `outputs/modalidades-unificadas-20261102/desktop.png` y `mobile.png`.
+- Build y diff check correctos. Comprobación automática: HTML idéntico fuera de las dos secciones unificadas, cuatro paneles y entregables, IDs únicos; sólo cambia software en `content.json`. Se actualizó el Markdown fuente para mantener consistente el lector de contenido. JS sin cambios.
+- Navegador integrado recargado en la sección unificada; viewport de pruebas restablecido y pestaña temporal de Chrome cerrada. El respaldo de Digifianz sigue inmediatamente después del bloque unificado.

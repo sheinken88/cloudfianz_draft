@@ -30,14 +30,19 @@ def build_service(meta, intro, sections, routes):
     revianz_copy = ''.join(revianz_paragraphs[:-1])
     revianz_name, revianz_description = revianz[0].split(': ', 1)
     revianz_title = f'<span class="service-case-name">{revianz_name}</span>{revianz_description[0].upper()}{revianz_description[1:]}'
-    approach_title, approach = section('Del problema')
-    approach_intro, steps = subsections(approach)
-    step_labels = [('Entender', 'Evaluar las alternativas'), ('Diseñar', 'Definir qué vamos a lograr'), ('Construir', 'Validar con tu equipo'), ('Evaluar', 'Poner en uso y evolucionar')]
-    approach_tabs = ''.join(f'<button type="button" role="tab" id="approach-tab-{i}" aria-controls="approach-panel-{i}" aria-selected="{str(i == 1).lower()}" tabindex="{0 if i == 1 else -1}"><span class="approach-tab-number">{i:02}</span><span class="approach-tab-name">{label}</span><span class="approach-tab-hint">{hint}</span></button>' for i, (label, hint) in enumerate(step_labels, 1))
-    approach_steps = ''.join(f'<div class="approach-panel" id="approach-panel-{i}" role="tabpanel" aria-labelledby="approach-tab-{i}" tabindex="0"><h3>{title}</h3><div class="approach-step-copy">{copy}</div></div>' for i, (title, copy) in enumerate(steps, 1))
-    stages_title, stages = section('Cómo podés')
-    stages_intro, stages = subsections(stages)
-    offers = ''.join(f'<article><h3>{title}</h3>{copy}</article>' for title, copy in stages)
+    approach_title, approach = section('Cómo podés')
+    approach_intro, offers = subsections(approach)
+    hints = ['Evaluar las alternativas', 'Definir el alcance', 'Construir y poner en uso', 'Acompañar la operación']
+    approach_tabs, approach_panels = [], []
+    for i, ((label, copy), hint) in enumerate(zip(offers, hints), 1):
+        offer_parts = paragraphs(copy)
+        title = re.sub(r'</?(?:p|strong)>', '', offer_parts[0])
+        description = ''.join(offer_parts[1:-1])
+        delivery = re.fullmatch(r'<p><strong>(.*?):</strong> (.*?)</p>', offer_parts[-1], re.S)
+        delivery_label, delivery_copy = delivery.groups()
+        delivery_copy = delivery_copy[0].upper() + delivery_copy[1:]
+        approach_tabs.append(f'<button type="button" role="tab" id="approach-tab-{i}" aria-controls="approach-panel-{i}" aria-selected="{str(i == 1).lower()}" tabindex="{0 if i == 1 else -1}"><span class="approach-tab-name">{label}</span><span class="approach-tab-hint">{hint}</span></button>')
+        approach_panels.append(f'<div class="approach-panel" id="approach-panel-{i}" role="tabpanel" aria-labelledby="approach-tab-{i}" tabindex="0"><h3>{title}</h3><div class="approach-panel-body"><div class="approach-step-copy">{description}</div><aside class="approach-delivery" aria-labelledby="approach-delivery-{i}"><h4 id="approach-delivery-{i}">{delivery_label}</h4><p>{delivery_copy}</p></aside></div></div>')
     faq_title, faq = section('Antes de empezar')
     parts = re.split(r'<h3>(.*?)</h3>', faq)
     faqs = ''.join(f'<details name="service-questions"><summary>{parts[i]}<span class="plus" aria-hidden="true"></span></summary>{parts[i + 1]}</details>' for i in range(1, len(parts), 2))
@@ -87,11 +92,10 @@ def build_service(meta, intro, sections, routes):
 <section class="container page-section service-approach" id="como-abordamos" aria-labelledby="approach-heading">
   <div class="service-section-intro"><h2 id="approach-heading">{approach_title}</h2>{approach_intro}</div>
   <div class="service-process" data-tabs data-progressive-tabs>
-    <div class="approach-tabs" role="tablist" aria-label="Etapas del proyecto" hidden>{approach_tabs}</div>
-    <div class="approach-panels">{approach_steps}</div>
+    <div class="approach-tabs" role="tablist" aria-label="Modalidades de trabajo" hidden>{''.join(approach_tabs)}</div>
+    <div class="approach-panels">{''.join(approach_panels)}</div>
   </div>
 </section>
-<section class="container page-section service-engagement" aria-labelledby="engagement-heading"><div class="service-section-intro"><h2 id="engagement-heading">{stages_title}</h2>{stages_intro}</div><div class="service-offers">{offers}</div></section>
 <section class="service-backing" id="respaldo" aria-labelledby="backing-heading"><div class="container"><div class="service-backing-brand"><img src="/assets/brand/digifianz-official.svg" alt="Digifianz" width="226" height="80" loading="lazy"><p class="service-backing-credential">Elite Partner de HubSpot</p><a class="text-link light-link" href="https://www.digifianz.com/es/" target="_blank" rel="noopener noreferrer" aria-label="Conocé la empresa: Digifianz (nueva pestaña)">Conocé la empresa</a></div><div class="service-backing-copy"><h2 id="backing-heading">{backing_title}</h2>{backing}</div></div></section>
 <section class="container faq page-section" aria-labelledby="questions-heading"><div class="section-intro"><h2 id="questions-heading">{faq_title}</h2></div><div class="faq-list">{faqs}</div></section>
 <section class="page-contact" aria-labelledby="next-title"><div class="container page-contact-inner"><div><h2 id="next-title">{cta_title}</h2>{cta}</div><div class="page-contact-actions"><a class="button button-dark" href="/es#contacto">Hablemos de tu negocio</a><a class="text-link" href="/es#consulta">Prefiero enviar una consulta</a></div></div></section>
