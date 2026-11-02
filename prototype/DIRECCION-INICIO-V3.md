@@ -8,7 +8,7 @@ La homepage presenta la amplitud de Cloudfianz y orienta a servicios, casos o co
 
 Paleta existente: navy #0B1D3A, teal #12B5A5, mint #E8F4F0, gris #F5F7FA, blanco #FFFFFF, texto secundario #55616F. Manrope para títulos e Inter para lectura y controles.
 
-Hero con promesa de negocio a la izquierda y un nuevo mockup del cotizador de Despegar en una notebook a la derecha. Tres entradas de servicio visibles y equivalentes. Portfolio de tres proyectos con el formato editorial amplio de la versión anterior: Despegar y ConsorcioAbierto con imagen y relato en dos columnas; REVIANZ con contenido sobre su mockup. Criterio de trabajo breve, sección institucional de Digifianz y contacto como cierre. Sin carruseles ni pestañas que oculten las capacidades principales.
+Hero claro con promesa de negocio a la izquierda y una imagen ambiental de un equipo joven trabajando, integrada al fondo con un difuminado blanco hacia el texto. Tres entradas de servicio visibles y equivalentes. Portfolio de tres proyectos con el formato editorial amplio de la versión anterior: Despegar y ConsorcioAbierto con imagen y relato en dos columnas; REVIANZ con contenido sobre su mockup. Criterio de trabajo breve, sección institucional de Digifianz y contacto como cierre. Sin carruseles ni pestañas que oculten las capacidades principales.
 
 ## Revisión del plan
 
@@ -39,3 +39,8 @@ A pedido del usuario se reemplaza la imagen de ConsorcioAbierto por una composic
 ## Hero con Despegar en una notebook
 
 El usuario descartó el mockup conceptual y pidió una imagen nueva del caso Despegar. Se creó una composición de producto con una notebook, usando la herramienta integrada de generación de imágenes. La pantalla visible se superpone en CSS con una vista derivada de la captura original. A pedido explícito del usuario se retiran la marca Digifianz del encabezado y las cuatro líneas azules laterales de las filas de marcas. La captura original queda intacta para el resto del sitio. El mockup y su pie enlazan al caso. No se modifica el relato ni el resto de la homepage.
+
+
+## Hero ambiental con equipo joven
+
+La referencia visual del usuario cambia la dirección del hero: foto de fondo integrada, texto navy y transición blanca suave. Se genera una escena ilustrativa de cuatro jóvenes trabajando con notebooks, sin logos ni interfaces visibles. El titular, la bajada y los CTA aprobados se conservan. En mobile, la escena continúa debajo del contenido con un difuminado vertical. No se presenta la imagen como fotografía del equipo real. Las exploraciones anteriores quedan guardadas en el historial local.

@@ -369,3 +369,12 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Build correcto. Inspección visual a 1280 y 390 px; imagen cargada y sin desbordes también a 320 px. Viewport restablecido al terminar.
 - Comparación con HEAD confirma contenido idéntico fuera de la figura del hero. Sin cambios en páginas interiores.
 - Capturas desktop y mobile: `/Users/sheinken/Desktop/Cloudfianz/outputs/hero-mockup-20261102/`.
+
+## Hero ambiental con equipo joven · 2 de noviembre de 2026
+
+- Se reemplaza el mockup de producto por una imagen ambiental a todo el ancho, con difuminado blanco hacia el titular y la paleta de Cloudfianz. El texto y los CTA aprobados se mantienen.
+- Escena generada de cuatro personas ficticias diferenciadas. La revisión final corrige el botón superior duplicado de la camisa, a pedido del usuario. Procedencia y prompts en `dist/assets/hero/`.
+- Build y `git diff --check` correctos. Comparación confirma que todo el HTML posterior al hero sigue idéntico.
+- Desktop 1280 px, mobile 390 y 320 px revisados. Imagen cargada, sin desbordes horizontales. En mobile, transición vertical y encuadre derecho con altura proporcional para conservar los rostros dentro de la imagen.
+- Capturas finales y PNG original en `/Users/sheinken/Desktop/Cloudfianz/outputs/hero-equipo-20261102/`.
+- Exploración del mockup Despegar guardada previamente en el commit local `21bdf6c`. No hubo publicación ni cambios remotos.
