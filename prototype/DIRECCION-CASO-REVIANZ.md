@@ -48,3 +48,17 @@ Los visuales de referencia son componentes HTML/SVG, no archivos raster. Se port
 ## Imagen para el contexto del caso
 
 La sección “Mantener conectados el trabajo y sus números” reúne título y texto en una columna editorial, acompañada por el mockup oficial `ShareScopeFlowMockup` a la derecha. La vista de colaboración hace visible la relación con empresas externas y complementa el alcance mostrado en el hero. Se conservan los dos párrafos completos, Inter, la paleta del producto y su traducción oficial. En móvil, texto y visual se apilan; la ilustración se mantiene nítida, con leyenda y alternativa accesible. El ajuste se limita a este capítulo.
+
+## Cierre del caso: beneficios y acceso al producto
+
+El cierre reúne la idea principal, tres beneficios concretos y el acceso a REVIANZ en una sola composición. Se elimina el segundo bloque “Software que acompaña una forma de trabajar”, que repetía la conclusión. La introducción se reduce a una frase y cada beneficio a una explicación breve.
+
+Se conserva la paleta navy #0B1D3A, blanco #FFFFFF, texto #C1CFDB y mint #E8F4F0. Títulos Manrope, cuerpo Inter. Alineación izquierda, título de 38 px y beneficios de 21 px. El único acento es un botón mint “Conocé REVIANZ”, con apertura externa anunciada de forma accesible. No se agregan tarjetas, iconos, contadores ni divisores.
+
+```
+[Título y síntesis           ][Margen: explicación breve       ]
+[Conocé REVIANZ              ][Facturación: explicación breve  ]
+[                           ][Colaboración: explicación breve ]
+```
+
+En móvil se lee título, síntesis, beneficios y botón. La revisión del plan descarta agregar otra franja de llamada a la acción: el enlace pertenece al mismo cierre y el contacto comercial conserva su sección independiente.

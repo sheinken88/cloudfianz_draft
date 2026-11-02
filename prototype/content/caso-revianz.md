@@ -36,15 +36,11 @@ Un proyecto puede compartirse con otra organización. Cada colaborador trabaja s
 
 ## Qué permite: una base compartida para decidir
 
-Digifianz utiliza REVIANZ para conectar las condiciones comerciales, la ejecución y el seguimiento financiero de su operación. El valor está en poder revisar el trabajo y su impacto económico dentro de un mismo recorrido.
+Digifianz conecta el trabajo de sus equipos con la gestión financiera de cada proyecto.
 
-- **Visibilidad del margen.** Consultar ingresos, costos y rentabilidad por proyecto y período para identificar dónde hace falta revisar una decisión.
-- **Trazabilidad de la facturación.** Relacionar lo facturado y lo pendiente con el trabajo y las condiciones que les dieron origen.
-- **Colaboración con contexto.** Coordinar equipos y empresas externas con responsabilidades y reglas asociadas al proyecto.
-
-## Software que acompaña una forma de trabajar
-
-El caso muestra cómo un desarrollo a medida puede llevar las reglas de una empresa a una herramienta de uso cotidiano. REVIANZ integra la gestión operativa y financiera que necesita el modelo de trabajo de Digifianz.
+- **Visibilidad del margen.** Ingresos, costos y rentabilidad por proyecto y período para decidir con información compartida.
+- **Trazabilidad de la facturación.** Lo facturado y lo pendiente, vinculados al trabajo y a sus condiciones comerciales.
+- **Colaboración con contexto.** Equipos y empresas externas coordinados sobre el mismo proyecto, con responsabilidades claras.
 
 [Conocé REVIANZ](https://revianz.com/).
 

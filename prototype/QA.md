@@ -237,3 +237,10 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 
 - Enlace “Visitar revianz.com” agregado al preview del inicio, al proyecto en desarrollo de software y a los datos del producto en el hero del caso. Conserva el enlace interno para leer el caso. Destino HTTPS, apertura en nueva pestaña anunciada en el nombre accesible y `rel="noopener noreferrer"`.
 - Construcción y `git diff --check` completados. Verificados los tres enlaces generados. Apertura desde el servicio comprobada en Chrome: carga la página pública de REVIANZ en una pestaña nueva. A 390 px, enlaces con área de 44 px de alto y sin desborde horizontal. Captura en `outputs/revianz-enlace-20261102/enlace-desktop.jpg`.
+
+## REVIANZ: cierre más claro y acceso al producto · 2 de noviembre de 2026
+
+- Se unifican resultados y conclusión en una sola composición: título y síntesis a la izquierda, tres beneficios a la derecha, botón “Conocé REVIANZ” junto a la síntesis. Se elimina la conclusión redundante; el texto del cierre pasa de 140 a 69 palabras, manteniendo margen, facturación y colaboración. La edición también está en el Markdown y el lector de contenido.
+- CTA de 16 px y 58 px de alto, con contraste navy/mint. Conserva HTTPS, nueva pestaña, `noopener noreferrer` y nombre accesible que anuncia la apertura. En móvil se presenta después de los beneficios, a ancho completo.
+- Inspección visual en Chrome a 1440 × 783 y 390 × 844; comprobación adicional a 1024 × 768. Sin desbordes horizontales ni errores de consola observados. Viewport restablecido al finalizar. Evidencia en `outputs/revianz-cierre-20261102/cierre-desktop.jpg` y `cierre-mobile.jpg` del workspace.
+- Construcción, IDs únicos y `git diff --check` correctos. Comparación del HTML contra HEAD: cambios exclusivamente dentro de la sección de resultados; en `content.json` sólo cambia el caso REVIANZ. Inicio, servicio, Despegar, hero del caso y CTA de contacto permanecen idénticos.

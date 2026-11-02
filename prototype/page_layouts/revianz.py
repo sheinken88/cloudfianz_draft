@@ -18,8 +18,9 @@ def build_revianz(meta, intro, sections, routes):
     results_title, results = section('Qué permite')
     results_intro = re.findall(r'<p>.*?</p>', results, re.S)[0]
     results_items = re.findall(r'<li>(.*?)</li>', results, re.S)
-    outcomes = ''.join(f'<li>{item}</li>' for item in results_items)
-    evolution_title, evolution = section('Software que acompaña')
+    outcomes = ''.join('<li>' + re.sub(r'^<strong>(.*?)\.</strong>\s*(.*)$', r'<h3>\1</h3><p>\2</p>', item, flags=re.S) + '</li>' for item in results_items)
+    product_link = re.search(r'<a href="https://revianz\.com/"[^>]*>.*?</a>', results).group()
+    product_link = product_link.replace('<a ', '<a class="button rv-product-cta" aria-label="Conocé REVIANZ (nueva pestaña)" ', 1)
     contact_title, contact = section('¿Tu operación')
     report = mockup('scope', 'Servicios, importes y margen de un proyecto.')
     preview = mockup('margin', 'Vista ilustrativa del margen, los ingresos y el costo de entrega.')
@@ -40,6 +41,6 @@ def build_revianz(meta, intro, sections, routes):
   <div class="rv-margin"><div><h3>{margin_title}</h3><div class="page-prose">{margin}</div><p class="rv-detail-note">La vista de margen relaciona ingresos y costo de entrega para entender el resultado del proyecto.</p></div>{preview}</div>
   <div class="rv-billing">{invoice}<div><h3>{billing_title}</h3><div class="page-prose">{billing}</div><h3>{collaboration_title}</h3><div class="page-prose">{collaboration}</div></div></div>
 </div></section>
-<section class="rv-results"><div class="container"><div class="rv-results-heading"><h2>Una base compartida para decidir.</h2><div>{results_intro}</div></div><ul>{outcomes}</ul><div class="rv-evolution"><h3>{evolution_title}</h3><div>{evolution}</div></div></div></section>
+<section class="rv-results" id="resultados" aria-labelledby="rv-results-title"><div class="container rv-results-inner"><div class="rv-results-heading"><h2 id="rv-results-title">Una base compartida para decidir.</h2>{results_intro}</div><ul class="rv-outcomes">{outcomes}</ul><div class="rv-results-action">{product_link}</div></div></section>
 <section class="page-contact" aria-labelledby="next-title"><div class="container page-contact-inner"><div><h2 id="next-title">{contact_title}</h2>{contact}</div><div class="page-contact-actions"><a class="button button-dark" href="/es#contacto">Hablemos de tu negocio</a><a class="text-link" href="/es#consulta">Prefiero enviar una consulta</a></div></div></section>
 '''
