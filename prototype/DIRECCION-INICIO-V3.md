@@ -8,7 +8,7 @@ La homepage presenta la amplitud de Cloudfianz y orienta a servicios, casos o co
 
 Paleta existente: navy #0B1D3A, teal #12B5A5, mint #E8F4F0, gris #F5F7FA, blanco #FFFFFF, texto secundario #55616F. Manrope para títulos e Inter para lectura y controles.
 
-Hero con promesa de negocio a la izquierda y la imagen de contexto de ConsorcioAbierto a la derecha. Tres entradas de servicio visibles y equivalentes. Portfolio de tres proyectos con el formato editorial amplio de la versión anterior: Despegar y ConsorcioAbierto con imagen y relato en dos columnas; REVIANZ con contenido sobre su mockup. Criterio de trabajo breve, sección institucional de Digifianz y contacto como cierre. Sin carruseles ni pestañas que oculten las capacidades principales.
+Hero con promesa de negocio a la izquierda y un mockup conceptual de cotización, operación y resultados a la derecha. Tres entradas de servicio visibles y equivalentes. Portfolio de tres proyectos con el formato editorial amplio de la versión anterior: Despegar y ConsorcioAbierto con imagen y relato en dos columnas; REVIANZ con contenido sobre su mockup. Criterio de trabajo breve, sección institucional de Digifianz y contacto como cierre. Sin carruseles ni pestañas que oculten las capacidades principales.
 
 ## Revisión del plan
 
@@ -29,3 +29,8 @@ Los mockups de REVIANZ son los existentes, adaptados del sitio del producto, con
 ## Ajuste solicitado tras revisar la primera implementación
 
 Se mantiene la arquitectura de capacidades y la selección de tres casos, pero se recupera su presentación editorial anterior, en lugar de la grilla compacta. A pedido del usuario, el hero usa la imagen oficial de contexto de ConsorcioAbierto (`properix-product-context.png`) junto a su logo original. El caso REVIANZ conserva el mockup de alcance. No se generan imágenes ni se modifican logos. Despegar conserva exclusivamente la captura original verificada.
+
+
+## Mockup conceptual del hero
+
+A pedido del usuario se reemplaza la imagen de ConsorcioAbierto por una composición original generada con la herramienta integrada de imágenes. Presenta cotización, operación y resultados con la paleta de Cloudfianz. Es una representación conceptual, sin logos de clientes ni métricas, y se acompaña con «Una muestra de lo que podemos construir». El resto de la homepage conserva su composición. El prompt y la procedencia quedan en `dist/assets/hero/`.

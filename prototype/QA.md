@@ -361,3 +361,11 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 ### Hero con ConsorcioAbierto
 
 Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto del cliente y su logo original. Encuadre CSS verificado visualmente en 1280 y 390 px, sin desbordes también en 320 px. Build y diff sin errores. El resto de las secciones y páginas conserva su implementación.
+
+### Hero con mockup conceptual · 2 de noviembre de 2026
+
+- Imagen generada con la herramienta integrada a pedido del usuario: cotización, operación y resultados. Prompt y procedencia en `dist/assets/hero/`; original PNG preservado en outputs.
+- JPEG de 1254 × 1254 px, 203 KB, con dimensiones explícitas, carga prioritaria y texto alternativo que identifica el carácter conceptual.
+- Build correcto. Inspección visual a 1280 y 390 px; imagen cargada y sin desbordes también a 320 px. Viewport restablecido al terminar.
+- Comparación con HEAD confirma contenido idéntico fuera de la figura del hero. Sin cambios en páginas interiores.
+- Capturas desktop y mobile: `/Users/sheinken/Desktop/Cloudfianz/outputs/hero-mockup-20261102/`.
