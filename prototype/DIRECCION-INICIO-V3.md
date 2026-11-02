@@ -8,7 +8,7 @@ La homepage presenta la amplitud de Cloudfianz y orienta a servicios, casos o co
 
 Paleta existente: navy #0B1D3A, teal #12B5A5, mint #E8F4F0, gris #F5F7FA, blanco #FFFFFF, texto secundario #55616F. Manrope para títulos e Inter para lectura y controles.
 
-Hero claro con promesa de negocio a la izquierda y una imagen ambiental de un equipo joven trabajando, integrada al fondo con un difuminado blanco hacia el texto. Tres entradas de servicio visibles y equivalentes. Portfolio de tres proyectos con el formato editorial amplio de la versión anterior: Despegar y ConsorcioAbierto con imagen y relato en dos columnas; REVIANZ con contenido sobre tres vistas compactas de alcance, rentabilidad y facturación. Criterio de trabajo breve, sección institucional de Digifianz y contacto como cierre. Sin carruseles ni pestañas que oculten las capacidades principales.
+Hero claro con promesa de negocio a la izquierda y una imagen ambiental de un equipo joven trabajando, integrada al fondo con un difuminado blanco hacia el texto. Tres entradas de servicio visibles y equivalentes. Portfolio de tres proyectos contenido en artículos blancos sobre el fondo gris de Cloudfianz. Cada artículo comparte marca y categoría, título y enlace a la izquierda, relato y resultado a la derecha, y una zona neutra para el producto debajo. REVIANZ conserva sus tres vistas de alcance, rentabilidad y facturación. Criterio de trabajo breve, sección institucional de Digifianz y contacto como cierre. Sin carruseles ni pestañas que oculten las capacidades principales.
 
 ## Revisión del plan
 
@@ -51,3 +51,10 @@ La referencia visual del usuario cambia la dirección del hero: foto de fondo in
 Se sustituye el gran mockup único por tres detalles de los componentes existentes del producto: alcance y servicios, rentabilidad y facturación. El primer detalle conserva los servicios y sus importes, sin repetir el panel de margen. Desktop muestra las tres vistas alineadas; en pantallas pequeñas se recorren con desplazamiento horizontal nativo, con indicación discreta y acceso por teclado. Se mantiene una sola nota de datos ilustrativos. El texto y los enlaces del caso siguen arriba de la galería.
 
 El encabezado del caso REVIANZ incorpora su `BrandMark` oficial, portado desde el proyecto del producto y escalado proporcionalmente. Se evita repetir el nombre en el texto de contexto: el logo acompaña «Desarrollado para Digifianz».
+
+
+## Un sistema común para los casos del inicio
+
+Los tres casos comparten contenedor, alineaciones, tipografía, espaciado y tratamiento de imágenes. Los colores particulares permanecen en los logos y dentro de los productos, sin teñir cada artículo como un banner. Se retiran el encabezado promocional y el logo duplicado de la imagen de ConsorcioAbierto; se mantiene la aclaración de que es contexto del negocio del cliente. La captura de Despegar se presenta completa y sin perspectiva.
+
+En mobile, el orden es marca, título, relato, resultado, enlaces y producto. Las tres vistas REVIANZ se mantienen en un carril nativo accesible por teclado y tacto, con una nota única sobre los datos ilustrativos. No se modifican el hero, los textos comerciales ni las páginas internas.

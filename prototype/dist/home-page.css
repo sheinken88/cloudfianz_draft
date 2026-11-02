@@ -34,21 +34,36 @@
 .home-service-path>p{font-size:16px;line-height:1.8;color:var(--muted);margin-block:24px 28px}
 .home-service-path .text-link{margin-top:auto;color:var(--home-accent);font-size:14px;min-height:40px;display:inline-flex;align-items:center}
 
-/* Restore the original portfolio composition, retaining only three stories. */
+/* A shared editorial frame contains each project's own brand and product. */
 .home-work{background:var(--mist)}
-.home-work-heading{display:flex;align-items:end;justify-content:space-between;gap:48px;margin-bottom:70px}
+.home-work-heading{display:flex;align-items:end;justify-content:space-between;gap:48px;margin-bottom:60px}
 .home-work-heading>.text-link{flex:none;margin-bottom:5px}
-.home-project-stories>.project{margin-top:90px}
-.home-project-stories>.project:first-child{margin-top:0}
-.home-work .despegar-image,.home-work .properix-image{aspect-ratio:1.18}
-.home-work .despegar-image{background:#dcebe6}
-.home-work .revianz-preview{margin-top:80px;padding-top:62px}
-.home-work .revianz-preview-heading{gap:72px}
-.home-work .revianz-preview h3{font-size:36px}
-.home-work .revianz-preview figure{margin-top:36px}
-.home-work .revianz-preview figcaption{display:block}
-.home-portfolio-footer{display:flex;align-items:center;justify-content:space-between;gap:35px;margin-top:65px;padding-top:30px;border-top:1px solid var(--line)}
-.home-portfolio-footer>p{font-size:17px;color:var(--muted)}
+.home-project-stories{display:grid;gap:40px}
+.home-case{min-width:0;background:#fff;border:1px solid #dfe5eb;border-radius:20px;scroll-margin-top:120px}
+.home-case-intro{padding:38px 40px 34px}
+.home-case-brandline{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:46px;margin-bottom:30px}
+.home-case-logo{display:block;object-fit:contain;height:auto;flex:none}
+.home-case-logo-despegar{width:160px}
+.home-case-logo-consorcio{width:220px}
+.home-case-category{font-size:12px;line-height:1.6;color:var(--muted);text-align:right}
+.home-case-story{display:grid;grid-template-columns:1fr 1.08fr;grid-template-rows:auto 1fr;gap:24px 64px;align-items:start}
+.home-case-story>h3{grid-column:1;grid-row:1;font-size:34px;line-height:1.23;letter-spacing:-1.05px;color:var(--navy);max-width:490px}
+.home-case-description{grid-column:2;grid-row:1 / span 2;min-width:0}
+.home-case-description>p{font-size:15px;line-height:1.8;color:var(--muted)}
+.home-case-result{margin-top:22px}
+.home-case-result>span{display:block;font-size:11px;font-weight:650;color:var(--home-accent);margin-bottom:7px}
+.home-case-result>p{font-size:15px;line-height:1.75;color:var(--navy)}
+.home-case-actions{grid-column:1;grid-row:2;display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px;align-self:start}
+.home-case-actions .text-link{display:inline-flex;align-items:center;min-height:44px;font-size:13px;line-height:1.5;font-weight:600}
+.home-case-actions .home-case-external{font-weight:450;color:var(--muted)}
+.home-case-media{margin:0 24px 24px;min-width:0}
+.home-case-stage{display:flex;align-items:center;justify-content:center;min-height:420px;padding:32px;background:#f1f4f6;border-radius:12px}
+.home-case-stage>img{display:block;width:min(100%,840px);height:auto;max-width:100%;max-height:356px;object-fit:contain;border-radius:6px;box-shadow:0 12px 28px #0b1d3a0d}
+.home-case-media>figcaption,.home-rv-gallery-footer p{font-size:11px;line-height:1.6;color:var(--muted)}
+.home-case-media>figcaption{margin:13px 8px 0}
+.home-case-stage-gallery{display:block;min-height:0;padding:24px}
+.home-portfolio-footer{display:flex;align-items:center;justify-content:space-between;gap:35px;margin-top:44px}
+.home-portfolio-footer>p{font-size:16px;color:var(--muted)}
 
 /* The approach stands on its own; client examples stay in the portfolio. */
 .home-judgment-intro{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:start}
@@ -82,7 +97,7 @@
 @media(max-width:1199px){
   .home-opening h1{font-size:49px}
   .home-proof{gap:35px}.home-proof>p{flex-basis:180px}.home-client-logos{gap:30px}.home-section-heading{gap:55px}.home-service-paths{gap:32px}.home-service-path h3{font-size:26px}
-  .home-work .revianz-preview-heading{gap:45px}.home-work .revianz-preview h3{font-size:32px}.home-judgment-intro{gap:52px}.home-backing-layout{gap:58px}.home-backing-brand>img{width:245px}.home-backing-copy h2{font-size:42px}.home-page .contact-inner{gap:50px}
+  .home-judgment-intro{gap:52px}.home-backing-layout{gap:58px}.home-backing-brand>img{width:245px}.home-backing-copy h2{font-size:42px}.home-page .contact-inner{gap:50px}
 }
 @media(max-width:959px){
   .home-hero{min-height:0;padding-block:64px 0}.home-opening{padding-bottom:370px}.home-opening-content{width:100%;max-width:720px}.home-opening h1{font-size:60px;max-width:720px}.home-opening-copy{max-width:600px}.home-hero-media{inset:auto 0 0;height:400px}.home-hero-media>img{object-position:72% center}.home-hero::before{display:none}.home-hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.9) 8%,rgba(255,255,255,0) 36%)}
@@ -92,22 +107,61 @@
 @media(max-width:799px){
   .home-section{padding-block:76px}.home-hero{padding-block:48px 0}.home-opening h1{font-size:54px;letter-spacing:-2px}.home-opening-copy>p{font-size:16px}.home-proof{padding-block:30px}.home-client-logos{justify-content:space-between;gap:35px}.home-client-logos img{max-width:145px}.home-client-logos a:nth-child(2) img{max-width:180px}.home-client-logos a:nth-child(3) img{max-width:130px}
   .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:40px;letter-spacing:-1.3px}.home-service-paths{grid-template-columns:1fr;gap:35px}.home-service-path{padding-top:26px}.home-service-path h3{font-size:29px;max-width:520px}.home-service-path>p{max-width:600px;margin-block:18px}.home-service-path .text-link{font-size:14px}
-  .home-work-heading{gap:25px;margin-bottom:46px}.home-work-heading>.text-link{font-size:12px}.home-project-stories>.project{margin-top:65px}.home-work .despegar-image,.home-work .properix-image{aspect-ratio:1.4}.home-work .revianz-preview{margin-top:60px;padding-top:45px}.home-work .revianz-preview-heading{gap:26px}.home-work .revianz-preview h3{font-size:32px}.home-work .revianz-preview figure{margin-top:28px}.home-portfolio-footer{margin-top:45px;align-items:start;flex-direction:column;gap:16px}
+  .home-work-heading{gap:25px;margin-bottom:46px}.home-work-heading>.text-link{font-size:12px}.home-portfolio-footer{margin-top:32px;align-items:start;flex-direction:column;gap:16px}
   .home-backing{padding-block:72px}.home-backing-layout{grid-template-columns:1fr;gap:36px}.home-backing-brand{flex-direction:row;align-items:center;justify-content:space-between;gap:25px}.home-backing-brand>img{width:230px}.home-backing-brand>.text-link{font-size:13px;flex:none}.home-backing-copy h2{font-size:40px;max-width:650px}.home-backing-copy p{font-size:16px}
   .home-page .contact{padding-block:72px}.home-page .contact-copy{padding-top:0}.home-page .contact-copy h2{font-size:44px;max-width:580px}.home-next-step{margin-top:26px}.home-page #consulta{scroll-margin-top:100px}
 }
 @media(max-width:599px){
   .home-opening{padding-bottom:clamp(235px,calc(79.5vw - 20px),290px)}.home-hero-media{height:clamp(255px,79.5vw,310px)}.home-hero-media>img{object-position:right center}.home-opening h1{font-size:42px;letter-spacing:-1.6px;line-height:1.12}.home-affiliation{font-size:12px;max-width:290px}.home-opening-actions{flex-direction:column;align-items:start;gap:16px}.home-opening-actions>.button{width:100%}
   .home-client-logos{flex-wrap:wrap;gap:22px 30px;justify-content:start}.home-client-logos a{min-height:42px}.home-client-logos img{max-width:135px}.home-client-logos a:nth-child(2) img{max-width:165px}.home-client-logos a:nth-child(3) img{max-width:125px}.home-proof>p{font-size:12px}
-  .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:35px}.home-section-heading>p{font-size:16px}.home-work-heading{display:block}.home-work-heading>.text-link{margin-top:24px;font-size:13px}.home-work .revianz-preview h3{font-size:30px}.home-work .despegar-image,.home-work .properix-image{aspect-ratio:1.12}.home-portfolio-footer>p{font-size:16px}.home-portfolio-footer>.text-link{font-size:13px}
+  .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:35px}.home-section-heading>p{font-size:16px}.home-work-heading{display:block}.home-work-heading>.text-link{margin-top:24px;font-size:13px}.home-portfolio-footer>p{font-size:16px}.home-portfolio-footer>.text-link{font-size:13px}
   .home-judgment-intro>div>p{font-size:16px}.home-judgment-intro>div>.home-engagement-note{font-size:14px}.home-backing-brand{display:block}.home-backing-brand>img{width:230px}.home-backing-brand>.text-link{margin-top:18px}.home-backing-copy h2{font-size:35px;letter-spacing:-1.2px}.home-backing-copy p{font-size:16px;margin-top:24px}
   .home-page .contact-copy h2{font-size:39px}.home-page .contact-copy>p{font-size:16px}.home-page .contact-inner{gap:35px}.home-next-step h3{font-size:19px}.home-page .contact-copy>.text-link{min-height:44px;display:inline-flex;align-items:center;margin-top:18px}.home-page .contact-form-wrap{padding:28px 24px}.home-page .field label{font-size:13px}.home-page .field-help{font-size:12px}.home-page .demo-note{font-size:11px}
 }
 
-/* Three focused product views replace the single oversized REVIANZ panel. */
-.home-rv-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:40px;border-radius:18px}
+@media(max-width:1199px){
+  .home-case-intro{padding:32px}
+  .home-case-story{column-gap:40px}
+  .home-case-story>h3{font-size:30px}
+  .home-case-stage{min-height:380px;padding:24px}
+  .home-case-stage>img{max-height:332px}
+  .home-case-stage-gallery{min-height:0;padding:24px}
+}
+@media(max-width:799px){
+  .home-project-stories{gap:28px}
+  .home-case{border-radius:16px;scroll-margin-top:100px}
+  .home-case-intro{padding:28px}
+  .home-case-brandline{margin-bottom:28px}
+  .home-case-story{grid-template-columns:1fr;grid-template-rows:auto;gap:24px}
+  .home-case-story>h3{font-size:32px;max-width:580px}
+  .home-case-description{grid-column:1;grid-row:2}
+  .home-case-actions{grid-row:3;gap:12px 24px}
+  .home-case-result{margin-top:20px}
+  .home-case-media{margin:0 16px 20px}
+  .home-case-stage{min-height:0;padding:24px}
+  .home-case-stage>img{max-height:340px}
+  .home-case-stage-gallery{padding:20px}
+}
+@media(max-width:599px){
+  .home-case-intro{padding:26px 22px 24px}
+  .home-case-brandline{align-items:start;flex-direction:column;gap:15px;margin-bottom:24px}
+  .home-case-category{text-align:left;font-size:11px}
+  .home-case-logo-despegar{width:148px}
+  .home-case-logo-consorcio{width:206px;max-width:100%}
+  .home-case-story>h3{font-size:28px;letter-spacing:-.8px}
+  .home-case-description>p,.home-case-result>p{font-size:14px;line-height:1.8}
+  .home-case-actions{align-items:start;flex-direction:column;gap:6px}
+  .home-case-actions .text-link{font-size:12px}
+  .home-case-media{margin:0 12px 20px}
+  .home-case-stage{padding:14px;border-radius:9px}
+  .home-case-media>figcaption{margin:12px 8px 0;font-size:10px}
+  .home-case-stage-gallery{padding:14px 0}
+}
+
+/* The three original REVIANZ views share the same neutral product canvas. */
+.home-rv-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;min-width:0}
 .home-work .home-rv-gallery>figure{display:grid;grid-template-rows:1fr auto;margin:0;min-width:0;scroll-snap-align:start}
-.home-rv-gallery .revianz-mockup-stage{display:flex;align-items:center;min-height:360px;padding:18px;border-radius:16px}
+.home-rv-gallery .revianz-mockup-stage{display:flex;align-items:center;min-height:350px;padding:0;border:0;border-radius:0;background:transparent}
 .home-rv-gallery .revianz-mockup{width:100%;min-width:0}
 .home-rv-gallery .rm-paper{padding:20px;border-radius:17px;box-shadow:0 12px 28px #0d1f170d}
 .home-rv-gallery .rm-label{font-size:9px;letter-spacing:.7px}
@@ -131,33 +185,25 @@
 .home-rv-gallery .rm-invoice-row>div{font-size:12px;gap:10px}
 .home-rv-gallery .rm-invoice-row p{font-size:10px;line-height:1.5;margin-top:7px}
 .home-rv-gallery .rm-match-arrow{width:30px;height:30px;margin:12px auto}
-.home-work .home-rv-gallery figcaption{margin-top:16px;font-size:14px;font-weight:550;color:var(--navy)}
-.home-rv-gallery-footer{display:flex;justify-content:space-between;gap:24px;margin-top:24px;color:var(--muted)}
-.home-rv-gallery-footer p{font-size:12px;line-height:1.6}
+.home-work .home-rv-gallery figcaption{margin-top:14px;font-size:13px;font-weight:550;color:var(--navy)}
+.home-rv-gallery-footer{display:flex;justify-content:space-between;gap:24px;margin:13px 8px 0}
 .home-rv-swipe{display:none}
 @media(max-width:1199px){
-  .home-rv-gallery{gap:16px}
-  .home-rv-gallery .revianz-mockup-stage{padding:12px}
-  .home-rv-gallery .rm-paper{padding:16px}
-}
-@media(max-width:1099px){
-  .home-rv-gallery{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:clamp(300px,calc((100% - 32px)/2.15),420px);align-items:stretch;overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;padding:0 0 16px;border-radius:0;scrollbar-width:thin;scrollbar-color:#9eafa6 transparent}
+  .home-rv-gallery{gap:20px;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:clamp(310px,calc((100% - 20px)/2.15),380px);align-items:stretch;overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;padding:0 0 16px;border-radius:0;scrollbar-width:thin;scrollbar-color:#9eafa6 transparent}
   .home-rv-gallery-footer{margin-top:12px}
   .home-rv-swipe{display:block}
 }
 @media(max-width:599px){
-  .home-rv-gallery{grid-auto-columns:min(320px,max(280px,88%));margin-top:30px}
-  .home-rv-gallery .revianz-mockup-stage{min-height:340px;padding:12px}
+  .home-rv-gallery{grid-auto-columns:clamp(230px,90%,310px);padding-inline:12px;scroll-padding-inline:12px;gap:14px}
+  .home-rv-gallery .revianz-mockup-stage{min-height:330px;padding:0}
   .home-rv-gallery .rm-paper{padding:16px}
-  .home-work .home-rv-gallery figcaption{font-size:13px;margin-top:13px}
+  .home-rv-gallery .rm-percentage{font-size:40px}
+  .home-work .home-rv-gallery figcaption{font-size:12px;margin-top:13px}
   .home-rv-gallery-footer{flex-direction:column-reverse;gap:6px}
-  .home-rv-gallery-footer p{font-size:11px}
+  .home-rv-gallery-footer p{font-size:10px}
 }
 
 /* Official REVIANZ BrandMark, scaled proportionally to the client logo hierarchy. */
-.home-rv-brand{display:flex;align-items:center;gap:24px;margin-bottom:22px}
 .home-rv-logo{display:inline-flex;align-items:center;gap:12.5px;flex:none;font-family:Inter,sans-serif;color:#0d1f17;line-height:1}
 .home-rv-logo-symbol{display:flex;align-items:center;justify-content:center;width:45px;height:45px;border-radius:13.75px;background:#c4f751;color:#0d1f17;font-size:12.5px;font-weight:900;letter-spacing:-.04em;box-shadow:inset 0 0 0 1px #ffffff47}
 .home-rv-logo-wordmark{font-size:23.75px;font-weight:700;letter-spacing:-.03em}
-.home-rv-brand .revianz-project-context{margin:0;font-size:12px;line-height:1.5;max-width:155px}
-@media(max-width:599px){.home-rv-brand{gap:18px}.home-rv-brand .revianz-project-context{font-size:11px}}

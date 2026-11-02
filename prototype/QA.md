@@ -387,3 +387,14 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Se comprobó el desplazamiento horizontal por los tres paneles hasta el último. Sin desborde de página ni contenido interno cortado a 320 y 390 px.
 - Build correcto, tres figuras en la galería, IDs únicos. Estilos de la galería acotados al inicio; las páginas internas generadas no cambian.
 - Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/revianz-home-gallery-20261102/`.
+
+
+## Sistema editorial del portfolio de Home · 2 de noviembre de 2026
+
+- Despegar, REVIANZ y ConsorcioAbierto comparten artículos blancos, cabecera de marca y categoría, título/CTA y relato/resultado, con el producto debajo sobre un fondo neutro. Las identidades originales permanecen dentro de logos e interfaces.
+- Se conserva la captura original completa de Despegar, sin perspectiva ni recorte. ConsorcioAbierto utiliza la imagen de contexto existente, sin el banner navy, frase promocional o logo duplicado. REVIANZ conserva su marca oficial y las tres vistas con sus datos ilustrativos identificados.
+- Desktop 1280 px: artículos de 1136 px, imágenes con un marco común de aproximadamente 420 px de alto y galería de tres vistas de 330 px. Contenido completo arriba de las imágenes.
+- Responsive revisado a 1024, 390 y 320 px: sin desborde horizontal de página. Galería REVIANZ con desplazamiento nativo, dos vistas y una parte de la tercera en tablet, primera vista y adelanto de la siguiente en mobile. A 320 px los paneles tienen 230 px; se ajustó el porcentaje para evitar un desborde de 2 px. No hay contenido interno cortado y se comprobó el recorrido hasta facturación.
+- El enlace de ConsorcioAbierto abre el caso correcto en el lector existente. Las rutas de Despegar y REVIANZ, los assets, IDs únicos y H1 se verificaron en el HTML generado.
+- Build y `git diff --check` correctos. Comparación confirma que todo el HTML fuera de los artículos del portfolio es idéntico al anterior; sin cambios en las páginas internas ni estilos compartidos.
+- Capturas desktop y mobile en `/Users/sheinken/Desktop/Cloudfianz/outputs/portfolio-system-20261102/`. Cambios guardados sólo en el historial local.
