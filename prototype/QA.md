@@ -293,3 +293,8 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Encabezado reducido a «Nuestro trabajo», sin la bajada genérica. Separación de 64 px respecto del caso (44 px en mobile). El mockup sigue al título; explicación y acciones se leen debajo del producto.
 - Inspección visual a 1440 y 390 px, sin desbordes horizontales. Capturas en `outputs/portfolio-ritmo-20261102/desktop.png` y `mobile.png`. Viewport restablecido y pestaña del navegador integrado recargada con el nuevo orden.
 - Build y diff check correctos. Comparación automática confirma HTML idéntico fuera del portfolio y conservación exacta de los párrafos y del mockup REVIANZ. En `content.json` sólo cambia el servicio de software.
+
+## Portfolio: contenido antes de la imagen · 2 de noviembre de 2026
+
+- Se reordena únicamente el mockup REVIANZ después de la explicación y sus enlaces. Se conservan textos y estilos.
+- Build y diff check correctos. Navegador integrado recargado, orden DOM comprobado y captura visual guardada en `outputs/portfolio-ritmo-20261102/contenido-arriba.png`. Viewport temporal restablecido.
