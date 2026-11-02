@@ -32,7 +32,9 @@ def build_service(meta, intro, sections, routes):
     revianz_title = f'<span class="service-case-name">{revianz_name}</span>{revianz_description[0].upper()}{revianz_description[1:]}'
     approach_title, approach = section('Del problema')
     approach_intro, steps = subsections(approach)
-    approach_steps = ''.join(f'<li><div class="approach-step-title"><span aria-hidden="true">{i:02}</span><h3>{title}</h3></div><div class="approach-step-copy">{copy}</div></li>' for i, (title, copy) in enumerate(steps, 1))
+    step_labels = [('Entender', 'Evaluar las alternativas'), ('Diseñar', 'Definir qué vamos a lograr'), ('Construir', 'Validar con tu equipo'), ('Evaluar', 'Poner en uso y evolucionar')]
+    approach_tabs = ''.join(f'<button type="button" role="tab" id="approach-tab-{i}" aria-controls="approach-panel-{i}" aria-selected="{str(i == 1).lower()}" tabindex="{0 if i == 1 else -1}"><span class="approach-tab-number">{i:02}</span><span class="approach-tab-name">{label}</span><span class="approach-tab-hint">{hint}</span></button>' for i, (label, hint) in enumerate(step_labels, 1))
+    approach_steps = ''.join(f'<div class="approach-panel" id="approach-panel-{i}" role="tabpanel" aria-labelledby="approach-tab-{i}" tabindex="0"><h3>{title}</h3><div class="approach-step-copy">{copy}</div></div>' for i, (title, copy) in enumerate(steps, 1))
     stages_title, stages = section('Cómo podés')
     stages_intro, stages = subsections(stages)
     offers = ''.join(f'<article><h3>{title}</h3>{copy}</article>' for title, copy in stages)
@@ -84,7 +86,10 @@ def build_service(meta, intro, sections, routes):
 </section>
 <section class="container page-section service-approach" id="como-abordamos" aria-labelledby="approach-heading">
   <div class="service-section-intro"><h2 id="approach-heading">{approach_title}</h2>{approach_intro}</div>
-  <ol class="service-approach-steps">{approach_steps}</ol>
+  <div class="service-process" data-tabs data-progressive-tabs>
+    <div class="approach-tabs" role="tablist" aria-label="Etapas del proyecto" hidden>{approach_tabs}</div>
+    <div class="approach-panels">{approach_steps}</div>
+  </div>
 </section>
 <section class="container page-section service-engagement" aria-labelledby="engagement-heading"><div class="service-section-intro"><h2 id="engagement-heading">{stages_title}</h2>{stages_intro}</div><div class="service-offers">{offers}</div></section>
 <section class="service-backing" id="respaldo" aria-labelledby="backing-heading"><div class="container"><div class="service-backing-brand"><img src="/assets/brand/digifianz-official.svg" alt="Digifianz" width="226" height="80" loading="lazy"><p class="service-backing-credential">Elite Partner de HubSpot</p><a class="text-link light-link" href="https://www.digifianz.com/es/" target="_blank" rel="noopener noreferrer" aria-label="Conocé la empresa: Digifianz (nueva pestaña)">Conocé la empresa</a></div><div class="service-backing-copy"><h2 id="backing-heading">{backing_title}</h2>{backing}</div></div></section>

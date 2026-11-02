@@ -298,3 +298,12 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 
 - Se reordena únicamente el mockup REVIANZ después de la explicación y sus enlaces. Se conservan textos y estilos.
 - Build y diff check correctos. Navegador integrado recargado, orden DOM comprobado y captura visual guardada en `outputs/portfolio-ritmo-20261102/contenido-arriba.png`. Viewport temporal restablecido.
+
+
+## Abordaje: etapas interactivas · 2 de noviembre de 2026
+
+- Cuatro tarjetas de etapa con un panel visible a la vez. Se conservan íntegros los cuatro títulos y explicaciones originales, y el enlace al servicio de integración. El resto del HTML del servicio permanece idéntico; fuentes Markdown, contenido JSON y otras páginas no cambian.
+- Se reutiliza el controlador de pestañas existente, con una inicialización progresiva exclusiva de este componente. Sin JS, los cuatro detalles están renderizados y visibles; con JS se muestra la primera etapa. Roles, relaciones tab/panel, selección y tabindex sincronizados.
+- Verificados clic, navegación con flechas, Home/End y Tab al panel con foco visible. Apertura y cierre del lector de integración correctos. Sin errores de consola observados.
+- Revisión visual a 1440 y 390 px en Chrome; comprobación adicional a 900 px sin desbordes. Capturas en `outputs/proceso-interactivo-20261102/desktop.png` y `mobile.png`. Viewports temporales restablecidos y pestaña de pruebas cerrada. Navegador integrado recargado y dejado en `#como-abordamos`.
+- Build, sintaxis JS y diff check correctos. Comprobación automática de IDs únicos, conservación exacta de textos y ausencia de cambios fuera de la sección. Transiciones de color desactivadas con preferencia de movimiento reducido.

@@ -152,3 +152,18 @@ Se elimina el vacío bajo el título del caso. La marca se distingue del título
 La iteración anterior seguía acumulando título de sección, bajada, marca, título del caso, acciones y dos párrafos antes de mostrar el producto. Se elimina la bajada genérica y el encabezado se reduce a «Nuestro trabajo». Se conserva un intervalo de 64 px antes del caso. El mockup pasa inmediatamente después del título REVIANZ; la explicación y los enlaces se leen debajo del producto. Así el visual interrumpe la acumulación de texto sin recortar el caso. Se mantienen los colores, fuentes y escalas existentes; no se agregan tarjetas ni separadores. Móvil conserva el mismo orden de lectura.
 
 Ajuste solicitado: el contenido y las acciones vuelven arriba de la imagen. Se mantienen el encabezado breve y las separaciones; orden final: título del caso, explicación, enlaces y mockup.
+
+
+### Abordaje: cuatro etapas explorables
+
+La sección cumple un papel distinto al portfolio y a la contratación: mostrar el criterio de trabajo. Cuatro tarjetas seleccionables resumen la secuencia y un panel compartido conserva íntegramente la explicación de cada etapa. Se reutiliza el patrón de pestañas del sitio. La primera etapa abre por defecto; sin JavaScript se muestran las cuatro explicaciones.
+
+Paleta: navy #0B1D3A para selección, blanco #FFFFFF como base, mist #F5F7FA para opciones, mint #E8F4F0 para el detalle y gris #55616F para texto secundario. Manrope en títulos (24 px en tarjetas, 30 px en el detalle), Inter en descripción (16 px) y señales de etapa (13 px). Todo alineado a la izquierda. Las cifras 01–04 tienen función secuencial, sin iconos ni sombras decorativas.
+
+```
+[Título de sección                ][Introducción         ]
+[01 Entender][02 Diseñar][03 Construir][04 Evaluar         ]
+[Título completo de etapa         ][Explicación íntegra  ]
+```
+
+Revisión del criterio: las tarjetas funcionan como controles de un solo recorrido, no como cuatro servicios autónomos. Sólo una tiene contraste fuerte. No se fragmenta la explicación en resúmenes nuevos ni se añaden entregables que compitan con contratación. En mobile las opciones forman una grilla 2×2 y el panel se apila; el teclado conserva navegación con flechas, Inicio/Fin y Tab. Sin animaciones automáticas.

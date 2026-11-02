@@ -47,6 +47,11 @@ document.querySelectorAll('[data-tabs]').forEach((group) => {
       if (next !== undefined) { event.preventDefault(); activate(tabs[next], true); }
     });
   });
+  if (group.hasAttribute('data-progressive-tabs')) {
+    activate(tabs[0]);
+    tablist.hidden = false;
+    group.classList.add('tabs-ready');
+  }
 });
 
 const reader = document.querySelector('#reader-dialog');
