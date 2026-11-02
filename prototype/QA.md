@@ -124,3 +124,13 @@ Carpeta `outputs/paginas-visual-v2-20261030/` del workspace:
 - Revisión visual en navegador a 1440 × 1000 y 390 × 844. En móvil, ancho del documento de 390 px sin desborde; la imagen carga a sus dimensiones originales. Enlace a la imagen completa activado con Enter y nueva pestaña con el PNG de 1633 × 887 px comprobada.
 - Evidencia en `outputs/despegar-hero-20261102/hero-desktop.jpg`, `hero-desktop-completo.jpg` y `hero-mobile.jpg`, fuera del checkout. Desktop también sin desborde y consola sin errores ni advertencias. Las pruebas usan viewports de navegador, no dispositivos físicos.
 - El resto de las imágenes de la página y del sitio no se sustituyen en esta iteración; quedan para una revisión específica. Esta entrega se limita al hero, tal como se solicitó.
+
+## Resumen e índice de Despegar · 2 de noviembre de 2026
+
+- El cambio de negocio toma el nivel principal; negocio y solución acompañan en una columna secundaria. Sin tarjetas, bordes de tabla ni divisores verticales. Los seis textos de etiquetas y descripciones permanecen íntegros.
+- Índice de 56 px en desktop, fijo debajo de la cabecera de 96 px. Capítulo activo indicado por color, subrayado y `aria-current="location"`. En móvil queda en el flujo con enlaces de al menos 44 px de alto. Las anclas siguen siendo enlaces nativos; la mejora JavaScript sólo indica posición y estado fijo.
+- Inspección visual del resumen a 1440 × 1000 y 390 × 844, sin desborde horizontal. Clic en Resultados: índice entre los píxeles 96 y 152, título a 281 px y estado activo correcto. Navegación con Enter a Enfoque en móvil: título a 127 px, debajo de la cabecera de 74 px, e indicador actualizado.
+- Revisión adicional a 360 y 1024 px, sin desborde. Los cuatro enlaces conservan 44 px de alto y caben en una sola fila a 360 px. A 1024 px, el índice comienza exactamente debajo de la cabecera de 86 px; Producto queda activo y su título a 261 px, libre de superposiciones.
+- Comparación del HTML: hero y los cinco capítulos idénticos; homepage y servicio idénticos; IDs únicos. La transición al primer capítulo reduce su espacio superior y las anclas compensan el índice fijo. No cambian los textos, imágenes ni metadatos del caso.
+- `npm run build:proposal`, `node --check prototype/dist/case-navigation.js` y `git diff --check` completados. La regla existente de movimiento reducido conserva el desplazamiento inmediato para esa preferencia.
+- Capturas en `outputs/despegar-resumen-20261102/` del workspace: `resumen-desktop.jpg`, `resumen-mobile.jpg` e `indice-sticky-desktop.jpg`. Se conserva el versionado local sin publicación remota.
