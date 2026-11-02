@@ -53,7 +53,8 @@ def page(key, body, kind):
     meta, _, _ = document(key)
     title, description = html.escape(meta['Title'], quote=True), html.escape(meta['Meta description'], quote=True)
     canonical = 'https://cloudfianz.com' + routes[key]
-    extra_css = '<link rel="stylesheet" href="/case-page.css">' if kind == 'case-page' else ''
+    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css'}
+    extra_css = f'<link rel="stylesheet" href="/{page_styles[kind]}">'
     return f'''<!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#0B1D3A">
 <title>{title}</title><meta name="description" content="{description}"><link rel="canonical" href="{canonical}">

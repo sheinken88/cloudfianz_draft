@@ -20,7 +20,7 @@ La captura completa se muestra con su proporción original y se puede abrir a ta
 
 Se conserva el PNG original byte por byte. La composición encuadra mediante CSS la ventana de selección de productos (x=525, y=56, ancho=600, alto=802), sin alterar textos, controles ni píxeles del archivo. Tanto el detalle como su pie enlazan la captura completa. No se utiliza la captura del diálogo de facturación, que contiene datos de contactos.
 
-El caso utiliza exclusivamente estas dos imágenes originales del producto. Los usos de imágenes en la homepage y en otras páginas se conservan para una revisión posterior.
+El caso utiliza exclusivamente estas dos imágenes originales del producto. La página de Desarrollo de software a medida también utiliza `despegar-cotizador-original.png` en su hero desde la revisión comercial del 2 de noviembre; se retiraron allí ambas imágenes públicas anteriores. Los usos de imágenes en la homepage se conservan para una revisión posterior.
 
 ## Imágenes públicas usadas anteriormente
 

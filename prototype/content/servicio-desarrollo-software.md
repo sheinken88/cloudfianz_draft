@@ -1,6 +1,6 @@
 # Desarrollo de software a medida
 
-Versión 1 · Texto aprobado el 23 de octubre de 2026 · Preparado para diseño
+Versión 2 · Revisión de concisión y diferenciación del 2 de noviembre de 2026
 
 **URL propuesta:** `/es/desarrollo-software-a-medida`  
 **Title:** Desarrollo de software a medida para empresas | Cloudfianz  
@@ -12,73 +12,79 @@ Versión 1 · Texto aprobado el 23 de octubre de 2026 · Preparado para diseño
 
 **H1:** Software a medida para mejorar cómo funciona tu negocio.
 
-Desarrollamos herramientas para mejorar tus procesos comerciales, organizar la operación y poner en marcha nuevos servicios digitales. Partimos de lo que tu empresa necesita lograr y definimos una solución que pueda integrarse a su forma de trabajar.
+Entendemos cómo funciona tu negocio y desarrollamos el software que necesitás para vender mejor, organizar la operación o lanzar un nuevo servicio digital.
 
 **Botón principal:** Hablemos de tu negocio  
 **Texto de apoyo:** Contanos qué querés mejorar y evaluemos cómo podemos ayudarte.  
 **Enlace secundario:** Ver proyectos de software a medida
 
-## Cuando tus herramientas limitan lo que tu negocio puede hacer
+## Tres situaciones que podemos resolver
 
-Una herramienta puede haber acompañado bien a tu empresa y empezar a quedar corta. Las reglas comerciales cambian, aparecen nuevos servicios o la operación necesita información que hoy está distribuida entre varios lugares.
+### Vender con tus propias reglas
 
-### Mejorar la forma de vender y atender
+Cada propuesta exige cálculos y ajustes que tu CRM no contempla.
 
-Un cotizador que contemple tus reglas de precios, una herramienta para gestionar pedidos o un portal donde tus clientes consulten sus operaciones pueden facilitar pasos importantes de la relación comercial. Definimos qué necesita hacer cada persona y dónde una solución propia puede mejorar esa experiencia.
+Cotizadores con tus reglas de precios, gestión de pedidos y portales de clientes.
 
-### Organizar una operación que creció
+### Coordinar una operación que creció
 
-Cuando coordinar personas, servicios y documentación exige reconstruir información todos los días, una plataforma a medida puede reunir el trabajo y darle seguimiento. Diseñamos los flujos, los permisos y las vistas que necesita cada equipo para cumplir su función.
+Tu equipo coordina personas, servicios y documentación entre planillas, mensajes y sistemas.
 
-### Habilitar un nuevo servicio o canal
+Agenda, órdenes de trabajo y seguimiento en un mismo lugar.
 
-Si querés ofrecer un servicio digital o incorporar una nueva forma de atender a tus clientes, te ayudamos a definir una primera versión. Priorizamos las funciones necesarias para ponerla en uso y evaluar cómo responde al objetivo del negocio.
+### Lanzar un servicio digital
 
-## Elegimos la solución a partir del problema
+Querés ofrecer una experiencia que tus herramientas actuales no permiten.
 
-Revisamos las herramientas que ya usás y sus posibilidades de configuración e integración. Una necesidad puede resolverse aprovechando mejor un sistema existente, conectándolo con otros o desarrollando una función específica.
-
-Cuando hace falta software propio, delimitamos qué conviene construir y cómo va a convivir con el resto de tu operación. Esa decisión contempla el uso cotidiano, los costos de funcionamiento y el mantenimiento posterior.
-
-Si tu necesidad principal es conectar herramientas existentes, conocé nuestro servicio de [integración de sistemas](servicio-integracion-sistemas.md).
+Portales, aplicaciones y una primera versión lista para poner en uso.
 
 ## Proyectos que muestran ese trabajo
 
 ### Despegar: cotizaciones conectadas con el proceso comercial
 
-Un cotizador conectado con HubSpot reúne reglas de precios y distribución de presupuesto por marca y país. El equipo puede preparar propuestas con esa lógica y devolver la cotización al CRM.
+Un cotizador con las reglas de Despegar, conectado con HubSpot. De horas de preparación a propuestas en minutos.
 
 [Conocé el caso Despegar](caso-despegar.md).
 
-### Photonix: una plataforma para coordinar el servicio técnico
+### Photonix: servicio técnico visible en tiempo real
 
-La plataforma reúne agenda, contratos y órdenes de servicio para el mantenimiento de equipos de radioterapia. Técnicos y administración cuentan con un entorno compartido para registrar y consultar el trabajo.
+Un sistema propio reúne agenda, contratos y órdenes digitales. Los técnicos registran el servicio y la firma del cliente en el momento; administración consulta su estado sin esperar el papel.
 
 [Conocé el caso Photonix](caso-photonix.md).
 
 ### ADS Mexicana: más de 50 cotizaciones diarias
 
-Un panel conectado a HubSpot aplica las reglas de precios, descuentos y cálculo de ADS. El equipo prepara las propuestas en minutos y las cotizaciones quedan registradas en el negocio correspondiente.
+Un cotizador conectado a HubSpot aplica precios, descuentos y cálculos propios. Las propuestas se preparan en minutos y quedan vinculadas al negocio, sin una segunda carga manual.
 
 [Conocé el caso ADS Mexicana](caso-ads-mexicana.md).
 
-## Una primera versión con un resultado definido
+## Tu operación define la solución
 
-Antes de construir, acordamos qué mejora buscamos y cómo vamos a observarla: el tiempo que lleva completar una operación, la capacidad de atender solicitudes, el desempeño de un proceso comercial o la calidad de la información disponible.
+Revisamos cómo trabajás y qué herramientas ya tenés. Si configurar o [integrar sistemas](servicio-integracion-sistemas.md) alcanza, empezamos por ahí. Cuando hace falta desarrollar, acordamos qué resultado debe mejorar y cómo comprobarlo.
 
-El alcance define quiénes usarán la solución, qué podrán hacer, qué sistemas intervienen y qué condiciones debe cumplir la entrega. Durante la implementación validamos el funcionamiento con tu equipo. Al finalizar, realizamos el traspaso y entregamos la documentación y el código o configuración que correspondan a lo contratado.
+### Diagnóstico
 
-## Podés empezar desde el punto en el que está tu proyecto
+Entendemos el proceso, sus reglas y a quienes lo usan. Comparamos alternativas y sus costos de operación.
 
-**Auditoría.** Si necesitás decidir qué mejorar primero, revisamos un proceso y comparamos alternativas. Recibís un diagnóstico con prioridades y una recomendación fundamentada.
+### Diseño
 
-**Diseño.** Si el objetivo está claro, definimos la solución, su alcance y los criterios para construirla. Recibís documentación que permite continuar con Cloudfianz o con otro equipo.
+Definimos usuarios, integraciones y alcance. Acordamos con tu equipo qué debe hacer la primera versión y cómo evaluar el resultado.
 
-**Implementación.** Si ya contás con un diseño suficiente, evaluamos los insumos y construimos la versión acordada, con pruebas y transferencia a quienes la van a utilizar.
+### Implementación
 
-**Soporte.** Para acompañar la operación, podemos acordar una capacidad mensual de atención para incidentes, mantenimiento y ajustes menores.
+Construimos y validamos con quienes usarán la solución. Preparamos el traspaso para que el equipo pueda incorporarla a su operación.
+
+## Empezá por lo que tu proyecto necesita
 
 Cada servicio se puede contratar por separado. Antes de avanzar, acordamos entregables, presupuesto, calendario y responsabilidades.
+
+**Auditoría.** Diagnóstico de un proceso, prioridades y recomendación fundamentada.
+
+**Diseño.** Alcance y documentación para construir con Cloudfianz o con otro equipo.
+
+**Implementación.** La versión acordada, con pruebas, documentación y traspaso. El código y las configuraciones a entregar se explicitan en la propuesta.
+
+**Soporte.** Capacidad mensual para incidentes, mantenimiento y ajustes menores.
 
 ## Antes de empezar
 
@@ -106,7 +112,7 @@ Podemos contratar soporte para incidentes, mantenimiento y ajustes menores. Las 
 
 Cloudfianz es la unidad de desarrollo de software de Digifianz. Combinamos la comprensión de los procesos comerciales con el desarrollo de herramientas para las necesidades de cada empresa.
 
-## ¿Qué necesita hacer tu empresa que hoy le resulta difícil?
+## ¿Qué necesitás mejorar?
 
 Contanos qué querés mejorar, cómo lo resolvés hoy y qué resultado buscás. Evaluemos qué solución puede aportar más valor.
 
