@@ -44,7 +44,7 @@ La versión anterior aprobada se conserva en `outputs/homepage-20261022/` del wo
 La composición vigente se documenta en [DIRECCION-PAGINAS-V2.md](DIRECCION-PAGINAS-V2.md). La [primera dirección](DIRECCION-PAGINAS.md) se conserva como antecedente. El servicio presenta las cuatro formas de contratación completas, sin pestañas; el caso utiliza composiciones distintas para contexto, enfoque, solución, resultados y evolución. Las capturas permiten ampliar el software real; Photonix mantiene la leyenda que identifica su imagen como contexto institucional.
 
 - [Fuentes de marca e imágenes de contexto](dist/assets/brand/SOURCES.md): logo Cloudfianz recuperado del archivo usado en las presentaciones, logos oficiales de clientes y Digifianz, dimensiones, procedencia y hashes. Los archivos se conservan intactos.
-- [Fuentes de capturas de producto](dist/assets/projects/SOURCES.md): originales de Despegar y capturas de demostración de REVIANZ con procedencia y hashes. El documento distingue los originales de las imágenes públicas anteriores de Despegar.
+- [Fuentes de capturas de producto](dist/assets/projects/SOURCES.md): originales de Despegar y antecedentes visuales de REVIANZ con procedencia y hashes. El documento distingue los originales de las imágenes públicas anteriores de Despegar.
 
 Las captions distinguen el trabajo mostrado: Despegar es una captura del proyecto; la interfaz de Properix ilustra la plataforma del cliente y no la integración desarrollada por Cloudfianz; la imagen Photonix presenta equipamiento de radioterapia como contexto de su actividad. No se incorporan nombres ni fotos de personas del equipo.
 
@@ -57,3 +57,5 @@ La agenda y el envío del formulario son simulaciones identificadas como tales. 
 El prototipo tiene `noindex, nofollow`. La recepción de consultas, la agenda, la política definitiva, la analítica, el SEO técnico de lanzamiento y el despliegue quedan para la etapa posterior a la revisión del diseño.
 
 La [dirección del caso REVIANZ](DIRECCION-CASO-REVIANZ.md) documenta la nueva composición y sus fuentes. `dist/revianz-page.css` sólo se carga en esa página; los previews de inicio y servicio usan estilos compartidos limitados a `.revianz-preview`.
+
+Revisión de REVIANZ: el sitio usa ahora los mockups ilustrativos del producto, portados desde sus componentes oficiales. `page_layouts/revianz_mockups.py`, `data/revianz-mockups-es.json` y `dist/revianz-mockups.css` mantienen una única implementación compartida por inicio, servicio y caso. Las capturas anteriores ya no se muestran.

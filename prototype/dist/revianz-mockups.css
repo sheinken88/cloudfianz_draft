@@ -1,0 +1,48 @@
+/* Adapted from REVIANZ's ScopeDefinition, LiveMarginFlow and InvoiceMatchFlow.
+   All illustrative copy, amounts and chart geometry come from the product site. */
+.revianz-mockup-stage{padding:42px;background:#eef3ed;border:1px solid #dce2da;border-radius:18px}
+.revianz-mockup{font-family:Inter,sans-serif;color:#172019;max-width:1000px;margin-inline:auto;font-size:15px;line-height:1.5;text-align:left}
+.revianz-mockup *{box-sizing:border-box}
+.revianz-mockup p{margin:0;font-size:inherit;line-height:inherit;color:inherit}
+.revianz-mockup strong{font-weight:600;color:inherit}
+.revianz-mockup .rm-paper{padding:32px;border:1px solid #0000000f;background:#fffef9;border-radius:20px;box-shadow:0 18px 45px #0d1f1712}
+.revianz-mockup .rm-label{font-size:11px;font-weight:600;letter-spacing:1.1px;text-transform:uppercase;color:#879188}
+.revianz-mockup .rm-title{font-size:20px;font-weight:600;letter-spacing:-.45px;line-height:1.35}
+.revianz-mockup .rm-status{display:inline-block;flex:none;padding:8px 12px;background:#eff6df;border-radius:24px;font-size:11px;line-height:1.5;font-weight:700;color:#58771b}
+.rm-scope-header{display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #0000000f;padding-bottom:24px}
+.rm-scope-header .rm-title{margin-top:6px;max-width:420px}
+.rm-scope-body{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;margin-top:24px;align-items:start}
+.rm-services{display:grid;gap:12px}
+.rm-service{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:14px;padding:15px 17px;background:#fff;border:1px solid #0000000d;border-radius:16px;font-size:14px}
+.rm-service>span:nth-child(2){color:#839087;white-space:nowrap}
+.rm-economics{padding:24px;background:#13271c;border-radius:18px;color:#fff}
+.revianz-mockup .rm-economics .rm-label,.revianz-mockup .rm-live .rm-label{color:#ffffff73}
+.revianz-mockup .rm-percentage{font-size:48px;line-height:1.15;letter-spacing:-2.5px;font-weight:600;color:#c4f751;margin-top:16px}
+.rm-progress{height:8px;margin-block:24px;background:#ffffff1a;border-radius:8px;overflow:hidden}
+.rm-progress>span{display:block;width:64%;height:100%;background:#c4f751;border-radius:8px}
+.rm-amount{display:flex;justify-content:space-between;gap:15px;font-size:13px;line-height:1.7}
+.rm-amount>span{color:#ffffff7a}
+.rm-amount+.rm-amount{margin-top:8px}
+.revianz-mockup .rm-live{background:#13271c;color:#fff;border-color:#ffffff1a;padding:28px}
+.rm-live-heading{display:flex;align-items:start;justify-content:space-between;gap:15px}
+.rm-trend{flex:none;padding:7px 11px;background:#c4f75124;color:#c4f751;border-radius:22px;font-size:11px;font-weight:600}
+.rm-chart{width:100%;height:auto;display:block;margin-top:28px;overflow:visible}
+.rm-live-totals{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.rm-live-totals>div{background:#ffffff0e;border-radius:16px;padding:16px}
+.revianz-mockup .rm-live-totals p{font-size:11px;color:#ffffff66;margin-bottom:7px}
+.rm-live-totals strong{font-size:17px}
+.rm-invoice-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}
+.rm-invoice-row{padding:22px;border:1px solid #0000000f;background:#fff;border-radius:18px}
+.rm-invoice-row>div{display:flex;align-items:start;justify-content:space-between;gap:16px;font-size:16px}
+.revianz-mockup .rm-invoice-row p{font-size:13px;color:#8a948c;margin-top:8px}
+.rm-match-arrow{display:flex;align-items:center;justify-content:center;width:36px;height:36px;margin:16px auto;background:#17271d;color:#c4f751;border-radius:50%}
+.rm-invoice-partner{background:#f4fae9;border-color:#c9dda9}
+.rm-invoice-partner strong:last-child{color:#58771b}
+.rv-mockup-figure{margin:0;min-width:0}
+.rv-mockup-figure figcaption{font-size:12px;line-height:1.6;color:var(--muted);margin-top:14px}
+.rv-hero .rv-mockup-figure figcaption{color:#c1cfdb}
+.rv-hero .revianz-mockup-stage{background:#e8f0e8}
+.rv-margin .revianz-mockup-stage,.rv-billing .revianz-mockup-stage{padding:24px}
+@media(max-width:1199px){.revianz-mockup-stage{padding:28px}.revianz-mockup .rm-paper{padding:24px}.rm-scope-header{align-items:start}.rm-scope-header .rm-status{max-width:150px}.rm-scope-body{gap:18px}.rm-service{gap:10px;font-size:12px;padding:13px}.rm-economics{padding:20px}.rm-invoice-heading{flex-wrap:wrap}.rm-invoice-row{padding:18px}}
+@media(max-width:799px){.revianz-mockup-stage{padding:20px}.revianz-mockup .rm-paper{padding:22px}.rm-scope-header{gap:16px}.rm-scope-header .rm-title{font-size:18px}.rm-scope-body{grid-template-columns:1fr;gap:20px}.rm-economics{padding:23px}.rm-service{font-size:14px}.revianz-mockup .rm-percentage{font-size:44px}.rm-amount{font-size:14px}.rm-progress{margin-block:18px}.revianz-mockup .rm-label{font-size:10px}.rv-mockup-figure figcaption{font-size:11px}.rv-margin .revianz-mockup-stage,.rv-billing .revianz-mockup-stage{padding:20px}}
+@media(max-width:479px){.revianz-mockup-stage{padding:14px;border-radius:12px}.revianz-mockup .rm-paper{padding:18px;border-radius:16px}.rm-scope-header{display:block;padding-bottom:18px}.rm-scope-header .rm-status{max-width:none;margin-top:12px;font-size:10px}.rm-scope-body{margin-top:18px;gap:18px}.rm-service{padding:12px 10px;gap:8px;font-size:11px;grid-template-columns:minmax(0,1fr) auto auto}.rm-economics{padding:20px}.revianz-mockup .rm-title{font-size:18px}.rm-live-heading{gap:10px}.rm-trend{padding:6px 9px;font-size:10px}.rm-live-totals>div{padding:13px}.rm-invoice-row{padding:16px}.rm-invoice-row>div{font-size:14px}.revianz-mockup .rm-invoice-row p{font-size:11px}.rv-margin .revianz-mockup-stage,.rv-billing .revianz-mockup-stage{padding:14px}}

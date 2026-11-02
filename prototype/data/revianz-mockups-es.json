@@ -1,0 +1,23 @@
+{
+  "scopeDefinition": {
+    "economics": "Economía del alcance",
+    "program": "Programa de crecimiento de ciclo de vida",
+    "status": "Borrador · vista previa en vivo",
+    "margin": "Margen en vivo",
+    "revenue": "Ingresos",
+    "deliveryCost": "Costo de entrega"
+  },
+  "liveMargin": {
+    "title": "Margen del alcance · en vivo",
+    "revenue": "Ingresos",
+    "deliveryCost": "Costo de entrega"
+  },
+  "invoice": {
+    "title": "Conciliación de facturas",
+    "matched": "Conciliado",
+    "client": "Factura del cliente",
+    "partner": "Factura del socio",
+    "outgoing": "Saliente · INV-2048",
+    "incoming": "Entrante · vinculada al alcance"
+  }
+}

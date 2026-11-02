@@ -1,5 +1,6 @@
 """Service composition: business applications, real projects and independent offers."""
 import re
+from page_layouts.revianz_mockups import mockup
 
 
 def build_service(meta, intro, sections, routes):
@@ -64,7 +65,7 @@ def build_service(meta, intro, sections, routes):
     </article>
     <article class="revianz-preview" id="proyecto-revianz" aria-labelledby="revianz-service-title">
       <div class="revianz-preview-heading"><div><p class="revianz-project-context">Desarrollo de software a medida</p><h3 id="revianz-service-title">{revianz[0]}</h3></div><div class="revianz-preview-copy">{revianz[1]}</div></div>
-      <figure><a class="revianz-preview-capture" href="/assets/projects/revianz-rentabilidad-original.jpg" target="_blank" rel="noopener" aria-label="Ampliar reporte de rentabilidad de REVIANZ (nueva pestaña)"><img src="/assets/projects/revianz-rentabilidad-original.jpg" alt="Reporte de REVIANZ que relaciona ingresos, costos, comisiones y rentabilidad de cada proyecto, con datos de demostración." width="1920" height="650" loading="lazy" decoding="async"></a><figcaption>REVIANZ · Reporte de rentabilidad. Datos de demostración. <a href="/assets/projects/revianz-rentabilidad-original.jpg" target="_blank" rel="noopener" aria-label="Ampliar captura de REVIANZ (nueva pestaña)">Ampliar captura</a></figcaption></figure>
+      {mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.')}
     </article>
     <div class="project-companions">
       <article class="project-photonix-story"><figure><img src="/assets/brand/photonix-ethos-official.jpg" alt="Equipo de radioterapia Ethos, en una imagen institucional publicada por Photonix." width="1920" height="1080" loading="lazy"><figcaption>Equipamiento de radioterapia. Imagen institucional de Photonix.</figcaption></figure><div><h3>{photonix[0]}</h3>{photonix[1]}</div></article>

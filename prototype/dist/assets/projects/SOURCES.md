@@ -44,3 +44,12 @@ Capturas originales del centro de ayuda del producto, conservadas byte por byte.
 
 
 Ubicaciones de uso: reporte de rentabilidad en inicio, portfolio de software y apertura del caso; detalle de margen y generación de factura en el caso. Todas ofrecen ampliación del original. Fuentes de contenido: README y documentación de funcionalidades implementadas de Boom2.0; sitio público https://revianz.com/en; descripción del proyecto aportada por el usuario. No se consultaron datos de producción.
+
+## REVIANZ: mockups oficiales de marketing · revisión del 2 de noviembre de 2026
+
+A pedido del usuario, los tres JPG anteriores dejan de mostrarse en inicio, servicio y caso. Se conservan como archivos históricos. La presentación vigente reutiliza los componentes publicados en https://revianz.com/en#workflow: `ScopeDefinitionMockup`, `LiveMarginFlowMockup` e `InvoiceMatchFlowMockup`. No son capturas literales de la aplicación; se identifican como vistas ilustrativas del producto.
+
+Se portó su composición a HTML/SVG estático en `page_layouts/revianz_mockups.py`, con estilos acotados en `dist/revianz-mockups.css`. Se preservan la fuente Inter, la paleta del producto, los servicios, las cifras y la curva SVG original. Los textos provienen de la traducción oficial de `marketing.mockups` en `messages/es.json`, guardada en `data/revianz-mockups-es.json`. El layout adapta escala y distribución para lectura en Cloudfianz. No se recrearon pantallas mediante IA ni se generaron datos nuevos.
+
+- Fuente de componentes: `/Users/sheinken/Desktop/Digifianz/boom2.0/boom2.0_frontend/components/marketing/landing-sections.tsx`. SHA-256 al extraer: `af4c66b85b33507e8f418cb3bb353f34c793464a0f1e68a859e9156ec077ccd6`.
+- Las cifras 38.4%, 42.8%, +3.4 pts e importes son ejemplos de los mockups originales, no métricas del caso Digifianz. Los elementos de la ilustración no se presentan como controles interactivos.

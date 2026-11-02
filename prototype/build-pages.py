@@ -10,7 +10,10 @@ DIST = ROOT / 'dist'
 runpy.run_path(str(ROOT / 'build-content.py'))
 contents = json.loads((DIST / 'content.json').read_text())
 routes = json.loads((ROOT / 'page-routes.json').read_text())
+from page_layouts.revianz_mockups import mockup
+
 home = (ROOT / 'templates/home.html').read_text()
+home = home.replace('<!-- REVIANZ_SCOPE_MOCKUP -->', mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.'))
 
 
 def absolute_assets(text):
@@ -55,6 +58,8 @@ def page(key, body, kind):
     canonical = 'https://cloudfianz.com' + routes[key]
     page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css'}
     extra_css = f'<link rel="stylesheet" href="/{page_styles[kind]}">'
+    if kind in ['service-page', 'revianz-page']:
+        extra_css += '<link rel="stylesheet" href="/revianz-mockups.css">'
     return f'''<!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#0B1D3A">
 <title>{title}</title><meta name="description" content="{description}"><link rel="canonical" href="{canonical}">

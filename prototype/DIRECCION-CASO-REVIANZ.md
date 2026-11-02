@@ -34,3 +34,13 @@ Títulos alineados a la izquierda; una captura de conjunto y detalles ampliables
 - El documento GTM declara los KPIs pendientes de valores reales. No se usan métricas ni resultados de transformación como hechos.
 
 La variedad proviene del contenido: reporte ancho, vista vertical de margen y generación de factura. No se agregan tarjetas decorativas, cifras destacadas inventadas ni pantallas reconstruidas.
+
+## Revisión de imágenes: mockups del sitio del producto
+
+A pedido del usuario, los mockups de marketing de REVIANZ reemplazan las capturas completas de la aplicación. Se reutilizan los componentes originales publicados en la sección “How it works”: definición del proyecto, margen y conciliación de facturas. La preferencia actual sustituye el criterio anterior de mostrar exclusivamente capturas de producto.
+
+Composición revisada: inicio y servicio presentan el mockup de alcance como imagen principal, acompañado por un detalle de facturación. El caso abre con esa misma combinación y utiliza margen y conciliación en sus capítulos. Se conserva el contenido comercial, la paleta, las fuentes y las proporciones del sitio. Cada imagen se identifica como una vista ilustrativa del producto; los importes no son resultados financieros de Digifianz.
+
+La extracción respeta los textos y los elementos de los mockups oficiales. No se generan pantallas con IA ni se inventan elementos nuevos. Se evita mostrar el dashboard completo o encoger tablas densas en móvil. En pantallas pequeñas, los detalles se apilan y mantienen el ancho de lectura.
+
+Los visuales de referencia son componentes HTML/SVG, no archivos raster. Se portan a componentes estáticos del generador con estilos limitados a `.revianz-mockup`, Inter (la misma fuente del producto), colores y contenidos originales. Se usa la traducción oficial de `messages/es.json`; los nombres de servicios y los números permanecen como en la fuente. No se trata de una interfaz interactiva: se presenta como ilustración accesible. Esto permite mantener nitidez y reacomodar el contenido a móvil. La apertura y los previews usarán sólo el mockup de alcance; la conciliación queda en su capítulo para evitar duplicación y altura innecesaria.
