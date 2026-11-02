@@ -19,5 +19,13 @@
     "partner": "Factura del socio",
     "outgoing": "Saliente · INV-2048",
     "incoming": "Entrante · vinculada al alcance"
+  },
+  "shareFlow": {
+    "title": "Comparte este alcance",
+    "description": "Da a un socio acceso a sus servicios, condiciones y flujo de facturación.",
+    "partnerCompany": "Empresa socia",
+    "selected": "3 servicios seleccionados",
+    "synced": "Condiciones sincronizadas",
+    "shared": "Compartido"
   }
 }

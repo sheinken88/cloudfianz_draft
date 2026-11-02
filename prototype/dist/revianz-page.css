@@ -10,7 +10,10 @@
 .rv-facts dt{color:#a6bacb;font-size:12px;margin-bottom:5px}
 .rv-facts dd{margin:0;color:#fff;line-height:1.6}
 .rv-demo-note{font-size:12px;color:#b7c8d7;margin-top:4px;max-width:900px}
-.rv-context-section{padding-block:76px;display:grid;grid-template-columns:1fr 1fr;gap:95px}
+.rv-context-section{padding-block:76px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:80px;align-items:center;scroll-margin-top:96px}
+.rv-context-copy{max-width:660px}
+.rv-context-copy .page-prose{margin-top:26px}
+.rv-context-section .rv-mockup-figure{width:100%;max-width:440px;justify-self:center}
 .revianz-page .rv-context-section h2,.revianz-page .rv-results h2{font-size:38px;line-height:1.2;letter-spacing:-1px;text-wrap:pretty}
 .rv-product{background:var(--mint);padding-block:76px}
 .rv-product-heading{max-width:800px}
@@ -42,3 +45,5 @@
 
 @media(max-width:799px){.rv-margin .rv-mockup-figure{width:100%;max-width:420px;justify-self:center}}
 @media(max-width:799px){.rv-billing>.rv-mockup-figure{grid-row:2}}
+@media(min-width:800px) and (max-width:1199px){.rv-context-section{grid-template-columns:minmax(0,1fr) minmax(0,360px)}}
+@media(max-width:799px){.rv-context-section{gap:32px;scroll-margin-top:74px}.rv-context-copy{max-width:none}.rv-context-copy .page-prose{margin-top:22px}}

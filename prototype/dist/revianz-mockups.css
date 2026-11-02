@@ -1,4 +1,4 @@
-/* Adapted from REVIANZ's ScopeDefinition, LiveMarginFlow and InvoiceMatchFlow.
+/* Adapted from REVIANZ's ScopeDefinition, ShareScopeFlow, LiveMarginFlow and InvoiceMatchFlow.
    All illustrative copy, amounts and chart geometry come from the product site. */
 .revianz-mockup-stage{padding:42px;background:#eef3ed;border:1px solid #dce2da;border-radius:18px}
 .revianz-mockup{font-family:Inter,sans-serif;color:#172019;max-width:1000px;margin-inline:auto;font-size:15px;line-height:1.5;text-align:left}
@@ -38,6 +38,17 @@
 .rm-match-arrow{display:flex;align-items:center;justify-content:center;width:36px;height:36px;margin:16px auto;background:#17271d;color:#c4f751;border-radius:50%}
 .rm-invoice-partner{background:#f4fae9;border-color:#c9dda9}
 .rm-invoice-partner strong:last-child{color:#58771b}
+.rm-share-icon{display:flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:16px;background:#17271d;color:#c4f751;margin-bottom:26px}
+.revianz-mockup .rm-share-description{font-size:13px;line-height:1.65;color:#7a857d;margin-top:8px}
+.rm-share-partner{margin-top:26px;padding:20px;border:1px solid #0000000f;border-radius:18px;background:#fff}
+.rm-share-company{display:flex;align-items:center;gap:12px;margin-top:13px}
+.rm-share-avatar{display:flex;align-items:center;justify-content:center;flex:none;width:42px;height:42px;border-radius:50%;background:#dff0c3;color:#365027;font-size:12px;font-weight:700}
+.rm-share-company strong{font-size:14px}
+.revianz-mockup .rm-share-company p{font-size:12px;color:#89928b;margin-top:3px}
+.rm-share-state{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:20px;padding:14px;border-radius:12px;background:#eff6df;color:#58771b;font-size:11px;font-weight:600}
+.rm-share-state>span{display:flex;align-items:center;gap:8px}
+.rm-share-state>strong{font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:#6f971f}
+.rv-context-section .revianz-mockup-stage{padding:24px}
 .rv-mockup-figure{margin:0;min-width:0}
 .rv-mockup-figure figcaption{font-size:12px;line-height:1.6;color:var(--muted);margin-top:14px}
 .rv-hero .rv-mockup-figure figcaption{color:#c1cfdb}
@@ -46,3 +57,4 @@
 @media(max-width:1199px){.revianz-mockup-stage{padding:28px}.revianz-mockup .rm-paper{padding:24px}.rm-scope-header{align-items:start}.rm-scope-header .rm-status{max-width:150px}.rm-scope-body{gap:18px}.rm-service{gap:10px;font-size:12px;padding:13px}.rm-economics{padding:20px}.rm-invoice-heading{flex-wrap:wrap}.rm-invoice-row{padding:18px}}
 @media(max-width:799px){.revianz-mockup-stage{padding:20px}.revianz-mockup .rm-paper{padding:22px}.rm-scope-header{gap:16px}.rm-scope-header .rm-title{font-size:18px}.rm-scope-body{grid-template-columns:1fr;gap:20px}.rm-economics{padding:23px}.rm-service{font-size:14px}.revianz-mockup .rm-percentage{font-size:44px}.rm-amount{font-size:14px}.rm-progress{margin-block:18px}.revianz-mockup .rm-label{font-size:10px}.rv-mockup-figure figcaption{font-size:11px}.rv-margin .revianz-mockup-stage,.rv-billing .revianz-mockup-stage{padding:20px}}
 @media(max-width:479px){.revianz-mockup-stage{padding:14px;border-radius:12px}.revianz-mockup .rm-paper{padding:18px;border-radius:16px}.rm-scope-header{display:block;padding-bottom:18px}.rm-scope-header .rm-status{max-width:none;margin-top:12px;font-size:10px}.rm-scope-body{margin-top:18px;gap:18px}.rm-service{padding:12px 10px;gap:8px;font-size:11px;grid-template-columns:minmax(0,1fr) auto auto}.rm-economics{padding:20px}.revianz-mockup .rm-title{font-size:18px}.rm-live-heading{gap:10px}.rm-trend{padding:6px 9px;font-size:10px}.rm-live-totals>div{padding:13px}.rm-invoice-row{padding:16px}.rm-invoice-row>div{font-size:14px}.revianz-mockup .rm-invoice-row p{font-size:11px}.rv-margin .revianz-mockup-stage,.rv-billing .revianz-mockup-stage{padding:14px}}
+@media(max-width:479px){.rv-context-section .revianz-mockup-stage{padding:14px}.rm-share-partner{padding:16px}.rm-share-state{font-size:10px;padding:12px;gap:8px}.rm-share-state>strong{font-size:9px;letter-spacing:.5px}.rm-share-state>span{gap:6px}}

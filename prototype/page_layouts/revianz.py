@@ -24,6 +24,7 @@ def build_revianz(meta, intro, sections, routes):
     report = mockup('scope', 'Servicios, importes y margen de un proyecto.')
     preview = mockup('margin', 'Vista ilustrativa del margen, los ingresos y el costo de entrega.')
     invoice = mockup('invoice', 'Vista ilustrativa de la conciliación de facturas vinculadas al proyecto.')
+    collaboration_preview = mockup('share', 'Vista ilustrativa de un alcance compartido con una empresa colaboradora.')
     return f'''
 <section class="rv-hero">
   <div class="container">
@@ -33,7 +34,7 @@ def build_revianz(meta, intro, sections, routes):
     <p class="rv-demo-note">Vistas ilustrativas del producto. Los importes no representan resultados financieros de Digifianz.</p>
   </div>
 </section>
-<section class="rv-context-section container"><h2>{challenge_title.split(': ', 1)[1].capitalize()}</h2><div class="page-prose">{challenge}</div></section>
+<section class="rv-context-section container" id="contexto" aria-labelledby="rv-context-title"><div class="rv-context-copy"><h2 id="rv-context-title">{challenge_title.split(': ', 1)[1].capitalize()}</h2><div class="page-prose">{challenge}</div></div>{collaboration_preview}</section>
 <section class="rv-product"><div class="container">
   <div class="rv-product-heading"><p class="rv-context">La solución</p><h2>{solution_title.split(': ', 1)[1].capitalize()}</h2><div class="page-prose">{parts[0]}</div></div>
   <div class="rv-margin"><div><h3>{margin_title}</h3><div class="page-prose">{margin}</div><p class="rv-detail-note">La vista de margen relaciona ingresos y costo de entrega para entender el resultado del proyecto.</p></div>{preview}</div>

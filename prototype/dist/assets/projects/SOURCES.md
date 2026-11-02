@@ -53,3 +53,7 @@ Se portó su composición a HTML/SVG estático en `page_layouts/revianz_mockups.
 
 - Fuente de componentes: `/Users/sheinken/Desktop/Digifianz/boom2.0/boom2.0_frontend/components/marketing/landing-sections.tsx`. SHA-256 al extraer: `af4c66b85b33507e8f418cb3bb353f34c793464a0f1e68a859e9156ec077ccd6`.
 - Las cifras 38.4%, 42.8%, +3.4 pts e importes son ejemplos de los mockups originales, no métricas del caso Digifianz. Los elementos de la ilustración no se presentan como controles interactivos.
+
+### Colaboración en el contexto del caso
+
+Se incorpora `ShareScopeFlowMockup` de la misma fuente a la sección “Mantener conectados el trabajo y sus números”. Conserva la empresa de ejemplo Northstar Studio, sus tres servicios seleccionados, la traducción oficial `shareFlow` y los iconos Share2/Check usados por el componente original (Lucide). Es una ilustración estática del flujo de colaboración, no un registro de un cliente real.

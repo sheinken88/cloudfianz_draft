@@ -225,3 +225,10 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Inspección visual del visual principal en el servicio y de apertura, margen y facturación en el caso a 1440 px; detalle de alcance y caso en 390 × 844. Sin desborde horizontal a 360, 390, 1024 y 1440 px. Navegación de inicio al caso verificada. Las dimensiones del producto son fluidas y no dependen de una captura raster reducida.
 - Construcción, `git diff --check`, IDs únicos, un H1 por página y cantidades esperadas de ilustraciones accesibles comprobados (1 en inicio, 1 en software, 3 en el caso). `content.json`, caso Despegar y sus estilos permanecen idénticos. No se modificó Boom2.0.
 - Evidencia en `outputs/revianz-mockups-20261102/`: vistas desktop y mobile del caso y detalle, junto al visual del servicio y el inicio. Versionado local; sin publicación remota.
+
+## REVIANZ: imagen en el contexto · 2 de noviembre de 2026
+
+- Se agrega el mockup oficial de compartir un alcance con una empresa socia. Título y ambos párrafos se reúnen a la izquierda; el visual acompaña a la derecha. En móvil, texto e ilustración se apilan. Se conserva el texto completo.
+- La traducción de `shareFlow` se copia del proyecto original, con su empresa de ejemplo, estados e iconos. Ilustración con nombre accesible, leyenda y contenido visual oculto al lector de pantalla para evitar duplicación.
+- Construcción y comparación contra HEAD: HTML del caso idéntico fuera de la sección de contexto; `content.json`, inicio, servicio y Despegar sin modificaciones. Cuatro mockups accesibles e IDs únicos en el caso. `git diff --check` sin errores.
+- Inspección visual a 1440 × 783 y 390 × 844, comprobación adicional a 360 × 800: sin desborde horizontal y sin errores de consola observados. Viewport restablecido. Capturas desktop y móvil en `outputs/revianz-contexto-20261102/` del workspace. Cambio local, sin publicación.
