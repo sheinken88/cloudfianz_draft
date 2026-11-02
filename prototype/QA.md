@@ -378,3 +378,12 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Desktop 1280 px, mobile 390 y 320 px revisados. Imagen cargada, sin desbordes horizontales. En mobile, transición vertical y encuadre derecho con altura proporcional para conservar los rostros dentro de la imagen.
 - Capturas finales y PNG original en `/Users/sheinken/Desktop/Cloudfianz/outputs/hero-equipo-20261102/`.
 - Exploración del mockup Despegar guardada previamente en el commit local `21bdf6c`. No hubo publicación ni cambios remotos.
+
+## Galería y marca REVIANZ en el inicio · 2 de noviembre de 2026
+
+- Se reemplaza el mockup único por tres vistas existentes: alcance y servicios, rentabilidad y facturación. La variante compacta de alcance tiene una descripción accesible acorde con su contenido.
+- Marca oficial `BrandMark` portada desde Boom2.0, con proporciones y colores preservados; procedencia documentada en el registro de marcas.
+- Desktop 1280 px: tres paneles de 364 × 360 px, alineados. Tablet 1024 px: carril de 928 px con contenido desplazable de 1282 px. Mobile 390 px: paneles de 308 px, con vista siguiente parcialmente visible.
+- Se comprobó el desplazamiento horizontal por los tres paneles hasta el último. Sin desborde de página ni contenido interno cortado a 320 y 390 px.
+- Build correcto, tres figuras en la galería, IDs únicos. Estilos de la galería acotados al inicio; las páginas internas generadas no cambian.
+- Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/revianz-home-gallery-20261102/`.

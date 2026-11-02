@@ -61,3 +61,7 @@ Se incorpora `ShareScopeFlowMockup` de la misma fuente a la sección “Mantener
 ## Homepage: revisión narrativa del 2 de noviembre de 2026
 
 La homepage también retira las dos imágenes públicas anteriores y utiliza `despegar-cotizador-original.png` en la selección de proyectos. El encuadre se realiza en CSS sin modificar la captura. REVIANZ usa `InvoiceMatchFlowMockup`, con sus datos ilustrativos y su identificación visible.
+
+## Galería compacta de REVIANZ en el inicio
+
+2 de noviembre de 2026. Tres vistas sustituyen el mockup único de alcance: detalle de servicios de `ScopeDefinitionMockup`, `LiveMarginFlowMockup` e `InvoiceMatchFlowMockup`. Se mantienen los textos, servicios, importes, cifras y geometría del gráfico existentes. La variante `scope-services` omite el panel de margen para evitar duplicarlo con la segunda vista; su descripción accesible se ajusta al contenido visible. Se conservan la identificación de datos ilustrativos y las vistas completas en las páginas internas.

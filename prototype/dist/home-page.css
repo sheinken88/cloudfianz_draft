@@ -103,3 +103,61 @@
   .home-judgment-intro>div>p{font-size:16px}.home-judgment-intro>div>.home-engagement-note{font-size:14px}.home-backing-brand{display:block}.home-backing-brand>img{width:230px}.home-backing-brand>.text-link{margin-top:18px}.home-backing-copy h2{font-size:35px;letter-spacing:-1.2px}.home-backing-copy p{font-size:16px;margin-top:24px}
   .home-page .contact-copy h2{font-size:39px}.home-page .contact-copy>p{font-size:16px}.home-page .contact-inner{gap:35px}.home-next-step h3{font-size:19px}.home-page .contact-copy>.text-link{min-height:44px;display:inline-flex;align-items:center;margin-top:18px}.home-page .contact-form-wrap{padding:28px 24px}.home-page .field label{font-size:13px}.home-page .field-help{font-size:12px}.home-page .demo-note{font-size:11px}
 }
+
+/* Three focused product views replace the single oversized REVIANZ panel. */
+.home-rv-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:40px;border-radius:18px}
+.home-work .home-rv-gallery>figure{display:grid;grid-template-rows:1fr auto;margin:0;min-width:0;scroll-snap-align:start}
+.home-rv-gallery .revianz-mockup-stage{display:flex;align-items:center;min-height:360px;padding:18px;border-radius:16px}
+.home-rv-gallery .revianz-mockup{width:100%;min-width:0}
+.home-rv-gallery .rm-paper{padding:20px;border-radius:17px;box-shadow:0 12px 28px #0d1f170d}
+.home-rv-gallery .rm-label{font-size:9px;letter-spacing:.7px}
+.home-rv-gallery .rm-title{font-size:17px;line-height:1.4;letter-spacing:-.35px}
+.home-rv-gallery .rm-scope-header{padding-bottom:20px}
+.home-rv-gallery .rm-scope-header .rm-title{font-size:17px;margin-top:8px}
+.home-rv-gallery .rm-scope-body{grid-template-columns:1fr;margin-top:20px}
+.home-rv-gallery .rm-services{gap:10px}
+.home-rv-gallery .rm-service{padding:12px 10px;gap:8px;font-size:12px;border-radius:12px}
+.home-rv-gallery .rm-percentage{font-size:44px;letter-spacing:-2px;margin-top:12px}
+.home-rv-gallery .rm-live-heading{gap:10px}
+.home-rv-gallery .rm-trend{font-size:10px;padding:6px 8px}
+.home-rv-gallery .rm-chart{margin-top:24px}
+.home-rv-gallery .rm-live-totals{gap:10px;margin-top:20px}
+.home-rv-gallery .rm-live-totals>div{padding:12px;border-radius:12px}
+.home-rv-gallery .rm-live-totals p{font-size:10px;margin-bottom:5px}
+.home-rv-gallery .rm-live-totals strong{font-size:16px}
+.home-rv-gallery .rm-invoice-heading{flex-wrap:nowrap;align-items:start;gap:10px;margin-bottom:20px}
+.home-rv-gallery .rm-status{font-size:9px;padding:7px 9px}
+.home-rv-gallery .rm-invoice-row{padding:14px 12px;border-radius:12px}
+.home-rv-gallery .rm-invoice-row>div{font-size:12px;gap:10px}
+.home-rv-gallery .rm-invoice-row p{font-size:10px;line-height:1.5;margin-top:7px}
+.home-rv-gallery .rm-match-arrow{width:30px;height:30px;margin:12px auto}
+.home-work .home-rv-gallery figcaption{margin-top:16px;font-size:14px;font-weight:550;color:var(--navy)}
+.home-rv-gallery-footer{display:flex;justify-content:space-between;gap:24px;margin-top:24px;color:var(--muted)}
+.home-rv-gallery-footer p{font-size:12px;line-height:1.6}
+.home-rv-swipe{display:none}
+@media(max-width:1199px){
+  .home-rv-gallery{gap:16px}
+  .home-rv-gallery .revianz-mockup-stage{padding:12px}
+  .home-rv-gallery .rm-paper{padding:16px}
+}
+@media(max-width:1099px){
+  .home-rv-gallery{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:clamp(300px,calc((100% - 32px)/2.15),420px);align-items:stretch;overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;padding:0 0 16px;border-radius:0;scrollbar-width:thin;scrollbar-color:#9eafa6 transparent}
+  .home-rv-gallery-footer{margin-top:12px}
+  .home-rv-swipe{display:block}
+}
+@media(max-width:599px){
+  .home-rv-gallery{grid-auto-columns:min(320px,max(280px,88%));margin-top:30px}
+  .home-rv-gallery .revianz-mockup-stage{min-height:340px;padding:12px}
+  .home-rv-gallery .rm-paper{padding:16px}
+  .home-work .home-rv-gallery figcaption{font-size:13px;margin-top:13px}
+  .home-rv-gallery-footer{flex-direction:column-reverse;gap:6px}
+  .home-rv-gallery-footer p{font-size:11px}
+}
+
+/* Official REVIANZ BrandMark, scaled proportionally to the client logo hierarchy. */
+.home-rv-brand{display:flex;align-items:center;gap:24px;margin-bottom:22px}
+.home-rv-logo{display:inline-flex;align-items:center;gap:12.5px;flex:none;font-family:Inter,sans-serif;color:#0d1f17;line-height:1}
+.home-rv-logo-symbol{display:flex;align-items:center;justify-content:center;width:45px;height:45px;border-radius:13.75px;background:#c4f751;color:#0d1f17;font-size:12.5px;font-weight:900;letter-spacing:-.04em;box-shadow:inset 0 0 0 1px #ffffff47}
+.home-rv-logo-wordmark{font-size:23.75px;font-weight:700;letter-spacing:-.03em}
+.home-rv-brand .revianz-project-context{margin:0;font-size:12px;line-height:1.5;max-width:155px}
+@media(max-width:599px){.home-rv-brand{gap:18px}.home-rv-brand .revianz-project-context{font-size:11px}}

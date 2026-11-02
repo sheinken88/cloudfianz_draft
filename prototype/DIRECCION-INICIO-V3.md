@@ -8,7 +8,7 @@ La homepage presenta la amplitud de Cloudfianz y orienta a servicios, casos o co
 
 Paleta existente: navy #0B1D3A, teal #12B5A5, mint #E8F4F0, gris #F5F7FA, blanco #FFFFFF, texto secundario #55616F. Manrope para títulos e Inter para lectura y controles.
 
-Hero claro con promesa de negocio a la izquierda y una imagen ambiental de un equipo joven trabajando, integrada al fondo con un difuminado blanco hacia el texto. Tres entradas de servicio visibles y equivalentes. Portfolio de tres proyectos con el formato editorial amplio de la versión anterior: Despegar y ConsorcioAbierto con imagen y relato en dos columnas; REVIANZ con contenido sobre su mockup. Criterio de trabajo breve, sección institucional de Digifianz y contacto como cierre. Sin carruseles ni pestañas que oculten las capacidades principales.
+Hero claro con promesa de negocio a la izquierda y una imagen ambiental de un equipo joven trabajando, integrada al fondo con un difuminado blanco hacia el texto. Tres entradas de servicio visibles y equivalentes. Portfolio de tres proyectos con el formato editorial amplio de la versión anterior: Despegar y ConsorcioAbierto con imagen y relato en dos columnas; REVIANZ con contenido sobre tres vistas compactas de alcance, rentabilidad y facturación. Criterio de trabajo breve, sección institucional de Digifianz y contacto como cierre. Sin carruseles ni pestañas que oculten las capacidades principales.
 
 ## Revisión del plan
 
@@ -44,3 +44,10 @@ El usuario descartó el mockup conceptual y pidió una imagen nueva del caso Des
 ## Hero ambiental con equipo joven
 
 La referencia visual del usuario cambia la dirección del hero: foto de fondo integrada, texto navy y transición blanca suave. Se genera una escena ilustrativa de cuatro jóvenes trabajando con notebooks, sin logos ni interfaces visibles. El titular, la bajada y los CTA aprobados se conservan. En mobile, la escena continúa debajo del contenido con un difuminado vertical. No se presenta la imagen como fotografía del equipo real. Las exploraciones anteriores quedan guardadas en el historial local.
+
+
+## REVIANZ: tres vistas en el portfolio
+
+Se sustituye el gran mockup único por tres detalles de los componentes existentes del producto: alcance y servicios, rentabilidad y facturación. El primer detalle conserva los servicios y sus importes, sin repetir el panel de margen. Desktop muestra las tres vistas alineadas; en pantallas pequeñas se recorren con desplazamiento horizontal nativo, con indicación discreta y acceso por teclado. Se mantiene una sola nota de datos ilustrativos. El texto y los enlaces del caso siguen arriba de la galería.
+
+El encabezado del caso REVIANZ incorpora su `BrandMark` oficial, portado desde el proyecto del producto y escalado proporcionalmente. Se evita repetir el nombre en el texto de contexto: el logo acompaña «Desarrollado para Digifianz».

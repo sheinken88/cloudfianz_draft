@@ -51,3 +51,9 @@ La página https://www.digifianz.com/team contiene fotos de personas identificad
 - `photonix-original.svg`: SHA-256 `ab30afa0ac6c08fe95a7f0a6f716752de3b169b279d3a10acbaffdccac488cfe`
 - `properix-official.png`: SHA-256 `214dc62aab105592a21fe5d77cb5fafafca028b05dc7f1cf16631d56cf1707a7`
 - `properix-product-context.png`: SHA-256 `abb9f49be2217517f4e27242cefa8b5298e3ee93573b8ff88bf37419aa2ff689`
+
+## REVIANZ · marca oficial en el portfolio del inicio
+
+2 de noviembre de 2026. Se porta el componente `BrandMark` del proyecto local de REVIANZ: `/Users/sheinken/Desktop/Digifianz/boom2.0/boom2.0_frontend/components/marketing/brand-mark.tsx`. El original compone el símbolo RZ y la palabra Revianz con HTML/CSS; no existe un SVG/PNG independiente.
+
+Se conservan la tipografía Inter, los pesos 900/700, el fondo #c4f751, el texto #0d1f17, el espaciado y los radios. Se presenta al 125% de su tamaño de navegación para acompañar los otros logos del portfolio. No se genera ni se inventa un logo nuevo. Uso acotado al caso REVIANZ en la homepage.

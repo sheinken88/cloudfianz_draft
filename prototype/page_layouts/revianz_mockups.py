@@ -7,11 +7,14 @@ COPY = json.loads((Path(__file__).resolve().parents[1] / 'data/revianz-mockups-e
 
 
 def mockup(kind, caption, class_name=''):
-    if kind == 'scope':
+    if kind in ('scope', 'scope-services'):
         t = COPY['scopeDefinition']
         rows = ''.join(f'<div class="rm-service"><span>{service}</span><span>{hours}</span><strong>{amount}</strong></div>' for service, hours, amount in [('Lifecycle strategy', '48 h', '$7,200'), ('Campaign delivery', '72 h', '$10,800'), ('Reporting', '16 h', '$2,400')])
         label = 'Mockup de REVIANZ: servicios de un proyecto, horas, importes y vista previa de su margen. Datos ilustrativos.'
         body = f'''<div class="rm-paper rm-scope"><div class="rm-scope-header"><div><p class="rm-label">{t['economics']}</p><p class="rm-title">{t['program']}</p></div><span class="rm-status">{t['status']}</span></div><div class="rm-scope-body"><div class="rm-services">{rows}</div><div class="rm-economics"><p class="rm-label">{t['margin']}</p><p class="rm-percentage">38.4%</p><div class="rm-progress"><span></span></div><div class="rm-amount"><span>{t['revenue']}</span><strong>$20,400</strong></div><div class="rm-amount"><span>{t['deliveryCost']}</span><strong>$12,566</strong></div></div></div></div>'''
+        if kind == 'scope-services':
+            label = 'Detalle ilustrativo de REVIANZ: servicios de un proyecto, horas e importes. Datos de ejemplo.'
+            body = f'''<div class="rm-paper rm-scope"><div class="rm-scope-header"><div><p class="rm-label">{t['economics']}</p><p class="rm-title">{t['program']}</p></div></div><div class="rm-scope-body"><div class="rm-services">{rows}</div></div></div>'''
     elif kind == 'share':
         t = COPY['shareFlow']
         label = 'Mockup de REVIANZ: un alcance compartido con una empresa socia, sus servicios seleccionados y condiciones sincronizadas. Datos ilustrativos.'

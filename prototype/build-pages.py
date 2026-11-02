@@ -13,7 +13,13 @@ routes = json.loads((ROOT / 'page-routes.json').read_text())
 from page_layouts.revianz_mockups import mockup
 
 home = (ROOT / 'templates/home.html').read_text()
-home = home.replace('<!-- REVIANZ_SCOPE_MOCKUP -->', mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.'))
+home = home.replace('<!-- REVIANZ_HOME_GALLERY -->', ''.join(
+    mockup(kind, caption, 'home-rv-view') for kind, caption in [
+        ('scope-services', 'Alcance y servicios'),
+        ('margin', 'Rentabilidad en vivo'),
+        ('invoice', 'Facturación conectada'),
+    ]
+))
 
 
 def absolute_assets(text):
