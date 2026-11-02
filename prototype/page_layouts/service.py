@@ -26,7 +26,10 @@ def build_service(meta, intro, sections, routes):
     projects_title, projects = section('Nuestro trabajo')
     projects_intro, projects = subsections(projects)
     revianz, photonix = projects
-    revianz_copy = re.sub(r'<p>(<a [^>]+>Conocé el caso REVIANZ</a>)\.</p>', r'<div class="revianz-preview-actions">\1<a href="https://revianz.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar revianz.com (nueva pestaña)">Visitar revianz.com</a></div>', revianz[1])
+    revianz_paragraphs = paragraphs(revianz[1])
+    revianz_copy = ''.join(revianz_paragraphs[:-1])
+    revianz_name, revianz_description = revianz[0].split(': ', 1)
+    revianz_title = f'<span class="service-case-name">{revianz_name}</span>{revianz_description[0].upper()}{revianz_description[1:]}'
     approach_title, approach = section('Del problema')
     approach_intro, steps = subsections(approach)
     approach_steps = ''.join(f'<li><div class="approach-step-title"><span aria-hidden="true">{i:02}</span><h3>{title}</h3></div><div class="approach-step-copy">{copy}</div></li>' for i, (title, copy) in enumerate(steps, 1))
@@ -63,7 +66,11 @@ def build_service(meta, intro, sections, routes):
   <div class="container">
     <div class="service-section-intro service-projects-intro"><h2 id="projects-heading">{projects_title}</h2>{projects_intro}</div>
     <article class="revianz-preview" id="proyecto-revianz" aria-labelledby="revianz-service-title">
-      <div class="revianz-preview-heading"><h3 id="revianz-service-title">{revianz[0]}</h3><div class="revianz-preview-copy">{revianz_copy}</div></div>
+      <div class="service-case-overview">
+        <h3 id="revianz-service-title">{revianz_title}</h3>
+        <div class="revianz-preview-copy">{revianz_copy}</div>
+        <div class="service-case-actions"><a class="button button-dark" href="{routes['caso-revianz']}">Conocé el caso REVIANZ</a><a class="text-link" href="https://revianz.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar revianz.com (nueva pestaña)">Visitar revianz.com</a></div>
+      </div>
       {mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.')}
     </article>
     <article class="service-project-secondary" aria-labelledby="photonix-service-title">

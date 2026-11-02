@@ -281,3 +281,9 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Encabezado y bajada sobre un mismo eje, separados de las tres aplicaciones; subtítulos secundarios y ejemplos con fondo gris suave e inset propio. Texto y HTML intactos. Alineación de títulos, descripciones y ejemplos mediante subgrid.
 - Inspección visual a 1440 y 390 px; comprobación adicional a 900 y 768 px sin desborde horizontal. En desktop los ejemplos comparten eje superior; en mobile se apilan con separación entre aplicaciones. Evidencia: `outputs/necesidades-aire-20261102/desktop.png` y `mobile.png`.
 - Build y diff check correctos; sólo cambian los estilos de necesidades y la documentación. Viewport de Chrome restablecido y pestaña del navegador integrado recargada con los estilos nuevos.
+
+## Portfolio: cabecera del caso REVIANZ · 2 de noviembre de 2026
+
+- Marca y título descriptivo diferenciados; contexto y cambio debajo en dos columnas. Botón principal al caso y enlace secundario al sitio. En móvil, título, explicación, acciones y mockup en ese orden.
+- Inspección visual a 1440 y 390 px; revisión a 1024 y 768 px sin desbordes. Viewport restablecido. Evidencia en `outputs/portfolio-apertura-20261102/desktop.png` y `mobile.png`.
+- Build y diff check correctos. Comparación HTML confirma cambios exclusivamente dentro del artículo REVIANZ; se conservan párrafos, mockup, URL del caso y enlace externo HTTPS con nueva pestaña y noopener/noreferrer. Contenido JSON y demás páginas intactos.

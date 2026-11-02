@@ -135,3 +135,14 @@ El usuario percibe la sección comprimida. Se conserva todo el texto y las tres 
 ```
 
 La intervención distingue tres niveles de lectura sin agregar contenido, números ni iconos. El espacio se concentra entre grupos, en vez de aumentar todas las separaciones por igual.
+
+### Portfolio: apertura del caso REVIANZ
+
+Se elimina el vacío bajo el título del caso. La marca se distingue del título descriptivo; debajo, contexto y cambio forman dos columnas de lectura. La acción principal se alinea al encabezado y el enlace externo mantiene un nivel secundario. El mockup sigue inmediatamente después de esta introducción. En móvil el orden es título, explicación, acciones y producto. Se mantienen Manrope/Inter, navy #0B1D3A, blanco, mist #F5F7FA, gris #55616F y acento #08796F. No se agrega una tarjeta envolvente, iconos ni contenido nuevo. Photonix y el resto de la página conservan su composición.
+
+```
+[REVIANZ                                                ]
+[Título descriptivo                ][Ver caso / sitio    ]
+[Contexto y solución               ][Cambio              ]
+[Mockup oficial                                         ]
+```
