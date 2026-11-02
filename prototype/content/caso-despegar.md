@@ -10,9 +10,9 @@
 
 **H1:** Despegar Ads: cotizaciones en minutos, conectadas con todo el proceso comercial.
 
-El equipo de Media Sales de Despegar, hoy Despegar Ads, preparaba propuestas en planillas con reglas complejas para distintas marcas, países y productos. Cloudfianz desarrolló un cotizador conectado con HubSpot que automatiza los cálculos y la generación de órdenes de inserción. La herramienta pasó a ser el sistema principal de cotización del equipo.
+Cloudfianz desarrolló un cotizador conectado con HubSpot que automatiza los cálculos y la generación de órdenes de inserción.
 
-Despegar Ads comercializa espacios publicitarios dentro del ecosistema digital de la compañía. Su operación combina más de ocho marcas y ocho países, con propuestas que ajustan la moneda según el mercado y toman el dólar como base.
+Despegar Ads, antes equipo de Media Sales, comercializa espacios publicitarios dentro del ecosistema digital de la compañía. Su operación combina más de ocho marcas y ocho países, con propuestas que ajustan la moneda según el mercado y toman el dólar como base.
 
 ## El problema: cada propuesta exigía reconstruir la lógica en planillas
 
