@@ -44,4 +44,8 @@ La franja institucional de 136 px se convierte en un bloque secundario con títu
 [Conocé Digifianz         ][esa experiencia a la solución del cliente ]
 ```
 
-El título y la relación explícita con una empresa consolidada aportan presencia; la credencial aporta evidencia. No se agregan cifras, premios, nombres de personas ni insignias recreadas. La condición de Elite está verificada el 2 de noviembre de 2026 en el [directorio oficial de HubSpot](https://ecosystem.hubspot.com/es/marketplace/solutions/digifianz). La marca enlaza mediante “Conocé Digifianz” al sitio institucional. El resto de la página conserva su arquitectura y contenido.
+El título y la relación explícita con una empresa consolidada aportan presencia; la credencial aporta evidencia. No se agregan cifras, premios, nombres de personas ni insignias recreadas. La condición de Elite está verificada el 2 de noviembre de 2026 en el [directorio oficial de HubSpot](https://ecosystem.hubspot.com/es/marketplace/solutions/digifianz). La marca enlaza al sitio institucional. El resto de la página conserva su arquitectura y contenido.
+
+### Ajuste de redundancia
+
+El logo identifica la empresa; el título explica el aporte: “Experiencia de negocio detrás del software”. La relación entre Cloudfianz y Digifianz sigue explícita en el primer párrafo. El enlace pasa a “Conocé la empresa”, con nombre accesible que conserva el texto visible y especifica el destino. Se mantienen la composición, los tokens y las proporciones anteriores; esta revisión sólo edita dos etiquetas para que cada elemento cumpla una función distinta.

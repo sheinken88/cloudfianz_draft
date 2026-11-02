@@ -31,7 +31,7 @@ def build_service(meta, intro, sections, routes):
     faq_title, faq = section('Antes de empezar')
     parts = re.split(r'<h3>(.*?)</h3>', faq)
     faqs = ''.join(f'<details name="service-questions"><summary>{parts[i]}<span class="plus" aria-hidden="true"></span></summary>{parts[i + 1]}</details>' for i in range(1, len(parts), 2))
-    backing_title, backing = section('El respaldo')
+    backing_title, backing = section('Experiencia de negocio')
     cta_title, cta = section('¿Qué necesita')
     return f'''
 <section class="service-hero">
@@ -72,6 +72,6 @@ def build_service(meta, intro, sections, routes):
 <section class="delivery-section page-section" id="alcance"><div class="container"><h2>{delivery_title}</h2><div class="delivery-copy">{delivery}</div></div></section>
 <section class="container page-section service-engagement" aria-labelledby="engagement-heading"><div class="service-section-intro"><h2 id="engagement-heading">{stages_title}</h2>{stage_paragraphs[-1]}</div><div class="service-offers">{''.join(offers)}</div></section>
 <section class="container faq page-section" aria-labelledby="questions-heading"><div class="section-intro"><h2 id="questions-heading">{faq_title}</h2></div><div class="faq-list">{faqs}</div></section>
-<section class="service-backing" id="respaldo" aria-labelledby="backing-heading"><div class="container"><div class="service-backing-brand"><img src="/assets/brand/digifianz-official.svg" alt="Digifianz" width="226" height="80" loading="lazy"><p class="service-backing-credential">Elite Partner de HubSpot</p><a class="text-link light-link" href="https://www.digifianz.com/es/" target="_blank" rel="noopener noreferrer" aria-label="Conocé Digifianz (nueva pestaña)">Conocé Digifianz</a></div><div class="service-backing-copy"><h2 id="backing-heading">{backing_title}</h2>{backing}</div></div></section>
+<section class="service-backing" id="respaldo" aria-labelledby="backing-heading"><div class="container"><div class="service-backing-brand"><img src="/assets/brand/digifianz-official.svg" alt="Digifianz" width="226" height="80" loading="lazy"><p class="service-backing-credential">Elite Partner de HubSpot</p><a class="text-link light-link" href="https://www.digifianz.com/es/" target="_blank" rel="noopener noreferrer" aria-label="Conocé la empresa: Digifianz (nueva pestaña)">Conocé la empresa</a></div><div class="service-backing-copy"><h2 id="backing-heading">{backing_title}</h2>{backing}</div></div></section>
 <section class="page-contact" aria-labelledby="next-title"><div class="container page-contact-inner"><div><h2 id="next-title">{cta_title}</h2>{cta}</div><div class="page-contact-actions"><a class="button button-dark" href="/es#contacto">Hablemos de tu negocio</a><a class="text-link" href="/es#consulta">Prefiero enviar una consulta</a></div></div></section>
 '''

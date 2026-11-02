@@ -102,7 +102,7 @@ El diseño se entrega documentado para permitir esa continuidad. En la implement
 
 Podemos contratar soporte para incidentes, mantenimiento y ajustes menores. Las funcionalidades nuevas se evalúan según su alcance, y acordamos su presupuesto y calendario antes de incorporarlas.
 
-## El respaldo de Digifianz
+## Experiencia de negocio detrás del software
 
 Cloudfianz es la unidad de desarrollo de software de Digifianz, una empresa consolidada en procesos comerciales y tecnología.
 

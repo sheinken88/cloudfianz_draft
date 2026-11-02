@@ -199,3 +199,9 @@ Esta revisión sustituye la simplificación de `c7739c4`, tomando la arquitectur
 - Inspección visual en Chrome a 1440 × 1000 y 390 × 844. Franja de 297 px en desktop y 553 px en móvil; título de 36 y 30 px respectivamente. Logo cargado, sin desborde horizontal. Enlace institucional con destino HTTPS, nueva pestaña anunciada y área de 44 px de alto. Viewport temporal restablecido al finalizar.
 - Construcción y comparación contra HEAD: el HTML y el Markdown del servicio sólo cambian en el respaldo. Homepage, Despegar y estilos/scripts compartidos idénticos. El ajuste de estilos está en el CSS exclusivo del servicio.
 - Capturas en `outputs/servicio-respaldo-digifianz-20261102/`: `respaldo-desktop.jpg` y `respaldo-mobile.jpg`. Verificación mediante viewports de navegador; sin publicación remota.
+
+## Respaldo: reducir repetición de marca · 2 de noviembre de 2026
+
+- Título cambiado a “Experiencia de negocio detrás del software” y enlace visible a “Conocé la empresa”. El nombre accesible conserva ese texto, especifica Digifianz y anuncia la nueva pestaña. El párrafo mantiene explícita la relación entre ambas marcas.
+- Revisión en Chrome a 1440 × 1000 y 390 × 844: título en una y dos líneas respectivamente, sin desborde horizontal. La franja conserva su altura desktop de 297 px; no se modificaron estilos ni composición.
+- Construcción, `git diff --check` y comparación de HTML completados: sólo cambian el título y las etiquetas del enlace. Capturas en `outputs/servicio-respaldo-editorial-20261102/` del workspace. Iteración local sin push.
