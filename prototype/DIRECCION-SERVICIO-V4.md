@@ -93,3 +93,29 @@ Paleta: blanco #FFFFFF, navy #0B1D3A, gris #55616F, línea #DCE3E9 y acento #087
 ```
 
 Los ejemplos concretan el tipo de solución: cotizador conectado al CRM, panel de proyectos y facturación, portal para solicitar y seguir servicios. Son ejemplos de aplicaciones, sin atribuir un proyecto o resultado no documentado. Las descripciones se verifican visualmente sin truncamiento ni ocultar contenido. Debajo de 900 px se apilan los tres conceptos para conservar el ancho de lectura.
+
+## Arquitectura narrativa integrada · implementación del 2 de noviembre
+
+Se aplica el recorrido aprobado: propuesta → identificación → evidencia → abordaje → contratación → confianza y contacto. Esta revisión reemplaza el orden de capítulos descrito al principio del documento, conservando el historial de decisiones.
+
+Paleta existente: navy #0B1D3A, verde #12B5A5, blanco #FFFFFF, fondo suave #F5F7FA, mint #E8F4F0 y gris #55616F. Manrope para títulos e Inter para lectura; H1, H2 y necesidades mantienen sus escalas. Lectura alineada a la izquierda, cuerpos de 16–17 px, columnas fluidas y una columna en móvil. El protagonismo visual sigue en los productos reales, no en decoraciones o nuevos componentes.
+
+```
+[Hero: propuesta + contacto        ][Despegar: captura + enlace al caso]
+[Necesidades: venta       ][operación       ][nuevo servicio           ]
+[Nuestro trabajo: REVIANZ, contexto + solución + cambio + mockup       ]
+[Photonix: imagen institucional    ][contexto + solución + cambio      ]
+[Del problema a una solución en uso: título + propósito                ]
+[01 Entender                     ][alternativas y criterio            ]
+[02 Diseñar                      ][alcance y resultado esperado       ]
+[03 Construir                    ][revisiones y validación            ]
+[04 Poner en uso y evaluar        ][aceptación y transferencia         ]
+[Cómo trabajar con nosotros: cuatro servicios con entregables         ]
+[Digifianz: respaldo consolidado                                       ]
+[Preguntas frecuentes compactas                                        ]
+[Contacto                                                             ]
+```
+
+Despegar aparece una sola vez en el hero, con acceso directo a su caso. El portfolio desarrolla REVIANZ y Photonix, con la misma lógica de necesidad, solución y cambio, pero con jerarquía principal/secundaria. ADS conserva su contenido y acceso en el índice general. El mockup oficial de REVIANZ se identifica como ilustrativo; la foto de Photonix como institucional.
+
+Se fusionan criterio y alcance en una secuencia editorial sin tarjetas ni controles nuevos. Los números representan pasos reales; los párrafos conservan evaluación de alternativas, costos de operación, definición de alcance, validación y traspaso. Contratación explica puntos de entrada y entregables independientes, sin repetir el proceso. Digifianz precede a las FAQ y el contacto. Revisión contra el pedido: se mantiene la profundidad donde aporta decisión, las necesidades breves aprobadas y la identidad visual, evitando nuevos bloques promocionales o repetir los casos.

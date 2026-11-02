@@ -1,6 +1,6 @@
 # Desarrollo de software a medida
 
-Versión 3 · Arquitectura y profundidad originales recuperadas el 2 de noviembre de 2026
+Versión 4 · Recorrido comercial integrado el 2 de noviembre de 2026
 
 **URL propuesta:** `/es/desarrollo-software-a-medida`  
 **Title:** Desarrollo de software a medida para empresas | Cloudfianz  
@@ -40,57 +40,89 @@ Lanzá un servicio digital y validalo con una primera versión.
 
 **Ejemplo:** Un portal donde tus clientes solicitan servicios y consultan su estado.
 
-## Elegimos la solución a partir del problema
+## Nuestro trabajo, en operaciones reales
 
-Revisamos las herramientas que ya usás y sus posibilidades de configuración e integración. Una necesidad puede resolverse aprovechando mejor un sistema existente, conectándolo con otros o desarrollando una función específica.
-
-Cuando hace falta software propio, delimitamos qué conviene construir y cómo va a convivir con el resto de tu operación. Esa decisión contempla el uso cotidiano, los costos de funcionamiento y el mantenimiento posterior.
-
-Si tu necesidad principal es conectar herramientas existentes, conocé nuestro servicio de [integración de sistemas](servicio-integracion-sistemas.md).
-
-## Proyectos que muestran ese trabajo
-
-### Despegar: cotizaciones conectadas con el proceso comercial
-
-Un cotizador conectado con HubSpot reúne reglas de precios y distribución de presupuesto por marca y país. El equipo puede preparar propuestas con esa lógica y devolver la cotización al CRM.
-
-[Conocé el caso Despegar](caso-despegar.md).
+Cada proyecto responde a una forma de trabajar. Estas soluciones muestran cómo conectamos las necesidades del negocio con herramientas de uso cotidiano.
 
 ### REVIANZ: proyectos y seguimiento financiero para Digifianz
 
-Cloudfianz desarrolló una plataforma que conecta servicios, equipos, costos, rentabilidad y facturación. Digifianz puede seguir la operación de sus proyectos y coordinar colaboradores externos desde el mismo entorno.
+Los proyectos de Digifianz reúnen equipos internos y colaboradores externos, con condiciones comerciales y costos que necesitan seguirse en conjunto. Cloudfianz desarrolló REVIANZ para conectar servicios, responsables, rentabilidad y facturación.
+
+El equipo puede consultar el margen por proyecto y período, relacionar las facturas con el trabajo y coordinar a los colaboradores desde un mismo entorno.
 
 [Conocé el caso REVIANZ](caso-revianz.md).
 
 ### Photonix: una plataforma para coordinar el servicio técnico
 
-La plataforma reúne agenda, contratos y órdenes de servicio para el mantenimiento de equipos de radioterapia. Técnicos y administración cuentan con un entorno compartido para registrar y consultar el trabajo.
+El mantenimiento de equipos de radioterapia requiere coordinar visitas, contratos y documentación del servicio. Desarrollamos una plataforma que reúne la agenda y las órdenes de trabajo en un entorno compartido.
+
+Los técnicos pueden registrar el servicio y obtener la firma del cliente desde el lugar de trabajo. Administración puede consultar el estado de cada intervención y dar seguimiento a la operación.
 
 [Conocé el caso Photonix](caso-photonix.md).
 
-### ADS Mexicana: más de 50 cotizaciones diarias
+## Del problema de negocio a una solución en uso
 
-Un panel conectado a HubSpot aplica las reglas de precios, descuentos y cálculo de ADS. El equipo prepara las propuestas en minutos y las cotizaciones quedan registradas en el negocio correspondiente.
+Los proyectos cambian; el criterio se mantiene. Entendemos cómo trabaja tu empresa, acordamos qué necesita mejorar y validamos la solución con quienes la van a usar.
 
-[Conocé el caso ADS Mexicana](caso-ads-mexicana.md).
+### Entender antes de elegir
 
-## Una primera versión con un resultado definido
+Revisamos el proceso, las personas que participan y las herramientas que ya usás. Comparamos las posibilidades de configurar un sistema existente, conectarlo con otros o desarrollar una función propia.
 
-Antes de construir, acordamos qué mejora buscamos y cómo vamos a observarla: el tiempo que lleva completar una operación, la capacidad de atender solicitudes, el desempeño de un proceso comercial o la calidad de la información disponible.
+La decisión contempla el uso cotidiano, la convivencia con el resto de tu operación, los costos de funcionamiento y el mantenimiento posterior.
 
-El alcance define quiénes usarán la solución, qué podrán hacer, qué sistemas intervienen y qué condiciones debe cumplir la entrega. Durante la implementación validamos el funcionamiento con tu equipo. Al finalizar, realizamos el traspaso y entregamos la documentación y el código o configuración que correspondan a lo contratado.
+Si necesitás conectar herramientas existentes, conocé nuestro servicio de [integración de sistemas](servicio-integracion-sistemas.md).
 
-## Modalidades de contratación
+### Diseñar un alcance con un resultado definido
 
-**Auditoría.** Si necesitás decidir qué mejorar primero, revisamos un proceso y comparamos alternativas. Recibís un diagnóstico con prioridades y una recomendación fundamentada.
+Acordamos qué mejora buscamos y cómo vamos a observarla: el tiempo de una operación, la capacidad de atender solicitudes, el desempeño comercial o la calidad de la información disponible.
 
-**Diseño.** Si el objetivo está claro, definimos la solución, su alcance y los criterios para construirla. Recibís documentación que permite continuar con Cloudfianz o con otro equipo.
+Definimos quiénes usarán la solución, qué podrán hacer, qué sistemas intervienen y qué condiciones debe cumplir la entrega. Así delimitamos una primera versión y qué puede quedar para más adelante.
 
-**Implementación.** Si ya contás con un diseño suficiente, evaluamos los insumos y construimos la versión acordada, con pruebas y transferencia a quienes la van a utilizar.
+### Construir y validar con tu equipo
 
-**Soporte.** Para acompañar la operación, podemos acordar una capacidad mensual de atención para incidentes, mantenimiento y ajustes menores.
+Durante la implementación revisamos el funcionamiento con quienes conocen el proceso. Probamos los recorridos de uso, las reglas y las integraciones contra el alcance acordado.
 
-Cada servicio se puede contratar por separado. Antes de avanzar, acordamos entregables, presupuesto, calendario y responsabilidades.
+Estas revisiones permiten ajustar la solución con contexto y comprobar su utilidad antes de la entrega.
+
+### Poner en uso y evaluar
+
+Comprobamos las condiciones acordadas y realizamos el traspaso a quienes van a operar la solución. Entregamos la documentación y el código o configuración que correspondan a lo contratado.
+
+Los criterios definidos al inicio permiten observar la mejora y decidir, con información, qué conviene evolucionar después.
+
+## Cómo podés trabajar con nosotros
+
+Podés empezar por lo que tu proyecto necesita. Cada servicio se puede contratar por separado, con entregables, presupuesto, calendario y responsabilidades acordados antes de avanzar.
+
+### Auditoría
+
+Para decidir qué mejorar primero y comparar alternativas sobre un proceso concreto.
+
+**Recibís:** un diagnóstico con prioridades y una recomendación fundamentada.
+
+### Diseño
+
+Para convertir un objetivo claro en una solución con alcance y criterios de construcción definidos.
+
+**Recibís:** documentación que permite continuar con Cloudfianz o con otro equipo.
+
+### Implementación
+
+Para construir cuando ya contás con un diseño suficiente. Evaluamos los insumos antes de acordar el desarrollo.
+
+**Recibís:** la versión acordada, con pruebas y transferencia a quienes la van a utilizar.
+
+### Soporte
+
+Para acompañar una solución en funcionamiento y sostener su operación cotidiana.
+
+**Incluye:** una capacidad mensual acordada para incidentes, mantenimiento y ajustes menores.
+
+## Experiencia de negocio detrás del software
+
+Cloudfianz es la unidad de desarrollo de software de Digifianz, una empresa consolidada en procesos comerciales y tecnología.
+
+Sumamos esa experiencia al desarrollo a medida para conectar objetivos comerciales, operación y decisiones técnicas en una misma solución.
 
 ## Antes de empezar
 
@@ -113,12 +145,6 @@ El diseño se entrega documentado para permitir esa continuidad. En la implement
 ### ¿Qué pasa si necesitamos cambios después del lanzamiento?
 
 Podemos contratar soporte para incidentes, mantenimiento y ajustes menores. Las funcionalidades nuevas se evalúan según su alcance, y acordamos su presupuesto y calendario antes de incorporarlas.
-
-## Experiencia de negocio detrás del software
-
-Cloudfianz es la unidad de desarrollo de software de Digifianz, una empresa consolidada en procesos comerciales y tecnología.
-
-Sumamos esa experiencia al desarrollo a medida para conectar objetivos comerciales, operación y decisiones técnicas en una misma solución.
 
 ## ¿Qué necesita hacer tu empresa que hoy le resulta difícil?
 
