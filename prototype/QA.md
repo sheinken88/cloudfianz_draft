@@ -115,3 +115,12 @@ Carpeta `outputs/paginas-visual-v2-20261030/` del workspace:
 - `despegar-desktop.png` y `despegar-desktop-completa.png`.
 - `despegar-mobile.png` y `despegar-mobile-completa.png`.
 - `despegar-resultados-desktop.png` y `despegar-resultados-mobile.png`.
+
+## Hero Despegar · 2 de noviembre de 2026
+
+- Nueva composición: identidad lateral, título y descripción en un mismo eje y captura completa debajo. En móvil la identidad pasa a una fila y la escala del título se ajusta para evitar cortes excesivos.
+- Reemplazada la imagen del hero por el PNG nítido de 1633 × 887 px incrustado en el documento interno `Caso de Estudio del Cotizador`. Archivo original y copia local idénticos byte por byte. Fuente y hash registrados en `dist/assets/projects/SOURCES.md`; corregida la afirmación anterior de que la imagen publicada era una captura original verificada.
+- Construcción `npm run build:proposal` y `git diff --check` completados. Comparación del HTML contra el commit anterior: H1, descripción, cabecera, metadatos y todo el documento posterior al hero idénticos. Las reglas CSS ajenas al hero no cambian. Homepage y servicio conservan sus archivos.
+- Revisión visual en navegador a 1440 × 1000 y 390 × 844. En móvil, ancho del documento de 390 px sin desborde; la imagen carga a sus dimensiones originales. Enlace a la imagen completa activado con Enter y nueva pestaña con el PNG de 1633 × 887 px comprobada.
+- Evidencia en `outputs/despegar-hero-20261102/hero-desktop.jpg`, `hero-desktop-completo.jpg` y `hero-mobile.jpg`, fuera del checkout. Desktop también sin desborde y consola sin errores ni advertencias. Las pruebas usan viewports de navegador, no dispositivos físicos.
+- El resto de las imágenes de la página y del sitio no se sustituyen en esta iteración; quedan para una revisión específica. Esta entrega se limita al hero, tal como se solicitó.

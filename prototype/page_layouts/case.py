@@ -32,17 +32,19 @@ def build_case(meta, intro, sections, routes):
 <section class="case-hero" aria-labelledby="case-title">
   <div class="container">
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es#casos">Casos</a></li><li aria-current="page">Despegar Ads</li></ol></nav>
-    <div class="case-identity">
-      <div class="case-client-logo"><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"></div>
-      <p>Desarrollo a medida e integración</p>
-    </div>
-    <div class="case-hero-copy">
-      <h1 id="case-title">{html.escape(meta['H1'])}</h1>
-      <div class="case-hero-summary">{opening[0]}</div>
+    <div class="case-hero-intro">
+      <div class="case-identity">
+        <div class="case-client-logo"><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"></div>
+        <p>Desarrollo a medida e integración</p>
+      </div>
+      <div class="case-hero-copy">
+        <h1 id="case-title">{html.escape(meta['H1'])}</h1>
+        <div class="case-hero-summary">{opening[0]}</div>
+      </div>
     </div>
     <figure class="case-hero-media">
-      <a href="/assets/projects/despegar-cotizador.png" target="_blank" rel="noopener" aria-label="Abrir vista del cotizador de Despegar en tamaño completo"><img src="/assets/projects/despegar-cotizador.png" alt="Vista real del cotizador de Despegar con presupuesto y selección de productos para la propuesta comercial." width="1600" height="869" fetchpriority="high"></a>
-      <figcaption><span>Captura real del proyecto, publicada por Digifianz. Los campos difuminados pertenecen a la imagen original.</span><a href="/assets/projects/despegar-cotizador.png" target="_blank" rel="noopener">Ver captura completa</a></figcaption>
+      <a href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Abrir captura del cotizador de Despegar en tamaño completo (nueva pestaña)"><img src="/assets/projects/despegar-cotizador-original.png" alt="Cotizador de Despegar con una campaña de prueba: presupuesto, distribución por marca y país y paneles de productos." width="1633" height="887" fetchpriority="high" decoding="async"></a>
+      <figcaption><span>Cotizador de Despegar Ads. Captura del producto.</span><a href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Ver captura completa del cotizador (nueva pestaña)">Ver captura completa</a></figcaption>
     </figure>
   </div>
 </section>
