@@ -6,6 +6,7 @@ from page_layouts.service_heroes import hero_media
 SERVICES = {
     'servicio-desarrollo-software': {
         'name': 'Desarrollo de software a medida',
+        'application_icons': ['custom-quotes', 'custom-operations', 'custom-portals'],
         'cases': [('despegar', 'Desarrollo a medida · Cotización comercial'), ('revianz', 'Desarrollo a medida · Para Digifianz')],
     },
     'servicio-integracion-sistemas': {
@@ -34,11 +35,19 @@ def build_service(key, meta, intro, sections):
 
     needs_title, needs = section('Qué podemos')
     needs_intro, applications = subsections(needs)
+    application_icons = service.get('application_icons', [])
+    if application_icons and len(application_icons) != len(applications):
+        raise ValueError(f'Application copy and icons differ for {key}')
+    needs_class = ' service-needs--illustrated' if application_icons else ''
     application_columns = []
-    for title, copy in applications:
+    for index, (title, copy) in enumerate(applications):
         description, example = paragraphs(copy)
         example = example.removeprefix('<p><strong>Ejemplo:</strong> ').removesuffix('</p>')
-        application_columns.append(f'<article class="service-application"><h3>{title}</h3><div class="application-description">{description}</div><div class="application-example"><p class="application-example-label">Por ejemplo</p><p>{example}</p></div></article>')
+        heading = f'<h3>{title}</h3>'
+        if application_icons:
+            icon = application_icons[index]
+            heading = f'<div class="application-heading"><img class="application-icon" src="/assets/icons/{icon}.svg" alt="" aria-hidden="true" width="64" height="64" loading="lazy" decoding="async">{heading}</div>'
+        application_columns.append(f'<article class="service-application">{heading}<div class="application-description">{description}</div><div class="application-example"><p class="application-example-label">Por ejemplo</p><p>{example}</p></div></article>')
 
     projects_title, projects = section('Casos reales')
     projects_intro, projects = subsections(projects)
@@ -92,7 +101,7 @@ def build_service(key, meta, intro, sections):
     </div>
   </div>
 </section>
-<section class="container service-needs page-section" aria-labelledby="needs-heading">
+<section class="container service-needs page-section{needs_class}" aria-labelledby="needs-heading">
   <div class="service-section-intro"><h2 id="needs-heading">{needs_title}</h2>{needs_intro}</div>
   <div class="service-applications">{''.join(application_columns)}</div>
 </section>

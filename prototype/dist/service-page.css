@@ -73,6 +73,17 @@
 .application-example .application-example-label{font-size:12px;line-height:1.5;font-weight:600;color:#08796f;margin-bottom:12px}
 .application-example p:not(.application-example-label){font-size:15px;line-height:1.75;color:var(--navy);max-width:350px}
 
+/* Custom software capabilities follow the homepage's open, illustrated columns. */
+.service-page .service-needs--illustrated .service-section-intro{margin-bottom:44px}
+.service-page .service-needs--illustrated .service-section-intro>p{margin-top:18px;max-width:700px}
+.service-needs--illustrated .service-applications{column-gap:40px}
+.service-needs--illustrated .service-application{padding-top:24px;border-top:1px solid #c2d9d3}
+.application-heading{display:flex;flex-direction:column;align-items:flex-start;gap:22px}
+.application-icon{display:block;width:64px;height:64px;padding:4px;flex:none;background:var(--mint);border-radius:14px}
+.service-page .service-needs--illustrated .service-application h3{max-width:350px}
+.service-needs--illustrated .application-description p{max-width:370px;font-size:15px;line-height:1.8}
+.service-needs--illustrated .application-example{background:var(--mint);margin-top:2px}
+
 /* Cases share the homepage's neutral frame, reading order and action hierarchy. */
 .service-page #como-abordamos{scroll-margin-top:25px}
 .service-projects{background:var(--mist)}
@@ -195,6 +206,12 @@
 }
 
 @media(max-width:899px){
+  .service-page .service-needs--illustrated .service-section-intro{margin-bottom:32px}
+  .service-needs--illustrated .service-applications{gap:32px}
+  .service-needs--illustrated .service-application{padding-top:22px}
+  .application-heading{gap:20px}
+  .service-page .service-needs--illustrated .service-application h3{max-width:520px}
+  .service-needs--illustrated .application-description p{max-width:560px}
   .service-applications{grid-template-columns:1fr;gap:44px}
   .service-application{grid-template-rows:auto auto auto;grid-row:auto;gap:18px}
   .service-page .service-application h3{max-width:470px}
