@@ -142,6 +142,6 @@ def build_project(key, meta, intro, sections, routes):
 {evolution}
 <section class="page-contact story-contact" aria-labelledby="story-contact-title"><div class="container page-contact-inner">
   <h2 id="story-contact-title">{html.escape(contact_title)}</h2>{contact}
-  <div class="page-contact-actions"><a class="button button-dark" href="/es#consulta">Contanos qué necesitás</a><a class="text-link" href="/es/casos">Ver todos los casos</a></div>
+  <div class="page-contact-actions"><a class="button button-dark" href="/es/contacto">Contanos qué necesitás</a><a class="text-link" href="/es/casos">Ver todos los casos</a></div>
 </div></section>
 '''

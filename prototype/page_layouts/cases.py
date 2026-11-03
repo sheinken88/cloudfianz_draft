@@ -52,5 +52,5 @@ def build_cases(meta, intro, sections, routes):
   </div>
 </section>
 <section class="cases-collection" id="proyectos" aria-label="Proyectos de nuestros clientes"><div class="container cases-grid">{''.join(cards)}</div></section>
-<section class="page-contact cases-contact" aria-labelledby="cases-contact-title"><div class="container page-contact-inner"><h2 id="cases-contact-title">{closing_title}</h2>{sections[closing_title]}<div class="page-contact-actions"><a class="button button-dark" href="/es#consulta">Contanos qué necesitás</a><a class="text-link" href="/es#soluciones">Conocé nuestras soluciones</a></div></div></section>
+<section class="page-contact cases-contact" aria-labelledby="cases-contact-title"><div class="container page-contact-inner"><h2 id="cases-contact-title">{closing_title}</h2>{sections[closing_title]}<div class="page-contact-actions"><a class="button button-dark" href="/es/contacto">Contanos qué necesitás</a><a class="text-link" href="/es#soluciones">Conocé nuestras soluciones</a></div></div></section>
 '''

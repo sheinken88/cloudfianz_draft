@@ -88,7 +88,7 @@ def build_service(key, meta, intro, sections):
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es#soluciones">Soluciones</a></li><li aria-current="page">{service['name']}</li></ol></nav>
     <div class="service-hero-grid service-hero-grid--project">
       <div class="service-hero-copy"><h1>{meta['H1']}</h1></div>{hero_project}
-      <div class="service-hero-intro">{paragraphs(intro)[0]}<div class="page-actions"><a class="button button-dark" href="/es#consulta">Contanos qué necesitás</a><a class="text-link" href="#proyectos">Ver proyectos reales</a></div></div>
+      <div class="service-hero-intro">{paragraphs(intro)[0]}<div class="page-actions"><a class="button button-dark" href="/es/contacto">Contanos qué necesitás</a><a class="text-link" href="#proyectos">Ver proyectos reales</a></div></div>
     </div>
   </div>
 </section>
@@ -111,5 +111,5 @@ def build_service(key, meta, intro, sections):
   </div>
 </section>
 <section class="container faq service-faq page-section" id="preguntas-frecuentes" aria-labelledby="questions-heading"><div class="section-intro"><h2 id="questions-heading">{faq_title}</h2></div><div class="faq-list">{faqs}</div></section>
-<section class="page-contact service-closing" id="conversemos" aria-labelledby="next-title"><div class="container service-closing-inner"><div class="service-closing-heading"><h2 id="next-title">{cta_title}</h2><div class="service-closing-reassurance">{cta_reassurance}</div></div><div class="service-closing-action">{cta_context}<a class="button" href="/es#consulta">Contanos qué necesitás</a></div></div></section>
+<section class="page-contact service-closing" id="conversemos" aria-labelledby="next-title"><div class="container service-closing-inner"><div class="service-closing-heading"><h2 id="next-title">{cta_title}</h2><div class="service-closing-reassurance">{cta_reassurance}</div></div><div class="service-closing-action">{cta_context}<a class="button" href="/es/contacto">Contanos qué necesitás</a></div></div></section>
 '''

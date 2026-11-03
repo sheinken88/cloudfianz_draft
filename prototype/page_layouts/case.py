@@ -115,5 +115,5 @@ def build_case(meta, intro, sections, routes):
   </div>
 </section>
 
-<section class="page-contact" aria-labelledby="next-title"><div class="container page-contact-inner"><div><h2 id="next-title">{contact_title}</h2>{contact_copy}</div><div class="page-contact-actions"><a class="button button-dark" href="/es#contacto">Hablemos de tu negocio</a><a class="text-link" href="/es#consulta">Prefiero enviar una consulta</a></div></div></section>
+<section class="page-contact" aria-labelledby="next-title"><div class="container page-contact-inner"><div><h2 id="next-title">{contact_title}</h2>{contact_copy}</div><div class="page-contact-actions"><a class="button button-dark" href="/es/contacto">Hablemos de tu negocio</a><a class="text-link" href="/es/casos">Ver todos los casos</a></div></div></section>
 '''

@@ -135,3 +135,14 @@ La superficie mint de Solución contiene composiciones diferentes según el trab
 - ADS Mexicana recorre tres pasos: datos disponibles en el CRM, aplicación de las reglas de cálculo y cotización registrada en el negocio de HubSpot.
 
 Los resultados comparten una superficie navy y una jerarquía adaptada a la evidencia: ADS destaca más de 50 cotizaciones por día y el paso de horas de cálculo a propuestas en minutos. Photonix y Escala24x7 presentan sus capacidades operativas documentadas. El cierre común mantiene los enlaces de consulta, servicios e índice. Se conservan los párrafos, listas y matices aprobados, incluyendo los límites del costo de infraestructura de Photonix y las funcionalidades que todavía corresponden a etapas posteriores.
+
+
+## Contacto, Cómo trabajamos y navegación compartida · 3 de noviembre de 2026
+
+El alcance vigente pasa a trece páginas: Home, tres servicios, índice, seis casos individuales, `/es/contacto` y `/es/como-trabajamos`. La cabecera y el pie llevan a las nuevas páginas; los CTA de consulta apuntan a Contacto. La Home conserva el formulario y las anclas `/es#contacto`, `/es#consulta` y `/es#como-trabajamos` para los enlaces anteriores.
+
+Contacto prioriza una apertura práctica y breve, con título navy sobre blanco y formulario sobre mint, visible junto al texto en escritorio. Sus cuatro campos son Nombre, Empresa, Email de trabajo y Qué necesitás resolver. La explicación de qué pasa después queda junto al contenido en escritorio y después del formulario en móvil. Mantiene la simulación local de Home: valida los campos y muestra una confirmación de prueba, con una nota explícita de que no envía ni guarda datos. El formulario continúa sin backend conectado.
+
+Cómo trabajamos desarrolla cuatro modalidades contratables por separado: auditoría, diseño, implementación y soporte. El selector utiliza pestañas con mejora progresiva; sin JavaScript, todos los contenidos permanecen visibles. Cada panel relaciona la actividad con sus entregables y la participación del cliente. Los acuerdos iniciales, ejemplos de proyectos y preguntas frecuentes breves explican cómo definir el trabajo; alcance, presupuesto, calendario y responsabilidades se acuerdan para cada proyecto.
+
+El pie se extrae a `templates/footer.html`, con `dist/footer.css` compartido por las trece páginas. Agrupa Soluciones, los enlaces de Cloudfianz, el respaldo de Digifianz y el aviso de privacidad. `templates/home.html` mantiene la cabecera y los diálogos comunes; `build-pages.py` incorpora la plantilla del pie durante la generación. Los textos de las páginas nuevas viven en `content/pagina-contacto.md` y `content/pagina-como-trabajamos.md`, con composiciones en `page_layouts/contact.py` y `page_layouts/method.py` y estilos en `dist/contact-page.css` y `dist/method-page.css`.

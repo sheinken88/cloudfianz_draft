@@ -42,5 +42,5 @@ def build_revianz(meta, intro, sections, routes):
   <div class="rv-billing">{invoice}<div><h3>{billing_title}</h3><div class="page-prose">{billing}</div><h3>{collaboration_title}</h3><div class="page-prose">{collaboration}</div></div></div>
 </div></section>
 <section class="rv-results" id="resultados" aria-labelledby="rv-results-title"><div class="container rv-results-inner"><div class="rv-results-heading"><h2 id="rv-results-title">Una base compartida para decidir.</h2>{results_intro}</div><ul class="rv-outcomes">{outcomes}</ul><div class="rv-results-action">{product_link}</div></div></section>
-<section class="page-contact" aria-labelledby="next-title"><div class="container page-contact-inner"><div><h2 id="next-title">{contact_title}</h2>{contact}</div><div class="page-contact-actions"><a class="button button-dark" href="/es#contacto">Hablemos de tu negocio</a><a class="text-link" href="/es#consulta">Prefiero enviar una consulta</a></div></div></section>
+<section class="page-contact" aria-labelledby="next-title"><div class="container page-contact-inner"><div><h2 id="next-title">{contact_title}</h2>{contact}</div><div class="page-contact-actions"><a class="button button-dark" href="/es/contacto">Hablemos de tu negocio</a><a class="text-link" href="/es/casos">Ver todos los casos</a></div></div></section>
 '''

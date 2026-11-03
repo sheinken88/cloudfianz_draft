@@ -13,6 +13,7 @@ routes = json.loads((ROOT / 'page-routes.json').read_text())
 from page_layouts.revianz_mockups import mockup
 
 home = (ROOT / 'templates/home.html').read_text()
+home = home.replace('<!-- SITE_FOOTER -->', (ROOT / 'templates/footer.html').read_text().strip())
 home = home.replace('<!-- REVIANZ_HOME_PREVIEW -->', mockup(
     'margin', 'Vista ilustrativa del producto. Datos de ejemplo.',
     'home-case-media home-rv-preview',
@@ -33,7 +34,7 @@ home = native_links(absolute_assets(home))
 home = home.replace('</head>', '<link rel="canonical" href="https://cloudfianz.com/es">\n</head>')
 (DIST / 'index.html').write_text(home)
 header = re.search(r'<header class="site-header">.*?</header>', home, re.S).group()
-footer = re.search(r'<footer class="site-footer">.*?</footer>', home, re.S).group()
+footer = re.search(r'<footer\b[^>]*>.*?</footer>', home, re.S).group()
 dialogs = re.search(r'<dialog id="reader-dialog".*?</dialog>\s*<dialog id="info-dialog".*?</dialog>', home, re.S).group()
 
 
@@ -60,7 +61,7 @@ def page(key, body, kind):
     title, description = html.escape(meta['Title'], quote=True), html.escape(meta['Meta description'], quote=True)
     canonical = 'https://cloudfianz.com' + routes[key]
     body = native_links(body)
-    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css', 'cases-page': 'cases-page.css', 'properix-page': 'properix-page.css', 'project-page': 'project-page.css'}
+    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css', 'cases-page': 'cases-page.css', 'properix-page': 'properix-page.css', 'project-page': 'project-page.css', 'contact-page': 'contact-page.css', 'method-page': 'method-page.css'}
     extra_css = f'<link rel="stylesheet" href="/{page_styles[kind]}">'
     if kind in ('revianz-page', 'cases-page') or key == 'servicio-desarrollo-software':
         extra_css += '<link rel="stylesheet" href="/revianz-mockups.css">'
@@ -74,7 +75,7 @@ def page(key, body, kind):
 <meta property="og:title" content="{title}"><meta property="og:description" content="{description}"><meta property="og:type" content="website"><meta property="og:url" content="{canonical}"><meta property="og:locale" content="es_AR">
 <link rel="icon" href="/assets/brand/cloudfianz-symbol.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css">{extra_css}<script src="/app.js" defer></script></head>
+<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css"><link rel="stylesheet" href="/footer.css">{extra_css}<script src="/app.js" defer></script></head>
 <body class="inner-page {kind}"><a class="skip-link" href="#principal">Ir al contenido</a>{header}<main id="principal">{body}</main>{footer}{dialogs}</body></html>'''
 
 
@@ -105,6 +106,13 @@ for key, builder, kind in [('indice-casos', build_cases, 'cases-page'), ('caso-p
 for key in ['caso-photonix', 'caso-escala24x7', 'caso-ads-mexicana']:
     meta, intro, sections = document(key)
     pages.append((key, build_project(key, meta, intro, sections, routes), 'project-page'))
+
+from page_layouts.contact import build_contact
+from page_layouts.method import build_method
+
+for key, builder, kind in [('pagina-contacto', build_contact, 'contact-page'), ('pagina-como-trabajamos', build_method, 'method-page')]:
+    meta, intro, sections = document(key)
+    pages.append((key, builder(meta, intro, sections, routes), kind))
 
 for key, body, kind in pages:
     output = DIST / routes[key].lstrip('/') / 'index.html'

@@ -1,6 +1,6 @@
 # Propuesta local del sitio · Cloudfianz
 
-Prototipo local de Cloudfianz. La Home presenta la empresa; Desarrollo a medida, Integraciones y Automatizaciones tienen páginas independientes con una arquitectura compartida y contenido específico. La revisión del 3 de noviembre de 2026 organiza cada servicio alrededor de aplicaciones concretas, casos reales y una única metodología. La página de Casos de éxito reúne seis proyectos, todos con página individual: Despegar, REVIANZ, ConsorcioAbierto, Photonix, Escala24x7 y ADS Mexicana.
+Prototipo local de Cloudfianz. La Home presenta la empresa; Desarrollo a medida, Integraciones y Automatizaciones tienen páginas independientes con una arquitectura compartida y contenido específico. La revisión del 3 de noviembre de 2026 organiza cada servicio alrededor de aplicaciones concretas, casos reales y una única metodología. La página de Casos de éxito reúne seis proyectos, todos con página individual: Despegar, REVIANZ, ConsorcioAbierto, Photonix, Escala24x7 y ADS Mexicana. Cómo trabajamos y Contacto completan el recorrido con páginas propias.
 
 ## Ver la propuesta
 
@@ -15,14 +15,16 @@ Desde la raíz del repositorio: `npm run dev:proposal`.
 - [Caso ConsorcioAbierto](http://127.0.0.1:3001/es/casos/consorcioabierto-facturacion-hubspot-odoo).
 - [Caso Despegar](http://127.0.0.1:3001/es/casos/despegar-cotizador-hubspot).
 - [Caso REVIANZ](http://127.0.0.1:3001/es/casos/revianz-gestion-financiera-proyectos).
+- [Cómo trabajamos](http://127.0.0.1:3001/es/como-trabajamos).
+- [Contacto](http://127.0.0.1:3001/es/contacto).
 
-El selector permite revisar las once páginas a distintos anchos. El servidor queda limitado a `127.0.0.1:3001`; esta entrega es una vista local para revisión, no un despliegue. Después de editar las fuentes, ejecutar `npm run build:proposal` y recargar el navegador. El servidor no incorpora recarga automática. Si se cambia el mapa de rutas, reiniciar el servidor.
+El selector permite revisar las trece páginas a distintos anchos. El servidor queda limitado a `127.0.0.1:3001`; esta entrega es una vista local para revisión, no un despliegue. Después de editar las fuentes, ejecutar `npm run build:proposal` y recargar el navegador. El servidor no incorpora recarga automática. Si se cambia el mapa de rutas, reiniciar el servidor.
 
 ## Dirección visual
 
 La [dirección visual v2](DIRECCION-VISUAL-V2.md) define azul profundo `#0B1D3A`, verde `#12B5A5`, blanco `#FFFFFF`, gris `#F5F7FA` y tinta `#0E1726`. El naranja `#FF7A2F` queda reservado para un uso justificado. Manrope es la familia de titulares e Inter la de lectura.
 
-El enlace «Casos» de la cabecera y del pie navega al índice `/es/casos`. Los CTA de proyectos de la Home y los servicios abren páginas completas, incluido el enlace a ConsorcioAbierto de la sección AWS.
+El enlace «Casos» de la cabecera y del pie navega al índice `/es/casos`. Los CTA de proyectos de la Home y los servicios abren páginas completas, incluido el enlace a ConsorcioAbierto de la sección AWS. «Cómo trabajamos» lleva a `/es/como-trabajamos`; la navegación de contacto y los CTA de consulta llevan a `/es/contacto`. La Home conserva su formulario y los destinos anteriores `/es#contacto`, `/es#consulta` y `/es#como-trabajamos` siguen disponibles.
 
 La cabecera compartida incluye un desplegable «Soluciones» con enlaces directos a Software a medida, Integraciones y Automatizaciones. En móvil se despliega dentro del menú principal; admite teclado, cierre con Escape, clic exterior y salida del foco.
 
@@ -36,17 +38,19 @@ La implementación adapta columnas, navegación y selectores a móvil. La valida
 
 ## Contenido y recursos originales
 
-La versión anterior aprobada se conserva en `outputs/homepage-20261022/` del workspace. Los textos vigentes están en `prototype/content/`: incluyen los cinco casos adaptados de los borradores del usuario del 29 de octubre de 2026 y REVIANZ (desarrollado para Digifianz), su índice y los servicios con ejemplos actualizados. Las notas editoriales de implementación quedan fuera de las páginas y del lector.
+La versión anterior aprobada se conserva en `outputs/homepage-20261022/` del workspace. Los textos vigentes están en `prototype/content/`: incluyen los cinco casos adaptados de los borradores del usuario del 29 de octubre de 2026 y REVIANZ (desarrollado para Digifianz), su índice, los servicios con ejemplos actualizados y las páginas de Contacto y Cómo trabajamos. Las notas editoriales de implementación quedan fuera de las páginas y del lector.
 
 ## Editar y generar
 
-- `templates/home.html`: fuente de la homepage y de la cabecera, pie y diálogos compartidos. No editar directamente el `dist/index.html` generado.
-- `content/*.md`: textos vigentes de servicios y casos, incluidos sus títulos y descripciones SEO.
+- `templates/home.html`: fuente de la homepage y de la cabecera y diálogos compartidos. No editar directamente el `dist/index.html` generado.
+- `templates/footer.html`: fuente única del pie compartido. `build-pages.py` lo inserta en Home y en todas las páginas internas; `dist/footer.css` contiene sus estilos comunes.
+- `content/*.md`: textos vigentes de servicios, casos, índice y páginas generales, incluidos sus títulos y descripciones SEO. `pagina-contacto.md` y `pagina-como-trabajamos.md` alimentan las dos páginas nuevas.
 - `build-pages.py`: generación de la homepage y las páginas independientes. Ejecuta primero `build-content.py` para regenerar el lector.
 - `page_layouts/service.py`: composición común de los tres servicios, alimentada por sus textos vigentes. `page_layouts/service_cases.py` reúne las identidades y recursos visuales de sus casos; `page_layouts/service_heroes.py` contiene las tres composiciones visuales del Hero.
 - `page_layouts/cases.py` y `page_layouts/case_previews.py`: índice de seis casos y sus recursos visuales compactos.
 - `page_layouts/case.py`, `page_layouts/revianz.py`, `page_layouts/properix.py` y `page_layouts/project.py`: composiciones de las seis páginas individuales de casos. Cada una conserva su contenido aprobado y distingue las capturas de los esquemas e imágenes de contexto.
-- `page-routes.json`: mapa de servicios, índice y casos con página propia. Todos sus enlaces se generan como URLs normales; no requieren el lector provisional.
+- `page_layouts/contact.py` y `page_layouts/method.py`: páginas de Contacto y Cómo trabajamos. Sus estilos específicos están en `dist/contact-page.css` y `dist/method-page.css`.
+- `page-routes.json`: mapa de servicios, índice, casos, Contacto y Cómo trabajamos. Todos sus enlaces se generan como URLs normales; no requieren el lector provisional.
 - `dist/home-page.css` y `dist/home-page.js`: presentación de Home y carril de clientes; los estilos y el movimiento quedan aislados de las páginas internas.
 - `dist/styles.css` y `dist/app.js`: base visual e interacciones compartidas. `dist/pages.css` define el sistema de las páginas internas; `dist/service-page.css` se comparte entre los tres servicios y `dist/case-page.css` agrega la composición específica de Despegar.
 - `dist/review.html` y `dist/review.js`: interfaz local de revisión.
@@ -63,7 +67,7 @@ Las captions distinguen el trabajo mostrado: Despegar usa la vista adaptada del 
 
 ## Alcance y límites de la revisión
 
-La entrega incluye once páginas: Home, tres servicios, índice de casos y seis casos individuales. No sustituye la web actual en `src/`. Los contenidos de casos y servicios se leen en sus URLs propias; ningún enlace público abre el lector provisional.
+La entrega incluye trece páginas: Home, tres servicios, índice de casos, seis casos individuales, Contacto y Cómo trabajamos. No sustituye la web actual en `src/`. Los contenidos de casos y servicios se leen en sus URLs propias; ningún enlace público abre el lector provisional.
 
 La agenda y el envío del formulario son simulaciones identificadas como tales. El formulario valida los campos y muestra una confirmación de prueba, sin enviar ni guardar los datos ingresados. No hay recepción comercial, reserva de reuniones ni medición conectadas. La política de privacidad permanece como aviso provisional.
 
@@ -90,3 +94,11 @@ La página individual adopta el sistema editorial de Despegar y REVIANZ: portada
 Las tres páginas adoptan el criterio editorial de ConsorcioAbierto: Hero navy con logo original, titular centrado en el resultado y ficha de tres datos; contexto y desafío en una misma sección; decisión técnica cuando corresponde; Solución sobre mint y resultados sobre navy. El cierre compartido reúne consulta, servicios e índice de casos. Los detalles retirados de las aperturas pasan a Solución, conservando el contenido aprobado.
 
 Cada solución mantiene un esquema propio: Photonix conecta técnicos y administración con el sistema alojado en AWS; Escala24x7 presenta sus tres intercambios originales una sola vez dentro del diagrama; ADS Mexicana organiza el recorrido en datos del CRM, cálculos y registro de la cotización. El resultado de ADS destaca más de 50 cotizaciones diarias. Las leyendas siguen distinguiendo los esquemas de la imagen de contexto de Photonix.
+
+## Contacto, Cómo trabajamos y pie compartido
+
+Contacto abre con una explicación breve y el formulario visible junto al título en escritorio. Reutiliza los cuatro campos y el comportamiento de prueba de la Home, con una nota explícita: no envía ni guarda datos y no tiene backend conectado. La explicación del siguiente paso acompaña el formulario sin comprometer un plazo de respuesta.
+
+Cómo trabajamos presenta auditoría, diseño, implementación y soporte como modalidades independientes. El selector se activa progresivamente con JavaScript; sin él, se leen todos los paneles. Cada modalidad explica actividad, entregables y participación del equipo. Los acuerdos de alcance y validación, ejemplos de proyectos y preguntas frecuentes breves completan el recorrido hacia Contacto; presupuesto, calendario y responsabilidades se definen según cada proyecto.
+
+El pie común agrupa los enlaces de Soluciones y Cloudfianz, la pertenencia a Digifianz y el acceso al aviso de privacidad. Su plantilla y CSS se comparten entre las trece páginas para mantener la navegación y presentación consistentes.

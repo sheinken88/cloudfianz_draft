@@ -1,0 +1,147 @@
+/* Independent engagements, shared decisions and a compact working agreement. */
+.method-page .mp-section{padding-block:76px;scroll-margin-top:24px}
+.method-page .mp-hero{background:#fff}
+.method-page .mp-hero .breadcrumbs{padding-block:26px}
+.method-page .mp-hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:80px;align-items:center;padding-block:28px 72px}
+.method-page .mp-hero h1{font-size:clamp(46px,4.1vw,60px);line-height:1.13;letter-spacing:-1.9px;max-width:740px;text-wrap:pretty}
+.method-page .mp-hero-intro{font-size:18px;color:var(--muted);max-width:650px;margin-top:26px}
+.method-page .mp-hero-intro p{line-height:1.8}
+.method-page .mp-hero-actions{display:flex;align-items:center;gap:20px 26px;flex-wrap:wrap;margin-top:30px}
+.method-page .mp-hero-actions .text-link{font-size:13px}
+.method-page .mp-agreement{background:var(--mist);border:1px solid var(--line);border-radius:14px;padding:30px}
+.method-page .mp-agreement h2{font-size:25px;line-height:1.3;letter-spacing:-.6px;text-wrap:pretty}
+.method-page .mp-agreement dl{margin:24px 0 0}
+.method-page .mp-agreement dl>div+div{border-top:1px solid var(--line);padding-top:18px;margin-top:18px}
+.method-page .mp-agreement dt{font-size:14px;line-height:1.5;color:var(--navy);font-weight:600}
+.method-page .mp-agreement dd{margin:7px 0 0;font-size:13px;line-height:1.7;color:var(--muted)}
+.method-page .mp-agreement dd p{line-height:1.7}
+.method-page .mp-modalities{background:var(--mist)}
+.method-page .mp-section-intro{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:76px;align-items:start;margin-bottom:36px}
+.method-page .mp-section h2{font-size:39px;line-height:1.2;letter-spacing:-1.15px;text-wrap:pretty}
+.method-page .mp-section-intro>p{max-width:650px;font-size:16px;line-height:1.8;color:var(--muted)}
+.method-page .mp-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:16px}
+.method-page .mp-tabs[hidden],.method-page .mp-panel[hidden]{display:none}
+.method-page .mp-tabs>button{display:flex;flex-direction:column;align-items:flex-start;gap:7px;text-align:left;padding:21px 22px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--navy);font:inherit;cursor:pointer;min-width:0}
+.method-page .mp-tab-name{font-family:var(--heading);font-size:23px;font-weight:600;line-height:1.35;letter-spacing:-.4px}
+.method-page .mp-tab-hint{font-size:12px;line-height:1.5;color:var(--muted)}
+.method-page .mp-tabs>button:hover{background:var(--mint);border-color:#c8e1d8}
+.method-page .mp-tabs>button[aria-selected=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.method-page .mp-tabs>button[aria-selected=true] .mp-tab-hint{color:#c1cfdb}
+.method-page .mp-panels{display:grid;gap:18px}
+.method-page .mp-panel{padding:32px;background:#fff;border:1px solid var(--line);border-radius:12px;min-width:0}
+.method-page .mp-panel>h3{font-size:30px;line-height:1.25;letter-spacing:-.75px;text-wrap:pretty;max-width:800px}
+.method-page .mp-panel-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:start;margin-top:26px}
+.method-page .mp-panel-story h4{font-size:13px;line-height:1.5;font-weight:600;color:var(--navy);margin:0 0 10px}
+.method-page .mp-panel-story p{font-size:15px;line-height:1.8;color:var(--muted)}
+.method-page .mp-participation{border-top:1px solid var(--line);margin-top:22px;padding-top:20px}
+.method-page .mp-delivery{background:var(--mint);padding:26px;border-radius:8px}
+.method-page .mp-delivery h4{font-size:12px;line-height:1.5;font-weight:600;color:#126357;margin:0 0 12px}
+.method-page .mp-delivery p{font-family:var(--heading);font-size:21px;line-height:1.55;letter-spacing:-.35px;color:var(--navy)}
+.method-page .mp-examples{background:var(--mint)}
+.method-page .mp-examples h2{max-width:760px;margin-bottom:35px}
+.method-page .mp-example-list{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0}
+.method-page .mp-example{min-width:0;display:flex;flex-direction:column;align-items:flex-start;padding-right:44px}
+.method-page .mp-example+.mp-example{padding-left:44px;padding-right:0;border-left:1px solid #bdd6cd}
+.method-page .mp-example-brand{display:flex;align-items:center;min-height:48px;margin-bottom:20px}
+.method-page .mp-example-brand img{height:auto}
+.method-page .mp-logo-photonix{width:150px}
+.method-page .mp-logo-consorcio{width:215px}
+.method-page .mp-example h3{font-size:27px;line-height:1.3;letter-spacing:-.7px;text-wrap:pretty;margin-bottom:17px}
+.method-page .mp-example-copy{font-size:15px;line-height:1.8;color:#466359;margin-bottom:24px}
+.method-page .mp-example .case-button{margin-top:auto;background:#fff}
+.method-page .mp-example .case-button:hover{background:#d8eee6}
+.method-page .mp-faq{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:80px;align-items:start}
+.method-page .mp-faq .faq-list summary{font-size:17px;font-weight:550;line-height:1.6;min-height:80px;padding-block:22px;gap:24px}
+.method-page .mp-faq .faq-list details>p{font-size:15px;line-height:1.8;padding:0 38px 24px 0;max-width:80ch}
+.method-page .mp-faq .plus{width:28px;height:28px;border-radius:50%;background:var(--mist)}
+.method-page .mp-faq .plus::before,.method-page .mp-faq .plus::after{left:8px;top:13px}
+.method-page .mp-faq details[open] .plus{background:var(--navy);color:#fff}
+.method-page .mp-contact{background:var(--navy);color:#fff}
+.method-page .mp-contact-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:90px;align-items:center}
+.method-page .mp-contact h2{color:#fff;max-width:740px}
+.method-page .mp-contact-grid>div>p{font-size:16px;line-height:1.8;color:#c1cfdb;max-width:670px;margin-top:24px}
+.method-page .mp-contact-action{display:flex;flex-direction:column;align-items:flex-start}
+.method-page .mp-contact-action>.button{max-width:100%;text-align:center}
+.method-page .mp-contact .mp-contact-action>p{font-size:13px;max-width:370px;margin-top:18px}
+.method-page .mp-contact a:focus-visible{outline-color:#89e1d3}
+@media(max-width:1199px){
+  .method-page .mp-hero-grid{gap:44px}
+  .method-page .mp-hero h1{font-size:48px;letter-spacing:-1.5px}
+  .method-page .mp-hero-intro{font-size:17px}
+  .method-page .mp-agreement{padding:25px}
+  .method-page .mp-agreement h2{font-size:23px}
+  .method-page .mp-section{padding-block:64px}
+  .method-page .mp-section h2{font-size:35px;letter-spacing:-.95px}
+  .method-page .mp-section-intro{gap:48px}
+  .method-page .mp-tabs>button{padding:19px 16px}
+  .method-page .mp-tab-name{font-size:20px}
+  .method-page .mp-panel-grid{gap:32px}
+  .method-page .mp-delivery{padding:22px}
+  .method-page .mp-delivery p{font-size:20px}
+  .method-page .mp-faq,.method-page .mp-contact-grid{gap:48px}
+  .method-page .mp-example{padding-right:32px}
+  .method-page .mp-example+.mp-example{padding-left:32px}
+}
+@media(max-width:899px){
+  .method-page .mp-hero-grid{grid-template-columns:1fr;gap:34px;padding-block:20px 48px}
+  .method-page .mp-hero h1{max-width:750px}
+  .method-page .mp-hero-intro{max-width:700px}
+  .method-page .mp-agreement{max-width:720px}
+  .method-page .mp-agreement dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  .method-page .mp-agreement dl>div+div{border:0;padding:0;margin:0}
+  .method-page .mp-section-intro{grid-template-columns:1fr;gap:20px}
+  .method-page .mp-section-intro>p{max-width:720px}
+  .method-page .mp-tabs{gap:8px}
+  .method-page .mp-tabs>button{padding:18px 14px}
+  .method-page .mp-tab-name{font-size:18px}
+  .method-page .mp-tab-hint{font-size:11px}
+  .method-page .mp-panel{padding:28px}
+  .method-page .mp-panel-grid{gap:26px;grid-template-columns:minmax(0,1fr) minmax(0,.8fr)}
+  .method-page .mp-delivery p{font-size:18px}
+  .method-page .mp-faq{grid-template-columns:1fr;gap:30px}
+  .method-page .mp-faq .faq-list{max-width:780px}
+  .method-page .mp-example h3{font-size:24px}
+  .method-page .mp-contact-grid{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:599px){
+  .method-page .mp-hero .breadcrumbs{font-size:11px;padding-block:20px}
+  .method-page .mp-hero-grid{padding-block:14px 40px;gap:30px}
+  .method-page .mp-hero h1{font-size:38px;line-height:1.15;letter-spacing:-1.1px}
+  .method-page .mp-hero-intro{font-size:16px;margin-top:22px}
+  .method-page .mp-hero-actions{gap:15px;margin-top:25px}
+  .method-page .mp-hero-actions>.button{width:100%;text-align:center;padding-inline:16px}
+  .method-page .mp-agreement{padding:24px;border-radius:10px}
+  .method-page .mp-agreement h2{font-size:24px}
+  .method-page .mp-agreement dl{display:block;margin-top:20px}
+  .method-page .mp-agreement dl>div+div{border-top:1px solid var(--line);padding-top:16px;margin-top:16px}
+  .method-page .mp-section{padding-block:50px}
+  .method-page .mp-section h2{font-size:30px;letter-spacing:-.75px}
+  .method-page .mp-section-intro{margin-bottom:28px}
+  .method-page .mp-section-intro>p{font-size:15px}
+  .method-page .mp-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .method-page .mp-tabs>button{padding:17px 12px}
+  .method-page .mp-tab-name{font-size:clamp(16px,4.4vw,19px);letter-spacing:-.35px}
+  .method-page .mp-tab-hint{font-size:11px}
+  .method-page .mp-panel{padding:25px 22px;border-radius:10px}
+  .method-page .mp-panel>h3{font-size:26px;letter-spacing:-.6px}
+  .method-page .mp-panel-grid{grid-template-columns:1fr;gap:24px;margin-top:22px}
+  .method-page .mp-panel-story p{font-size:14px}
+  .method-page .mp-panel-story h4{font-size:12px}
+  .method-page .mp-participation{margin-top:19px;padding-top:18px}
+  .method-page .mp-delivery{padding:22px}
+  .method-page .mp-delivery p{font-size:19px}
+  .method-page .mp-examples h2{margin-bottom:28px}
+  .method-page .mp-example-list{grid-template-columns:1fr;gap:30px}
+  .method-page .mp-example{padding:0}
+  .method-page .mp-example+.mp-example{border-left:0;border-top:1px solid #bdd6cd;padding:30px 0 0}
+  .method-page .mp-example h3{font-size:25px}
+  .method-page .mp-example-copy{font-size:14px;margin-bottom:22px}
+  .method-page .mp-example-brand{margin-bottom:18px}
+  .method-page .mp-logo-consorcio{width:200px}
+  .method-page .mp-faq .faq-list summary{font-size:16px;gap:18px;min-height:76px}
+  .method-page .mp-faq .faq-list details>p{font-size:14px;padding-right:0}
+  .method-page .mp-contact-grid>div>p{font-size:15px;margin-top:21px}
+  .method-page .mp-contact-action{align-items:stretch}
+  .method-page .mp-contact .mp-contact-action>p{font-size:12px;max-width:none}
+}
+@media(prefers-reduced-motion:reduce){.method-page .mp-faq .plus::after{transition:none}}

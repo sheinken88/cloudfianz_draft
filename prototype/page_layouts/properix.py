@@ -95,6 +95,6 @@ def build_properix(meta, intro, sections, routes):
 <section class="page-contact billing-contact" aria-labelledby="billing-contact-title"><div class="container page-contact-inner">
   <h2 id="billing-contact-title">{contact_title}</h2>
   {contact}
-  <div class="page-contact-actions"><a class="button button-dark" href="/es#consulta">Contanos qué necesitás</a><a class="text-link" href="/es/casos">Ver todos los casos</a></div>
+  <div class="page-contact-actions"><a class="button button-dark" href="/es/contacto">Contanos qué necesitás</a><a class="text-link" href="/es/casos">Ver todos los casos</a></div>
 </div></section>
 '''

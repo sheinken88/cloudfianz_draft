@@ -8,5 +8,7 @@
   "caso-properix": "/es/casos/consorcioabierto-facturacion-hubspot-odoo",
   "caso-photonix": "/es/casos/photonix-servicio-tecnico",
   "caso-escala24x7": "/es/casos/escala24x7-hubspot-aws-partner-central",
-  "caso-ads-mexicana": "/es/casos/ads-mexicana-cotizador-hubspot"
+  "caso-ads-mexicana": "/es/casos/ads-mexicana-cotizador-hubspot",
+  "pagina-contacto": "/es/contacto",
+  "pagina-como-trabajamos": "/es/como-trabajamos"
 }
