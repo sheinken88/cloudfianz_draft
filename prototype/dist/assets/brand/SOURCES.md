@@ -85,3 +85,8 @@ Esta variante reemplaza el soporte navy de Digifianz en la franja blanca de clie
 `hubspot-official.svg`: logo horizontal naranja original de la cabecera de [HubSpot](https://www.hubspot.com/), recuperado el 3 de noviembre de 2026. La página lo sirve como un `data:image/svg+xml;base64` en `img.global-nav-logo.-static`; se decodificó el archivo sin alterar el SVG, sus trazados ni su color original `#ff4800`. ViewBox `0 0 1255.82 355.99`, fondo transparente. Se usa como identificación de la plataforma en el esquema HubSpot ↔ AWS Partner Central.
 
 SHA-256: `883ba903494b9eb6ae8886f05362eb3914ce1c97a9d347aa50d1fd3464f35893`.
+
+
+## Odoo · 3 de noviembre de 2026
+
+Logo oficial positivo para el esquema de facturación de ConsorcioAbierto en el Hero de Automatizaciones. Archivo intacto: `odoo-official.svg`. [Fuente, dimensiones, hash y condiciones de presentación](ODOO-SOURCE.md).

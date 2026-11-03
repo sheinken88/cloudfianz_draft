@@ -1,6 +1,7 @@
 """One service architecture, with capability-specific copy and project evidence."""
 import re
 from page_layouts.service_cases import BRANDS, case_media
+from page_layouts.service_heroes import hero_media
 
 SERVICES = {
     'servicio-desarrollo-software': {
@@ -80,21 +81,12 @@ def build_service(key, meta, intro, sections):
     faqs = ''.join(f'<details name="service-questions"{" open" if i == 0 else ""}><summary>{question}<span class="plus" aria-hidden="true"></span></summary>{answer}</details>' for i, (question, answer) in enumerate(questions))
     cta_title, cta = section('Hablemos')
     cta_context, cta_reassurance = paragraphs(cta)
-    hero_class, hero_project = '', ''
-    if key == 'servicio-desarrollo-software':
-        hero_class = ' service-hero-grid--project'
-        hero_project = '''
-      <figure class="service-hero-project">
-        <a class="service-hero-preview" href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Ampliar captura del cotizador de Despegar (nueva pestaña)">
-          <img src="/assets/projects/despegar-cotizador-original.png" alt="Cotizador desarrollado para Despegar: presupuesto, productos y distribución por marca y país." width="1633" height="887" fetchpriority="high" decoding="async">
-        </a>
-        <figcaption><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"><span><strong>Cotizador comercial a medida</strong><span>Captura real del proyecto</span></span></figcaption>
-      </figure>'''
+    hero_project = hero_media(key)
     return f'''
 <section class="service-hero">
   <div class="container">
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es#soluciones">Soluciones</a></li><li aria-current="page">{service['name']}</li></ol></nav>
-    <div class="service-hero-grid{hero_class}">
+    <div class="service-hero-grid service-hero-grid--project">
       <div class="service-hero-copy"><h1>{meta['H1']}</h1></div>{hero_project}
       <div class="service-hero-intro">{paragraphs(intro)[0]}<div class="page-actions"><a class="button button-dark" href="/es#consulta">Contanos qué necesitás</a><a class="text-link" href="#proyectos">Ver proyectos reales</a></div></div>
     </div>

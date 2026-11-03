@@ -81,3 +81,12 @@ Un único constructor (`page_layouts/service.py`) y una hoja de estilos (`dist/s
 El Hero de Desarrollo incorpora la captura real del cotizador de Despegar, completa y sin alteraciones, sobre una superficie mint con borde suave. El logo original y un pie breve identifican el proyecto; la imagen enlaza al original para ampliarla. Se conserva el titular y la bajada, reunidos con los CTA a la izquierda en escritorio. La captura equilibra el bloque a la derecha. En móvil, el orden es titular, proyecto, descripción y acciones; el DOM respeta ese mismo recorrido de lectura y foco.
 
 La variante se limita a Desarrollo mediante `service-hero-grid--project`. Las otras páginas conservan sus composiciones y el portfolio mantiene los dos casos. No se agregan cifras, interfaces ficticias ni movimiento automático.
+
+
+## Recursos visuales en los tres Hero de servicios · 3 de noviembre de 2026
+
+Integraciones y Automatizaciones adoptan el layout de Desarrollo: título y descripción con CTA a la izquierda, proyecto a la derecha. En móvil, el recurso aparece después del título y antes de la descripción. La captura de Despegar permanece intacta.
+
+Integraciones muestra HubSpot ↔ AWS Partner Central con los logos oficiales, dos módulos equivalentes y flechas bidireccionales. La marca Escala24x7 y «Esquema de la integración» identifican el proyecto. Automatizaciones muestra el recorrido de las membresías en HubSpot, las reglas del contrato (descuentos, períodos y país) y la generación de facturas en Odoo. «Más de 15.000 facturas al mes» corresponde al caso documentado de ConsorcioAbierto; su marca y «Esquema del proceso» aclaran la evidencia.
+
+Los esquemas son HTML/SVG estático; no simulan interfaces de producto ni presentan controles interactivos. Los logos mantienen sus archivos originales, incluida la sonrisa naranja de AWS. El SVG de Odoo se recuperó del sitio oficial y conserva su espacio de seguridad; fuente y hash en `dist/assets/brand/ODOO-SOURCE.md`. `page_layouts/service_heroes.py` mantiene estas composiciones junto con el Hero de Desarrollo.

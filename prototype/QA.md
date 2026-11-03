@@ -526,3 +526,12 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Orden DOM y foco alineados con móvil: titular, imagen, descripción y CTA. Enlace de la captura accesible con Tab y foco visible. Consola sin errores ni avisos. Viewport restablecido al finalizar.
 - Build y diff check correctos. Comparación confirma que solo cambia el Hero en el HTML de Desarrollo; el resto de esa página, las otras cinco páginas y content.json son idénticos. CSS nuevo limitado a la variante. Revisión independiente sin hallazgos pendientes.
 - Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/development-hero-visual-20261103/desktop.jpg` y `mobile.jpg`. Cambios locales.
+
+
+## Hero visual de Integraciones y Automatizaciones · 3 de noviembre de 2026
+
+- Esquemas basados en los proyectos Escala24x7 y ConsorcioAbierto. Logos oficiales cargados, textos alternativos presentes y SVG decorativos con aria-hidden. Los pasos, reglas y la cifra mensual se contrastaron con el contenido aprobado de los casos. Revisión independiente del diff y capturas sin hallazgos pendientes.
+- Logo Odoo conservado intacto desde la descarga enlazada en su página oficial de marca. Hash comprobado contra la nota de procedencia. Su espacio libre interno y colores originales permanecen; sin filtros o recortes.
+- Revisión visual de escritorio a 1536 px CSS y móvil a 390 px. Medidas adicionales a 1280, 1024, 768 y 320 px: sin desbordes del Hero o de la página y todas sus imágenes cargadas. Orden DOM y visual móvil: título, esquema, descripción y CTA. Enlace «Ver proyectos reales» comprobado; consola sin errores ni avisos.
+- Build y diff check correctos. H1 e IDs únicos y recursos existentes. Comparación del HTML confirma cambios solo dentro de los Hero de Integraciones y Automatizaciones. Desarrollo, Home, páginas de casos y content.json permanecen idénticos. Los nuevos estilos afectan exclusivamente a los nuevos diagramas.
+- Capturas desktop y mobile de ambas páginas en `/Users/sheinken/Desktop/Cloudfianz/outputs/service-hero-visuals-20261103/`. Viewport restablecido al finalizar. Entrega local.

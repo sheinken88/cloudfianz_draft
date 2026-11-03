@@ -7,7 +7,7 @@
 .service-page .page-actions{gap:20px;margin-top:28px}
 .service-page .text-link{min-height:44px;display:inline-flex;align-items:center}
 
-/* Development puts a real product next to the capability it demonstrates. */
+/* Each service pairs its capability with evidence from a real project. */
 .service-hero-grid--project{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);grid-template-areas:"heading project" "intro project";gap:24px 56px;align-items:start;padding-block:40px 72px}
 .service-hero-grid--project .service-hero-copy{grid-area:heading}
 .service-hero-grid--project .service-hero-intro{grid-area:intro}
@@ -20,6 +20,40 @@
 .service-hero-project figcaption>img{width:120px;height:auto;flex:none}
 .service-hero-project figcaption>span{display:grid;gap:4px;font-size:12px;line-height:1.5;color:var(--muted)}
 .service-hero-project figcaption strong{font-size:14px;font-weight:600;color:var(--navy)}
+
+/* Service diagrams use the original platform identities and project facts. */
+.service-hero-canvas{padding:28px;background:var(--mint);border:1px solid #d6e5e0;border-radius:16px}
+.hero-system-map{display:grid;gap:28px;padding-block:32px}
+.hero-visual-title{font-family:var(--heading);font-size:20px;line-height:1.4;letter-spacing:-.3px;font-weight:600;color:var(--navy)}
+.hero-system-pair{display:grid;grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr);align-items:center}
+.hero-system{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;min-height:156px;padding:20px 14px;background:#fff;border:1px solid #dfe5eb;border-radius:10px;box-shadow:0 12px 28px #0b1d3a06}
+.hero-system>img{display:block;width:140px;max-width:100%;height:58px;object-fit:contain}
+.hero-system>.hero-system-aws{width:88px}
+.hero-system>span{font-size:13px;line-height:1.5;color:var(--muted);text-align:center}
+.hero-system-connection{width:100%;height:42px;color:#08796f}
+.hero-sync-note{display:flex;align-items:center;gap:14px;color:#27544c;font-size:14px;line-height:1.65}
+.hero-sync-symbol{display:grid;place-items:center;width:40px;height:40px;flex:none;background:#d5eae3;border-radius:50%;font-size:23px}
+.hero-sync-note strong{font-weight:600}
+.service-hero-project--integration figcaption>img{width:88px}
+.hero-billing-flow{padding:24px}
+.hero-flow-endpoint{display:flex;align-items:center;gap:24px;min-height:78px;padding:12px 20px;background:#fff;border:1px solid #dfe5eb;border-radius:10px}
+.hero-flow-endpoint>img{display:block;flex:none;object-fit:contain}
+.hero-flow-hubspot{width:124px;height:42px}
+.hero-flow-odoo{width:124px;height:66px}
+.hero-flow-endpoint>span{font-size:13px;line-height:1.5;color:var(--muted)}
+.hero-flow-endpoint strong{color:var(--navy);font-weight:600}
+.hero-flow-connector{display:flex;justify-content:center;height:26px;color:#08796f}
+.hero-flow-connector>svg{width:24px;height:100%}
+.hero-contract-rules{display:flex;align-items:center;gap:18px;padding:24px;background:var(--navy);color:#fff;border-radius:10px}
+.hero-contract-rules>svg{width:36px;height:36px;flex:none;color:#8bd1bf}
+.hero-contract-rules circle{fill:var(--navy);stroke:currentColor;stroke-width:1.5px}
+.hero-contract-rules p{font-family:var(--heading);font-size:17px;line-height:1.4;font-weight:600}
+.hero-contract-rules ul{display:flex;flex-wrap:wrap;gap:8px 16px;list-style:none;padding:0;margin:10px 0 0;color:#c4d4e2;font-size:12px;line-height:1.5}
+.hero-invoice-stack{width:40px;height:44px;flex:none;margin-left:auto;stroke:#71968c;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.hero-invoice-stack>path:nth-child(2){fill:#fff}
+.hero-flow-result{margin:20px 0 0;text-align:center;font-size:14px;line-height:1.6;color:#27544c}
+.hero-flow-result strong{font-weight:650}
+.service-hero-project--automation figcaption>img{width:168px}
 
 /* Service sections retain their hierarchy; needs use concise examples. */
 .service-page .page-section{padding-block:76px}
@@ -267,4 +301,37 @@
   .service-hero-project figcaption>img{width:90px}
   .service-hero-project figcaption strong{font-size:12px}
   .service-hero-project figcaption>span{font-size:11px}
+}
+@media(max-width:1199px){
+  .service-hero-canvas{padding:24px}
+  .hero-system-pair{grid-template-columns:minmax(0,1fr) 44px minmax(0,1fr)}
+  .hero-system{padding:18px 12px;min-height:144px}
+  .hero-flow-endpoint{gap:16px;padding-inline:16px}
+  .hero-flow-hubspot,.hero-flow-odoo{width:112px}
+  .hero-contract-rules{padding:20px;gap:16px}
+  .hero-contract-rules p{font-size:16px}
+}
+@media(max-width:479px){
+  .service-hero-canvas{padding:18px;border-radius:12px}
+  .hero-system-map{gap:22px}
+  .hero-visual-title{font-size:17px}
+  .hero-system-pair{grid-template-columns:minmax(0,1fr) 36px minmax(0,1fr)}
+  .hero-system{min-height:126px;padding:14px 10px;gap:12px}
+  .hero-system>img{height:48px}
+  .hero-system>.hero-system-aws{width:64px}
+  .hero-system>span{font-size:11px}
+  .hero-sync-note{font-size:12px;gap:12px}
+  .hero-sync-symbol{width:32px;height:32px;font-size:20px}
+  .service-hero-project--integration figcaption>img{width:72px}
+  .hero-flow-endpoint{gap:14px;padding:10px 14px;min-height:72px}
+  .hero-flow-hubspot,.hero-flow-odoo{width:96px}
+  .hero-flow-odoo{height:58px}
+  .hero-flow-endpoint>span{font-size:11px}
+  .hero-contract-rules{padding:18px 14px;gap:12px}
+  .hero-contract-rules>svg{width:28px;height:28px}
+  .hero-contract-rules p{font-size:14px}
+  .hero-contract-rules ul{font-size:11px;gap:6px 12px;margin-top:8px}
+  .hero-invoice-stack{display:none}
+  .hero-flow-result{font-size:12px;margin-top:18px}
+  .service-hero-project--automation figcaption>img{width:128px}
 }
