@@ -15,8 +15,6 @@ PROJECTS = [
 
 
 def build_cases(meta, intro, sections, routes):
-    hero_despegar = case_preview('caso-despegar').replace('loading="lazy"', 'fetchpriority="high"')
-    hero_revianz = case_preview('caso-revianz')
     cards = []
     for key, section, category, asset, width, height, slug in PROJECTS:
         copy = sections[section]
@@ -29,8 +27,11 @@ def build_cases(meta, intro, sections, routes):
             brand = f'<img src="/assets/brand/{asset}" alt="{html.escape(section)}"{dimensions} loading="lazy">'
         else:
             brand = '<span class="cases-revianz-brand" role="img" aria-label="REVIANZ"><span aria-hidden="true">RZ</span><strong aria-hidden="true">Revianz</strong></span>'
+        preview = case_preview(key)
+        if key == 'caso-despegar':
+            preview = preview.replace('loading="lazy"', 'fetchpriority="high"')
         cards.append(f'''<article class="cases-card cases-card--{slug}" aria-labelledby="{key}-title">
-          {case_preview(key)}
+          {preview}
           <div class="cases-card-copy">
             <div class="cases-card-brand">{brand}</div>
             <p class="cases-card-category">{category}</p>
@@ -45,11 +46,8 @@ def build_cases(meta, intro, sections, routes):
   <div class="container">
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li aria-current="page">Casos</li></ol></nav>
     <div class="cases-hero-heading">
-      <div class="cases-hero-copy"><h1 id="cases-hero-title">{html.escape(meta['H1'])}</h1><div class="cases-hero-intro">{intro}</div><a class="button cases-hero-action" href="#proyectos">Explorá los proyectos</a></div>
-      <div class="cases-hero-work" aria-label="Vistas de los proyectos Despegar y REVIANZ">
-        <div class="cases-hero-despegar"><img class="cases-hero-client" src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52">{hero_despegar}</div>
-        <div class="cases-hero-revianz"><span class="cases-revianz-brand" role="img" aria-label="REVIANZ"><span aria-hidden="true">RZ</span><strong aria-hidden="true">Revianz</strong></span>{hero_revianz}</div>
-      </div>
+      <h1 id="cases-hero-title">{html.escape(meta['H1'])}</h1>
+      <div class="cases-hero-intro">{intro}</div>
     </div>
   </div>
 </section>

@@ -106,3 +106,10 @@ Los enlaces «Casos» del menú y pie, «Ver todos los casos», las marcas de cl
 La apertura textual sobre mist se reemplaza por una composición de producto sobre navy #0B1D3A. «Casos de éxito» gana escala, la bajada se acorta y el CTA mint lleva al índice de proyectos. A la derecha, dos vistas escalonadas muestran el cotizador de Despegar y el detalle de alcance de REVIANZ. Se preservan Manrope, Inter y la paleta existente. En móvil queda solo la vista de Despegar para contener la altura; REVIANZ continúa en la grilla.
 
 El usuario confirmó que la imagen correcta es la variante limpia, sin Digifianz en la cabecera ni acentos azules junto a las marcas. El mismo JPG adaptado se utiliza en todas las vistas generales del cotizador y sus ampliaciones, incluida Home y Solución en el caso individual. Las leyendas distinguen su tratamiento de marketing. El catálogo conserva su imagen específica.
+
+
+## Apertura compacta del índice · 3 de noviembre de 2026
+
+Tras el rechazo del Hero navy, el índice adopta una apertura blanca con H1 y bajada centrados. Se elimina la composición superpuesta, las vistas repetidas y el botón que bajaba a la grilla. El breadcrumb permanece alineado a la izquierda. La primera fila de casos es la evidencia visual de la página y aparece inmediatamente debajo.
+
+El H1 usa Manrope a 64 px en escritorio y escala hasta 36 px en móvil. La cabecera ocupa aproximadamente 269 px a 1440 px de ancho y 237 px a 390 px. Se mantienen los textos, seis cards, destinos nativos y la versión limpia del cotizador. La primera imagen del índice carga con prioridad alta por estar ahora en el primer pantallazo.

@@ -1,31 +1,10 @@
 /* The case directory keeps the project identity inside one readable system. */
-.cases-hero{background:var(--navy);color:#fff;overflow:hidden}
-.cases-hero .breadcrumbs,.cases-hero .breadcrumbs [aria-current]{color:#c1d1dc}
-.cases-hero .breadcrumbs li+li::before{color:#8ba6b8}
-.cases-hero-heading{display:grid;grid-template-columns:.8fr 1.2fr;gap:68px;align-items:center;padding:28px 0 72px}
-.cases-hero-copy{min-width:0;padding-bottom:14px}
-.cases-page .cases-hero h1{font-size:clamp(64px,5.9vw,84px);line-height:1.04;letter-spacing:-3px;color:#fff;max-width:440px;text-wrap:initial}
-.cases-hero-intro{max-width:420px;margin-top:26px;font-size:17px;line-height:1.8;color:#d2dde5}
-.cases-hero-action{margin-top:30px;background:var(--mint);color:var(--navy);border-color:var(--mint)}
-.cases-hero-action:hover{background:#fff;border-color:#fff;box-shadow:none}
-.cases-hero a:focus-visible{outline-color:#85dfcc}
-.cases-hero-work{display:grid;grid-template-columns:1fr 1fr;min-width:0;width:100%;max-width:560px;justify-self:end;padding-block:8px 0}
-.cases-hero-despegar{grid-column:1/-1;grid-row:1;width:88%;padding:20px 22px 16px;background:#f3f7f6;border-radius:14px;min-width:0}
-.cases-hero-client{display:block;width:112px;height:auto;margin-bottom:15px}
-.cases-hero-revianz{grid-column:1/-1;grid-row:2;justify-self:end;width:72%;margin-top:-18px;padding:17px 20px 15px;background:#fff;border:1px solid #dce5e2;border-radius:12px;min-width:0;position:relative;box-shadow:0 14px 30px #0002}
-.cases-hero-revianz .cases-revianz-brand{margin-bottom:12px;gap:8px}
-.cases-hero-revianz .cases-revianz-brand>span{width:26px;height:26px;border-radius:7px;font-size:8px}
-.cases-hero-revianz .cases-revianz-brand>strong{font-size:17px}
-.cases-hero-work .case-preview .case-preview-stage{height:auto;padding:0;border-radius:0;background:none}
-.cases-hero-work .case-preview .case-preview-capture{width:100%;max-height:none;box-shadow:none}
-.cases-hero-work .case-preview>.revianz-mockup-stage{height:auto;padding:0;border-radius:0;background:none}
-.cases-hero-work .case-preview .revianz-mockup{max-width:none}
-.cases-hero-work .case-preview .rm-paper{box-shadow:none;padding:12px}
-.cases-hero-work .case-preview>figcaption{font-size:10px;margin:10px 0 0;line-height:1.4}
-.cases-hero-work .case-preview .rm-scope-header{padding-bottom:7px}
-.cases-hero-work .case-preview .rm-scope-body{margin-top:7px}
-.cases-hero-work .case-preview .rm-service{padding:5px 7px}
-.cases-collection{padding:64px 0 88px;scroll-margin-top:96px}
+.cases-hero{background:#fff}
+.cases-hero .breadcrumbs{padding-block:24px 0}
+.cases-hero-heading{max-width:780px;margin-inline:auto;padding:32px 0 44px;text-align:center}
+.cases-page .cases-hero h1{font-size:clamp(50px,4.6vw,64px);line-height:1.12;letter-spacing:-2.2px;color:var(--navy)}
+.cases-hero-intro{max-width:620px;margin:18px auto 0;font-size:17px;line-height:1.75;color:var(--muted)}
+.cases-collection{padding:8px 0 88px;scroll-margin-top:96px}
 .cases-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
 .cases-card{display:flex;flex-direction:column;min-width:0;border:1px solid #dfe5eb;border-radius:16px;overflow:hidden;background:#fff}
 .cases-card>.case-preview>figcaption{margin:12px 0 0;padding-inline:32px}
@@ -47,32 +26,22 @@
 .cases-card-action .case-button{max-width:100%}
 .cases-page .cases-contact h2{font-size:42px;line-height:1.2;max-width:780px}
 @media(max-width:1199px){
-  .cases-hero-heading{gap:40px;padding-bottom:56px;grid-template-columns:.85fr 1.15fr}
-  .cases-hero-despegar{width:96%}
-  .cases-hero-revianz{width:86%;margin-top:-4px}
   .cases-grid{gap:24px}
   .cases-card-copy{padding:24px 26px 28px}
   .cases-card>.case-preview>figcaption{padding-inline:26px}
   .cases-page .cases-card h2{font-size:26px}
 }
 @media(max-width:799px){
-  .cases-hero-heading{grid-template-columns:1fr;gap:34px;padding:18px 0 40px}
-  .cases-page .cases-hero h1{font-size:60px;max-width:none}
-  .cases-hero-intro{max-width:540px;margin-top:20px}
-  .cases-hero-copy{padding:0}
-  .cases-hero-work{width:100%;max-width:560px;justify-self:center}
-  .cases-hero-despegar{width:88%;padding:16px}
-  .cases-hero-revianz{width:76%;margin-top:-8px;padding:14px}
-  .cases-collection{padding-block:40px 64px}
+  .cases-hero-heading{padding:28px 0 32px}
+  .cases-page .cases-hero h1{font-size:48px}
+  .cases-hero-intro{max-width:540px;font-size:16px}
+  .cases-collection{padding-block:8px 64px}
   .cases-grid{grid-template-columns:1fr;gap:28px}
   .cases-page .cases-contact h2{font-size:36px}
 }
 @media(max-width:479px){
-  .cases-page .cases-hero h1{font-size:52px;letter-spacing:-1.8px;max-width:300px}
-  .cases-hero-intro{font-size:16px;line-height:1.7}
-  .cases-hero-action{margin-top:24px}
-  .cases-hero-despegar{width:100%;padding:14px}
-  .cases-hero-revianz{display:none}
+  .cases-page .cases-hero h1{font-size:clamp(36px,10vw,44px);letter-spacing:-1.4px}
+  .cases-hero-intro{font-size:15px;line-height:1.7;margin-top:14px}
   .cases-card{border-radius:12px}
   .cases-card-copy{padding:22px}
   .cases-card>.case-preview>figcaption{padding-inline:22px}

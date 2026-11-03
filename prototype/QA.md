@@ -553,3 +553,10 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Confirmación explícita del usuario: usar la variante sin logo Digifianz ni líneas azules. Las ocho imágenes generales del cotizador, distribuidas en cinco páginas, apuntan al mismo JPG adaptado de 1701 × 924. Alt, leyendas y ampliaciones actualizados; verificación de los destinos en DOM. PNG original preservado como archivo histórico y catálogo sin cambios.
 - CTA «Explorá los proyectos» comprobado y navegación correcta a la grilla. Consola sin errores ni advertencias durante las comprobaciones. Build y diff check correctos.
 - Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/cases-hero-revision-20261103/`: Hero del índice desktop/mobile y portada del caso Despegar. Cambios locales.
+
+
+## Apertura compacta y proyectos visibles · 3 de noviembre de 2026
+
+- Se reemplaza el Hero navy por una cabecera blanca, centrada y breve. Se retiran collage y CTA redundante; las cards mantienen su contenido y enlaces. Build y diff check correctos. El diff de los HTML generados queda limitado al índice.
+- Revisión visual a 1440 y 390 px CSS; medidas a 1024, 768 y 320 px sin desbordes horizontales ni de contenido del encabezado. Altura desktop de 269 px frente a los 786 px anteriores; en 390 px, 237 px. Consola sin errores ni advertencias.
+- Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/cases-compact-opening-20261103/desktop.jpg` y `mobile.jpg`. Entrega local.

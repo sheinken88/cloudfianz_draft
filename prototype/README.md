@@ -75,6 +75,6 @@ Revisión de REVIANZ: el sitio usa los mockups ilustrativos del producto, portad
 
 ## Revisión del Hero de Casos y de Despegar · 3 de noviembre de 2026
 
-El índice abre con título y bajada breve sobre navy, CTA hacia los proyectos y una composición de Despegar y REVIANZ. En móvil se conserva la vista de Despegar para mantener una apertura compacta. La grilla y las páginas individuales conservan su arquitectura.
+El índice abre con título y bajada centrados sobre blanco, en una cabecera compacta. La primera fila de proyectos aporta el recurso visual inmediatamente después de la introducción. La grilla y las páginas individuales conservan su arquitectura.
 
-Todas las vistas generales del cotizador usan `assets/hero/despegar-cotizador-hero-v1.jpg`, la variante limpia confirmada por el usuario: sin logo Digifianz ni líneas azules junto a las marcas. Aparece en Home, Hero y portfolio de Desarrollo, portfolio de Automatizaciones, Hero y card del índice, y Hero y Solución del caso Despegar. Sus ampliaciones abren el mismo JPG; los pies la identifican como vista adaptada. El PNG original queda como archivo histórico.
+Todas las vistas generales del cotizador usan `assets/hero/despegar-cotizador-hero-v1.jpg`, la variante limpia confirmada por el usuario: sin logo Digifianz ni líneas azules junto a las marcas. Aparece en Home, Hero y portfolio de Desarrollo, portfolio de Automatizaciones, card del índice, y Hero y Solución del caso Despegar. Sus ampliaciones abren el mismo JPG; los pies la identifican como vista adaptada. El PNG original queda como archivo histórico.
