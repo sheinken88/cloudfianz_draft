@@ -63,3 +63,13 @@ En mobile, el orden es marca, título, relato, resultado, enlaces y producto. La
 ## Portfolio más breve en la Home · 3 de noviembre de 2026
 
 La Home presenta cada proyecto con un titular enfocado en su resultado, un único párrafo de contexto y enlaces al caso completo. Se integra el contenido de «Qué cambió» en esa presentación y se reservan las explicaciones extensas para las páginas de casos. Los tres artículos mantienen el marco visual común, las marcas originales y las imágenes existentes. Las capturas tienen menor altura y la galería REVIANZ conserva sus tres vistas, con menos espaciado interno. El contenido completo de los casos permanece intacto.
+
+## Edición de ritmo y jerarquía · 3 de noviembre de 2026
+
+Se mantiene la arquitectura Hero → Credibilidad → Soluciones → Casos → Metodología → Contacto. Paleta: navy #0B1D3A, teal #12B5A5, mint #E8F4F0, gris #F5F7FA, blanco #FFFFFF y texto #55616F. Manrope conserva los titulares; Inter, los párrafos y acciones. Todo el contenido se alinea a la izquierda sobre el ancho compartido del sitio.
+
+El hero conserva la imagen ambiental y cambia su promesa a «Tu negocio tiene sus reglas. Tu software también debería.». El diferencial se apoya en las reglas de cotización, contratos y gestión ya documentadas en los proyectos. El respaldo de Digifianz pasa a una franja breve debajo del hero; reemplaza la repetición de logos de clientes y absorbe la sección institucional del cierre.
+
+Las tres soluciones conservan su jerarquía y reciben CTA con verbos y un tratamiento de botón secundario. Los casos se presentan en filas de dos columnas: marca, resultado, un párrafo y enlace a la izquierda; una sola imagen a la derecha. REVIANZ muestra únicamente la vista ilustrativa de rentabilidad. En móvil se apilan texto e imagen. Una invitación contextual al contacto aparece tras los primeros dos casos. El acceso al índice se ofrece una sola vez al terminar la selección.
+
+Revisión del plan: se descarta una nueva grilla de tarjetas y se preserva el recorrido editorial existente. La escala de las imágenes acompaña al resumen en lugar de producir tres presentaciones completas. El contraste navy distingue el respaldo institucional; mint marca la oportunidad de contacto. Las cifras y capturas mantienen sus aclaraciones; no se agregan resultados ni credenciales. Las páginas internas conservan el detalle de cada proyecto.

@@ -1,85 +1,94 @@
-/* Homepage: broad positioning, visible services, editorial cases and company backing.
-   Page-specific styles keep the approved service and case pages unchanged. */
+/* Home: a concise introduction, one proof per case and an earlier contact path.
+   All selectors stay local to the homepage; inner pages retain their own system. */
 .home-page{--home-accent:#08796f}
 .home-page main :is(h1,h2,h3){text-wrap:balance}
-.home-section{padding-block:108px}
+.home-section{padding-block:88px}
 
-/* An editorial workplace image fades into the copy, keeping the opening cohesive. */
-.home-hero{position:relative;isolation:isolate;overflow:hidden;background:#fff;color:var(--navy);min-height:660px;padding-block:78px 88px}
+/* Keep the existing workplace image; let the business-specific headline lead. */
+.home-hero{position:relative;isolation:isolate;overflow:hidden;background:#fff;color:var(--navy);min-height:600px;padding-block:92px 80px}
 .home-hero-media{position:absolute;inset:0;z-index:0;pointer-events:none}
 .home-hero-media>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .home-hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(0deg,#fff 0%,rgba(255,255,255,0) 22%),linear-gradient(90deg,#fff 0%,#fff 26%,rgba(255,255,255,.97) 39%,rgba(255,255,255,.88) 47%,rgba(255,255,255,.6) 56%,rgba(255,255,255,.08) 72%,rgba(255,255,255,0) 85%)}
 .home-opening{position:relative;z-index:2;display:block}
 .home-opening-content{width:58%;max-width:650px;min-width:0}
-.home-affiliation{color:#526b65;font-size:13px;margin-bottom:28px}
-.home-opening h1{color:var(--navy);font-size:clamp(48px,4.3vw,64px);line-height:1.1;letter-spacing:-2.4px;font-weight:550;max-width:650px}
+.home-opening h1{color:var(--navy);font-size:clamp(48px,4.5vw,64px);line-height:1.1;letter-spacing:-2.4px;font-weight:550;max-width:650px}
 .home-opening-copy{margin-top:28px;max-width:510px}
-.home-opening-copy>p{font-size:16px;line-height:1.8;color:#465565}
+.home-opening-copy>p{font-size:17px;line-height:1.8;color:#465565}
 .home-opening-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:30px}
-.home-opening-actions .text-link{font-size:13px;min-height:35px;color:var(--navy)}
+.home-opening-actions .text-link{font-size:14px;min-height:44px;display:inline-flex;align-items:center;color:var(--navy)}
 
-.home-proof{display:flex;align-items:center;gap:70px;padding-block:40px;border-bottom:1px solid var(--line)}
-.home-proof>p{font-size:13px;line-height:1.6;color:var(--muted);flex:0 0 225px}
-.home-client-logos{display:flex;align-items:center;justify-content:space-between;gap:50px;flex:1}
-.home-client-logos a{display:flex;align-items:center;min-height:60px}
-.home-client-logos img{width:100%;max-width:170px;height:auto}
-.home-client-logos a:nth-child(2) img{max-width:210px}
-.home-client-logos a:nth-child(3) img{max-width:150px}
-.home-section-heading{display:grid;grid-template-columns:1.2fr 1fr;gap:100px;align-items:end;margin-bottom:66px}
-.home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:clamp(38px,3.6vw,52px);line-height:1.15;letter-spacing:-1.7px}
-.home-section-heading>p{font-size:17px;line-height:1.8;color:var(--muted);max-width:480px}
-.home-service-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:52px}
-.home-service-path{display:flex;flex-direction:column;align-items:start;min-width:0;padding-top:28px;border-top:3px solid #64b6aa}
-.home-service-path h3{font-size:29px;line-height:1.24;letter-spacing:-.8px;max-width:340px}
-.home-service-path>p{font-size:16px;line-height:1.8;color:var(--muted);margin-block:24px 28px}
-.home-service-path .text-link{margin-top:auto;color:var(--home-accent);font-size:14px;min-height:40px;display:inline-flex;align-items:center}
+/* Institutional credibility is a short bridge, with client brands saved for cases. */
+.home-proof{background:var(--navy);color:#fff;padding-block:28px}
+.home-proof-inner{display:grid;grid-template-columns:180px 1fr auto;align-items:center;gap:48px}
+.home-proof-inner>img{width:180px;height:auto}
+.home-proof-inner>p{font-size:14px;line-height:1.75;color:#d5dfe8;max-width:640px}
+.home-proof-inner>.text-link{font-size:13px;min-height:44px;display:inline-flex;align-items:center;white-space:nowrap}
 
-/* A shared editorial frame contains each project's own brand and product. */
-.home-work{background:var(--mist);padding-block:88px}
-.home-work-heading{display:flex;align-items:end;justify-content:space-between;gap:48px;margin-bottom:44px}
-.home-work-heading>.text-link{flex:none;margin-bottom:5px}
-.home-project-stories{display:grid;gap:28px}
-.home-case{min-width:0;background:#fff;border:1px solid #dfe5eb;border-radius:20px;scroll-margin-top:120px}
-.home-case-intro{padding:28px 32px 24px}
-.home-case-brandline{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:46px;margin-bottom:20px}
+.home-section-heading{display:grid;grid-template-columns:1.2fr 1fr;gap:88px;align-items:end;margin-bottom:48px}
+.home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:clamp(36px,3.5vw,48px);line-height:1.16;letter-spacing:-1.6px}
+.home-section-heading>p{font-size:16px;line-height:1.8;color:var(--muted);max-width:480px}
+.home-service-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.home-service-path{display:flex;flex-direction:column;align-items:start;min-width:0;padding-top:24px;border-top:2px solid #64b6aa}
+.home-service-path h3{font-size:27px;line-height:1.25;letter-spacing:-.8px;max-width:340px}
+.home-service-path>p{font-size:15px;line-height:1.8;color:var(--muted);margin-block:20px 24px}
+.home-service-action{margin-top:auto;min-height:48px;padding:12px 17px;background:transparent;border-color:#8fb6ae;color:#17665e;font-size:13px;text-align:left}
+.home-service-action:hover{background:var(--mint);border-color:var(--home-accent);box-shadow:none}
+
+/* One compact text-and-product row per case, with consistent reading order. */
+.home-work{background:var(--mist)}
+.home-work-heading{display:grid;grid-template-columns:1.2fr 1fr;align-items:end;gap:88px;margin-bottom:40px}
+.home-work-heading>p{font-size:16px;line-height:1.8;color:var(--muted);max-width:350px}
+.home-project-stories{display:grid;gap:24px}
+.home-case{display:grid;grid-template-columns:1fr 1fr;align-items:center;min-width:0;background:#fff;border:1px solid #dfe5eb;border-radius:16px;scroll-margin-top:120px}
+.home-case-intro{padding:30px 32px}
+.home-case-brandline{display:flex;flex-direction:column;align-items:start;gap:10px;margin-bottom:20px}
 .home-case-logo{display:block;object-fit:contain;height:auto;flex:none}
-.home-case-logo-despegar{width:160px}
-.home-case-logo-consorcio{width:220px}
-.home-case-category{font-size:12px;line-height:1.6;color:var(--muted);text-align:right}
-.home-case-story{display:grid;grid-template-columns:1fr 1.08fr;grid-template-rows:auto 1fr;gap:14px 56px;align-items:start}
-.home-case-story>h3{grid-column:1;grid-row:1;font-size:32px;line-height:1.23;letter-spacing:-1.05px;color:var(--navy);max-width:490px}
-.home-case-description{grid-column:2;grid-row:1 / span 2;min-width:0}
-.home-case-description>p{font-size:15px;line-height:1.8;color:var(--muted)}
-.home-case-actions{grid-column:1;grid-row:2;display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px;align-self:start}
+.home-case-logo-despegar{width:148px}
+.home-case-logo-consorcio{width:206px;max-width:100%}
+.home-case-category{font-size:12px;line-height:1.5;color:var(--muted)}
+.home-case-story>h3{font-size:30px;line-height:1.22;letter-spacing:-.9px;color:var(--navy);max-width:490px}
+.home-case-description{margin-top:16px}
+.home-case-description>p{font-size:15px;line-height:1.8;color:var(--muted);max-width:490px}
+.home-case-actions{margin-top:16px}
 .home-case-actions .text-link{display:inline-flex;align-items:center;min-height:44px;font-size:13px;line-height:1.5;font-weight:600}
-.home-case-actions .home-case-external{font-weight:450;color:var(--muted)}
-.home-case-media{margin:0 24px 20px;min-width:0}
-.home-case-stage{display:flex;align-items:center;justify-content:center;min-height:320px;padding:22px;background:#f1f4f6;border-radius:12px}
-.home-case-stage>img{display:block;width:min(100%,840px);height:auto;max-width:100%;max-height:276px;object-fit:contain;border-radius:6px;box-shadow:0 12px 28px #0b1d3a0d}
-.home-case-media>figcaption,.home-rv-gallery-footer p{font-size:11px;line-height:1.6;color:var(--muted)}
-.home-case-media>figcaption{margin:13px 8px 0}
-.home-case-stage-gallery{display:block;min-height:0;padding:16px}
-.home-portfolio-footer{display:flex;align-items:center;justify-content:space-between;gap:35px;margin-top:44px}
-.home-portfolio-footer>p{font-size:16px;color:var(--muted)}
+.home-case-media{margin:24px 24px 24px 0;min-width:0}
+.home-case-stage{display:flex;align-items:center;justify-content:center;min-height:280px;padding:20px;background:#f1f4f6;border-radius:10px}
+.home-case-stage>img{display:block;width:100%;height:auto;max-width:100%;max-height:280px;object-fit:contain;border-radius:5px;box-shadow:0 12px 28px #0b1d3a0d}
+.home-case-media>figcaption{margin:12px 4px 0;font-size:11px;line-height:1.6;color:var(--muted)}
+.home-case-contact{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:30px 32px;background:var(--mint);border-radius:12px}
+.home-case-contact h3{font-size:27px;line-height:1.25;letter-spacing:-.7px}
+.home-case-contact p{margin-top:8px;font-size:15px;color:#42645b}
+.home-case-contact>.button{flex:none}
+.home-portfolio-footer{display:flex;justify-content:flex-end;margin-top:30px}
+.home-portfolio-footer>.text-link{display:inline-flex;align-items:center;min-height:44px}
 
-/* The approach stands on its own; client examples stay in the portfolio. */
-.home-judgment-intro{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:start}
+/* REVIANZ has one representative preview. Its complete views live on the case page. */
+.home-rv-preview .revianz-mockup-stage{display:flex;align-items:center;justify-content:center;min-height:280px;padding:20px;background:#f1f4f6;border:0;border-radius:10px}
+.home-rv-preview .revianz-mockup{width:100%;max-width:340px;min-width:0}
+.home-rv-preview .rm-paper{padding:22px;border-radius:16px;box-shadow:0 12px 28px #0d1f170d}
+.home-rv-preview .rm-label{font-size:11px;letter-spacing:0;text-transform:none}
+.home-rv-preview .rm-live .rm-label{color:#bdc9be}
+.home-rv-preview .rm-percentage{font-size:42px;letter-spacing:-2px;margin-top:8px}
+.home-rv-preview .rm-live-heading{flex-wrap:wrap;gap:10px}
+.home-rv-preview .rm-trend{font-size:10px;padding:6px 8px}
+.home-rv-preview .rm-chart{margin-top:18px;max-height:70px}
+.home-rv-preview .rm-live-totals{gap:10px;margin-top:16px}
+.home-rv-preview .rm-live-totals>div{padding:12px;border-radius:10px}
+.home-rv-preview .rm-live-totals p{font-size:10px;margin-bottom:5px;color:#bdc9be}
+.home-rv-preview .rm-live-totals strong{font-size:16px}
+
+/* Official REVIANZ BrandMark, scaled proportionally. */
+.home-rv-logo{display:inline-flex;align-items:center;gap:12.5px;flex:none;font-family:Inter,sans-serif;color:#0d1f17;line-height:1}
+.home-rv-logo-symbol{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12.2px;background:#c4f751;color:#0d1f17;font-size:11.1px;font-weight:900;letter-spacing:-.04em;box-shadow:inset 0 0 0 1px #ffffff47}
+.home-rv-logo-wordmark{font-size:21.1px;font-weight:700;letter-spacing:-.03em}
+
+.home-judgment-intro{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start}
 .home-judgment-intro h2{max-width:560px}
-.home-judgment-intro>div>p{font-size:17px;line-height:1.8;color:var(--muted)}
-.home-judgment-intro>div>p+p{margin-top:22px}
-.home-judgment-intro>div>.home-engagement-note{font-size:14px;line-height:1.8;margin-top:28px;max-width:540px;color:#536c65}
+.home-judgment-intro>div>p{font-size:16px;line-height:1.8;color:var(--muted)}
+.home-judgment-intro>div>p+p{margin-top:18px}
+.home-judgment-intro>div>.home-engagement-note{font-size:14px;line-height:1.8;margin-top:24px;max-width:540px;color:#536c65}
 
-/* Digifianz has an institutional section, not a small card inside another block. */
-.home-backing{background:var(--navy);color:#fff;padding-block:92px}
-.home-backing-layout{display:grid;grid-template-columns:.65fr 1.35fr;gap:95px;align-items:center}
-.home-backing-brand{display:flex;flex-direction:column;align-items:start;gap:28px}
-.home-backing-brand>img{width:280px;height:auto}
-.home-backing-brand>.text-link{font-size:14px}
-.home-backing-copy h2{color:#fff;font-size:48px;line-height:1.17;letter-spacing:-1.7px;max-width:740px}
-.home-backing-copy p{font-size:17px;color:#c2d2dd;line-height:1.8;margin-top:26px;max-width:690px}
-.home-backing-copy p+p{margin-top:20px}
-
-.home-page .contact{padding-block:100px}
+.home-page .contact{padding-block:88px}
 .home-page .contact-inner{gap:88px}
 .home-page .contact-copy{padding-top:14px}
 .home-page .contact-copy h2{font-size:clamp(38px,3.8vw,54px);line-height:1.14;max-width:570px}
@@ -93,113 +102,39 @@
 
 @media(max-width:1199px){
   .home-opening h1{font-size:49px}
-  .home-proof{gap:35px}.home-proof>p{flex-basis:180px}.home-client-logos{gap:30px}.home-section-heading{gap:55px}.home-service-paths{gap:32px}.home-service-path h3{font-size:26px}
-  .home-judgment-intro{gap:52px}.home-backing-layout{gap:58px}.home-backing-brand>img{width:245px}.home-backing-copy h2{font-size:42px}.home-page .contact-inner{gap:50px}
+  .home-proof-inner{grid-template-columns:150px 1fr auto;gap:32px}
+  .home-section-heading,.home-work-heading{gap:52px}
+  .home-service-paths{gap:28px}.home-service-path h3{font-size:25px}.home-service-action{font-size:12px;padding-inline:14px}
+  .home-case-intro{padding:26px}.home-case-story>h3{font-size:27px}.home-case-media{margin-right:20px}.home-case-stage{padding:16px;min-height:260px}
+  .home-judgment-intro{gap:52px}.home-page .contact-inner{gap:50px}
 }
 @media(max-width:959px){
-  .home-hero{min-height:0;padding-block:64px 0}.home-opening{padding-bottom:370px}.home-opening-content{width:100%;max-width:720px}.home-opening h1{font-size:60px;max-width:720px}.home-opening-copy{max-width:600px}.home-hero-media{inset:auto 0 0;height:400px}.home-hero-media>img{object-position:72% center}.home-hero::before{display:none}.home-hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.9) 8%,rgba(255,255,255,0) 36%)}
-  .home-proof{display:block}.home-proof>p{margin-bottom:24px}.home-client-logos{justify-content:start;gap:65px}.home-section-heading{grid-template-columns:1fr;gap:24px;margin-bottom:48px}.home-section-heading>p{max-width:600px}.home-service-paths{gap:26px}.home-service-path h3{font-size:24px}.home-service-path>p{font-size:15px}.home-service-path .text-link{font-size:12px}
-  .home-judgment-intro{grid-template-columns:1fr;gap:28px}.home-judgment-intro>div{max-width:700px}.home-backing-layout{grid-template-columns:.65fr 1.35fr;gap:40px}.home-backing-copy h2{font-size:38px}
+  .home-hero{min-height:0;padding-block:56px 0}.home-opening{padding-bottom:320px}.home-opening-content{width:100%;max-width:720px}.home-opening h1{font-size:56px;max-width:720px}.home-opening-copy{max-width:600px}.home-hero-media{inset:auto 0 0;height:350px}.home-hero-media>img{object-position:72% center}.home-hero::before{display:none}.home-hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.9) 8%,rgba(255,255,255,0) 36%)}
+  .home-proof-inner{grid-template-columns:140px 1fr;gap:12px 28px}.home-proof-inner>.text-link{grid-column:2;justify-self:start}.home-proof-inner>img{grid-row:1 / span 2}
+  .home-section-heading,.home-work-heading{grid-template-columns:1fr;gap:20px}.home-section-heading>p,.home-work-heading>p{max-width:600px}
+  .home-service-paths{gap:24px}.home-service-path h3{font-size:24px}.home-service-path>p{font-size:14px}
+  .home-case{grid-template-columns:1.1fr 1fr}.home-case-story>h3{font-size:25px}.home-case-intro{padding:24px}.home-case-description>p{font-size:14px}
+  .home-case-contact h3{font-size:25px}.home-case-contact{padding:28px}
+  .home-judgment-intro{grid-template-columns:1fr;gap:28px}.home-judgment-intro>div{max-width:700px}
 }
 @media(max-width:799px){
-  .home-section{padding-block:76px}.home-hero{padding-block:48px 0}.home-opening h1{font-size:54px;letter-spacing:-2px}.home-opening-copy>p{font-size:16px}.home-proof{padding-block:30px}.home-client-logos{justify-content:space-between;gap:35px}.home-client-logos img{max-width:145px}.home-client-logos a:nth-child(2) img{max-width:180px}.home-client-logos a:nth-child(3) img{max-width:130px}
-  .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:40px;letter-spacing:-1.3px}.home-service-paths{grid-template-columns:1fr;gap:35px}.home-service-path{padding-top:26px}.home-service-path h3{font-size:29px;max-width:520px}.home-service-path>p{max-width:600px;margin-block:18px}.home-service-path .text-link{font-size:14px}
-  .home-work-heading{gap:25px;margin-bottom:46px}.home-work-heading>.text-link{font-size:12px}.home-portfolio-footer{margin-top:32px;align-items:start;flex-direction:column;gap:16px}
-  .home-backing{padding-block:72px}.home-backing-layout{grid-template-columns:1fr;gap:36px}.home-backing-brand{flex-direction:row;align-items:center;justify-content:space-between;gap:25px}.home-backing-brand>img{width:230px}.home-backing-brand>.text-link{font-size:13px;flex:none}.home-backing-copy h2{font-size:40px;max-width:650px}.home-backing-copy p{font-size:16px}
-  .home-page .contact{padding-block:72px}.home-page .contact-copy{padding-top:0}.home-page .contact-copy h2{font-size:44px;max-width:580px}.home-next-step{margin-top:26px}.home-page #consulta{scroll-margin-top:100px}
+  .home-section{padding-block:64px}.home-opening h1{font-size:50px;letter-spacing:-2px}.home-opening-copy>p{font-size:16px}
+  .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:38px;letter-spacing:-1.3px}.home-section-heading{margin-bottom:36px}
+  .home-service-paths{grid-template-columns:1fr;gap:32px}.home-service-path{padding-top:22px}.home-service-path h3{font-size:27px;max-width:520px}.home-service-path>p{font-size:15px;max-width:600px;margin-block:16px 20px}.home-service-action{font-size:13px}
+  .home-work-heading{margin-bottom:32px}.home-case{grid-template-columns:1fr;scroll-margin-top:100px}.home-case-intro{padding:26px 28px 24px}.home-case-brandline{flex-direction:row;align-items:center;justify-content:space-between;gap:24px;margin-bottom:20px}.home-case-category{text-align:right;max-width:170px}.home-case-story>h3{font-size:29px;max-width:580px}.home-case-description>p{font-size:15px;max-width:600px}
+  .home-case-media{margin:0 24px 24px}.home-case-stage{min-height:0;padding:24px}.home-case-stage>img{max-height:260px}.home-rv-preview .revianz-mockup-stage{min-height:0}
+  .home-case-contact{align-items:start;flex-direction:column;gap:22px}.home-portfolio-footer{justify-content:flex-start;margin-top:24px}
+  .home-page .contact{padding-block:64px}.home-page .contact-copy{padding-top:0}.home-page .contact-copy h2{font-size:42px;max-width:580px}.home-next-step{margin-top:26px}.home-page #consulta{scroll-margin-top:100px}
 }
 @media(max-width:599px){
-  .home-opening{padding-bottom:clamp(235px,calc(79.5vw - 20px),290px)}.home-hero-media{height:clamp(255px,79.5vw,310px)}.home-hero-media>img{object-position:right center}.home-opening h1{font-size:42px;letter-spacing:-1.6px;line-height:1.12}.home-affiliation{font-size:12px;max-width:290px}.home-opening-actions{flex-direction:column;align-items:start;gap:16px}.home-opening-actions>.button{width:100%}
-  .home-client-logos{flex-wrap:wrap;gap:22px 30px;justify-content:start}.home-client-logos a{min-height:42px}.home-client-logos img{max-width:135px}.home-client-logos a:nth-child(2) img{max-width:165px}.home-client-logos a:nth-child(3) img{max-width:125px}.home-proof>p{font-size:12px}
-  .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:35px}.home-section-heading>p{font-size:16px}.home-work-heading{display:block}.home-work-heading>.text-link{margin-top:24px;font-size:13px}.home-portfolio-footer>p{font-size:16px}.home-portfolio-footer>.text-link{font-size:13px}
-  .home-judgment-intro>div>p{font-size:16px}.home-judgment-intro>div>.home-engagement-note{font-size:14px}.home-backing-brand{display:block}.home-backing-brand>img{width:230px}.home-backing-brand>.text-link{margin-top:18px}.home-backing-copy h2{font-size:35px;letter-spacing:-1.2px}.home-backing-copy p{font-size:16px;margin-top:24px}
-  .home-page .contact-copy h2{font-size:39px}.home-page .contact-copy>p{font-size:16px}.home-page .contact-inner{gap:35px}.home-next-step h3{font-size:19px}.home-page .contact-copy>.text-link{min-height:44px;display:inline-flex;align-items:center;margin-top:18px}.home-page .contact-form-wrap{padding:28px 24px}.home-page .field label{font-size:13px}.home-page .field-help{font-size:12px}.home-page .demo-note{font-size:11px}
+  .home-hero{padding-top:42px}.home-opening{padding-bottom:clamp(225px,calc(79.5vw - 20px),280px)}.home-hero-media{height:clamp(245px,79.5vw,300px)}.home-hero-media>img{object-position:right center}.home-opening h1{font-size:40px;letter-spacing:-1.5px;line-height:1.12}.home-opening-actions{flex-direction:column;align-items:start;gap:12px}.home-opening-actions>.button{width:100%}
+  .home-proof{padding-block:24px}.home-proof-inner{grid-template-columns:1fr;gap:14px}.home-proof-inner>img{grid-row:auto;width:150px}.home-proof-inner>p{font-size:13px}.home-proof-inner>.text-link{grid-column:1;font-size:12px}
+  .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:34px}.home-section-heading>p,.home-work-heading>p{font-size:15px}.home-service-path h3{font-size:26px}
+  .home-project-stories{gap:20px}.home-case{border-radius:12px}.home-case-intro{padding:22px 22px 20px}.home-case-brandline{align-items:start;flex-direction:column;gap:10px;margin-bottom:18px}.home-case-category{text-align:left;max-width:none;font-size:11px}.home-case-story>h3{font-size:27px;letter-spacing:-.8px}.home-case-description>p{font-size:14px}.home-case-actions{margin-top:12px}.home-case-actions .text-link{font-size:12px}
+  .home-case-media{margin:0 14px 20px}.home-case-stage{padding:14px;border-radius:8px}.home-case-media>figcaption{margin:10px 4px 0;font-size:10px}
+  .home-rv-preview .revianz-mockup-stage{padding:14px;border-radius:8px}.home-rv-preview .rm-paper{padding:18px}.home-rv-preview .rm-live-totals>div{padding:10px}.home-rv-preview .rm-live-totals strong{font-size:15px}
+  .home-rv-preview .rm-percentage{font-size:clamp(32px,10vw,42px)}
+  .home-case-contact{padding:24px}.home-case-contact h3{font-size:25px}.home-case-contact p{font-size:14px}.home-case-contact>.button{width:100%}.home-portfolio-footer>.text-link{font-size:13px}
+  .home-judgment-intro>div>p{font-size:16px}.home-judgment-intro>div>.home-engagement-note{font-size:14px}
+  .home-page .contact-copy h2{font-size:37px}.home-page .contact-copy>p{font-size:16px}.home-page .contact-inner{gap:35px}.home-next-step h3{font-size:19px}.home-page .contact-copy>.text-link{min-height:44px;display:inline-flex;align-items:center;margin-top:18px}.home-page .contact-form-wrap{padding:28px 24px}.home-page .field label{font-size:13px}.home-page .field-help{font-size:12px}.home-page .demo-note{font-size:11px}
 }
-
-@media(max-width:1199px){
-  .home-case-intro{padding:28px 32px 24px}
-  .home-case-story{column-gap:40px}
-  .home-case-story>h3{font-size:30px}
-  .home-case-stage{min-height:300px;padding:20px}
-  .home-case-stage>img{max-height:260px}
-  .home-case-stage-gallery{min-height:0;padding:16px}
-}
-@media(max-width:799px){
-  .home-project-stories{gap:24px}
-  .home-case{border-radius:16px;scroll-margin-top:100px}
-  .home-case-intro{padding:24px 28px}
-  .home-case-brandline{margin-bottom:20px}
-  .home-case-story{grid-template-columns:1fr;grid-template-rows:auto;gap:18px}
-  .home-case-story>h3{font-size:30px;max-width:580px}
-  .home-case-description{grid-column:1;grid-row:2}
-  .home-case-actions{grid-row:3;gap:12px 24px}
-  .home-case-media{margin:0 16px 20px}
-  .home-case-stage{min-height:0;padding:24px}
-  .home-case-stage>img{max-height:300px}
-  .home-case-stage-gallery{padding:16px}
-}
-@media(max-width:599px){
-  .home-case-intro{padding:22px 22px 20px}
-  .home-case-brandline{align-items:start;flex-direction:column;gap:13px;margin-bottom:20px}
-  .home-case-category{text-align:left;font-size:11px}
-  .home-case-logo-despegar{width:148px}
-  .home-case-logo-consorcio{width:206px;max-width:100%}
-  .home-case-story>h3{font-size:28px;letter-spacing:-.8px}
-  .home-case-description>p{font-size:14px;line-height:1.8}
-  .home-case-actions{gap:6px 18px}
-  .home-case-actions .text-link{font-size:12px}
-  .home-case-media{margin:0 12px 20px}
-  .home-case-stage{padding:14px;border-radius:9px}
-  .home-case-media>figcaption{margin:12px 8px 0;font-size:10px}
-  .home-case-stage-gallery{padding:14px 0}
-}
-
-/* The three original REVIANZ views share the same neutral product canvas. */
-.home-rv-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;min-width:0}
-.home-work .home-rv-gallery>figure{display:grid;grid-template-rows:1fr auto;margin:0;min-width:0;scroll-snap-align:start}
-.home-rv-gallery .revianz-mockup-stage{display:flex;align-items:center;min-height:280px;padding:0;border:0;border-radius:0;background:transparent}
-.home-rv-gallery .revianz-mockup{width:100%;min-width:0}
-.home-rv-gallery .rm-paper{padding:16px;border-radius:17px;box-shadow:0 12px 28px #0d1f170d}
-.home-rv-gallery .rm-label{font-size:9px;letter-spacing:.7px}
-.home-rv-gallery .rm-title{font-size:17px;line-height:1.4;letter-spacing:-.35px}
-.home-rv-gallery .rm-scope-header{padding-bottom:12px}
-.home-rv-gallery .rm-scope-header .rm-title{font-size:17px;margin-top:8px}
-.home-rv-gallery .rm-scope-body{grid-template-columns:1fr;margin-top:12px}
-.home-rv-gallery .rm-services{gap:8px}
-.home-rv-gallery .rm-service{padding:10px;gap:8px;font-size:12px;border-radius:12px}
-.home-rv-gallery .rm-percentage{font-size:40px;letter-spacing:-2px;margin-top:8px}
-.home-rv-gallery .rm-live-heading{gap:10px}
-.home-rv-gallery .rm-trend{font-size:10px;padding:6px 8px}
-.home-rv-gallery .rm-chart{margin-top:16px;max-height:74px}
-.home-rv-gallery .rm-live-totals{gap:10px;margin-top:12px}
-.home-rv-gallery .rm-live-totals>div{padding:10px;border-radius:12px}
-.home-rv-gallery .rm-live-totals p{font-size:10px;margin-bottom:5px}
-.home-rv-gallery .rm-live-totals strong{font-size:16px}
-.home-rv-gallery .rm-invoice-heading{flex-wrap:nowrap;align-items:start;gap:10px;margin-bottom:14px}
-.home-rv-gallery .rm-status{font-size:9px;padding:7px 9px}
-.home-rv-gallery .rm-invoice-row{padding:12px;border-radius:12px}
-.home-rv-gallery .rm-invoice-row>div{font-size:12px;gap:10px}
-.home-rv-gallery .rm-invoice-row p{font-size:10px;line-height:1.5;margin-top:5px}
-.home-rv-gallery .rm-match-arrow{width:28px;height:28px;margin:8px auto}
-.home-work .home-rv-gallery figcaption{margin-top:10px;font-size:13px;font-weight:550;color:var(--navy)}
-.home-rv-gallery-footer{display:flex;justify-content:space-between;gap:24px;margin:13px 8px 0}
-.home-rv-swipe{display:none}
-@media(max-width:1199px){
-  .home-rv-gallery{gap:20px;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:clamp(310px,calc((100% - 20px)/2.15),380px);align-items:stretch;overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;padding:0 0 16px;border-radius:0;scrollbar-width:thin;scrollbar-color:#9eafa6 transparent}
-  .home-rv-gallery-footer{margin-top:12px}
-  .home-rv-swipe{display:block}
-}
-@media(max-width:599px){
-  .home-rv-gallery{grid-auto-columns:clamp(230px,90%,310px);padding-inline:12px;scroll-padding-inline:12px;gap:14px}
-  .home-rv-gallery .revianz-mockup-stage{min-height:280px;padding:0}
-  .home-rv-gallery .rm-paper{padding:16px}
-  .home-rv-gallery .rm-percentage{font-size:40px}
-  .home-work .home-rv-gallery figcaption{font-size:12px;margin-top:13px}
-  .home-rv-gallery-footer{flex-direction:column-reverse;gap:6px}
-  .home-rv-gallery-footer p{font-size:10px}
-}
-
-/* Official REVIANZ BrandMark, scaled proportionally to the client logo hierarchy. */
-.home-rv-logo{display:inline-flex;align-items:center;gap:12.5px;flex:none;font-family:Inter,sans-serif;color:#0d1f17;line-height:1}
-.home-rv-logo-symbol{display:flex;align-items:center;justify-content:center;width:45px;height:45px;border-radius:13.75px;background:#c4f751;color:#0d1f17;font-size:12.5px;font-weight:900;letter-spacing:-.04em;box-shadow:inset 0 0 0 1px #ffffff47}
-.home-rv-logo-wordmark{font-size:23.75px;font-weight:700;letter-spacing:-.03em}

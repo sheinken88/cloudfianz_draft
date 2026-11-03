@@ -13,12 +13,9 @@ routes = json.loads((ROOT / 'page-routes.json').read_text())
 from page_layouts.revianz_mockups import mockup
 
 home = (ROOT / 'templates/home.html').read_text()
-home = home.replace('<!-- REVIANZ_HOME_GALLERY -->', ''.join(
-    mockup(kind, caption, 'home-rv-view') for kind, caption in [
-        ('scope-services', 'Alcance y servicios'),
-        ('margin', 'Rentabilidad en vivo'),
-        ('invoice', 'Facturación conectada'),
-    ]
+home = home.replace('<!-- REVIANZ_HOME_PREVIEW -->', mockup(
+    'margin', 'Vista ilustrativa del producto. Datos de ejemplo.',
+    'home-case-media home-rv-preview',
 ))
 
 

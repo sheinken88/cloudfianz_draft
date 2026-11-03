@@ -408,3 +408,15 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Revisión visual a 1280 y 390 px; comprobaciones a 320 y 1024 px sin desbordes de página ni de los elementos internos de los mockups. Desplazamiento horizontal hasta la tercera vista verificado a 320 px.
 - Build y diff check correctos, un H1, IDs únicos y assets existentes. HTML fuera de los casos idéntico al anterior; sin cambios en páginas internas. Viewport restablecido.
 - Evidencia en `/Users/sheinken/Desktop/Cloudfianz/outputs/portfolio-compact-20261103/desktop.jpg` y `mobile.jpg`.
+
+
+## Ritmo y jerarquía de la Home · 3 de noviembre de 2026
+
+- Arquitectura final: Hero, respaldo breve de Digifianz, soluciones, casos, metodología y contacto. Se retiran la franja repetida de logos y el bloque institucional extenso del cierre.
+- Un resultado, un párrafo, un enlace y una sola imagen por caso. REVIANZ conserva el mockup de margen con su nota de datos ilustrativos. CTA contextual después del segundo caso; acceso único al índice al terminar.
+- A 1280 px CSS: página de 4696 px y sección de casos de 1755 px, incluido el nuevo CTA. Artículos de aproximadamente 393, 410 y 359 px. Se conservan proporciones y contenido completo de las imágenes.
+- Revisión visual en escritorio y móvil. Sin desbordes de página ni internos a 320, 360, 390, 1024 y 1280 px. Se corrigió el encabezado del mockup a 320 px mediante tipografía adaptable y flex-wrap. Las medidas CSS se verificaron en el navegador; el zoom del navegador requiere compensación en las capturas.
+- CTA intermedio comprobado hacia contacto. Menú móvil abre y se cierra al navegar. ConsorcioAbierto abre el lector correcto y permite cerrarlo. Los tres CTA de servicios tienen rutas nativas válidas y una altura mínima de 48 px.
+- Build correcto y diff sin errores. Revisión estática independiente: IDs únicos, un H1, un solo mockup REVIANZ, assets existentes, enlaces nativos y lectores válidos. Las cinco páginas internas no tienen cambios y no cargan los estilos de Home.
+- Formulario y agenda mantienen su comportamiento de demostración local. Sin publicación.
+- Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/home-rhythm-20261103/`.
