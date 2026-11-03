@@ -122,3 +122,16 @@ La página toma como referencia la portada de Despegar y la lectura editorial de
 El contexto y desafío comparten una sección blanca de dos columnas. La decisión técnica se presenta sobre mist en dos bloques: qué se evaluó y cómo se resolvió. El esquema de integración sale del Hero y acompaña la explicación de Solución: tres plataformas conectadas en horizontal en escritorio, con recorrido vertical en móvil. Las cuatro reglas y la nota de implementación completan ese capítulo. Resultados conserva la cifra documentada y sus tres beneficios, sobre navy; el cierre mantiene los enlaces a consulta, servicios e índice.
 
 Los párrafos y listas aprobados se conservan. La segunda oración de la apertura se traslada a la introducción de Solución, sin alterar sus hechos. El cambio de H1 concentra el resultado y evita repetir el nombre que ya identifica el logo.
+
+
+## Photonix, Escala24x7 y ADS Mexicana con un criterio común · 3 de noviembre de 2026
+
+Las tres páginas extienden la dirección de ConsorcioAbierto. El Hero navy reúne logo original, titular de resultado, apertura breve y una ficha de tres datos específicos del proyecto. El contexto del cliente acompaña al desafío dentro de una misma sección blanca. Photonix y ADS incorporan la decisión técnica en dos bloques; Escala24x7 pasa directamente del desafío a la solución. Los H1 dejan de repetir la marca y el detalle de las aperturas se conserva al comienzo de Solución.
+
+La superficie mint de Solución contiene composiciones diferentes según el trabajo realizado:
+
+- Photonix presenta los roles de técnicos y administración alrededor del sistema de servicio técnico alojado en AWS.
+- Escala24x7 integra sus tres intercambios originales en el diagrama: creación desde HubSpot, oportunidades generadas por AWS y actualizaciones de ambos pipelines. Cada ítem aparece una sola vez.
+- ADS Mexicana recorre tres pasos: datos disponibles en el CRM, aplicación de las reglas de cálculo y cotización registrada en el negocio de HubSpot.
+
+Los resultados comparten una superficie navy y una jerarquía adaptada a la evidencia: ADS destaca más de 50 cotizaciones por día y el paso de horas de cálculo a propuestas en minutos. Photonix y Escala24x7 presentan sus capacidades operativas documentadas. El cierre común mantiene los enlaces de consulta, servicios e índice. Se conservan los párrafos, listas y matices aprobados, incluyendo los límites del costo de infraestructura de Photonix y las funcionalidades que todavía corresponden a etapas posteriores.

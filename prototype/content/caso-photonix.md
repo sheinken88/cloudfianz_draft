@@ -8,9 +8,9 @@
 
 **Texto de contexto:** Photonix · Desarrollo de software a medida
 
-**H1:** Photonix: del papel a una operación de servicio técnico visible en tiempo real.
+**H1:** Órdenes digitales y servicio técnico visible en tiempo real.
 
-Photonix reemplazó las órdenes en papel, las planillas de Excel y una pizarra física por un sistema propio. Sus técnicos registran el servicio en el momento y administración puede consultar su estado sin tener que ubicar a cada técnico por teléfono.
+Photonix reemplazó las órdenes en papel, las planillas de Excel y una pizarra física por un sistema propio.
 
 La empresa representa en Argentina tecnología médica oncológica y presta servicios especializados de mantenimiento, comisionamiento y dosimetría. Su operación requiere coordinar visitas, contratos y documentación de servicios sobre equipamiento de alta complejidad.
 
@@ -27,6 +27,8 @@ Cloudfianz comenzó con una auditoría y el diseño de la solución. El objetivo
 Se evaluó también adaptar un CRM. Para el flujo de Photonix, esa alternativa requería desarrollo adicional y una licencia recurrente. Se eligió construir un sistema propio que contemplara las reglas de la operación y mantuviera acotado el costo de infraestructura.
 
 ## La solución: un sistema para técnicos y administración
+
+Sus técnicos registran el servicio en el momento y administración puede consultar su estado sin tener que ubicar a cada técnico por teléfono.
 
 Cloudfianz desarrolló un sistema de gestión de servicio técnico en campo, alojado en AWS, con dos vistas: un portal para los técnicos y un entorno para administración. La información se organiza en contratos, equipos, casos, servicios y clientes.
 

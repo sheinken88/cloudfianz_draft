@@ -66,6 +66,8 @@ def page(key, body, kind):
         extra_css += '<link rel="stylesheet" href="/revianz-mockups.css">'
     if kind == 'cases-page':
         extra_css += '<link rel="stylesheet" href="/case-previews.css">'
+    if kind == 'project-page':
+        extra_css += '<link rel="stylesheet" href="/project-visuals.css">'
     return f'''<!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#0B1D3A">
 <title>{title}</title><meta name="description" content="{description}"><link rel="canonical" href="{canonical}">

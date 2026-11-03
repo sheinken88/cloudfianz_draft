@@ -569,3 +569,12 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Comprobaciones a 1440, 1024, 768, 390 y 320 px CSS; sin desbordes de página ni componentes en los cuatro anchos menores. Imagen completa con proporción original, sin generación o modificación visual.
 - Auditoría de contenido: 14 párrafos y 7 ítems preservados, oración de apertura trasladada una sola vez e intacta a Solución. H1 actualizado para priorizar el resultado. Las otras diez páginas son idénticas a HEAD antes de esta entrega; content.json cambia únicamente caso-properix.
 - Las once páginas mantienen H1 e IDs únicos y rutas, fragmentos y assets válidos. Build y diff check correctos. Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/consorcio-case-redesign-20261103/`. Entrega local.
+
+
+## Photonix, Escala24x7 y ADS Mexicana · revisión visual · 3 de noviembre de 2026
+
+- Las tres páginas adoptan la jerarquía del caso ConsorcioAbierto: Hero navy con marca, recurso visual y ficha de tres datos; contexto y desafío compartidos; decisión técnica cuando corresponde; Solución mint y Resultados navy. Photonix usa su imagen institucional como contexto, Escala conserva HubSpot y AWS con sonrisa naranja, y ADS muestra el flujo del cotizador. No se incorporan capturas ficticias ni cifras nuevas.
+- Revisión visual desktop y móvil de las tres portadas y sus diagramas. Medidas a 320, 390, 768, 1024 y 1440 px CSS, compensando el zoom del navegador: sin desbordes horizontales de página. Los conectores de ADS salen de sus dos primeros pasos hacia el espacio de separación previsto; no se recorta texto ni se amplía el documento. La carga diferida del logo AWS en Photonix se comprobó al navegar a Solución.
+- Auditoría independiente de preservación: Photonix y ADS conservan 15 párrafos y 4 ítems cada uno; Escala conserva 13 párrafos y 7 ítems. Los tres intercambios de Escala aparecen una única vez, dentro del diagrama. Los matices del costo AWS de Photonix y las funcionalidades futuras o en desarrollo permanecen explícitos.
+- Un H1 por página, IDs únicos, referencias ARIA, enlaces locales, fragmentos y assets válidos. Solo cambian los tres HTML y sus entradas de content.json; las otras ocho páginas son idénticas a la versión anterior. Build, compilación de Python y diff check correctos. Revisión visual independiente de Escala sin hallazgos pendientes.
+- Capturas de las portadas desktop/mobile y recorridos en `/Users/sheinken/Desktop/Cloudfianz/outputs/project-cases-redesign-20261103/`. Cambios locales, sin publicación.

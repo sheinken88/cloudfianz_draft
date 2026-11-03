@@ -8,9 +8,9 @@
 
 **Texto de contexto:** Escala24x7 · Integración de sistemas
 
-**H1:** Escala24x7: las oportunidades de AWS y HubSpot, conectadas en ambos sentidos.
+**H1:** Oportunidades actualizadas en HubSpot y AWS Partner Central.
 
-Cloudfianz conectó HubSpot con AWS Partner Central para que las oportunidades comerciales se actualicen automáticamente entre ambas plataformas. Los equipos de ventas y operación de Escala24x7 pueden trabajar con información compartida, sin replicar cada oportunidad a mano.
+Cloudfianz conectó HubSpot con AWS Partner Central para que las oportunidades comerciales se actualicen automáticamente entre ambas plataformas.
 
 Escala24x7 es una compañía de servicios cloud con operación en más de 19 países de Latinoamérica. Como AWS Premier Partner, acompaña a empresas en migración, datos, seguridad, inteligencia artificial y servicios gestionados.
 
@@ -23,6 +23,8 @@ Digifianz comenzó a implementar HubSpot y, durante ese trabajo, surgió la nece
 Sin esa conexión, mantener las dos plataformas alineadas exigía intervención del equipo y dejaba espacio para información parcial o desactualizada.
 
 ## La solución: sincronización bidireccional de oportunidades
+
+Los equipos de ventas y operación de Escala24x7 pueden trabajar con información compartida, sin replicar cada oportunidad a mano.
 
 Cloudfianz construyó una integración con las APIs de AWS que conecta las oportunidades de HubSpot y AWS Partner Central en ambos sentidos. La solución también contempla la sincronización de los beneficios que AWS otorga a sus partners.
 

@@ -4,7 +4,7 @@
 <meta property="og:title" content="Photonix: servicio técnico en tiempo real | Cloudfianz"><meta property="og:description" content="Cómo Photonix reemplazó papel, Excel y una pizarra por un software de servicio técnico con órdenes digitales, firma y visibilidad en tiempo real."><meta property="og:type" content="website"><meta property="og:url" content="https://cloudfianz.com/es/casos/photonix-servicio-tecnico"><meta property="og:locale" content="es_AR">
 <link rel="icon" href="/assets/brand/cloudfianz-symbol.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css"><link rel="stylesheet" href="/project-page.css"><script src="/app.js" defer></script></head>
+<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/pages.css"><link rel="stylesheet" href="/project-page.css"><link rel="stylesheet" href="/project-visuals.css"><script src="/app.js" defer></script></head>
 <body class="inner-page project-page"><a class="skip-link" href="#principal">Ir al contenido</a><header class="site-header"><div class="container header-inner">
 <a class="brand" href="/es#inicio" aria-label="Cloudfianz, inicio"><img src="/assets/brand/cloudfianz-original.jpg" alt="Cloudfianz" width="238" height="61"></a>
 <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><span>Menú</span><span class="menu-lines" aria-hidden="true"></span></button>
@@ -25,51 +25,58 @@
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es/casos">Casos</a></li><li aria-current="page">Photonix</li></ol></nav>
     <div class="story-hero-grid">
       <div class="story-hero-copy">
-        <div class="story-identity story-identity-photonix"><img src="/assets/brand/photonix-official.svg" alt="Photonix" width="170" height="54"><p>Desarrollo de software a medida</p></div>
-        <h1 id="story-title">Photonix: del papel a una operación de servicio técnico visible en tiempo real.</h1>
-        <div class="story-hero-summary"><p>Photonix reemplazó las órdenes en papel, las planillas de Excel y una pizarra física por un sistema propio. Sus técnicos registran el servicio en el momento y administración puede consultar su estado sin tener que ubicar a cada técnico por teléfono.</p></div>
-        <a class="text-link" href="#solucion">Explorá la solución</a>
+        <div class="story-identity story-identity-photonix"><div class="story-client-logo"><img src="/assets/brand/photonix-official.svg" alt="Photonix" width="170" height="54"></div><p>Desarrollo de software a medida</p></div>
+        <h1 id="story-title">Órdenes digitales y servicio técnico visible en tiempo real.</h1>
+        <div class="story-hero-summary"><p>Photonix reemplazó las órdenes en papel, las planillas de Excel y una pizarra física por un sistema propio.</p></div>
       </div>
-      <figure class="story-visual story-photo">
-          <div class="story-photo-stage"><img src="/assets/brand/photonix-ethos-official.jpg" alt="Equipo de radioterapia Ethos en una imagen institucional de Photonix." width="1920" height="1080" fetchpriority="high" decoding="async"></div>
-          <figcaption>Equipamiento de radioterapia. Imagen institucional de Photonix como contexto de su actividad.</figcaption>
+      <figure class="pv-figure pv-hero pv-hero-photo">
+          <div class="pv-photo-stage"><img src="/assets/brand/photonix-ethos-official.jpg" alt="Equipamiento de radioterapia Ethos en una imagen institucional de Photonix." width="1920" height="1080" fetchpriority="high" decoding="async"></div>
+          <figcaption>Equipamiento de radioterapia. Imagen de contexto de la actividad de Photonix.</figcaption>
         </figure>
     </div>
+    <dl class="story-project-facts"><div><dt>Trabajo de Cloudfianz</dt><dd>Software de servicio técnico</dd></div><div><dt>Usuarios</dt><dd>Técnicos y administración</dd></div><div><dt>Implementación</dt><dd>Tres meses, del diagnóstico a producción</dd></div></dl>
   </div>
 </section>
-<section class="story-context" aria-labelledby="story-context-title"><div class="container story-context-grid"><h2 id="story-context-title">El contexto</h2><div class="story-prose"><p>La empresa representa en Argentina tecnología médica oncológica y presta servicios especializados de mantenimiento, comisionamiento y dosimetría. Su operación requiere coordinar visitas, contratos y documentación de servicios sobre equipamiento de alta complejidad.</p></div></div></section>
-<section class="story-problem story-section container" id="problema" aria-labelledby="story-problem-title">
-  <div class="story-chapter-heading"><p class="story-section-label">El desafío</p><h2 id="story-problem-title">La información llegaba después del servicio</h2></div>
-  <div class="story-prose"><p>Al terminar una visita, el técnico hacía firmar al cliente una orden en papel. El documento debía volver a la oficina para que administración cargara los datos en Excel. Esa planilla también concentraba el control de qué servicios correspondía descontar de un contrato y cuáles había que facturar.</p>
-<p>La programación del mes se llevaba en una pizarra física. Con la información repartida entre esos soportes, conocer el estado de un servicio dependía de encontrar a la persona que lo había realizado. El proceso consumía tiempo administrativo, demoraba las respuestas al cliente y se volvía más difícil de sostener a medida que crecía la operación.</p></div>
+<section class="story-challenge story-section container" id="problema" aria-labelledby="story-problem-title">
+  <aside class="story-client" aria-labelledby="story-client-title"><h2 id="story-client-title">El cliente</h2><p>La empresa representa en Argentina tecnología médica oncológica y presta servicios especializados de mantenimiento, comisionamiento y dosimetría. Su operación requiere coordinar visitas, contratos y documentación de servicios sobre equipamiento de alta complejidad.</p></aside>
+  <div><div class="story-chapter-heading"><p class="story-section-label">El desafío</p><h2 id="story-problem-title">La información llegaba después del servicio</h2></div><div class="story-prose"><p>Al terminar una visita, el técnico hacía firmar al cliente una orden en papel. El documento debía volver a la oficina para que administración cargara los datos en Excel. Esa planilla también concentraba el control de qué servicios correspondía descontar de un contrato y cuáles había que facturar.</p>
+<p>La programación del mes se llevaba en una pizarra física. Con la información repartida entre esos soportes, conocer el estado de un servicio dependía de encontrar a la persona que lo había realizado. El proceso consumía tiempo administrativo, demoraba las respuestas al cliente y se volvía más difícil de sostener a medida que crecía la operación.</p></div></div>
 </section>
-<section class="story-approach story-section" id="enfoque" aria-labelledby="story-approach-title">
-  <div class="container">
-    <div class="story-chapter-heading"><p class="story-section-label">El enfoque</p><h2 id="story-approach-title">Entender el proceso antes de elegir la herramienta</h2></div>
-    <div class="story-approach-copy story-prose"><p>Cloudfianz comenzó con una auditoría y el diseño de la solución. El objetivo fue comprender cómo trabajaban técnicos y administración, qué necesitaba consultar cada uno y cómo se relacionaban los servicios con los contratos.</p>
-<p>Se evaluó también adaptar un CRM. Para el flujo de Photonix, esa alternativa requería desarrollo adicional y una licencia recurrente. Se eligió construir un sistema propio que contemplara las reglas de la operación y mantuviera acotado el costo de infraestructura.</p></div>
-  </div>
-</section>
-<section class="story-solution story-section" id="solucion" aria-labelledby="story-solution-title">
-  <div class="container">
-    <div class="story-chapter-heading"><p class="story-section-label">La solución</p><h2 id="story-solution-title">Un sistema para técnicos y administración</h2></div>
-    <div class="story-solution-copy story-prose"><p>Cloudfianz desarrolló un sistema de gestión de servicio técnico en campo, alojado en AWS, con dos vistas: un portal para los técnicos y un entorno para administración. La información se organiza en contratos, equipos, casos, servicios y clientes.</p>
-<ul><li><strong>Órdenes digitales desde el lugar del servicio.</strong> El técnico genera la orden, obtiene la firma del cliente en una tablet y puede enviarla por email en el momento.</li><li><strong>Bitácora interna separada.</strong> Las observaciones operativas quedan registradas sin incorporarse a la constancia formal que recibe el cliente.</li><li><strong>Información disponible para administración.</strong> El equipo puede consultar el estado del servicio y su relación con un contrato o con la facturación, sin esperar el regreso del documento en papel.</li><li><strong>Calendario compartido.</strong> Los nuevos servicios programados aparecen en una agenda digital que los técnicos consultan desde su portal.</li></ul>
-<p>Desde el diagnóstico hasta la puesta en producción, el proyecto llevó tres meses. Tanto técnicos como administración incorporaron el sistema a su trabajo cotidiano.</p></div>
-  </div>
-</section>
-<section class="story-results story-section" id="resultados" aria-labelledby="story-results-title">
-  <div class="container">
-    <div class="story-chapter-heading"><p class="story-section-label">Los resultados</p><h2 id="story-results-title">Registrar una vez, consultar en el momento</h2></div>
-    <div class="story-results-copy story-prose"><p>La orden nace digital y firmada, lo que elimina el traslado del papel y su posterior carga en la oficina. Administración cuenta con información actualizada para responder consultas y controlar qué corresponde descontar de un contrato y qué facturar.</p>
-<p>El calendario compartido reemplaza la pizarra y la bitácora conserva el detalle operativo sin exponerlo en la documentación del cliente. El cambio reúne planificación, ejecución y seguimiento en un mismo sistema.</p>
-<p>En la configuración implementada, el costo mensual de infraestructura en AWS informado para el proyecto es inferior a USD 10. Ese importe corresponde a la infraestructura de la configuración implementada y varía según el uso.</p></div>
-  </div>
-</section>
-<section class="story-evolution story-section container" id="evolucion" aria-labelledby="story-evolution-title">
-  <h2 id="story-evolution-title">Una base para seguir mejorando la operación</h2><div class="story-prose"><p>A los tres meses de la puesta en marcha, Photonix y Cloudfianz comenzaron a evaluar nuevas funcionalidades. Entre ellas, la transcripción de notas de voz de los técnicos y la gestión de stock de repuestos asociado a los equipos. Ambas se plantean para una siguiente etapa.</p></div>
-</section>
-<section class="story-contact story-section" aria-labelledby="story-contact-title"><div class="container story-contact-grid"><div><h2 id="story-contact-title">¿Necesitás una visión compartida de tu operación?</h2><div class="story-prose"><p>Contanos cómo coordinás el trabajo y qué información necesitan tus equipos para responder mejor. Evaluemos qué solución puede ayudarlos.</p>
-<p>Conocé nuestro servicio de <a href="/es/desarrollo-software-a-medida">desarrollo de software a medida</a>.</p></div></div><div class="story-contact-actions"><a class="button button-dark" href="/es#consulta">Contanos qué necesitás</a><a class="text-link" href="/es/casos">Ver todos los casos</a></div></div></section>
+<section class="story-approach story-section" id="enfoque" aria-labelledby="story-approach-title"><div class="container">
+  <div class="story-chapter-heading"><p class="story-section-label">La decisión técnica</p><h2 id="story-approach-title">Entender el proceso antes de elegir la herramienta</h2></div>
+  <div class="story-decisions"><div><h3>Conocer el trabajo de cada equipo</h3><div class="story-prose"><p>Cloudfianz comenzó con una auditoría y el diseño de la solución. El objetivo fue comprender cómo trabajaban técnicos y administración, qué necesitaba consultar cada uno y cómo se relacionaban los servicios con los contratos.</p></div></div><div><h3>Un sistema propio para sus reglas</h3><div class="story-prose"><p>Se evaluó también adaptar un CRM. Para el flujo de Photonix, esa alternativa requería desarrollo adicional y una licencia recurrente. Se eligió construir un sistema propio que contemplara las reglas de la operación y mantuviera acotado el costo de infraestructura.</p></div></div></div>
+</div></section>
+<section class="story-solution story-section" id="solucion" aria-labelledby="story-solution-title"><div class="container">
+  <div class="story-solution-heading"><div class="story-chapter-heading"><p class="story-section-label">La solución</p><h2 id="story-solution-title">Un sistema para técnicos y administración</h2></div><div class="story-prose"><p>Sus técnicos registran el servicio en el momento y administración puede consultar su estado sin tener que ubicar a cada técnico por teléfono.</p></div></div>
+  <figure class="pv-figure pv-solution pv-operation">
+          <div class="pv-solution-stage">
+            <div class="pv-operation-flow">
+              <div class="pv-role"><p class="pv-role-title">Técnicos</p><ul><li>Consultan la agenda</li><li>Registran la orden y la firma</li><li>Envían la constancia por email</li></ul></div>
+              <svg class="pv-arrow" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M3 13h34m-7-6 7 6-7 6M37 27H3m7-6-7 6 7 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="pv-shared-system"><p class="pv-shared-title">Sistema de servicio técnico</p><p>Contratos, equipos, casos,<br>servicios y clientes</p><div class="pv-hosting"><img class="pv-aws" src="/assets/aws/aws-logo-color.svg" alt="AWS" width="304" height="182" decoding="async" loading="lazy"><span>Alojado en AWS</span></div></div>
+              <svg class="pv-arrow" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M3 13h34m-7-6 7 6-7 6M37 27H3m7-6-7 6 7 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="pv-role"><p class="pv-role-title">Administración</p><ul><li>Consulta el estado del servicio</li><li>Revisa contratos y facturación</li><li>Comparte el calendario operativo</li></ul></div>
+            </div>
+            <p class="pv-operation-note">La bitácora interna queda separada de la orden que recibe el cliente.</p>
+          </div>
+          <figcaption>Esquema del sistema desarrollado para Photonix: dos vistas sobre la misma información.</figcaption>
+        </figure>
+  <div class="story-solution-overview story-prose"><p>Cloudfianz desarrolló un sistema de gestión de servicio técnico en campo, alojado en AWS, con dos vistas: un portal para los técnicos y un entorno para administración. La información se organiza en contratos, equipos, casos, servicios y clientes.</p></div>
+<ul class="story-features"><li><h3>Órdenes digitales desde el lugar del servicio</h3><p>El técnico genera la orden, obtiene la firma del cliente en una tablet y puede enviarla por email en el momento.</p></li><li><h3>Bitácora interna separada</h3><p>Las observaciones operativas quedan registradas sin incorporarse a la constancia formal que recibe el cliente.</p></li><li><h3>Información disponible para administración</h3><p>El equipo puede consultar el estado del servicio y su relación con un contrato o con la facturación, sin esperar el regreso del documento en papel.</p></li><li><h3>Calendario compartido</h3><p>Los nuevos servicios programados aparecen en una agenda digital que los técnicos consultan desde su portal.</p></li></ul>
+  <div class="story-delivery"><h3>De la definición al trabajo cotidiano.</h3><div class="story-prose">
+<p>Desde el diagnóstico hasta la puesta en producción, el proyecto llevó tres meses. Tanto técnicos como administración incorporaron el sistema a su trabajo cotidiano.</p></div></div>
+</div></section>
+<section class="story-results story-section" id="resultados" aria-labelledby="story-results-title"><div class="container">
+  <div class="story-result-lead"><div><p class="story-section-label">Los resultados</p><h2 id="story-results-title">Registrar una vez, consultar en el momento</h2></div><div class="story-result-summary"><p>La orden nace digital y firmada, lo que elimina el traslado del papel y su posterior carga en la oficina. Administración cuenta con información actualizada para responder consultas y controlar qué corresponde descontar de un contrato y qué facturar.</p></div></div>
+  <div class="story-result-details"><div><h3>Planificación y seguimiento compartidos</h3><p>El calendario compartido reemplaza la pizarra y la bitácora conserva el detalle operativo sin exponerlo en la documentación del cliente. El cambio reúne planificación, ejecución y seguimiento en un mismo sistema.</p></div><div><h3>Infraestructura acorde a la operación</h3><p>En la configuración implementada, el costo mensual de infraestructura en AWS informado para el proyecto es inferior a USD 10. Ese importe corresponde a la infraestructura de la configuración implementada y varía según el uso.</p></div></div>
+</div></section>
+<section class="story-evolution story-section" id="evolucion" aria-labelledby="story-evolution-title"><div class="container story-evolution-grid">
+  <div><p class="story-section-label">Próximos pasos</p><h2 id="story-evolution-title">Una base para seguir mejorando la operación</h2></div><div class="story-prose"><p>A los tres meses de la puesta en marcha, Photonix y Cloudfianz comenzaron a evaluar nuevas funcionalidades. Entre ellas, la transcripción de notas de voz de los técnicos y la gestión de stock de repuestos asociado a los equipos. Ambas se plantean para una siguiente etapa.</p></div>
+</div></section>
+<section class="page-contact story-contact" aria-labelledby="story-contact-title"><div class="container page-contact-inner">
+  <h2 id="story-contact-title">¿Necesitás una visión compartida de tu operación?</h2><p>Contanos cómo coordinás el trabajo y qué información necesitan tus equipos para responder mejor. Evaluemos qué solución puede ayudarlos.</p>
+<p>Conocé nuestro servicio de <a href="/es/desarrollo-software-a-medida">desarrollo de software a medida</a>.</p>
+  <div class="page-contact-actions"><a class="button button-dark" href="/es#consulta">Contanos qué necesitás</a><a class="text-link" href="/es/casos">Ver todos los casos</a></div>
+</div></section>
 </main><footer class="site-footer"><div class="container"><div class="footer-main"><div><a class="brand" href="/es#inicio" aria-label="Cloudfianz, volver al inicio"><img src="/assets/brand/cloudfianz-original.jpg" width="238" height="61" alt="Cloudfianz"></a><p>Desarrollo de software, integración<br>de sistemas y automatización.</p></div><nav aria-label="Navegación del pie"><a href="/es#soluciones">Soluciones</a><a href="/es/casos">Casos</a><a href="/es#como-trabajamos">Cómo trabajamos</a><a href="/es#contacto">Contacto</a></nav></div><div class="footer-bottom"><p>La unidad de desarrollo de software de <strong>Digifianz.</strong></p><button class="plain-button" data-privacy>Privacidad</button></div></div></footer><dialog id="reader-dialog" class="reader-dialog" aria-labelledby="reader-title"><div class="dialog-top"><span>Texto del caso o servicio · Página pendiente de diseño</span><button class="close-dialog" aria-label="Cerrar contenido">✕</button></div><div id="reader-content" class="reader-content"></div></dialog>
 <dialog id="info-dialog" class="info-dialog" aria-labelledby="info-title"><button class="close-dialog" aria-label="Cerrar ventana">✕</button><div id="info-content"></div></dialog></body></html>

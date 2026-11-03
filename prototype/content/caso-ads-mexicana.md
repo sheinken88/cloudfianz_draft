@@ -8,9 +8,9 @@
 
 **Texto de contexto:** ADS Mexicana · Desarrollo a medida e integración
 
-**H1:** ADS Mexicana: de horas de cálculo a más de 50 cotizaciones diarias conectadas con HubSpot.
+**H1:** Más de 50 cotizaciones por día, listas en minutos.
 
-ADS Mexicana reemplazó un proceso de cotización manual por una herramienta a medida integrada a HubSpot. Las propuestas que antes requerían de una a varias horas se preparan en minutos, con las reglas de cálculo aplicadas automáticamente. El equipo comercial realiza más de 50 cotizaciones por día a través de la solución.
+ADS Mexicana reemplazó un proceso de cotización manual por una herramienta a medida integrada a HubSpot.
 
 ADS fabrica tubería corrugada de polietileno de alta densidad y soluciones de gestión pluvial, sanitaria y eléctrica. Atiende proyectos en México y Centroamérica, con una operación de cuatro plantas y cuatro centros de distribución.
 
@@ -27,6 +27,8 @@ Cloudfianz relevó el proceso de venta, las ecuaciones de cálculo y los criteri
 Se decidió construir un panel externo conectado a HubSpot, la plataforma que ADS ya utilizaba. La solución cubrió la necesidad sin requerir una ampliación del plan de HubSpot ni licencias adicionales para esa funcionalidad.
 
 ## La solución: una extensión del proceso comercial
+
+Las propuestas que antes requerían de una a varias horas se preparan en minutos, con las reglas de cálculo aplicadas automáticamente. El equipo comercial realiza más de 50 cotizaciones por día a través de la solución.
 
 El cotizador se integra con el entorno de HubSpot y trae automáticamente los datos del negocio, la compañía y los contactos asociados. El catálogo se gestiona con productos de HubSpot, y la herramienta también permite cargar catálogos completos mediante archivos CSV.
 

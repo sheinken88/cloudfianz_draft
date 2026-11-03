@@ -84,3 +84,9 @@ Todas las vistas generales del cotizador usan `assets/hero/despegar-cotizador-he
 La página individual adopta el sistema editorial de Despegar y REVIANZ: portada navy con resultado principal, imagen aportada por el usuario, ficha de trabajo/plataformas/alcance y capítulos diferenciados. El desafío conserva el contexto del cliente; el enfoque explica qué se evaluó y qué decisión tomó Cloudfianz. La sección mint de Solución reúne el esquema HubSpot → AWS → Odoo, las cuatro reglas y la implementación. El resultado mensual y sus beneficios operativos cierran la historia antes del contacto.
 
 `assets/projects/consorcioabierto-plataforma-usuario.png` se conserva intacto, se puede ampliar y se identifica como contexto del producto del cliente. No representa la integración desarrollada por Cloudfianz. Fuente, dimensiones y hash en el registro de imágenes de proyectos.
+
+## Photonix, Escala24x7 y ADS Mexicana · revisión conjunta
+
+Las tres páginas adoptan el criterio editorial de ConsorcioAbierto: Hero navy con logo original, titular centrado en el resultado y ficha de tres datos; contexto y desafío en una misma sección; decisión técnica cuando corresponde; Solución sobre mint y resultados sobre navy. El cierre compartido reúne consulta, servicios e índice de casos. Los detalles retirados de las aperturas pasan a Solución, conservando el contenido aprobado.
+
+Cada solución mantiene un esquema propio: Photonix conecta técnicos y administración con el sistema alojado en AWS; Escala24x7 presenta sus tres intercambios originales una sola vez dentro del diagrama; ADS Mexicana organiza el recorrido en datos del CRM, cálculos y registro de la cotización. El resultado de ADS destaca más de 50 cotizaciones diarias. Las leyendas siguen distinguiendo los esquemas de la imagen de contexto de Photonix.
