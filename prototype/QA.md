@@ -517,3 +517,12 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Pestañas comprobadas con clic, flechas, Home y End, con un único panel activo. Las preguntas frecuentes abren una respuesta por vez. Los CTA navegan a Despegar y REVIANZ o abren los lectores correctos de ConsorcioAbierto y Escala24x7. El cierre lleva a `/es#consulta`; no se envió el formulario. Consola sin errores ni avisos.
 - Build y diff check correctos. Verificaciones estáticas: un H1, IDs únicos, enlaces y recursos locales válidos, cuatro pestañas y cinco preguntas por servicio. La Home y las páginas completas de casos conservan su HTML anterior. La interfaz local de revisión incluye las seis páginas.
 - Capturas de Hero, casos, metodología y vistas móviles en `/Users/sheinken/Desktop/Cloudfianz/outputs/service-capabilities-20261103/`. Entrega local, sin publicación.
+
+
+## Hero de Desarrollo con captura real · 3 de noviembre de 2026
+
+- Captura original de Despegar (1633 × 887) y logo cargados en el Hero. Imagen completa, ampliable, con texto alternativo y pie que identifica el proyecto. La lectura del original se comprobó en su URL local.
+- Revisión visual a 1280 y 390 px CSS; medidas adicionales a 1024, 768 y 320 px. Sin desbordes de página o componentes del Hero. El producto queda junto al texto en escritorio y debajo del titular en móvil.
+- Orden DOM y foco alineados con móvil: titular, imagen, descripción y CTA. Enlace de la captura accesible con Tab y foco visible. Consola sin errores ni avisos. Viewport restablecido al finalizar.
+- Build y diff check correctos. Comparación confirma que solo cambia el Hero en el HTML de Desarrollo; el resto de esa página, las otras cinco páginas y content.json son idénticos. CSS nuevo limitado a la variante. Revisión independiente sin hallazgos pendientes.
+- Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/development-hero-visual-20261103/desktop.jpg` y `mobile.jpg`. Cambios locales.

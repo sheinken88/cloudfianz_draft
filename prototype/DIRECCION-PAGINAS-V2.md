@@ -74,3 +74,10 @@ El Hero usa título a la izquierda y explicación con CTA a la derecha, sobre mi
 La metodología aparece una sola vez, con cuatro pestañas y entregables adaptados a cada servicio. Las preguntas frecuentes y el cierre también son específicos. La explicación institucional de Digifianz permanece en la Home y el pie compartido. Las páginas completas de casos mantienen su contenido.
 
 Un único constructor (`page_layouts/service.py`) y una hoja de estilos (`dist/service-page.css`) sostienen esta arquitectura. `page_layouts/service_cases.py` concentra los recursos de casos. Se retiran el constructor y CSS duplicados de capacidades; el contenido de cada servicio sigue editable en Markdown.
+
+
+## Hero de Desarrollo con producto real · 3 de noviembre de 2026
+
+El Hero de Desarrollo incorpora la captura real del cotizador de Despegar, completa y sin alteraciones, sobre una superficie mint con borde suave. El logo original y un pie breve identifican el proyecto; la imagen enlaza al original para ampliarla. Se conserva el titular y la bajada, reunidos con los CTA a la izquierda en escritorio. La captura equilibra el bloque a la derecha. En móvil, el orden es titular, proyecto, descripción y acciones; el DOM respeta ese mismo recorrido de lectura y foco.
+
+La variante se limita a Desarrollo mediante `service-hero-grid--project`. Las otras páginas conservan sus composiciones y el portfolio mantiene los dos casos. No se agregan cifras, interfaces ficticias ni movimiento automático.
