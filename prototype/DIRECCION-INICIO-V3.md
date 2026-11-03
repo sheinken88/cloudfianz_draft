@@ -58,3 +58,8 @@ El encabezado del caso REVIANZ incorpora su `BrandMark` oficial, portado desde e
 Los tres casos comparten contenedor, alineaciones, tipografía, espaciado y tratamiento de imágenes. Los colores particulares permanecen en los logos y dentro de los productos, sin teñir cada artículo como un banner. Se retiran el encabezado promocional y el logo duplicado de la imagen de ConsorcioAbierto; se mantiene la aclaración de que es contexto del negocio del cliente. La captura de Despegar se presenta completa y sin perspectiva.
 
 En mobile, el orden es marca, título, relato, resultado, enlaces y producto. Las tres vistas REVIANZ se mantienen en un carril nativo accesible por teclado y tacto, con una nota única sobre los datos ilustrativos. No se modifican el hero, los textos comerciales ni las páginas internas.
+
+
+## Portfolio más breve en la Home · 3 de noviembre de 2026
+
+La Home presenta cada proyecto con un titular enfocado en su resultado, un único párrafo de contexto y enlaces al caso completo. Se integra el contenido de «Qué cambió» en esa presentación y se reservan las explicaciones extensas para las páginas de casos. Los tres artículos mantienen el marco visual común, las marcas originales y las imágenes existentes. Las capturas tienen menor altura y la galería REVIANZ conserva sus tres vistas, con menos espaciado interno. El contenido completo de los casos permanece intacto.

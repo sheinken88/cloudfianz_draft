@@ -398,3 +398,13 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - El enlace de ConsorcioAbierto abre el caso correcto en el lector existente. Las rutas de Despegar y REVIANZ, los assets, IDs únicos y H1 se verificaron en el HTML generado.
 - Build y `git diff --check` correctos. Comparación confirma que todo el HTML fuera de los artículos del portfolio es idéntico al anterior; sin cambios en las páginas internas ni estilos compartidos.
 - Capturas desktop y mobile en `/Users/sheinken/Desktop/Cloudfianz/outputs/portfolio-system-20261102/`. Cambios guardados sólo en el historial local.
+
+
+## Portfolio compacto en Home · 3 de noviembre de 2026
+
+- Cada caso se resume en titular, un único párrafo y acceso al detalle. Se retira la repetición de «Qué cambió» y se conservan logos, imágenes, enlaces y las tres vistas REVIANZ. Los textos completos de las páginas de casos no cambian.
+- Desktop 1280 px: Despegar pasa de 833 a 628 px, REVIANZ de 831 a 650 px y ConsorcioAbierto de 818 a 627 px. La sección completa mide aproximadamente 2363 px.
+- Capturas con altura máxima de 276 px dentro de un marco de 320 px. REVIANZ conserva altura natural, con menos padding y separaciones; no se recortan los mockups ni se reduce su tipografía de lectura.
+- Revisión visual a 1280 y 390 px; comprobaciones a 320 y 1024 px sin desbordes de página ni de los elementos internos de los mockups. Desplazamiento horizontal hasta la tercera vista verificado a 320 px.
+- Build y diff check correctos, un H1, IDs únicos y assets existentes. HTML fuera de los casos idéntico al anterior; sin cambios en páginas internas. Viewport restablecido.
+- Evidencia en `/Users/sheinken/Desktop/Cloudfianz/outputs/portfolio-compact-20261103/desktop.jpg` y `mobile.jpg`.
