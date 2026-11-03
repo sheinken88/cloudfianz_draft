@@ -9,7 +9,7 @@
 
 Se descargó directamente la imagen incrustada mediante Google Docs, sin exportar ni volver a comprimir el documento. El archivo se conserva byte por byte, sin generación, retoques, cambios de texto ni reconstrucción de controles. La vista incluye una campaña identificada como `C2RIO -test`. Se comprobó visualmente la legibilidad de los textos y la coherencia de sus controles, frente a las alteraciones del archivo publicado.
 
-La captura completa se muestra con su proporción original y se puede abrir a tamaño completo. En la revisión integral del caso se trasladó del hero al capítulo de Solución, donde constituye la vista principal del producto. Tras aprobar ese diseño, el usuario pidió añadirla también al hero: se reutiliza el mismo archivo como presentación junto al título, conservando la vista grande en Solución.
+El 3 de noviembre de 2026, el usuario confirmó el uso de la variante limpia sin Digifianz ni los cuatro acentos azules. La misma vista adaptada `../hero/despegar-cotizador-hero-v1.jpg` se utiliza en todas las portadas y en la vista general del capítulo de Solución del caso. Este PNG original se conserva intacto como archivo histórico de procedencia y ya no se muestra en el sitio.
 
 ## Catálogo del cotizador · original recuperado el 2 de noviembre de 2026
 
@@ -20,7 +20,7 @@ La captura completa se muestra con su proporción original y se puede abrir a ta
 
 Se conserva el PNG original byte por byte. La composición encuadra mediante CSS la ventana de selección de productos (x=525, y=56, ancho=600, alto=802), sin alterar textos, controles ni píxeles del archivo. Tanto el detalle como su pie enlazan la captura completa. No se utiliza la captura del diálogo de facturación, que contiene datos de contactos.
 
-El caso utiliza exclusivamente estas dos imágenes originales del producto. La página de Desarrollo de software a medida también utiliza `despegar-cotizador-original.png` en su hero y, tras recuperar el portfolio completo, `despegar-catalogo-original.png` en el proyecto destacado. Ambas se muestran completas y se pueden ampliar. Las dos imágenes públicas anteriores siguen retiradas de esta página. Los usos de imágenes en la homepage se conservan para una revisión posterior.
+El catálogo mantiene su imagen original, el recorte CSS del modal y el enlace a la captura completa sin cambios. La vista general de Solución y las portadas de Despegar en Home, índice de casos, hero de Desarrollo, tarjetas de servicios y hero del caso comparten `../hero/despegar-cotizador-hero-v1.jpg` (1701 × 924 px), la variante limpia aprobada por el usuario. Sus leyendas y textos alternativos la identifican como vista adaptada y sus enlaces de ampliación abren la misma variante. La procedencia y el retoque se documentan en [SOURCES de portadas](../hero/SOURCES.md). El PNG original de la vista general y las dos imágenes públicas anteriores quedan conservados como archivos históricos, sin uso visible.
 
 ## Imágenes públicas usadas anteriormente
 
@@ -60,7 +60,7 @@ Se incorpora `ShareScopeFlowMockup` de la misma fuente a la sección “Mantener
 
 ## Homepage: revisión narrativa del 2 de noviembre de 2026
 
-La homepage también retira las dos imágenes públicas anteriores y utiliza `despegar-cotizador-original.png` en la selección de proyectos. El encuadre se realiza en CSS sin modificar la captura. REVIANZ usa `InvoiceMatchFlowMockup`, con sus datos ilustrativos y su identificación visible.
+En esa revisión, la homepage retiró las dos imágenes públicas anteriores y utilizó `despegar-cotizador-original.png` en la selección de proyectos. El 3 de noviembre de 2026 esa portada se sustituyó por la vista adaptada limpia, compartida con las demás portadas según lo documentado arriba. REVIANZ usaba `InvoiceMatchFlowMockup`, con sus datos ilustrativos y su identificación visible.
 
 ## Galería compacta de REVIANZ en el inicio
 

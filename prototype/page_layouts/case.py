@@ -60,8 +60,8 @@ def build_case(meta, intro, sections, routes):
         <div class="case-hero-summary">{opening[0]}</div>
       </div>
       <figure class="case-hero-product">
-        <a class="case-hero-capture" href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Ampliar vista del cotizador en el hero (nueva pestaña)"><img src="/assets/projects/despegar-cotizador-original.png" alt="Cotizador de Despegar: presupuesto, distribución por marca y país y selección de productos en una campaña de prueba." width="1633" height="887" fetchpriority="high" decoding="async"></a>
-        <figcaption><a href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Ver captura del hero a tamaño completo (nueva pestaña)">Ampliar captura</a></figcaption>
+        <a class="case-hero-capture" href="/assets/hero/despegar-cotizador-hero-v1.jpg" target="_blank" rel="noopener" aria-label="Ampliar vista adaptada del cotizador de Despegar (nueva pestaña)"><img src="/assets/hero/despegar-cotizador-hero-v1.jpg" alt="Vista adaptada del cotizador de Despegar: presupuesto, distribución por marca y país y selección de productos en una campaña de prueba." width="1701" height="924" fetchpriority="high" decoding="async"></a>
+        <figcaption><a href="/assets/hero/despegar-cotizador-hero-v1.jpg" target="_blank" rel="noopener" aria-label="Ver vista adaptada del cotizador a tamaño completo (nueva pestaña)">Ampliar vista adaptada</a></figcaption>
       </figure>
     </div>
   </div>
@@ -87,8 +87,8 @@ def build_case(meta, intro, sections, routes):
   <div class="container">
     <div class="case-solution-heading"><p class="case-section-label">El producto</p><h2 id="solucion-title">{_short_title(solution_title)}</h2><div class="page-prose">{solution_copy[0]}</div></div>
     <figure class="case-product-overview">
-      <a href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Ampliar captura del cotizador de Despegar (nueva pestaña)"><img src="/assets/projects/despegar-cotizador-original.png" alt="Vista completa del cotizador con una campaña de prueba: presupuesto, distribución por marca y país y paneles de productos." width="1633" height="887" loading="lazy" decoding="async"></a>
-      <figcaption><span>Presupuesto, marcas y países en una misma vista.</span><a href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Ver captura completa del cotizador (nueva pestaña)">Ver captura completa</a></figcaption>
+      <a href="/assets/hero/despegar-cotizador-hero-v1.jpg" target="_blank" rel="noopener" aria-label="Ampliar vista adaptada del cotizador de Despegar (nueva pestaña)"><img src="/assets/hero/despegar-cotizador-hero-v1.jpg" alt="Vista adaptada del cotizador de Despegar con una campaña de prueba: presupuesto, distribución por marca y país y paneles de productos." width="1701" height="924" loading="lazy" decoding="async"></a>
+      <figcaption><span>Vista adaptada del cotizador: presupuesto, marcas y países.</span><a href="/assets/hero/despegar-cotizador-hero-v1.jpg" target="_blank" rel="noopener" aria-label="Ver vista adaptada del cotizador a tamaño completo (nueva pestaña)">Ampliar vista adaptada</a></figcaption>
     </figure>
     <div class="case-product-workflow page-prose">{solution_copy[1]}</div>
     <div class="case-product-rules"><div>{_feature(features[0])}</div><div>{_feature(features[2])}</div></div>

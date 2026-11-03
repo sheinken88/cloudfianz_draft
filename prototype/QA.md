@@ -545,3 +545,11 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Revisión responsive de las cinco páginas nuevas a 1440, 1024, 768, 390 y 320 px CSS: sin desbordes horizontales de página ni de componentes. Inspección visual del índice completo, los cuatro Hero nuevos y las vistas móviles del índice y ConsorcioAbierto. Se ajustó el margen lateral de las captions para alinearlas con el contenido de las cards.
 - Auditoría estática independiente de las once páginas: un H1 por página, IDs únicos, rutas y fragmentos locales válidos, assets presentes y relaciones ARIA estáticas correctas. Cero atributos data-content en el HTML generado. Consola sin errores ni advertencias durante la revisión de navegación.
 - Build y diff check correctos. Selector local actualizado a once páginas; servidor reiniciado para incorporar las nuevas rutas. Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/cases-pages-20261103/`. Cambios locales, sin publicación.
+
+
+## Hero visual de Casos y versión limpia de Despegar · 3 de noviembre de 2026
+
+- Nuevo Hero sobre navy con título de mayor escala, introducción breve, CTA a `#proyectos` y vistas de Despegar/REVIANZ. La versión móvil presenta Despegar para contener la altura. Revisión visual a 1440 y 390 px; medidas adicionales a 320, 768 y 1024 px, sin desbordes de página o componentes.
+- Confirmación explícita del usuario: usar la variante sin logo Digifianz ni líneas azules. Las ocho imágenes generales del cotizador, distribuidas en cinco páginas, apuntan al mismo JPG adaptado de 1701 × 924. Alt, leyendas y ampliaciones actualizados; verificación de los destinos en DOM. PNG original preservado como archivo histórico y catálogo sin cambios.
+- CTA «Explorá los proyectos» comprobado y navegación correcta a la grilla. Consola sin errores ni advertencias durante las comprobaciones. Build y diff check correctos.
+- Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/cases-hero-revision-20261103/`: Hero del índice desktop/mobile y portada del caso Despegar. Cambios locales.

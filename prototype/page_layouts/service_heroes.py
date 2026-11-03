@@ -5,10 +5,10 @@ def hero_media(key):
     if key == 'servicio-desarrollo-software':
         return '''
       <figure class="service-hero-project">
-        <a class="service-hero-preview" href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Ampliar captura del cotizador de Despegar (nueva pestaña)">
-          <img src="/assets/projects/despegar-cotizador-original.png" alt="Cotizador desarrollado para Despegar: presupuesto, productos y distribución por marca y país." width="1633" height="887" fetchpriority="high" decoding="async">
+        <a class="service-hero-preview" href="/assets/hero/despegar-cotizador-hero-v1.jpg" target="_blank" rel="noopener" aria-label="Ampliar vista adaptada del cotizador de Despegar (nueva pestaña)">
+          <img src="/assets/hero/despegar-cotizador-hero-v1.jpg" alt="Vista adaptada del cotizador de Despegar: presupuesto, productos y distribución por marca y país." width="1701" height="924" fetchpriority="high" decoding="async">
         </a>
-        <figcaption><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"><span><strong>Cotizador comercial a medida</strong><span>Captura real del proyecto</span></span></figcaption>
+        <figcaption><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"><span><strong>Cotizador comercial a medida</strong><span>Vista adaptada del producto</span></span></figcaption>
       </figure>'''
     if key == 'servicio-integracion-sistemas':
         return '''

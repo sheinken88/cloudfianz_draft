@@ -15,6 +15,8 @@ PROJECTS = [
 
 
 def build_cases(meta, intro, sections, routes):
+    hero_despegar = case_preview('caso-despegar').replace('loading="lazy"', 'fetchpriority="high"')
+    hero_revianz = case_preview('caso-revianz')
     cards = []
     for key, section, category, asset, width, height, slug in PROJECTS:
         copy = sections[section]
@@ -39,12 +41,18 @@ def build_cases(meta, intro, sections, routes):
         </article>''')
     closing_title = next(title for title in sections if title.startswith('¿Reconocés'))
     return f'''
-<section class="cases-hero">
+<section class="cases-hero" aria-labelledby="cases-hero-title">
   <div class="container">
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li aria-current="page">Casos</li></ol></nav>
-    <div class="cases-hero-heading"><h1>{html.escape(meta['H1'])}</h1><div>{intro}</div></div>
+    <div class="cases-hero-heading">
+      <div class="cases-hero-copy"><h1 id="cases-hero-title">{html.escape(meta['H1'])}</h1><div class="cases-hero-intro">{intro}</div><a class="button cases-hero-action" href="#proyectos">Explorá los proyectos</a></div>
+      <div class="cases-hero-work" aria-label="Vistas de los proyectos Despegar y REVIANZ">
+        <div class="cases-hero-despegar"><img class="cases-hero-client" src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52">{hero_despegar}</div>
+        <div class="cases-hero-revianz"><span class="cases-revianz-brand" role="img" aria-label="REVIANZ"><span aria-hidden="true">RZ</span><strong aria-hidden="true">Revianz</strong></span>{hero_revianz}</div>
+      </div>
+    </div>
   </div>
 </section>
-<section class="cases-collection" aria-label="Proyectos de nuestros clientes"><div class="container cases-grid">{''.join(cards)}</div></section>
+<section class="cases-collection" id="proyectos" aria-label="Proyectos de nuestros clientes"><div class="container cases-grid">{''.join(cards)}</div></section>
 <section class="page-contact cases-contact" aria-labelledby="cases-contact-title"><div class="container page-contact-inner"><h2 id="cases-contact-title">{closing_title}</h2>{sections[closing_title]}<div class="page-contact-actions"><a class="button button-dark" href="/es#consulta">Contanos qué necesitás</a><a class="text-link" href="/es#soluciones">Conocé nuestras soluciones</a></div></div></section>
 '''

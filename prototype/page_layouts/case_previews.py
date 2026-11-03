@@ -15,7 +15,7 @@ def _arrow():
 
 def case_preview(key):
     if key == 'caso-despegar':
-        return _figure('despegar', '''<img class="case-preview-capture" src="/assets/projects/despegar-cotizador-original.png" alt="Cotizador de Despegar con presupuesto y productos distribuidos por marca y país." width="1633" height="887" loading="lazy" decoding="async">''', 'Captura real del cotizador de Despegar.')
+        return _figure('despegar', '''<img class="case-preview-capture" src="/assets/hero/despegar-cotizador-hero-v1.jpg" alt="Vista adaptada del cotizador de Despegar con presupuesto y productos distribuidos por marca y país." width="1701" height="924" loading="lazy" decoding="async">''', 'Vista adaptada del cotizador de Despegar.')
     if key == 'caso-revianz':
         return mockup('scope-services', 'Vista ilustrativa de REVIANZ. Datos de ejemplo.', 'case-preview case-preview--revianz')
     if key == 'caso-properix':

@@ -10,7 +10,7 @@
 
 **H1:** Casos de éxito
 
-Cotizadores, plataformas de gestión e integraciones que nuestros clientes ya usan para trabajar. Conocé el problema detrás de cada proyecto, cómo lo resolvimos y qué cambió en la operación.
+Software, integraciones y automatizaciones que resuelven necesidades concretas. Conocé qué construimos y cómo lo usan nuestros clientes.
 
 ## Despegar Ads
 

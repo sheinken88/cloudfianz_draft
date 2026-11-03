@@ -99,3 +99,10 @@ Los esquemas son HTML/SVG estático; no simulan interfaces de producto ni presen
 ConsorcioAbierto cuenta con página propia: contexto, problema, enfoque, solución, resultados y contacto. El Hero muestra el flujo HubSpot → AWS → Odoo con logos oficiales y la cifra mensual documentada. Photonix, Escala24x7 y ADS Mexicana también pasan del lector provisional a páginas completas con identidad, recurso visual, desarrollo del caso y CTA. Conservan los párrafos y listas aprobados; las composiciones y colores responden al sistema del sitio. Despegar y REVIANZ conservan sus páginas existentes.
 
 Los enlaces «Casos» del menú y pie, «Ver todos los casos», las marcas de clientes y los CTA de proyectos navegan a estas rutas. El botón «Conocé cómo lo aplicamos en ConsorcioAbierto» de AWS en Home va directamente a `/es/casos/consorcioabierto-facturacion-hubspot-odoo`. Las páginas individuales vuelven al índice desde el breadcrumb. No quedan enlaces de casos que abran un popup.
+
+
+## Hero de Casos y portada unificada de Despegar · 3 de noviembre de 2026
+
+La apertura textual sobre mist se reemplaza por una composición de producto sobre navy #0B1D3A. «Casos de éxito» gana escala, la bajada se acorta y el CTA mint lleva al índice de proyectos. A la derecha, dos vistas escalonadas muestran el cotizador de Despegar y el detalle de alcance de REVIANZ. Se preservan Manrope, Inter y la paleta existente. En móvil queda solo la vista de Despegar para contener la altura; REVIANZ continúa en la grilla.
+
+El usuario confirmó que la imagen correcta es la variante limpia, sin Digifianz en la cabecera ni acentos azules junto a las marcas. El mismo JPG adaptado se utiliza en todas las vistas generales del cotizador y sus ampliaciones, incluida Home y Solución en el caso individual. Las leyendas distinguen su tratamiento de marketing. El catálogo conserva su imagen específica.
