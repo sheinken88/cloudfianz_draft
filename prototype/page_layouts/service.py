@@ -95,9 +95,9 @@ def build_service(meta, intro, sections, routes):
           <div class="service-case-stage service-integration-stage">
             <p class="service-integration-label">Sincronización bidireccional</p>
             <div class="service-integration-flow">
-              <div class="service-integration-system"><strong>HubSpot</strong><span>CRM comercial</span></div>
+              <div class="service-integration-system"><div class="service-integration-brand"><img src="/assets/brand/hubspot-official.svg" alt="HubSpot" width="1256" height="356" loading="lazy" decoding="async"></div><span>CRM comercial</span></div>
               <span class="service-integration-arrows" aria-hidden="true">⇄</span>
-              <div class="service-integration-system"><strong>AWS</strong><span>Partner Central</span></div>
+              <div class="service-integration-system"><div class="service-integration-brand"><img class="service-integration-aws" src="/assets/aws/aws-logo.png" alt="AWS" width="1254" height="750" loading="lazy" decoding="async"></div><span>Partner Central</span></div>
             </div>
             <p class="service-integration-result">Oportunidades actualizadas<br>en ambas plataformas</p>
           </div>

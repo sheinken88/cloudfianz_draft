@@ -53,3 +53,5 @@ Ambos casos usan el CTA compartido `.case-button` verde mint de la Home. El enla
 ## Escala24x7 en Desarrollo a Medida · 3 de noviembre de 2026
 
 Por pedido del usuario, Escala24x7 reemplaza a REVIANZ en «Nuestro trabajo» del servicio. Mantiene el marco compartido con Photonix, el logo original, dos párrafos breves y el CTA mint. El texto resume la integración bidireccional entre HubSpot y AWS Partner Central y su beneficio operativo. La columna visual muestra un esquema tipográfico de esa conexión, identificado como tal; no representa una captura del software. El enlace abre el caso aprobado en el lector existente. Home y página del caso REVIANZ conservan su contenido.
+
+El esquema de Escala24x7 incorpora los logos originales de HubSpot (SVG naranja de su sitio oficial) y AWS (variante monocroma oficial utilizada en la Home). Se conservan sin filtros ni recoloraciones, dentro de módulos blancos de igual jerarquía y con tamaños ópticos equilibrados. Las etiquetas «CRM comercial» y «Partner Central» aclaran la función de cada extremo.

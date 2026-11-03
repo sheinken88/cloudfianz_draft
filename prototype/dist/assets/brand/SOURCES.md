@@ -78,3 +78,10 @@ Se localizó una variante positiva original en `/Users/sheinken/Desktop/Digifian
 Es un lockup coral `#ee5e60` con el avión en degradado coral/naranja, diseñado para fondo claro. Se inspeccionó la representación del SVG sobre blanco con Quick Look. No se recolorearon, redibujaron ni modificaron los trazados o el archivo. El viewBox cuadrado contiene espacio vacío alrededor del lockup horizontal: para el carril se puede encuadrar la imagen con CSS `object-fit: cover` en una caja de proporción aproximada 190 × 60, conservando todo el dibujo. La huella del logo está aproximadamente entre x104–978 e y420–659.
 
 Esta variante reemplaza el soporte navy de Digifianz en la franja blanca de clientes. `digifianz-official.svg` continúa siendo la variante blanca para la sección institucional de fondo navy. La búsqueda pública también revisó las páginas oficiales de Digifianz; la variante apta se recuperó del proyecto local, no mediante alteración de la versión blanca.
+
+
+## HubSpot · esquema Escala24x7
+
+`hubspot-official.svg`: logo horizontal naranja original de la cabecera de [HubSpot](https://www.hubspot.com/), recuperado el 3 de noviembre de 2026. La página lo sirve como un `data:image/svg+xml;base64` en `img.global-nav-logo.-static`; se decodificó el archivo sin alterar el SVG, sus trazados ni su color original `#ff4800`. ViewBox `0 0 1255.82 355.99`, fondo transparente. Se usa como identificación de la plataforma en el esquema HubSpot ↔ AWS Partner Central.
+
+SHA-256: `883ba903494b9eb6ae8886f05362eb3914ce1c97a9d347aa50d1fd3464f35893`.

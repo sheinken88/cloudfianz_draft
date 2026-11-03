@@ -485,3 +485,10 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - CTA mint abre el contenido correcto en el lector y el cierre devuelve a la página. Revisión visual de escritorio y móvil; medidas a 1280, 390 y 320 px CSS sin desbordes en la página ni en la card nueva. Consola sin errores ni avisos.
 - Build y diff check correctos. H1 e IDs únicos y recursos locales presentes. Solo cambia la entrada del servicio en content.json; Home y las demás páginas internas no cambian. Se retira del servicio el CSS de mockups REVIANZ ya innecesario.
 - Capturas guardadas en `/Users/sheinken/Desktop/Cloudfianz/outputs/service-escala-20261103/`. Viewport restablecido y página de servicio abierta en «Nuestro trabajo». Entrega local.
+
+
+## Logos oficiales en el esquema de Escala24x7 · 3 de noviembre de 2026
+
+- Los nombres tipográficos se reemplazan por el SVG oficial de HubSpot y el PNG oficial AWS ya usado en Home, conservando sus proporciones y colores originales. Procedencia y hash de HubSpot documentados en assets/brand/SOURCES.md; AWS conserva su fuente existente.
+- Ambos recursos cargan y tienen texto alternativo. Revisión visual desktop a 1280 px CSS y mediciones a 320 px: sin desbordes internos ni de página, logos ajustados al espacio disponible. Se conservan etiquetas, flechas, texto y CTA.
+- Build y diff check correctos. Captura en `/Users/sheinken/Desktop/Cloudfianz/outputs/service-escala-logos-20261103/desktop.jpg`. Solo cambia el HTML del servicio; Home y contenido editorial no cambian.
