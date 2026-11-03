@@ -129,16 +129,21 @@
 .home-method-footer>.text-link{font-size:13px;min-height:44px;display:inline-flex;align-items:center;color:var(--home-accent)}
 @media(prefers-reduced-motion:reduce){.home-method-tabs>button{transition:none}}
 
-/* Explain the infrastructure through its practical value and a real project. */
+/* Original AWS identities sit together in one service surface. */
 .home-infrastructure{background:var(--mist)}
-.home-infrastructure-layout{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start}
-.home-infrastructure-intro h2{font-size:clamp(36px,3.5vw,48px);line-height:1.16;letter-spacing:-1.6px;max-width:500px}
+.home-infrastructure-layout{display:grid;grid-template-columns:1fr 1.35fr;gap:64px;align-items:center}
+.home-aws-brand{display:block;width:108px;height:auto;max-height:72px;object-fit:contain;object-position:left;margin-bottom:28px}
+.home-infrastructure-intro h2{font-size:clamp(36px,3.4vw,46px);line-height:1.17;letter-spacing:-1.5px;max-width:460px}
 .home-infrastructure-intro>p{font-size:16px;line-height:1.8;color:var(--muted);margin-top:24px;max-width:490px}
+.home-infrastructure-intro>.home-infrastructure-value{font-size:14px;line-height:1.8;margin-top:18px;color:#526772}
 .home-infrastructure-intro>.text-link{display:inline-flex;align-items:center;min-height:44px;font-size:13px;line-height:1.6;color:var(--home-accent);margin-top:24px}
-.home-infrastructure-benefits{border-top:2px solid #64b6aa}
-.home-infrastructure-benefits article{padding:24px 0;border-bottom:1px solid #dbe3e9}
-.home-infrastructure-benefits h3{font-size:23px;line-height:1.3;letter-spacing:-.5px}
-.home-infrastructure-benefits p{font-size:15px;line-height:1.8;color:var(--muted);margin-top:12px;max-width:510px}
+.home-aws-services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#e2e8ed;border:1px solid #e2e8ed;border-radius:16px;overflow:hidden;box-shadow:0 16px 40px #0b1d3a06}
+.home-aws-service{min-width:0;background:#fff;padding:30px 28px 32px}
+.home-aws-service-brand{display:flex;align-items:center;gap:16px;min-height:64px;margin-bottom:24px}
+.home-aws-service-brand img{display:block;flex:none;width:64px;height:64px;object-fit:contain}
+.home-aws-service-brand p{font-size:13px;font-weight:550;line-height:1.5;color:#526171;max-width:130px}
+.home-aws-service h3{font-size:24px;line-height:1.3;letter-spacing:-.5px;max-width:250px}
+.home-aws-service>p{font-size:14px;line-height:1.8;color:var(--muted);margin-top:14px;max-width:280px}
 
 /* Digifianz remains an independent institutional section before contact. */
 .home-backing{background:var(--navy);color:#fff;padding-block:76px}
@@ -167,7 +172,7 @@
   .home-section-heading{gap:52px}
   .home-service-paths{gap:28px}.home-service-path h3{font-size:25px}.home-service-action{font-size:12px;padding-inline:14px}
   .home-case-intro{padding:26px}.home-case-story>h3{font-size:27px}.home-case-media{margin-right:20px}.home-case-stage{padding:16px;min-height:260px}
-  .home-method-intro{gap:48px}.home-method-tabs>button{padding:20px 18px}.home-method-tab-name{font-size:21px}.home-method-panel{gap:32px}.home-infrastructure-layout{gap:48px}.home-page .contact-inner{gap:50px}
+  .home-method-intro{gap:48px}.home-method-tabs>button{padding:20px 18px}.home-method-tab-name{font-size:21px}.home-method-panel{gap:32px}.home-infrastructure-layout{gap:40px;grid-template-columns:1fr 1.3fr}.home-aws-service{padding:26px 22px}.home-aws-service-brand{gap:12px}.home-aws-service-brand img{width:56px;height:56px}.home-aws-service h3{font-size:22px}.home-page .contact-inner{gap:50px}
   .home-backing-layout{gap:48px}.home-backing-brand>img{width:230px}.home-backing-copy h2{font-size:38px}
 }
 @media(max-width:959px){
@@ -176,10 +181,10 @@
   .home-service-paths{gap:24px}.home-service-path h3{font-size:24px}.home-service-path>p{font-size:14px}
   .home-case{grid-template-columns:1.1fr 1fr}.home-case-story>h3{font-size:25px}.home-case-intro{padding:24px}.home-case-description>p{font-size:14px}
   .home-case-contact h3{font-size:25px}.home-case-contact{padding:28px}
-  .home-method-intro{gap:32px}.home-method-tab-name{font-size:19px}.home-method-tabs>button{padding:18px 16px}.home-method-copy h3{font-size:26px}.home-infrastructure-layout{gap:40px}
+  .home-method-intro{gap:32px}.home-method-tab-name{font-size:19px}.home-method-tabs>button{padding:18px 16px}.home-method-copy h3{font-size:26px}.home-infrastructure-layout{grid-template-columns:1fr;gap:36px}.home-infrastructure-intro{max-width:680px}.home-infrastructure-intro h2,.home-infrastructure-intro>p{max-width:650px}.home-aws-service{padding:30px}.home-aws-service-brand img{width:64px;height:64px}.home-aws-service h3{font-size:24px}
 }
 @media(max-width:799px){
-  .home-method-intro,.home-infrastructure-layout{grid-template-columns:1fr;gap:24px}.home-method-intro h2{max-width:560px}.home-method-intro>p{max-width:620px}.home-method-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.home-method-tab-name{font-size:22px}.home-method-panel{grid-template-columns:1fr;gap:22px;padding:28px;min-height:0}.home-method-footer{justify-content:flex-start}.home-infrastructure-layout{gap:36px}.home-infrastructure-intro h2{font-size:38px;max-width:580px}.home-infrastructure-intro>p{max-width:620px}.home-infrastructure-benefits p{max-width:620px}
+  .home-method-intro,.home-infrastructure-layout{grid-template-columns:1fr;gap:24px}.home-method-intro h2{max-width:560px}.home-method-intro>p{max-width:620px}.home-method-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.home-method-tab-name{font-size:22px}.home-method-panel{grid-template-columns:1fr;gap:22px;padding:28px;min-height:0}.home-method-footer{justify-content:flex-start}.home-infrastructure-layout{gap:36px}.home-infrastructure-intro h2{font-size:38px;max-width:580px}.home-infrastructure-intro>p{max-width:620px}
   .home-backing{padding-block:64px}.home-backing-layout{grid-template-columns:1fr;gap:32px}.home-backing-brand{flex-direction:row;align-items:center;justify-content:space-between;gap:24px}
   .home-section{padding-block:64px}.home-opening h1{font-size:50px;letter-spacing:-2px}.home-opening-copy>p{font-size:16px}
   .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:38px;letter-spacing:-1.3px}.home-section-heading{margin-bottom:36px}
@@ -199,10 +204,11 @@
   .home-rv-preview .revianz-mockup-stage{padding:14px;border-radius:8px}.home-rv-preview .rm-paper{padding:18px}.home-rv-preview .rm-live-totals>div{padding:10px}.home-rv-preview .rm-live-totals strong{font-size:15px}
   .home-rv-preview .rm-percentage{font-size:clamp(32px,10vw,42px)}
   .home-case-contact{padding:24px}.home-case-contact h3{font-size:25px}.home-case-contact p{font-size:14px}.home-case-contact>.button{width:100%}.home-portfolio-footer>.text-link{font-size:13px}
-  .home-method-intro{gap:20px;margin-bottom:26px}.home-method-intro>p{font-size:15px}.home-method-tabs>button{padding:16px 12px}.home-method-tab-name{font-size:clamp(17px,4.6vw,21px)}.home-method-tab-hint{font-size:12px}.home-method-panel{padding:24px 22px}.home-method-copy h3{font-size:25px}.home-method-copy p{font-size:14px}.home-method-delivery{padding:18px}.home-method-delivery p{font-size:14px}.home-method-footer>.text-link{font-size:12px}.home-infrastructure-intro h2{font-size:34px;letter-spacing:-1.3px}.home-infrastructure-intro>p{font-size:15px;margin-top:20px}.home-infrastructure-intro>.text-link{font-size:12px;margin-top:18px}.home-infrastructure-benefits h3{font-size:23px}.home-infrastructure-benefits p{font-size:14px}
+  .home-method-intro{gap:20px;margin-bottom:26px}.home-method-intro>p{font-size:15px}.home-method-tabs>button{padding:16px 12px}.home-method-tab-name{font-size:clamp(17px,4.6vw,21px)}.home-method-tab-hint{font-size:12px}.home-method-panel{padding:24px 22px}.home-method-copy h3{font-size:25px}.home-method-copy p{font-size:14px}.home-method-delivery{padding:18px}.home-method-delivery p{font-size:14px}.home-method-footer>.text-link{font-size:12px}.home-infrastructure-intro h2{font-size:34px;letter-spacing:-1.3px}.home-infrastructure-intro>p{font-size:15px;margin-top:20px}.home-infrastructure-intro>.text-link{font-size:12px;margin-top:18px}.home-aws-brand{width:96px;margin-bottom:24px}.home-infrastructure-intro>.home-infrastructure-value{font-size:14px}.home-aws-services{grid-template-columns:1fr;border-radius:12px}.home-aws-service{display:grid;grid-template-columns:52px minmax(0,1fr);column-gap:18px;padding:24px}.home-aws-service-brand{display:contents}.home-aws-service-brand img{grid-column:1;grid-row:1 / span 3;width:52px;height:52px}.home-aws-service-brand p{grid-column:2;max-width:none;font-size:12px;margin:0 0 8px}.home-aws-service h3{grid-column:2;font-size:22px;max-width:none}.home-aws-service>p{grid-column:2;margin-top:10px;font-size:14px;max-width:none}
   .home-page .contact-copy h2{font-size:37px}.home-page .contact-copy>p{font-size:16px}.home-page .contact-inner{gap:35px}.home-next-step h3{font-size:19px}.home-page .contact-copy>.text-link{min-height:44px;display:inline-flex;align-items:center;margin-top:18px}.home-page .contact-form-wrap{padding:28px 24px}.home-page .field label{font-size:13px}.home-page .field-help{font-size:12px}.home-page .demo-note{font-size:11px}
 }
 @media(max-width:359px){
   .home-method-tabs>button{padding-inline:8px}
   .home-method-tab-name{font-size:16px}
+  .home-aws-service{padding:22px 18px;grid-template-columns:44px minmax(0,1fr);column-gap:14px}.home-aws-service-brand img{width:44px;height:44px}.home-aws-service h3{font-size:21px}
 }

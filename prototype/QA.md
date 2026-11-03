@@ -458,3 +458,12 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Nueva sección AWS entre metodología y Digifianz, con beneficios acotados a componentes serverless y servicios administrados. Fuentes oficiales y evidencia de proyectos registradas en DIRECCION-INICIO-V3.md. El enlace a ConsorcioAbierto abre el caso correcto en el lector y se puede cerrar.
 - Revisión responsive a 320, 390, 1024 y 1280 px CSS. Se ajustó la tipografía y el padding de las pestañas a 320 px para que «Implementación» entre completo. Sin desbordes de página ni de los nuevos componentes. Capturas desktop y mobile en `/Users/sheinken/Desktop/Cloudfianz/outputs/home-aws-tabs-20261103/`.
 - Build y diff check correctos; un H1, IDs únicos, asociaciones tab/panel válidas y assets presentes. Sin cambios en las cinco páginas internas ni en el JavaScript compartido. Consola sin errores ni avisos. Viewport restablecido y Home abierta. Cambios solo locales.
+
+
+## AWS con identidades oficiales y beneficios · 3 de noviembre de 2026
+
+- Logo corporativo AWS transparente del centro de prensa de Amazon y cuatro SVG intactos del paquete oficial de iconos de arquitectura: API Gateway, Lambda, EventBridge y S3. Archivos locales, URLs y hashes documentados en `dist/assets/aws/SOURCES.md`; los hashes coinciden con los archivos entregados.
+- Una superficie blanca con cuatro módulos internos reemplaza la lista de beneficios. Cada identidad conserva sus colores originales y acompaña un beneficio práctico. La introducción resume el uso de AWS, capacidad, costos y administración. Los nombres visibles identifican los servicios sin repetirlos en los textos alternativos de los iconos.
+- Revisión visual a 1280 y 390 px CSS, con medidas también a 320, 768 y 1024 px. Sin desbordes de página ni del contenido de la sección. Las cinco imágenes cargan; los SVG mantienen proporciones cuadradas. En móvil, los módulos pasan a filas con icono al lado del contenido.
+- El enlace a ConsorcioAbierto abre el lector correcto. Revisión estática independiente de contenido y responsive sin hallazgos.
+- Build y diff check correctos; H1 único, IDs únicos y assets existentes. Comparación confirma que el HTML exterior a AWS es idéntico a la versión previa; las páginas internas permanecen sin cambios. Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/home-aws-visual-20261103/`.

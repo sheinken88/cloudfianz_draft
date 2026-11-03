@@ -115,3 +115,23 @@ Entre metodología y Digifianz se incorpora «Infraestructura AWS para acompaña
 - `content/caso-properix.md`, apartado «Una arquitectura adaptada a la complejidad de los contratos»: documenta AWS Step Functions y Lambda para las reglas de facturación. Es el caso enlazado desde la sección.
 - `../src/data/cases.json`, caso Escala24x7: registra una arquitectura serverless con Lambda, STS y EventBridge. `../src/es/index.html`, sección `#infra`, conserva el antecedente de infraestructura AWS del sitio anterior.
 - `../infra/lib/website-stack.ts`: define S3 privado con cifrado y distribución CloudFront con HTTPS. Esta fuente describe la configuración del sitio; no se usa como prueba independiente de un despliegue activo.
+
+
+## Identidades oficiales de AWS y beneficios por servicio · 3 de noviembre de 2026
+
+La sección de AWS conserva su posición entre metodología y Digifianz y adopta una composición con mayor presencia de marca. En escritorio, el logo corporativo acompaña el título y el contexto comercial a la izquierda; a la derecha, una única superficie blanca reúne cuatro servicios en dos columnas. Las divisiones internas ordenan el contenido, sin presentar una arquitectura técnica ni una secuencia obligatoria. Los iconos originales mantienen sus colores y proporciones, sin filtros ni recoloreado.
+
+La selección incluye Amazon API Gateway, AWS Lambda, Amazon EventBridge y Amazon S3. Cada servicio se explica con una acción de negocio: conectar sistemas, automatizar tareas, responder a eventos y almacenar información. Los nombres de los servicios quedan subordinados al beneficio. No se añade un catálogo exhaustivo ni se atribuye la categoría genérica «AI Agents» a un producto específico.
+
+El texto introductorio concentra los beneficios generales de servicios administrados y componentes serverless: reducir tareas de infraestructura y ajustar capacidad y costos al uso previsto. El enlace a ConsorcioAbierto conserva la conexión con un caso documentado. La sección institucional de Digifianz no cambia.
+
+En tablet, la introducción queda sobre la superficie de servicios. En móvil, los cuatro módulos se apilan como filas con icono a la izquierda y nombre, beneficio y explicación a la derecha. Los iconos tienen alt vacío porque sus nombres se leen inmediatamente al lado; el logo corporativo identifica Amazon Web Services. La procedencia de los archivos de marca queda en `dist/assets/aws/SOURCES.md`.
+
+### Fuentes técnicas verificadas (registro interno)
+
+- [Amazon API Gateway: descripción y seguridad](https://docs.aws.amazon.com/whitepapers/latest/security-overview-amazon-api-gateway/about-amazon-api-gateway.html): API administrada con publicación, control de acceso y conexión a servicios de backend. Respalda el texto de intercambio de información con control de acceso.
+- [AWS Lambda: preguntas frecuentes](https://aws.amazon.com/lambda/faqs/): ejecución de código mediante funciones y disparadores, sin aprovisionar o administrar servidores. Respalda la automatización de reglas según necesidad.
+- [Amazon EventBridge: descripción](https://docs.aws.amazon.com/en_en/eventbridge/latest/userguide/eb-what-is.html): conexión de componentes y aplicaciones mediante eventos y su enrutamiento hacia consumidores. Respalda el vínculo entre cambios en una aplicación y procesos en otras.
+- [Amazon S3: descripción](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html): almacenamiento de objetos escalable. Respalda el almacenamiento de documentos y archivos de la operación.
+
+Fuentes consultadas el 3 de noviembre de 2026. No se incorporan métricas comerciales, garantías de ahorro, SLAs ni credenciales de partner.
