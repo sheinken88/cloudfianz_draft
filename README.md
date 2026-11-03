@@ -1,3 +1,29 @@
+# Cloudfianz · Draft para revisión
+
+El rediseño actual está en `prototype/`. La configuración de `vercel.json` publica únicamente `prototype/dist`, que ya contiene las páginas generadas y sus recursos.
+
+## Publicar en Vercel
+
+1. Importar `sheinken88/cloudfianz_draft` desde GitHub.
+2. Elegir la rama `main`, raíz del repositorio (`./`) y framework **Other**.
+3. Conservar la configuración de `vercel.json`: sin instalación ni build remoto; salida `prototype/dist`.
+4. Hacer Deploy y compartir la URL resultante.
+
+La raíz redirige a `/es`. Las 13 páginas tienen rutas explícitas. No se necesitan variables de entorno ni credenciales de AWS. El formulario es una demo: no envía ni guarda consultas. Se incluye `noindex` para la revisión; no representa una restricción de acceso.
+
+## Editar y actualizar
+
+```sh
+npm run build:proposal
+npm run dev:proposal
+```
+
+El generador requiere Python 3. Después de modificar contenidos o plantillas, ejecutar `npm run build:proposal` y guardar también los cambios generados en `prototype/dist` antes de subirlos. Los estilos y assets de ese directorio se editan directamente.
+
+La carpeta `src/` y la infraestructura histórica se conservan como referencia; Vercel no las publica ni las ejecuta.
+
+---
+
 # Cloudfianz — sitio web
 
 One-page estática (HTML/CSS/JS) con i18n EN/ES, casos de éxito desde JSON y hosting en **S3 + CloudFront**.

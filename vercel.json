@@ -1,0 +1,84 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "prototype/dist",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/es",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/es",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/es/desarrollo-software-a-medida",
+      "destination": "/es/desarrollo-software-a-medida/index.html"
+    },
+    {
+      "source": "/es/integracion-de-sistemas",
+      "destination": "/es/integracion-de-sistemas/index.html"
+    },
+    {
+      "source": "/es/automatizacion-de-procesos",
+      "destination": "/es/automatizacion-de-procesos/index.html"
+    },
+    {
+      "source": "/es/casos/despegar-cotizador-hubspot",
+      "destination": "/es/casos/despegar-cotizador-hubspot/index.html"
+    },
+    {
+      "source": "/es/casos/revianz-gestion-financiera-proyectos",
+      "destination": "/es/casos/revianz-gestion-financiera-proyectos/index.html"
+    },
+    {
+      "source": "/es/casos",
+      "destination": "/es/casos/index.html"
+    },
+    {
+      "source": "/es/casos/consorcioabierto-facturacion-hubspot-odoo",
+      "destination": "/es/casos/consorcioabierto-facturacion-hubspot-odoo/index.html"
+    },
+    {
+      "source": "/es/casos/photonix-servicio-tecnico",
+      "destination": "/es/casos/photonix-servicio-tecnico/index.html"
+    },
+    {
+      "source": "/es/casos/escala24x7-hubspot-aws-partner-central",
+      "destination": "/es/casos/escala24x7-hubspot-aws-partner-central/index.html"
+    },
+    {
+      "source": "/es/casos/ads-mexicana-cotizador-hubspot",
+      "destination": "/es/casos/ads-mexicana-cotizador-hubspot/index.html"
+    },
+    {
+      "source": "/es/contacto",
+      "destination": "/es/contacto/index.html"
+    },
+    {
+      "source": "/es/como-trabajamos",
+      "destination": "/es/como-trabajamos/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    }
+  ]
+}
