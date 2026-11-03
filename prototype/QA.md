@@ -439,3 +439,12 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Una revisión independiente detectó el desplazamiento del logo al recibir foco por clic; se corrigió usando :has(a:focus-visible) para el modo teclado. El clic en ADS Mexicana a 320 px abre el contenido correcto del lector.
 - Sin desborde horizontal de página a 1280 y 320 px. Captura de la sección institucional en `outputs/home-clients-20261103/digifianz-desktop.jpg`, fuera del repo website.
 - Build, sintaxis JavaScript y diff check correctos. Se conservaron las páginas internas sin cambios. Entrega local.
+
+
+## Logo positivo, nuevo Hero y metodología · 3 de noviembre de 2026
+
+- El SVG positivo original de Digifianz carga sobre fondo transparente en el carril. El logo blanco sigue en la sección institucional navy. Procedencia y hash registrados en `assets/brand/SOURCES.md`.
+- Titular y bajada nuevos presentes en el HTML. El carril no contiene botones; movimiento comprobado entre dos lecturas de su transformación. Al navegar por teclado se activa la lista estática y al salir se reanuda la animación. Los seis enlaces duplicados tienen tabindex -1. La alternativa de movimiento reducido se revisó en CSS.
+- Metodología con cuatro modalidades y entregables, sin contenido interno desbordado a 320, 390, 767 y 1280 px CSS. Revisión visual en escritorio y móvil. El enlace al servicio navega a `#como-abordamos` y deja su sección bajo la cabecera.
+- Revisión independiente de copy y CSS sin observaciones; los entregables se apoyan en el contenido del servicio. Consola sin errores ni avisos durante la revisión.
+- Build, sintaxis JavaScript y diff check correctos. Las cinco páginas internas no cambian. Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/home-method-20261103/`. Entrega local sin publicación.

@@ -88,3 +88,12 @@ Se recupera la sección institucional independiente antes del contacto, con el t
 La franja bajo el hero reúne los seis clientes documentados: Despegar, ConsorcioAbierto, Photonix, Escala24x7, ADS Mexicana y Digifianz (cliente del proyecto REVIANZ). No lleva la leyenda «Empresas con las que trabajamos». Se mantiene el fondo blanco; el logo blanco de Digifianz tiene un soporte navy para respetar el original. No se crean ni recolorean logos. Escala24x7 y ADS Mexicana se incorporan desde los originales del repositorio.
 
 Movimiento horizontal continuo y lineal, con pausa visible, pausa al pasar el puntero y recorrido estático al navegar por teclado. Se evita mover los enlaces durante el clic. Las preferencias de movimiento reducido desactivan la animación y mantienen una fila desplazable. Los duplicados visuales no añaden paradas de teclado. Se conservan el título «Casos de éxito», la presentación compacta y el CTA al final de los casos.
+
+
+## Hero práctico, marca sobre blanco y metodología · 3 de noviembre de 2026
+
+El titular pasa a «Desarrollamos software para que tu negocio funcione mejor.», acompañado por una bajada sobre conectar sistemas, automatizar procesos y crear herramientas. Se conserva la imagen ambiental y el tratamiento visual del hero.
+
+El carril utiliza la variante positiva original de Digifianz, recuperada del proyecto local de la empresa, en coral y sobre fondo transparente. El SVG se conserva intacto; CSS encuadra su dibujo horizontal dentro del viewBox cuadrado. Se retira el botón visible de pausa por pedido del usuario. Continúan el movimiento automático, la pausa al pasar el puntero, el recorrido estático por teclado y la preferencia de movimiento reducido.
+
+«Cómo trabajamos en tu proyecto» reemplaza la introducción breve de metodología. La composición combina una columna de orientación con cuatro filas abiertas: auditoría, diseño, implementación y soporte. Cada modalidad explica qué hacemos y qué recibe el cliente, según el contenido aprobado de desarrollo de software. Se aclara que se pueden contratar por separado y se enlaza al detalle. No se presentan como pasos obligatorios de un proceso único.

@@ -69,3 +69,12 @@ Los siguientes logos provienen de los assets originales del sitio Cloudfianz. Se
 | `ads-mexicana-original.png` | `website/src/assets/logo_ads.png` del repositorio existente | 938 × 410, RGBA. Logo ADS Mexicana negro y verde; transparencia conservada. Huella alpha x49–887 / y20–386. | `89b014f31f9d9d270cae03aac1e608abe49827c99363c4b4aa80a4dd81ed3a5e` |
 
 Digifianz: se conserva `digifianz-official.svg`, el SVG blanco ya documentado. La homepage oficial verificada el 3 de noviembre de 2026 sigue usando ese mismo recurso. No se encontró una variante oscura original en el workspace Cloudfianz; para el carril sobre blanco, presentar el SVG intacto sobre un soporte navy. No aplicar filtros ni alterar su relleno.
+
+
+## Digifianz positivo sobre blanco · 3 de noviembre de 2026
+
+Se localizó una variante positiva original en `/Users/sheinken/Desktop/Digifianz/boom_tool_frontend/public/images/Logo-Digifianz-Positivo.svg`, dentro del proyecto de Digifianz. Se conserva intacta como `digifianz-on-white-original.svg` (2853 bytes), con SHA-256 `e241dc641c3bc1c1df73febbe4aa2140e1490ec2c14b7849377b18e5580b8e40`. El archivo lleva el título interno `DFZ-Logo-NewVersion` y un viewBox `0 0 1080 1080`.
+
+Es un lockup coral `#ee5e60` con el avión en degradado coral/naranja, diseñado para fondo claro. Se inspeccionó la representación del SVG sobre blanco con Quick Look. No se recolorearon, redibujaron ni modificaron los trazados o el archivo. El viewBox cuadrado contiene espacio vacío alrededor del lockup horizontal: para el carril se puede encuadrar la imagen con CSS `object-fit: cover` en una caja de proporción aproximada 190 × 60, conservando todo el dibujo. La huella del logo está aproximadamente entre x104–978 e y420–659.
+
+Esta variante reemplaza el soporte navy de Digifianz en la franja blanca de clientes. `digifianz-official.svg` continúa siendo la variante blanca para la sección institucional de fondo navy. La búsqueda pública también revisó las páginas oficiales de Digifianz; la variante apta se recuperó del proyecto local, no mediante alteración de la versión blanca.
