@@ -97,3 +97,21 @@ El titular pasa a «Desarrollamos software para que tu negocio funcione mejor.»
 El carril utiliza la variante positiva original de Digifianz, recuperada del proyecto local de la empresa, en coral y sobre fondo transparente. El SVG se conserva intacto; CSS encuadra su dibujo horizontal dentro del viewBox cuadrado. Se retira el botón visible de pausa por pedido del usuario. Continúan el movimiento automático, la pausa al pasar el puntero, el recorrido estático por teclado y la preferencia de movimiento reducido.
 
 «Cómo trabajamos en tu proyecto» reemplaza la introducción breve de metodología. La composición combina una columna de orientación con cuatro filas abiertas: auditoría, diseño, implementación y soporte. Cada modalidad explica qué hacemos y qué recibe el cliente, según el contenido aprobado de desarrollo de software. Se aclara que se pueden contratar por separado y se enlaza al detalle. No se presentan como pasos obligatorios de un proceso único.
+
+
+## Selección de casos, metodología compacta e infraestructura AWS · 3 de noviembre de 2026
+
+El subtítulo de «Casos de éxito» pasa a «Una selección de proyectos que mejoran cómo trabajan nuestros clientes.». Se coloca debajo del título para evitar que la selección de tres casos se interprete como el total de proyectos de Cloudfianz. La presentación de cada caso y el CTA del cierre se conservan.
+
+La metodología adopta el selector de modalidades de Desarrollo a Medida, con cuatro controles y un solo panel visible. Cada panel resume qué hacemos y qué recibe el cliente. Se reutiliza la interacción de pestañas de `dist/app.js`, con navegación por teclado, estado seleccionado y relación entre controles y paneles. Las modalidades siguen siendo contratables por separado. Sin JavaScript, los controles permanecen ocultos y los cuatro paneles quedan legibles. El enlace final lleva al detalle del servicio.
+
+Entre metodología y Digifianz se incorpora «Infraestructura AWS para acompañar tu operación.». La composición mantiene la paleta, alineación y tipografía del inicio: introducción y vínculo a un caso a la izquierda, tres beneficios concretos a la derecha, apilados en móvil. Los beneficios se acotan a capacidad adaptable en componentes serverless, pago por consumo y reducción de tareas de gestión de servidores. La sección no promete un costo fijo, ahorro garantizado, disponibilidad absoluta ni acreditaciones de partner. La afirmación «en gran parte de nuestros proyectos» proviene del pedido del usuario.
+
+### Fuentes de la sección AWS (registro interno)
+
+- [AWS Serverless](https://aws.amazon.com/serverless/), consultado el 3 de noviembre de 2026: describe escalado automático, pago por uso y reducción de tareas de aprovisionamiento y mantenimiento. Respalda los tres beneficios expresados con alcance específico.
+- [AWS Lambda](https://aws.amazon.com/lambda/), consultado el 3 de noviembre de 2026: confirma el ajuste de capacidad y pago por consumo de funciones orientadas a eventos.
+- `content/caso-photonix.md`, apartado «La solución»: documenta el sistema alojado en AWS. Su costo de infraestructura inferior a USD 10 pertenece a una configuración puntual y no se traslada a la Home como promesa general.
+- `content/caso-properix.md`, apartado «Una arquitectura adaptada a la complejidad de los contratos»: documenta AWS Step Functions y Lambda para las reglas de facturación. Es el caso enlazado desde la sección.
+- `../src/data/cases.json`, caso Escala24x7: registra una arquitectura serverless con Lambda, STS y EventBridge. `../src/es/index.html`, sección `#infra`, conserva el antecedente de infraestructura AWS del sitio anterior.
+- `../infra/lib/website-stack.ts`: define S3 privado con cifrado y distribución CloudFront con HTTPS. Esta fuente describe la configuración del sitio; no se usa como prueba independiente de un despliegue activo.

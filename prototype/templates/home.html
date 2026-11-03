@@ -56,7 +56,7 @@
   </div>
 </section>
 <section class="home-work home-section" id="casos" aria-labelledby="cases-title"><div class="container">
-  <div class="home-work-heading"><h2 id="cases-title">Casos de éxito</h2><p>Tres proyectos que hoy forman parte de la operación de nuestros clientes.</p></div>
+  <div class="home-work-heading"><h2 id="cases-title">Casos de éxito</h2><p>Una selección de proyectos que mejoran cómo trabajan nuestros clientes.</p></div>
   <div class="home-project-stories">
     <article class="home-case" aria-labelledby="despegar-home-title">
       <div class="home-case-intro">
@@ -119,30 +119,49 @@
     <a class="button button-dark" href="#contacto">Hablemos de tu negocio</a>
   </aside>
 </div></section>
-<section class="home-judgment home-section" id="como-trabajamos" aria-labelledby="judgment-title"><div class="container home-method-layout">
+<section class="home-judgment home-section" id="como-trabajamos" aria-labelledby="judgment-title"><div class="container">
   <div class="home-method-intro">
     <h2 id="judgment-title">Cómo trabajamos en tu proyecto</h2>
-    <p>Podés empezar por lo que tu proyecto necesita. Acordamos alcance, entregables, presupuesto y responsabilidades antes de avanzar.</p>
-    <div class="home-method-agreement"><h3>Un punto de partida a tu medida.</h3><p>Cada modalidad se puede contratar por separado. Podemos ayudarte a definir una idea o sumarnos a un proyecto que ya está en marcha.</p></div>
-    <a class="text-link" href="/es/desarrollo-software-a-medida#como-abordamos">Conocé las formas de trabajo</a>
+    <p>Podés contratar cada modalidad por separado, según lo que necesites. Antes de avanzar, acordamos alcance, entregables, presupuesto y responsabilidades.</p>
   </div>
-  <div class="home-method-options">
-    <article class="home-method-option" aria-labelledby="method-audit-title">
-      <div class="home-method-copy"><h3 id="method-audit-title">Auditoría</h3><p>Revisamos tus procesos y herramientas para decidir qué conviene mejorar primero.</p></div>
-      <div class="home-method-delivery"><span>Qué recibís</span><p>Un diagnóstico con prioridades y una recomendación fundamentada.</p></div>
-    </article>
-    <article class="home-method-option" aria-labelledby="method-design-title">
-      <div class="home-method-copy"><h3 id="method-design-title">Diseño</h3><p>Definimos qué debe resolver la solución, quiénes la usarán y cómo validarla.</p></div>
-      <div class="home-method-delivery"><span>Qué recibís</span><p>El alcance documentado y criterios claros para construir.</p></div>
-    </article>
-    <article class="home-method-option" aria-labelledby="method-build-title">
-      <div class="home-method-copy"><h3 id="method-build-title">Implementación</h3><p>Construimos y probamos la solución con quienes conocen tu operación.</p></div>
-      <div class="home-method-delivery"><span>Qué recibís</span><p>La versión acordada, validada y documentada, con transferencia a tu equipo.</p></div>
-    </article>
-    <article class="home-method-option" aria-labelledby="method-support-title">
-      <div class="home-method-copy"><h3 id="method-support-title">Soporte</h3><p>Acompañamos la solución en funcionamiento con una capacidad mensual acordada.</p></div>
-      <div class="home-method-delivery"><span>Qué incluye</span><p>Atención de incidentes, mantenimiento y ajustes menores.</p></div>
-    </article>
+  <div class="home-method-process" data-tabs data-progressive-tabs>
+    <div class="home-method-tabs" role="tablist" aria-label="Modalidades de trabajo" hidden>
+      <button type="button" role="tab" id="home-method-tab-audit" aria-controls="home-method-panel-audit" aria-selected="true" tabindex="0"><span class="home-method-tab-name">Auditoría</span><span class="home-method-tab-hint">Evaluar las alternativas</span></button>
+      <button type="button" role="tab" id="home-method-tab-design" aria-controls="home-method-panel-design" aria-selected="false" tabindex="-1"><span class="home-method-tab-name">Diseño</span><span class="home-method-tab-hint">Definir el alcance</span></button>
+      <button type="button" role="tab" id="home-method-tab-build" aria-controls="home-method-panel-build" aria-selected="false" tabindex="-1"><span class="home-method-tab-name">Implementación</span><span class="home-method-tab-hint">Construir y poner en uso</span></button>
+      <button type="button" role="tab" id="home-method-tab-support" aria-controls="home-method-panel-support" aria-selected="false" tabindex="-1"><span class="home-method-tab-name">Soporte</span><span class="home-method-tab-hint">Acompañar la operación</span></button>
+    </div>
+    <div class="home-method-panels">
+      <div class="home-method-panel" id="home-method-panel-audit" role="tabpanel" aria-labelledby="home-method-tab-audit" tabindex="0">
+        <div class="home-method-copy"><h3>Entender antes de elegir</h3><p>Revisamos tus procesos y herramientas. Evaluamos qué conviene configurar, conectar o desarrollar para mejorar tu operación.</p></div>
+        <div class="home-method-delivery"><h4>Qué recibís</h4><p>Un diagnóstico con prioridades y una recomendación fundamentada.</p></div>
+      </div>
+      <div class="home-method-panel" id="home-method-panel-design" role="tabpanel" aria-labelledby="home-method-tab-design" tabindex="0">
+        <div class="home-method-copy"><h3>Definir el alcance</h3><p>Acordamos qué debe resolver la solución, quiénes la usarán y cómo validarla. Delimitamos una primera versión y qué puede venir después.</p></div>
+        <div class="home-method-delivery"><h4>Qué recibís</h4><p>El alcance documentado y criterios claros para construir.</p></div>
+      </div>
+      <div class="home-method-panel" id="home-method-panel-build" role="tabpanel" aria-labelledby="home-method-tab-build" tabindex="0">
+        <div class="home-method-copy"><h3>Construir y poner en uso</h3><p>Desarrollamos y probamos la solución con quienes conocen tu operación. Validamos los recorridos y las integraciones contra el alcance acordado.</p></div>
+        <div class="home-method-delivery"><h4>Qué recibís</h4><p>La versión acordada, validada y documentada, con transferencia a tu equipo.</p></div>
+      </div>
+      <div class="home-method-panel" id="home-method-panel-support" role="tabpanel" aria-labelledby="home-method-tab-support" tabindex="0">
+        <div class="home-method-copy"><h3>Acompañar la operación</h3><p>Sostenemos la solución en funcionamiento con una capacidad mensual de trabajo acordada según las necesidades de tu equipo.</p></div>
+        <div class="home-method-delivery"><h4>Qué incluye</h4><p>Atención de incidentes, mantenimiento y ajustes menores dentro de la capacidad acordada.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="home-method-footer"><a class="text-link" href="/es/desarrollo-software-a-medida#como-abordamos">Conocé las formas de trabajo en detalle</a></div>
+</div></section>
+<section class="home-infrastructure home-section" id="infraestructura" aria-labelledby="infrastructure-title"><div class="container home-infrastructure-layout">
+  <div class="home-infrastructure-intro">
+    <h2 id="infrastructure-title">Infraestructura AWS para acompañar tu operación.</h2>
+    <p>Usamos Amazon Web Services en gran parte de nuestros proyectos. Elegimos los servicios según el uso esperado, las integraciones y las necesidades de cada negocio.</p>
+    <a class="text-link" href="#caso-properix" data-content="caso-properix">Conocé cómo lo aplicamos en ConsorcioAbierto</a>
+  </div>
+  <div class="home-infrastructure-benefits">
+    <article><h3>Capacidad que acompaña el uso</h3><p>Los componentes serverless pueden ajustar su capacidad según la demanda, para acompañar nuevos usuarios y más actividad.</p></article>
+    <article><h3>Costos según la demanda</h3><p>Con servicios de pago por consumo, el gasto acompaña el uso de la solución y se reduce la necesidad de mantener capacidad ociosa.</p></article>
+    <article><h3>Menos mantenimiento de infraestructura</h3><p>Los servicios administrados por AWS reducen las tareas de gestión de servidores y nos permiten concentrarnos en la aplicación y su evolución.</p></article>
   </div>
 </div></section>
 <section class="home-backing" id="respaldo" aria-labelledby="backing-title"><div class="container home-backing-layout">

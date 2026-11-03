@@ -448,3 +448,13 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Metodología con cuatro modalidades y entregables, sin contenido interno desbordado a 320, 390, 767 y 1280 px CSS. Revisión visual en escritorio y móvil. El enlace al servicio navega a `#como-abordamos` y deja su sección bajo la cabecera.
 - Revisión independiente de copy y CSS sin observaciones; los entregables se apoyan en el contenido del servicio. Consola sin errores ni avisos durante la revisión.
 - Build, sintaxis JavaScript y diff check correctos. Las cinco páginas internas no cambian. Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/home-method-20261103/`. Entrega local sin publicación.
+
+
+## Casos, metodología con pestañas e infraestructura AWS · 3 de noviembre de 2026
+
+- Subtítulo de casos sin cantidad de proyectos: «Una selección de proyectos que mejoran cómo trabajan nuestros clientes.». Se verificó debajo del título, alineado al mismo margen izquierdo en escritorio.
+- Metodología adaptada de Desarrollo a Medida: cuatro pestañas y un panel visible con actividad y entregable. Clic, flechas, Home y End comprobados; un único tab seleccionado y un único tab con tabindex 0. El HTML original deja los cuatro paneles disponibles si no carga JavaScript.
+- A 1280 px CSS, la metodología inicial mide aproximadamente 697 px frente a los 835 px anteriores; a 390 px, el panel Diseño deja la sección en 957 px frente a los 1706 px de la versión anterior. Las medidas varían con el panel y el ancho.
+- Nueva sección AWS entre metodología y Digifianz, con beneficios acotados a componentes serverless y servicios administrados. Fuentes oficiales y evidencia de proyectos registradas en DIRECCION-INICIO-V3.md. El enlace a ConsorcioAbierto abre el caso correcto en el lector y se puede cerrar.
+- Revisión responsive a 320, 390, 1024 y 1280 px CSS. Se ajustó la tipografía y el padding de las pestañas a 320 px para que «Implementación» entre completo. Sin desbordes de página ni de los nuevos componentes. Capturas desktop y mobile en `/Users/sheinken/Desktop/Cloudfianz/outputs/home-aws-tabs-20261103/`.
+- Build y diff check correctos; un H1, IDs únicos, asociaciones tab/panel válidas y assets presentes. Sin cambios en las cinco páginas internas ni en el JavaScript compartido. Consola sin errores ni avisos. Viewport restablecido y Home abierta. Cambios solo locales.
