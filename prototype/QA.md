@@ -420,3 +420,11 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Build correcto y diff sin errores. Revisión estática independiente: IDs únicos, un H1, un solo mockup REVIANZ, assets existentes, enlaces nativos y lectores válidos. Las cinco páginas internas no tienen cambios y no cargan los estilos de Home.
 - Formulario y agenda mantienen su comportamiento de demostración local. Sin publicación.
 - Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/home-rhythm-20261103/`.
+
+## Ajuste de logos, título y cierre de casos · 3 de noviembre de 2026
+
+- Se recupera la franja blanca de Despegar, ConsorcioAbierto y Photonix inmediatamente bajo el Hero. Los tres recursos originales cargan y conservan sus enlaces al caso.
+- El título se simplifica a «Casos de éxito». El banner de contacto es el último bloque de la sección, después de los tres proyectos y del enlace al índice.
+- Revisión visual de la franja a 1280 y 390 px; sin desbordes de página también a 320 px. Orden final y título verificados en el DOM. La adaptación móvil dispone los logos en dos columnas.
+- Build y diff check correctos. Las páginas internas permanecen sin cambios. Vista de Home recargada, viewport restablecido y cambios sólo locales.
+- Captura de escritorio: `/Users/sheinken/Desktop/Cloudfianz/outputs/home-followup-20261103/logos-desktop.jpg`.

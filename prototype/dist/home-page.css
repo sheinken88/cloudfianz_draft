@@ -17,12 +17,15 @@
 .home-opening-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:30px}
 .home-opening-actions .text-link{font-size:14px;min-height:44px;display:inline-flex;align-items:center;color:var(--navy)}
 
-/* Institutional credibility is a short bridge, with client brands saved for cases. */
-.home-proof{background:var(--navy);color:#fff;padding-block:28px}
-.home-proof-inner{display:grid;grid-template-columns:180px 1fr auto;align-items:center;gap:48px}
-.home-proof-inner>img{width:180px;height:auto}
-.home-proof-inner>p{font-size:14px;line-height:1.75;color:#d5dfe8;max-width:640px}
-.home-proof-inner>.text-link{font-size:13px;min-height:44px;display:inline-flex;align-items:center;white-space:nowrap}
+/* Original client logos provide a quiet credibility strip below the hero. */
+.home-proof{background:#fff}
+.home-proof-inner{display:grid;grid-template-columns:215px 1fr;align-items:center;gap:64px;padding-block:32px;border-bottom:1px solid var(--line)}
+.home-proof-inner>p{font-size:14px;line-height:1.7;color:var(--muted);max-width:200px}
+.home-client-logos{display:flex;align-items:center;justify-content:space-between;gap:40px;min-width:0}
+.home-client-logos a{display:flex;align-items:center;min-height:60px;min-width:0}
+.home-client-logos img{width:100%;max-width:160px;height:auto}
+.home-client-logos a:nth-child(2) img{max-width:205px}
+.home-client-logos a:nth-child(3) img{max-width:148px}
 
 .home-section-heading{display:grid;grid-template-columns:1.2fr 1fr;gap:88px;align-items:end;margin-bottom:48px}
 .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:clamp(36px,3.5vw,48px);line-height:1.16;letter-spacing:-1.6px}
@@ -55,7 +58,7 @@
 .home-case-stage{display:flex;align-items:center;justify-content:center;min-height:280px;padding:20px;background:#f1f4f6;border-radius:10px}
 .home-case-stage>img{display:block;width:100%;height:auto;max-width:100%;max-height:280px;object-fit:contain;border-radius:5px;box-shadow:0 12px 28px #0b1d3a0d}
 .home-case-media>figcaption{margin:12px 4px 0;font-size:11px;line-height:1.6;color:var(--muted)}
-.home-case-contact{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:30px 32px;background:var(--mint);border-radius:12px}
+.home-case-contact{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:32px;padding:30px 32px;background:var(--mint);border-radius:12px}
 .home-case-contact h3{font-size:27px;line-height:1.25;letter-spacing:-.7px}
 .home-case-contact p{margin-top:8px;font-size:15px;color:#42645b}
 .home-case-contact>.button{flex:none}
@@ -102,7 +105,7 @@
 
 @media(max-width:1199px){
   .home-opening h1{font-size:49px}
-  .home-proof-inner{grid-template-columns:150px 1fr auto;gap:32px}
+  .home-proof-inner{grid-template-columns:180px 1fr;gap:32px}.home-client-logos{gap:28px}
   .home-section-heading,.home-work-heading{gap:52px}
   .home-service-paths{gap:28px}.home-service-path h3{font-size:25px}.home-service-action{font-size:12px;padding-inline:14px}
   .home-case-intro{padding:26px}.home-case-story>h3{font-size:27px}.home-case-media{margin-right:20px}.home-case-stage{padding:16px;min-height:260px}
@@ -110,7 +113,7 @@
 }
 @media(max-width:959px){
   .home-hero{min-height:0;padding-block:56px 0}.home-opening{padding-bottom:320px}.home-opening-content{width:100%;max-width:720px}.home-opening h1{font-size:56px;max-width:720px}.home-opening-copy{max-width:600px}.home-hero-media{inset:auto 0 0;height:350px}.home-hero-media>img{object-position:72% center}.home-hero::before{display:none}.home-hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.9) 8%,rgba(255,255,255,0) 36%)}
-  .home-proof-inner{grid-template-columns:140px 1fr;gap:12px 28px}.home-proof-inner>.text-link{grid-column:2;justify-self:start}.home-proof-inner>img{grid-row:1 / span 2}
+  .home-proof-inner{grid-template-columns:1fr;gap:20px}.home-proof-inner>p{max-width:none}.home-client-logos{justify-content:start;gap:56px}
   .home-section-heading,.home-work-heading{grid-template-columns:1fr;gap:20px}.home-section-heading>p,.home-work-heading>p{max-width:600px}
   .home-service-paths{gap:24px}.home-service-path h3{font-size:24px}.home-service-path>p{font-size:14px}
   .home-case{grid-template-columns:1.1fr 1fr}.home-case-story>h3{font-size:25px}.home-case-intro{padding:24px}.home-case-description>p{font-size:14px}
@@ -128,7 +131,7 @@
 }
 @media(max-width:599px){
   .home-hero{padding-top:42px}.home-opening{padding-bottom:clamp(225px,calc(79.5vw - 20px),280px)}.home-hero-media{height:clamp(245px,79.5vw,300px)}.home-hero-media>img{object-position:right center}.home-opening h1{font-size:40px;letter-spacing:-1.5px;line-height:1.12}.home-opening-actions{flex-direction:column;align-items:start;gap:12px}.home-opening-actions>.button{width:100%}
-  .home-proof{padding-block:24px}.home-proof-inner{grid-template-columns:1fr;gap:14px}.home-proof-inner>img{grid-row:auto;width:150px}.home-proof-inner>p{font-size:13px}.home-proof-inner>.text-link{grid-column:1;font-size:12px}
+  .home-proof-inner{padding-block:24px;gap:18px}.home-proof-inner>p{font-size:13px}.home-client-logos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 24px}.home-client-logos a{min-height:44px}.home-client-logos img{max-width:135px}.home-client-logos a:nth-child(2) img{max-width:165px}.home-client-logos a:nth-child(3) img{max-width:125px}
   .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:34px}.home-section-heading>p,.home-work-heading>p{font-size:15px}.home-service-path h3{font-size:26px}
   .home-project-stories{gap:20px}.home-case{border-radius:12px}.home-case-intro{padding:22px 22px 20px}.home-case-brandline{align-items:start;flex-direction:column;gap:10px;margin-bottom:18px}.home-case-category{text-align:left;max-width:none;font-size:11px}.home-case-story>h3{font-size:27px;letter-spacing:-.8px}.home-case-description>p{font-size:14px}.home-case-actions{margin-top:12px}.home-case-actions .text-link{font-size:12px}
   .home-case-media{margin:0 14px 20px}.home-case-stage{padding:14px;border-radius:8px}.home-case-media>figcaption{margin:10px 4px 0;font-size:10px}

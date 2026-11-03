@@ -73,3 +73,9 @@ El hero conserva la imagen ambiental y cambia su promesa a «Tu negocio tiene su
 Las tres soluciones conservan su jerarquía y reciben CTA con verbos y un tratamiento de botón secundario. Los casos se presentan en filas de dos columnas: marca, resultado, un párrafo y enlace a la izquierda; una sola imagen a la derecha. REVIANZ muestra únicamente la vista ilustrativa de rentabilidad. En móvil se apilan texto e imagen. Una invitación contextual al contacto aparece tras los primeros dos casos. El acceso al índice se ofrece una sola vez al terminar la selección.
 
 Revisión del plan: se descarta una nueva grilla de tarjetas y se preserva el recorrido editorial existente. La escala de las imágenes acompaña al resumen en lugar de producir tres presentaciones completas. El contraste navy distingue el respaldo institucional; mint marca la oportunidad de contacto. Las cifras y capturas mantienen sus aclaraciones; no se agregan resultados ni credenciales. Las páginas internas conservan el detalle de cada proyecto.
+
+## Ajuste de logos y cierre de casos · 3 de noviembre de 2026
+
+Se recuperan los logos originales de Despegar, ConsorcioAbierto y Photonix inmediatamente debajo del Hero, en una franja blanca con la etiqueta «Empresas con las que trabajamos». Esta franja sustituye el bloque breve de Digifianz; la pertenencia a la empresa sigue indicada en el pie.
+
+La sección de proyectos adopta el título directo «Casos de éxito». El banner «¿Qué necesita resolver tu equipo? Contanos cómo trabajás hoy y qué querés mejorar.» pasa después de los tres casos y del enlace al índice, como cierre de la sección. Es un ajuste puntual del recorrido: se conservan los resúmenes compactos, las imágenes y la vista única de REVIANZ.
