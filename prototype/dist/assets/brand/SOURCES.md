@@ -93,4 +93,6 @@ Logo oficial positivo para el esquema de facturación de ConsorcioAbierto en el 
 
 ## Footer sin fondo · 3 de noviembre de 2026
 
-Se adopta el tratamiento del footer de https://cloudfianz.com/: nombre en blanco con Space Grotesk 700 y símbolo turquesa transparente. Se reutiliza `cloudfianz-symbol.png` intacto; no es una eliminación de fondo del JPG delineado. El footer deja de usar ese JPG y su soporte blanco.
+`cloudfianz-original-transparent.png`: edición con transparencia a partir de `cloudfianz-original.jpg`, conservando el logo delineado y el avión como una sola imagen. Sustituye el tratamiento rechazado de texto HTML más símbolo separado. El JPEG original se conserva intacto.
+
+Herramienta: image_gen integrada, modo background-extraction, fondo transparente. Prompt: “Remove ONLY the white background, including negative spaces inside outlined letters and airplane. Preserve original Cloudfianz outlined lettering, airplane, proportions and teal color. No font replacement, redesign, added elements, shadows or clipping.”
