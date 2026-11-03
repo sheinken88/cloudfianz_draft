@@ -22,3 +22,12 @@ Los SVG conservan los fondos y colores oficiales: API Gateway violeta, Lambda na
 `aws-logo.png`: original RGBA de 1254 × 750 px (36.212 bytes), con fondo transparente, letras y sonrisa oscuras (variante monocroma oficial). Fuente: [Amazon Press Center — Logos, página 3](https://press.aboutamazon.com/logos?p=3). [Archivo original](https://assets.aboutamazon.com/ff/9f/c88d0578474381e7ee1b6d337d23/aws-logo-rgb.png). Se descargó sin transformación y se verificó visualmente.
 
 SHA-256: `0762717e921e1cf1813b7e28d3097b24e564357f7d30d416b3aa2aafcb18f9d3`.
+
+
+## Logo corporativo bicolor para Escala24x7
+
+`aws-logo-color.svg`: variante histórica de 2017 con letras oscuras `#252F3E` y sonrisa naranja `#FF9900`, fondo transparente y viewBox `0 0 304 182`. Descargada sin modificaciones el 3 de noviembre de 2026 desde [el archivo original conservado por Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg). [La ficha de procedencia](https://commons.wikimedia.org/wiki/File:Amazon_Web_Services_Logo.svg) atribuye autor y fuente a Amazon / Amazon.com Inc.; Wikimedia es el host intermediario, no una descarga directa actual de AWS.
+
+Los tres trazados del SVG coinciden con la variante inversa del [repositorio oficial AWS Samples, EKS Workshop](https://github.com/aws-samples/eks-workshop-v2/blob/main/website/static/img/logo.svg), que utiliza letras blancas y la misma sonrisa naranja. La variante bicolor sobre blanco también está representada en [AWS Partner Creative and Messaging Guide, enero de 2022](https://pages.awscloud.com/rs/112-TZM-766/images/AWS%20Partner%20Creative%20and%20Messaging%20Guide_January_2022_v1.pdf), páginas 42–43. Se conserva el archivo descargado intacto: no se ha recoloreado la variante monocroma ni el SVG de AWS Samples.
+
+SHA-256: `1f52a1d5f3c11d1452aac763e53ca9e74d6635298feb077059903595ca408206`. Tamaño: 3.474 bytes. El PNG monocromo existente permanece disponible para la Home.

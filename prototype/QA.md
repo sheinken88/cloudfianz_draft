@@ -501,3 +501,9 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Revisión visual a 1280 y 390 px CSS; comprobación de cabecera a 800 px, y menú a 320 × 600 px. Sin desbordes horizontales; opciones móviles de 48 px de altura. El menú permite desplazamiento si la altura disponible no alcanza.
 - Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/solutions-nav-aws-20261103/`.
 - Build, sintaxis JavaScript y diff check correctos. Verificación de H1 e IDs únicos y destinos válidos en las seis páginas. Los cambios de HTML quedan limitados a la cabecera. Revisión independiente sin hallazgos.
+
+
+## AWS bicolor en Escala24x7 · 3 de noviembre de 2026
+
+- SVG original con letras oscuras y sonrisa naranja en el esquema de Escala24x7. Archivo preservado intacto, SHA-256 comprobado y procedencia documentada, incluyendo la comparación con los trazados del repositorio AWS Samples. El logo monocromo de Home conserva su recurso existente.
+- Carga comprobada y revisión visual del esquema a 1280 px CSS; se mantiene la anchura de 80 px y la proporción del logo. Consola sin errores ni avisos. Build y diff check correctos. Captura en `/Users/sheinken/Desktop/Cloudfianz/outputs/solutions-nav-aws-20261103/escala-aws-color.jpg`.
