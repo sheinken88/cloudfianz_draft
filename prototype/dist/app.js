@@ -1,8 +1,10 @@
 const menuButton = document.querySelector('.menu-toggle');
 const menu = document.querySelector('#main-nav');
+const solutionsMenu = menu.querySelector('.nav-solutions');
 function closeMenu() {
   menuButton.setAttribute('aria-expanded', 'false');
   menu.classList.remove('is-open');
+  solutionsMenu.open = false;
 }
 menuButton.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') !== 'true';
@@ -11,9 +13,21 @@ menuButton.addEventListener('click', () => {
 });
 menu.addEventListener('click', (event) => { if (event.target.closest('a')) closeMenu(); });
 document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && solutionsMenu.open) {
+    event.preventDefault();
+    solutionsMenu.open = false;
+    solutionsMenu.querySelector('summary').focus();
+    return;
+  }
   if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
     closeMenu(); menuButton.focus();
   }
+});
+document.addEventListener('click', (event) => {
+  if (!solutionsMenu.contains(event.target)) solutionsMenu.open = false;
+});
+solutionsMenu.addEventListener('focusout', (event) => {
+  if (event.relatedTarget && !solutionsMenu.contains(event.relatedTarget)) solutionsMenu.open = false;
 });
 matchMedia('(min-width: 800px)').addEventListener('change', closeMenu);
 

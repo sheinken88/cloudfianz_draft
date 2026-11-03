@@ -492,3 +492,12 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Los nombres tipográficos se reemplazan por el SVG oficial de HubSpot y el PNG oficial AWS ya usado en Home, conservando sus proporciones y colores originales. Procedencia y hash de HubSpot documentados en assets/brand/SOURCES.md; AWS conserva su fuente existente.
 - Ambos recursos cargan y tienen texto alternativo. Revisión visual desktop a 1280 px CSS y mediciones a 320 px: sin desbordes internos ni de página, logos ajustados al espacio disponible. Se conservan etiquetas, flechas, texto y CTA.
 - Build y diff check correctos. Captura en `/Users/sheinken/Desktop/Cloudfianz/outputs/service-escala-logos-20261103/desktop.jpg`. Solo cambia el HTML del servicio; Home y contenido editorial no cambian.
+
+
+## Desplegable de Soluciones · 3 de noviembre de 2026
+
+- Los tres enlaces del desplegable navegan a sus páginas independientes: Software a medida, Integraciones y Automatizaciones. Navegación comprobada en navegador; enlaces sin data-content en el HTML final. Cabecera compartida en Home y cinco páginas internas.
+- Apertura con Enter, recorrido Tab entre las tres opciones, cierre con Escape y recuperación de foco comprobados. Salir con Tab o hacer clic fuera cierra el panel. En móvil, el primer Escape cierra Soluciones y el segundo cierra Menú y devuelve el foco a su botón.
+- Revisión visual a 1280 y 390 px CSS; comprobación de cabecera a 800 px, y menú a 320 × 600 px. Sin desbordes horizontales; opciones móviles de 48 px de altura. El menú permite desplazamiento si la altura disponible no alcanza.
+- Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/solutions-nav-aws-20261103/`.
+- Build, sintaxis JavaScript y diff check correctos. Verificación de H1 e IDs únicos y destinos válidos en las seis páginas. Los cambios de HTML quedan limitados a la cabecera. Revisión independiente sin hallazgos.

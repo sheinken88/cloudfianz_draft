@@ -142,3 +142,8 @@ Fuentes consultadas el 3 de noviembre de 2026. No se incorporan métricas comerc
 El Hero de la Home adopta el texto exacto solicitado: «Software a medida para mejorar cómo funciona tu negocio», sin punto final. Conserva la imagen ambiental, la bajada y los CTA del hero. La página de Desarrollo de software a medida utiliza «Software diseñado para los procesos de tu empresa», también sin punto final. La Home expresa el beneficio general; el servicio enfoca la adaptación a los procesos de cada empresa.
 
 Los enlaces «Conocé el caso» de la Home reciben mayor presencia con un botón de fondo mint `#E8F4F0`, texto verde oscuro `#126357`, borde suave y esquinas de 8 px. La clase compartida `.case-button` se utiliza también en los casos del servicio para mantener el mismo lenguaje de navegación entre las dos páginas. Tiene una altura mínima de 46 px, hover discreto y foco de teclado visible; conserva las rutas o aperturas de lector de cada caso.
+
+
+## Navegación por soluciones · 3 de noviembre de 2026
+
+La cabecera incorpora un desplegable «Soluciones» con los tres accesos solicitados: «Software a medida», «Integraciones» y «Automatizaciones». Los enlaces conectan las páginas de servicio existentes. Un panel blanco con borde tenue y estados mint conserva el lenguaje del sitio; en móvil, el listado se integra en el menú principal. La cabecera es compartida con las páginas internas. Se usa un disclosure nativo, con apertura por clic/teclado y cierre por Escape, clic exterior o salida del foco.
