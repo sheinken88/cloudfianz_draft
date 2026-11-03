@@ -467,3 +467,13 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Revisión visual a 1280 y 390 px CSS, con medidas también a 320, 768 y 1024 px. Sin desbordes de página ni del contenido de la sección. Las cinco imágenes cargan; los SVG mantienen proporciones cuadradas. En móvil, los módulos pasan a filas con icono al lado del contenido.
 - El enlace a ConsorcioAbierto abre el lector correcto. Revisión estática independiente de contenido y responsive sin hallazgos.
 - Build y diff check correctos; H1 único, IDs únicos y assets existentes. Comparación confirma que el HTML exterior a AWS es idéntico a la versión previa; las páginas internas permanecen sin cambios. Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/home-aws-visual-20261103/`.
+
+
+## CTA de casos, títulos y sistema común entre Home y servicio · 3 de noviembre de 2026
+
+- Hero de Home con el texto exacto solicitado, sin punto final: «Software a medida para mejorar cómo funciona tu negocio». Servicio con la propuesta complementaria «Software diseñado para los procesos de tu empresa», en la fuente y en el HTML/lector generado. Las bajadas no cambian.
+- Tres CTA de Home y dos CTA del portfolio del servicio usan `.case-button`: fondo mint, texto verde oscuro, borde tenue, radio 8 px y altura mínima de 46 px. Foco por teclado comprobado. Los destinos nativos Despegar/REVIANZ y los lectores ConsorcioAbierto/Photonix se probaron y abren el contenido correcto.
+- REVIANZ y Photonix comparten marco, orden de lectura, márgenes y jerarquía. A 1280 px CSS, las cards miden 1136 px de ancho y aproximadamente 520/529 px de alto. Se corrigió la especificidad del margen de la figura REVIANZ frente a los estilos compartidos del mockup.
+- Revisión visual desktop y móvil. Sin desbordes de página ni del contenido de las cards a 320, 390, 1024 y 1280 px CSS en el servicio; Home también revisada a 320 y 1280 px. El CTA largo de ConsorcioAbierto se adapta a dos líneas a 320 px. Los titulares no desbordan.
+- Build y diff check correctos. H1 único, IDs únicos y assets existentes en ambas páginas. El lector generado cambia únicamente el H1 del servicio. Los párrafos aprobados de los proyectos y sus aclaraciones permanecen; no cambia el contenido de las páginas de casos.
+- Capturas de los dos Hero, casos de Home y servicio, y vista móvil en `/Users/sheinken/Desktop/Cloudfianz/outputs/cases-consistency-20261103/`. Cambios locales.

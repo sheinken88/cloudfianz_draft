@@ -28,8 +28,14 @@ def build_service(meta, intro, sections, routes):
     revianz, photonix = projects
     revianz_paragraphs = paragraphs(revianz[1])
     revianz_copy = ''.join(revianz_paragraphs[:-1])
-    revianz_name, revianz_description = revianz[0].split(': ', 1)
-    revianz_title = f'<span class="service-case-name">{revianz_name}</span>{revianz_description[0].upper()}{revianz_description[1:]}'
+    _, revianz_description = revianz[0].split(': ', 1)
+    revianz_title = revianz_description[0].upper() + revianz_description[1:]
+    photonix_paragraphs = paragraphs(photonix[1])
+    photonix_copy = ''.join(photonix_paragraphs[:-1])
+    _, photonix_description = photonix[0].split(': ', 1)
+    photonix_title = photonix_description[0].upper() + photonix_description[1:]
+    photonix_link = re.search(r'<a ([^>]+)>(.*?)</a>', photonix_paragraphs[-1]).group(0)
+    photonix_link = photonix_link.replace('<a ', '<a class="case-button" ', 1)
     approach_title, approach = section('Cómo podés')
     approach_intro, offers = subsections(approach)
     hints = ['Evaluar las alternativas', 'Definir el alcance', 'Construir y poner en uso', 'Acompañar la operación']
@@ -73,20 +79,35 @@ def build_service(meta, intro, sections, routes):
 <section class="service-projects page-section" id="proyectos" aria-labelledby="projects-heading">
   <div class="container">
     <div class="service-section-intro service-projects-intro"><h2 id="projects-heading">{projects_title}</h2>{projects_intro}</div>
-    <article class="revianz-preview" id="proyecto-revianz" aria-labelledby="revianz-service-title">
-      <div class="service-case-overview">
-        <h3 id="revianz-service-title">{revianz_title}</h3>
-      </div>
-      <div class="service-case-details">
-        <div class="revianz-preview-copy">{revianz_copy}</div>
-        <div class="service-case-actions"><a class="button button-dark" href="{routes['caso-revianz']}">Conocé el caso REVIANZ</a><a class="text-link" href="https://revianz.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar revianz.com (nueva pestaña)">Visitar revianz.com</a></div>
-      </div>
-      {mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.')}
-    </article>
-    <article class="service-project-secondary" aria-labelledby="photonix-service-title">
-      <figure><img src="/assets/brand/photonix-ethos-official.jpg" alt="Equipo de radioterapia Ethos, en una imagen institucional publicada por Photonix." width="1920" height="1080" loading="lazy" decoding="async"><figcaption>Equipamiento de radioterapia. Imagen institucional de Photonix.</figcaption></figure>
-      <div class="service-project-copy"><h3 id="photonix-service-title">{photonix[0]}</h3>{photonix[1]}</div>
-    </article>
+    <div class="service-case-list">
+      <article class="service-case" id="proyecto-revianz" aria-labelledby="revianz-service-title">
+        <div class="service-case-copy">
+          <div class="service-case-brandline">
+            <span class="service-rv-logo" role="img" aria-label="Revianz"><span class="service-rv-logo-symbol" aria-hidden="true">RZ</span><span class="service-rv-logo-wordmark" aria-hidden="true">Revianz</span></span>
+            <p class="service-case-category">Desarrollo a medida · Para Digifianz</p>
+          </div>
+          <h3 id="revianz-service-title">{revianz_title}</h3>
+          <div class="service-case-description">{revianz_copy}</div>
+          <div class="service-case-actions"><a class="case-button" href="{routes['caso-revianz']}">Conocé el caso REVIANZ</a><a class="text-link" href="https://revianz.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar revianz.com (nueva pestaña)">Visitar revianz.com</a></div>
+        </div>
+        {mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.', 'service-case-media service-case-mockup')}
+      </article>
+      <article class="service-case" aria-labelledby="photonix-service-title">
+        <div class="service-case-copy">
+          <div class="service-case-brandline">
+            <img class="service-case-logo-photonix" src="/assets/brand/photonix-official.svg" alt="Photonix" width="170" height="54" loading="lazy">
+            <p class="service-case-category">Desarrollo a medida · Servicio técnico</p>
+          </div>
+          <h3 id="photonix-service-title">{photonix_title}</h3>
+          <div class="service-case-description">{photonix_copy}</div>
+          <div class="service-case-actions">{photonix_link}</div>
+        </div>
+        <figure class="service-case-media">
+          <div class="service-case-stage"><img src="/assets/brand/photonix-ethos-official.jpg" alt="Equipo de radioterapia Ethos, en una imagen institucional publicada por Photonix." width="1920" height="1080" loading="lazy" decoding="async"></div>
+          <figcaption>Equipamiento de radioterapia. Imagen institucional de Photonix.</figcaption>
+        </figure>
+      </article>
+    </div>
     <div class="service-portfolio-link"><a class="text-link" href="#indice-casos" data-content="indice-casos">Ver todos los casos</a></div>
   </div>
 </section>

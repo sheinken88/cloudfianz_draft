@@ -39,3 +39,12 @@ La portada combina identidad auténtica, resultado y producto con una ficha de p
 ## Revisión contra el brief
 
 Se descarta una grilla de tres tarjetas para las aplicaciones y otra grilla idéntica para los casos: jerarquizar por contenido aporta más que cambiar el radio o la sombra. Se mantiene la familia tipográfica porque la debilidad está en composición y ritmo. La presencia de software real, sus reglas comerciales y las diferencias entre proyectos son el recurso visual distintivo; no se agregan dashboards, diagramas ficticios ni estadísticas decorativas. En móvil, lectura lineal y títulos más contenidos, sin carruseles obligatorios ni información inaccesible al teclado.
+
+
+## Casos unificados y titular complementario · 3 de noviembre de 2026
+
+Desarrollo de Software a Medida adopta «Software diseñado para los procesos de tu empresa» como propuesta de titular complementario a «Software a medida para mejorar cómo funciona tu negocio», que pasa a la Home. La bajada del servicio conserva sus aplicaciones comerciales, operativas y de nuevos servicios digitales.
+
+REVIANZ y Photonix comparten un artículo blanco con borde discreto y radio de 16 px, sobre el fondo mist del design system. La marca, el contexto, el título, los dos párrafos y los enlaces ocupan la columna izquierda. El producto o imagen institucional ocupa un marco neutro a la derecha. En móvil, se apilan en ese mismo orden. Las marcas mantienen sus identidades dentro de este sistema común.
+
+Ambos casos usan el CTA compartido `.case-button` verde mint de la Home. El enlace externo de REVIANZ conserva una jerarquía secundaria. Los textos aprobados y las aclaraciones de las imágenes se mantienen; el mockup de alcance de REVIANZ conserva todos sus servicios, importes y margen, con una disposición compacta de sus cifras. Photonix incorpora su logo original y su imagen se sigue identificando como contexto institucional.

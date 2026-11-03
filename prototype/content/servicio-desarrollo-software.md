@@ -1,6 +1,6 @@
 # Desarrollo de software a medida
 
-Versión 4 · Recorrido comercial integrado el 2 de noviembre de 2026
+Versión 5 · Titular complementario a la Home revisado el 3 de noviembre de 2026
 
 **URL propuesta:** `/es/desarrollo-software-a-medida`  
 **Title:** Desarrollo de software a medida para empresas | Cloudfianz  
@@ -10,7 +10,7 @@ Versión 4 · Recorrido comercial integrado el 2 de noviembre de 2026
 
 **Texto de contexto:** Desarrollo de software a medida para empresas · Cloudfianz, una unidad de Digifianz
 
-**H1:** Software a medida para mejorar cómo funciona tu negocio.
+**H1:** Software diseñado para los procesos de tu empresa
 
 Desarrollamos herramientas para mejorar tus procesos comerciales, organizar la operación y poner en marcha nuevos servicios digitales. Partimos de lo que tu empresa necesita lograr y definimos una solución que pueda integrarse a su forma de trabajar.
 

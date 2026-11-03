@@ -45,3 +45,10 @@ dialog{color:var(--ink);border:0;border-radius:12px;box-shadow:0 25px 100px #000
 
 @media(max-width:1199px){.revianz-preview-heading{gap:40px}.revianz-preview h3{font-size:31px}}
 @media(max-width:799px){.revianz-preview{margin-top:52px;padding-top:36px}.revianz-preview-heading{grid-template-columns:1fr;gap:22px}.revianz-preview-copy{font-size:15px}.revianz-preview h3{font-size:30px}.revianz-preview figure{margin-top:24px}.revianz-preview figcaption{display:block;font-size:11px}.revianz-project-context{font-size:12px;margin-bottom:14px}}
+
+
+/* Case-study actions share a quiet mint treatment across home and services. */
+.case-button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;max-width:100%;padding:12px 18px;border:1px solid #c8e1d8;border-radius:8px;background:var(--mint);color:#126357;font-family:var(--body);font-size:13px;font-weight:600;line-height:1.5;text-align:center;text-decoration:none;transition:background-color .18s ease,border-color .18s ease}
+.case-button:hover{background:#d8eee6;border-color:#9cc7b6;color:#126357;text-decoration:none}
+.case-button:focus-visible{outline:3px solid #08796f;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.case-button{transition:none}}
