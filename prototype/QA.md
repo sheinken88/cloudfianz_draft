@@ -535,3 +535,13 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Revisión visual de escritorio a 1536 px CSS y móvil a 390 px. Medidas adicionales a 1280, 1024, 768 y 320 px: sin desbordes del Hero o de la página y todas sus imágenes cargadas. Orden DOM y visual móvil: título, esquema, descripción y CTA. Enlace «Ver proyectos reales» comprobado; consola sin errores ni avisos.
 - Build y diff check correctos. H1 e IDs únicos y recursos existentes. Comparación del HTML confirma cambios solo dentro de los Hero de Integraciones y Automatizaciones. Desarrollo, Home, páginas de casos y content.json permanecen idénticos. Los nuevos estilos afectan exclusivamente a los nuevos diagramas.
 - Capturas desktop y mobile de ambas páginas en `/Users/sheinken/Desktop/Cloudfianz/outputs/service-hero-visuals-20261103/`. Viewport restablecido al finalizar. Entrega local.
+
+
+## Índice de casos y navegación a páginas individuales · 3 de noviembre de 2026
+
+- Índice con seis proyectos y páginas nuevas para ConsorcioAbierto, Photonix, Escala24x7 y ADS Mexicana. Conservación de párrafos y listas aprobados comprobada. Los recursos existentes mantienen sus archivos originales y las leyendas diferencian captura, mockup, foto de contexto y esquema.
+- Clic real en los seis CTA del índice: cada uno abre su URL individual con el H1 correcto y sin diálogos abiertos. Regreso al índice desde los seis breadcrumbs comprobado. Menú «Casos» verificado en escritorio y móvil.
+- Clic real en «Conocé cómo lo aplicamos en ConsorcioAbierto» de AWS en Home: navega directamente a la página individual de ConsorcioAbierto, sin abrir el lector. La conversión de enlaces también alcanza los proyectos en Home, servicios y content.json.
+- Revisión responsive de las cinco páginas nuevas a 1440, 1024, 768, 390 y 320 px CSS: sin desbordes horizontales de página ni de componentes. Inspección visual del índice completo, los cuatro Hero nuevos y las vistas móviles del índice y ConsorcioAbierto. Se ajustó el margen lateral de las captions para alinearlas con el contenido de las cards.
+- Auditoría estática independiente de las once páginas: un H1 por página, IDs únicos, rutas y fragmentos locales válidos, assets presentes y relaciones ARIA estáticas correctas. Cero atributos data-content en el HTML generado. Consola sin errores ni advertencias durante la revisión de navegación.
+- Build y diff check correctos. Selector local actualizado a once páginas; servidor reiniciado para incorporar las nuevas rutas. Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/cases-pages-20261103/`. Cambios locales, sin publicación.

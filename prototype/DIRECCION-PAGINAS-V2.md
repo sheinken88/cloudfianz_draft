@@ -90,3 +90,12 @@ Integraciones y Automatizaciones adoptan el layout de Desarrollo: título y desc
 Integraciones muestra HubSpot ↔ AWS Partner Central con los logos oficiales, dos módulos equivalentes y flechas bidireccionales. La marca Escala24x7 y «Esquema de la integración» identifican el proyecto. Automatizaciones muestra el recorrido de las membresías en HubSpot, las reglas del contrato (descuentos, períodos y país) y la generación de facturas en Odoo. «Más de 15.000 facturas al mes» corresponde al caso documentado de ConsorcioAbierto; su marca y «Esquema del proceso» aclaran la evidencia.
 
 Los esquemas son HTML/SVG estático; no simulan interfaces de producto ni presentan controles interactivos. Los logos mantienen sus archivos originales, incluida la sonrisa naranja de AWS. El SVG de Odoo se recuperó del sitio oficial y conserva su espacio de seguridad; fuente y hash en `dist/assets/brand/ODOO-SOURCE.md`. `page_layouts/service_heroes.py` mantiene estas composiciones junto con el Hero de Desarrollo.
+
+
+## Índice de casos y páginas individuales · 3 de noviembre de 2026
+
+`/es/casos` reúne Despegar, REVIANZ, ConsorcioAbierto, Photonix, Escala24x7 y ADS Mexicana en una grilla de dos columnas, que pasa a una columna en móvil. El título «Casos de éxito» y la introducción abren sobre mist. Cada artículo combina un recurso visual, la marca original, la capacidad aplicada, un resumen concreto y el CTA mint compartido. Las captions distinguen la captura real de Despegar, la vista ilustrativa de REVIANZ, la foto de contexto de Photonix y los esquemas de los otros proyectos. El cierre invita a conversar sobre una necesidad similar.
+
+ConsorcioAbierto cuenta con página propia: contexto, problema, enfoque, solución, resultados y contacto. El Hero muestra el flujo HubSpot → AWS → Odoo con logos oficiales y la cifra mensual documentada. Photonix, Escala24x7 y ADS Mexicana también pasan del lector provisional a páginas completas con identidad, recurso visual, desarrollo del caso y CTA. Conservan los párrafos y listas aprobados; las composiciones y colores responden al sistema del sitio. Despegar y REVIANZ conservan sus páginas existentes.
+
+Los enlaces «Casos» del menú y pie, «Ver todos los casos», las marcas de clientes y los CTA de proyectos navegan a estas rutas. El botón «Conocé cómo lo aplicamos en ConsorcioAbierto» de AWS en Home va directamente a `/es/casos/consorcioabierto-facturacion-hubspot-odoo`. Las páginas individuales vuelven al índice desde el breadcrumb. No quedan enlaces de casos que abran un popup.

@@ -59,10 +59,13 @@ def page(key, body, kind):
     meta, _, _ = document(key)
     title, description = html.escape(meta['Title'], quote=True), html.escape(meta['Meta description'], quote=True)
     canonical = 'https://cloudfianz.com' + routes[key]
-    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css'}
+    body = native_links(body)
+    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css', 'cases-page': 'cases-page.css', 'properix-page': 'properix-page.css', 'project-page': 'project-page.css'}
     extra_css = f'<link rel="stylesheet" href="/{page_styles[kind]}">'
-    if kind == 'revianz-page' or key == 'servicio-desarrollo-software':
+    if kind in ('revianz-page', 'cases-page') or key == 'servicio-desarrollo-software':
         extra_css += '<link rel="stylesheet" href="/revianz-mockups.css">'
+    if kind == 'cases-page':
+        extra_css += '<link rel="stylesheet" href="/case-previews.css">'
     return f'''<!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#0B1D3A">
 <title>{title}</title><meta name="description" content="{description}"><link rel="canonical" href="{canonical}">
@@ -89,6 +92,17 @@ pages = [('caso-despegar', case_body, 'case-page'), ('caso-revianz', revianz_bod
 for key in ['servicio-desarrollo-software', 'servicio-integracion-sistemas', 'servicio-automatizacion-procesos']:
     meta, intro, sections = document(key)
     pages.append((key, build_service(key, meta, intro, sections), 'service-page'))
+
+from page_layouts.cases import build_cases
+from page_layouts.properix import build_properix
+from page_layouts.project import build_project
+
+for key, builder, kind in [('indice-casos', build_cases, 'cases-page'), ('caso-properix', build_properix, 'properix-page')]:
+    meta, intro, sections = document(key)
+    pages.append((key, builder(meta, intro, sections, routes), kind))
+for key in ['caso-photonix', 'caso-escala24x7', 'caso-ads-mexicana']:
+    meta, intro, sections = document(key)
+    pages.append((key, build_project(key, meta, intro, sections, routes), 'project-page'))
 
 for key, body, kind in pages:
     output = DIST / routes[key].lstrip('/') / 'index.html'

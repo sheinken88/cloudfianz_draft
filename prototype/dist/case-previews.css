@@ -1,0 +1,72 @@
+/* Compact evidence inside the index; original logos and project assets stay intact. */
+.case-preview{margin:0;min-width:0}
+.case-preview .case-preview-stage,.case-preview>.revianz-mockup-stage{display:flex;align-items:center;justify-content:center;width:100%;height:232px;padding:20px;background:#f1f4f6;border:0;border-radius:10px;min-width:0}
+.case-preview>figcaption{margin:10px 2px 0;font-size:11px;line-height:1.5;color:var(--muted)}
+.case-preview .case-preview-capture{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border:1px solid #dfe5eb;border-radius:5px;box-shadow:0 8px 20px #0b1d3a0a}
+.case-preview--photonix .case-preview-stage{padding:0;overflow:hidden}
+.case-preview .case-preview-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:45% 48%}
+.case-preview img{min-width:0}
+
+/* The published REVIANZ scope mockup, with example values kept secondary. */
+.case-preview .revianz-mockup{width:100%;max-width:430px;min-width:0}
+.case-preview .revianz-mockup .rm-paper{padding:14px 16px;border-radius:10px;box-shadow:0 8px 20px #0b1d3a08}
+.case-preview .revianz-mockup .rm-label{font-size:9px;line-height:1.4;letter-spacing:0;text-transform:none;color:#68796c}
+.case-preview .revianz-mockup .rm-title{font-size:13px;line-height:1.35;letter-spacing:-.1px;margin-top:3px;max-width:none}
+.case-preview .rm-scope-header{display:block;padding-bottom:10px}
+.case-preview .rm-scope-body{grid-template-columns:1fr;margin-top:10px;gap:0}
+.case-preview .rm-services{gap:5px}
+.case-preview .rm-service{padding:6px 8px;gap:8px;border-radius:5px;font-size:10px;line-height:1.4}
+.case-preview .rm-service>span:nth-child(2){color:#6e7b71}
+.case-preview .rm-service>strong{font-weight:500}
+
+/* ConsorcioAbierto: contracts become invoices through defined business rules. */
+.case-preview .case-preview-billing{display:grid;grid-template-columns:minmax(0,1fr);width:100%;max-width:360px}
+.case-preview .case-preview-billing-end{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:48px;padding:0 14px;background:#fff;border:1px solid #dfe5eb;border-radius:7px}
+.case-preview .case-preview-billing-end>span{font-size:12px;line-height:1.4;color:var(--muted);text-align:right}
+.case-preview .case-preview-hubspot{display:block;width:100px;max-width:100%;height:32px;object-fit:contain}
+.case-preview .case-preview-odoo{display:block;width:100px;max-width:100%;height:54px;object-fit:contain}
+.case-preview .case-preview-down{display:block;height:15px;line-height:15px;font-size:18px;color:#537d72;text-align:center}
+.case-preview .case-preview-rules{display:grid;gap:3px;padding:9px 14px;border:1px solid #cbded7;background:var(--mint);border-radius:7px;text-align:center}
+.case-preview .case-preview-rules strong{font-size:12px;line-height:1.4;font-weight:600;color:var(--navy)}
+.case-preview .case-preview-rules>span{font-size:11px;line-height:1.4;color:#466359}
+
+/* Escala24x7: two peers exchanging opportunities in both directions. */
+.case-preview .case-preview-sync{width:100%;max-width:440px;display:grid;gap:16px}
+.case-preview .case-preview-sync>p{font-size:13px;line-height:1.5;text-align:center;color:var(--navy)}
+.case-preview .case-preview-system-pair{display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr);align-items:center}
+.case-preview .case-preview-system{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-width:0;min-height:106px;padding:14px;background:#fff;border:1px solid #dfe5eb;border-radius:7px}
+.case-preview .case-preview-system>img{height:40px;max-width:100%;object-fit:contain}
+.case-preview .case-preview-aws{display:block;width:68px}
+.case-preview .case-preview-system>span{font-size:11px;line-height:1.4;color:var(--muted);text-align:center}
+.case-preview .case-preview-sync-arrows{width:100%;height:36px;color:#537d72}
+.case-preview .case-preview-sync>.case-preview-system-result{font-size:12px;color:var(--muted)}
+
+/* ADS Mexicana: a process diagram, without fabricated product controls. */
+.case-preview .case-preview-quote{width:100%;max-width:460px;display:grid;justify-items:center;gap:22px}
+.case-preview .case-preview-quote-flow{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr);align-items:center;width:100%}
+.case-preview .case-preview-quote-flow>span,.case-preview .case-preview-quote-flow>strong{display:flex;align-items:center;justify-content:center;min-height:74px;padding:10px;background:#fff;border:1px solid #dfe5eb;border-radius:7px;font-size:12px;line-height:1.5;text-align:center;color:var(--muted);font-weight:400}
+.case-preview .case-preview-quote-flow>strong{background:var(--mint);border-color:#cbded7;color:var(--navy);font-weight:600}
+.case-preview .case-preview-arrow{width:100%;height:20px;color:#537d72}
+.case-preview .case-preview-quote>p{font-size:13px;line-height:1.5;color:var(--navy);text-align:center}
+.case-preview .case-preview-quote>p>strong{font-weight:600}
+
+@media(max-width:599px){
+  .case-preview .case-preview-stage,.case-preview>.revianz-mockup-stage{padding:14px;height:232px;border-radius:8px}
+  .case-preview--photonix .case-preview-stage{padding:0}
+  .case-preview .revianz-mockup .rm-paper{padding:12px}
+  .case-preview .revianz-mockup .rm-title{font-size:12px}
+  .case-preview .rm-service{padding:6px;gap:6px}
+  .case-preview .case-preview-billing-end{padding-inline:10px;gap:10px}
+  .case-preview .case-preview-billing-end>span{font-size:11px}
+  .case-preview .case-preview-billing-end>img{width:88px;flex:none}
+  .case-preview .case-preview-system-pair{grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr)}
+  .case-preview .case-preview-system{padding:12px 8px;gap:10px}
+  .case-preview .case-preview-sync>p{font-size:12px}
+  .case-preview .case-preview-system>span{font-size:10px}
+  .case-preview .case-preview-sync>.case-preview-system-result{font-size:11px}
+  .case-preview .case-preview-quote{gap:20px}
+  .case-preview .case-preview-quote-flow{grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr) 18px minmax(0,1fr)}
+  .case-preview .case-preview-quote-flow>span,.case-preview .case-preview-quote-flow>strong{font-size:10px;line-height:1.45;padding:8px 4px}
+  .case-preview .case-preview-quote>p{font-size:12px}
+  .case-preview>figcaption{font-size:10px}
+}

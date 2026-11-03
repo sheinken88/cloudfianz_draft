@@ -52,7 +52,7 @@ def build_case(meta, intro, sections, routes):
     return f'''
 <section class="case-hero" aria-labelledby="case-title">
   <div class="container">
-    <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es#casos">Casos</a></li><li aria-current="page">Despegar Ads</li></ol></nav>
+    <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es/casos">Casos</a></li><li aria-current="page">Despegar Ads</li></ol></nav>
     <div class="case-hero-layout">
       <div class="case-hero-copy">
         <div class="case-identity"><div class="case-client-logo"><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"></div><p>Desarrollo a medida e integración</p></div>

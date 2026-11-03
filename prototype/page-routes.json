@@ -3,5 +3,10 @@
   "servicio-integracion-sistemas": "/es/integracion-de-sistemas",
   "servicio-automatizacion-procesos": "/es/automatizacion-de-procesos",
   "caso-despegar": "/es/casos/despegar-cotizador-hubspot",
-  "caso-revianz": "/es/casos/revianz-gestion-financiera-proyectos"
+  "caso-revianz": "/es/casos/revianz-gestion-financiera-proyectos",
+  "indice-casos": "/es/casos",
+  "caso-properix": "/es/casos/consorcioabierto-facturacion-hubspot-odoo",
+  "caso-photonix": "/es/casos/photonix-servicio-tecnico",
+  "caso-escala24x7": "/es/casos/escala24x7-hubspot-aws-partner-central",
+  "caso-ads-mexicana": "/es/casos/ads-mexicana-cotizador-hubspot"
 }

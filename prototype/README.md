@@ -1,6 +1,6 @@
 # Propuesta local del sitio · Cloudfianz
 
-Prototipo local de Cloudfianz. La Home presenta la empresa; Desarrollo a medida, Integraciones y Automatizaciones tienen páginas independientes con una arquitectura compartida y contenido específico. La revisión del 3 de noviembre de 2026 organiza cada servicio alrededor de aplicaciones concretas, casos reales y una única metodología. Despegar y REVIANZ conservan sus páginas de caso completas.
+Prototipo local de Cloudfianz. La Home presenta la empresa; Desarrollo a medida, Integraciones y Automatizaciones tienen páginas independientes con una arquitectura compartida y contenido específico. La revisión del 3 de noviembre de 2026 organiza cada servicio alrededor de aplicaciones concretas, casos reales y una única metodología. La página de Casos de éxito reúne seis proyectos, todos con página individual: Despegar, REVIANZ, ConsorcioAbierto, Photonix, Escala24x7 y ADS Mexicana.
 
 ## Ver la propuesta
 
@@ -11,14 +11,18 @@ Desde la raíz del repositorio: `npm run dev:proposal`.
 - [Desarrollo de software a medida](http://127.0.0.1:3001/es/desarrollo-software-a-medida).
 - [Integración de sistemas](http://127.0.0.1:3001/es/integracion-de-sistemas).
 - [Automatización de procesos](http://127.0.0.1:3001/es/automatizacion-de-procesos).
+- [Casos de éxito](http://127.0.0.1:3001/es/casos).
+- [Caso ConsorcioAbierto](http://127.0.0.1:3001/es/casos/consorcioabierto-facturacion-hubspot-odoo).
 - [Caso Despegar](http://127.0.0.1:3001/es/casos/despegar-cotizador-hubspot).
 - [Caso REVIANZ](http://127.0.0.1:3001/es/casos/revianz-gestion-financiera-proyectos).
 
-El selector permite revisar las seis páginas a distintos anchos. El servidor queda limitado a `127.0.0.1:3001`; esta entrega es una vista local para revisión, no un despliegue. Después de editar las fuentes, ejecutar `npm run build:proposal` y recargar el navegador. El servidor no incorpora recarga automática.
+El selector permite revisar las once páginas a distintos anchos. El servidor queda limitado a `127.0.0.1:3001`; esta entrega es una vista local para revisión, no un despliegue. Después de editar las fuentes, ejecutar `npm run build:proposal` y recargar el navegador. El servidor no incorpora recarga automática. Si se cambia el mapa de rutas, reiniciar el servidor.
 
 ## Dirección visual
 
 La [dirección visual v2](DIRECCION-VISUAL-V2.md) define azul profundo `#0B1D3A`, verde `#12B5A5`, blanco `#FFFFFF`, gris `#F5F7FA` y tinta `#0E1726`. El naranja `#FF7A2F` queda reservado para un uso justificado. Manrope es la familia de titulares e Inter la de lectura.
+
+El enlace «Casos» de la cabecera y del pie navega al índice `/es/casos`. Los CTA de proyectos de la Home y los servicios abren páginas completas, incluido el enlace a ConsorcioAbierto de la sección AWS.
 
 La cabecera compartida incluye un desplegable «Soluciones» con enlaces directos a Software a medida, Integraciones y Automatizaciones. En móvil se despliega dentro del menú principal; admite teclado, cierre con Escape, clic exterior y salida del foco.
 
@@ -40,8 +44,9 @@ La versión anterior aprobada se conserva en `outputs/homepage-20261022/` del wo
 - `content/*.md`: textos vigentes de servicios y casos, incluidos sus títulos y descripciones SEO.
 - `build-pages.py`: generación de la homepage y las páginas independientes. Ejecuta primero `build-content.py` para regenerar el lector.
 - `page_layouts/service.py`: composición común de los tres servicios, alimentada por sus textos vigentes. `page_layouts/service_cases.py` reúne las identidades y recursos visuales de sus casos; `page_layouts/service_heroes.py` contiene las tres composiciones visuales del Hero.
-- `page_layouts/case.py` y `page_layouts/revianz.py`: composiciones de las páginas completas de casos.
-- `page-routes.json`: mapa de los contenidos que ya tienen página propia. Sus enlaces se generan como URLs normales, también dentro de los lectores provisionales.
+- `page_layouts/cases.py` y `page_layouts/case_previews.py`: índice de seis casos y sus recursos visuales compactos.
+- `page_layouts/case.py`, `page_layouts/revianz.py`, `page_layouts/properix.py` y `page_layouts/project.py`: composiciones de las seis páginas individuales de casos. Cada una conserva su contenido aprobado y distingue las capturas de los esquemas e imágenes de contexto.
+- `page-routes.json`: mapa de servicios, índice y casos con página propia. Todos sus enlaces se generan como URLs normales; no requieren el lector provisional.
 - `dist/home-page.css` y `dist/home-page.js`: presentación de Home y carril de clientes; los estilos y el movimiento quedan aislados de las páginas internas.
 - `dist/styles.css` y `dist/app.js`: base visual e interacciones compartidas. `dist/pages.css` define el sistema de las páginas internas; `dist/service-page.css` se comparte entre los tres servicios y `dist/case-page.css` agrega la composición específica de Despegar.
 - `dist/review.html` y `dist/review.js`: interfaz local de revisión.
@@ -58,7 +63,7 @@ Las captions distinguen el trabajo mostrado: Despegar es una captura del proyect
 
 ## Alcance y límites de la revisión
 
-La entrega incluye la Home, las tres páginas de servicios y dos páginas de casos, y no sustituye la web actual en `src/`. Los casos restantes y su índice continúan en un lector provisional hasta revisar y extender estas bases.
+La entrega incluye once páginas: Home, tres servicios, índice de casos y seis casos individuales. No sustituye la web actual en `src/`. Los contenidos de casos y servicios se leen en sus URLs propias; ningún enlace público abre el lector provisional.
 
 La agenda y el envío del formulario son simulaciones identificadas como tales. El formulario valida los campos y muestra una confirmación de prueba, sin enviar ni guardar los datos ingresados. No hay recepción comercial, reserva de reuniones ni medición conectadas. La política de privacidad permanece como aviso provisional.
 
@@ -66,4 +71,4 @@ El prototipo tiene `noindex, nofollow`. La recepción de consultas, la agenda, l
 
 La [dirección del caso REVIANZ](DIRECCION-CASO-REVIANZ.md) documenta la nueva composición y sus fuentes. `dist/revianz-page.css` sólo se carga en esa página; el preview de inicio usa los estilos compartidos del mockup.
 
-Revisión de REVIANZ: el sitio usa los mockups ilustrativos del producto, portados desde sus componentes oficiales. La Home conserva el preview de rentabilidad y Desarrollo el de alcance; las vistas completas permanecen en el caso. `page_layouts/revianz_mockups.py`, `data/revianz-mockups-es.json` y `dist/revianz-mockups.css` mantienen una única implementación compartida. Las capturas anteriores ya no se muestran.
+Revisión de REVIANZ: el sitio usa los mockups ilustrativos del producto, portados desde sus componentes oficiales. La Home conserva el preview de rentabilidad, Desarrollo el de alcance y el índice una versión compacta de alcance; las vistas completas permanecen en el caso. `page_layouts/revianz_mockups.py`, `data/revianz-mockups-es.json` y `dist/revianz-mockups.css` mantienen una única implementación compartida. Las capturas anteriores ya no se muestran.

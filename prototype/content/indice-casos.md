@@ -8,9 +8,9 @@
 
 **Texto de contexto:** Cloudfianz, la unidad de desarrollo de software de Digifianz
 
-**H1:** Necesidades de negocio. Soluciones en funcionamiento.
+**H1:** Casos de éxito
 
-Cotizar más rápido, facturar con reglas complejas, coordinar servicios, seguir la rentabilidad de proyectos o mantener oportunidades actualizadas. Estos proyectos muestran cómo el desarrollo de software y la integración de sistemas pueden mejorar el trabajo de una empresa.
+Cotizadores, plataformas de gestión e integraciones que nuestros clientes ya usan para trabajar. Conocé el problema detrás de cada proyecto, cómo lo resolvimos y qué cambió en la operación.
 
 ## Despegar Ads
 
