@@ -11,10 +11,12 @@ SERVICES = {
     },
     'servicio-integracion-sistemas': {
         'name': 'Integración de sistemas',
+        'application_icons': ['integration-billing', 'integration-sync', 'integration-status'],
         'cases': [('properix', 'Integración · HubSpot y Odoo'), ('escala24x7', 'Integración · Operación comercial')],
     },
     'servicio-automatizacion-procesos': {
         'name': 'Automatización de procesos',
+        'application_icons': ['automation-billing', 'automation-documents', 'automation-approvals'],
         'cases': [('properix', 'Automatización · Facturación'), ('despegar', 'Automatización · Documentos comerciales')],
     },
 }

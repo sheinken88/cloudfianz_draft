@@ -73,7 +73,7 @@
 .application-example .application-example-label{font-size:12px;line-height:1.5;font-weight:600;color:#08796f;margin-bottom:12px}
 .application-example p:not(.application-example-label){font-size:15px;line-height:1.75;color:var(--navy);max-width:350px}
 
-/* Custom software capabilities follow the homepage's open, illustrated columns. */
+/* Service capabilities follow the homepage's open, illustrated columns. */
 .service-page .service-needs--illustrated .service-section-intro{margin-bottom:44px}
 .service-page .service-needs--illustrated .service-section-intro>p{margin-top:18px;max-width:700px}
 .service-needs--illustrated .service-applications{column-gap:40px}
