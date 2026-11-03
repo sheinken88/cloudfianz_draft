@@ -57,3 +57,15 @@ La página https://www.digifianz.com/team contiene fotos de personas identificad
 2 de noviembre de 2026. Se porta el componente `BrandMark` del proyecto local de REVIANZ: `/Users/sheinken/Desktop/Digifianz/boom2.0/boom2.0_frontend/components/marketing/brand-mark.tsx`. El original compone el símbolo RZ y la palabra Revianz con HTML/CSS; no existe un SVG/PNG independiente.
 
 Se conservan la tipografía Inter, los pesos 900/700, el fondo #c4f751, el texto #0d1f17, el espaciado y los radios. Se presenta al 125% de su tamaño de navegación para acompañar los otros logos del portfolio. No se genera ni se inventa un logo nuevo. Uso acotado al caso REVIANZ en la homepage.
+
+
+## Clientes completos en la franja de Home · 3 de noviembre de 2026
+
+Los siguientes logos provienen de los assets originales del sitio Cloudfianz. Se inspeccionaron visualmente y se copiaron sin recortar, recolorear ni modificar bytes.
+
+| Archivo | Procedencia | Dimensiones y uso | SHA-256 |
+| --- | --- | --- | --- |
+| `escala24x7-original.avif` | `website/src/assets/logo_escala24x7.avif` del repositorio existente | 1275 × 784, RGBA. Logo gris/turquesa/lima; transparencia conservada. Formato AVIF: requiere MIME `image/avif` en el servidor. | `c8b282d3fd9549a25a7a75204fbff2a11657c84222afa6b52c43bdee69dc55e9` |
+| `ads-mexicana-original.png` | `website/src/assets/logo_ads.png` del repositorio existente | 938 × 410, RGBA. Logo ADS Mexicana negro y verde; transparencia conservada. Huella alpha x49–887 / y20–386. | `89b014f31f9d9d270cae03aac1e608abe49827c99363c4b4aa80a4dd81ed3a5e` |
+
+Digifianz: se conserva `digifianz-official.svg`, el SVG blanco ya documentado. La homepage oficial verificada el 3 de noviembre de 2026 sigue usando ese mismo recurso. No se encontró una variante oscura original en el workspace Cloudfianz; para el carril sobre blanco, presentar el SVG intacto sobre un soporte navy. No aplicar filtros ni alterar su relleno.

@@ -79,3 +79,12 @@ Revisión del plan: se descarta una nueva grilla de tarjetas y se preserva el re
 Se recuperan los logos originales de Despegar, ConsorcioAbierto y Photonix inmediatamente debajo del Hero, en una franja blanca con la etiqueta «Empresas con las que trabajamos». Esta franja sustituye el bloque breve de Digifianz; la pertenencia a la empresa sigue indicada en el pie.
 
 La sección de proyectos adopta el título directo «Casos de éxito». El banner «¿Qué necesita resolver tu equipo? Contanos cómo trabajás hoy y qué querés mejorar.» pasa después de los tres casos y del enlace al índice, como cierre de la sección. Es un ajuste puntual del recorrido: se conservan los resúmenes compactos, las imágenes y la vista única de REVIANZ.
+
+
+## Recuperación de Digifianz y clientes en movimiento · 3 de noviembre de 2026
+
+Se recupera la sección institucional independiente antes del contacto, con el texto que explica que Cloudfianz es la unidad de desarrollo de software de Digifianz, su marca blanca original sobre navy y el enlace corporativo. Esta sección es parte del contenido solicitado, además de la presencia de Digifianz entre los clientes.
+
+La franja bajo el hero reúne los seis clientes documentados: Despegar, ConsorcioAbierto, Photonix, Escala24x7, ADS Mexicana y Digifianz (cliente del proyecto REVIANZ). No lleva la leyenda «Empresas con las que trabajamos». Se mantiene el fondo blanco; el logo blanco de Digifianz tiene un soporte navy para respetar el original. No se crean ni recolorean logos. Escala24x7 y ADS Mexicana se incorporan desde los originales del repositorio.
+
+Movimiento horizontal continuo y lineal, con pausa visible, pausa al pasar el puntero y recorrido estático al navegar por teclado. Se evita mover los enlaces durante el clic. Las preferencias de movimiento reducido desactivan la animación y mantienen una fila desplazable. Los duplicados visuales no añaden paradas de teclado. Se conservan el título «Casos de éxito», la presentación compacta y el CTA al final de los casos.

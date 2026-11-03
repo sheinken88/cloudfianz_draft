@@ -428,3 +428,14 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Revisión visual de la franja a 1280 y 390 px; sin desbordes de página también a 320 px. Orden final y título verificados en el DOM. La adaptación móvil dispone los logos en dos columnas.
 - Build y diff check correctos. Las páginas internas permanecen sin cambios. Vista de Home recargada, viewport restablecido y cambios sólo locales.
 - Captura de escritorio: `/Users/sheinken/Desktop/Cloudfianz/outputs/home-followup-20261103/logos-desktop.jpg`.
+
+
+## Sección Digifianz y carril de seis clientes · 3 de noviembre de 2026
+
+- Sección institucional restaurada entre metodología y contacto, con el texto original de pertenencia a Digifianz y logo blanco auténtico. El ancla `#respaldo` apunta ahora a esa sección.
+- Seis logos cargados en el navegador: Despegar, ConsorcioAbierto, Photonix, Escala24x7, ADS Mexicana y Digifianz. Escala y ADS son copias intactas documentadas en SOURCES.md; el servidor local incorpora el MIME image/avif.
+- Movimiento automático verificado comparando transformaciones en instantes separados. Dos grupos del mismo ancho (1404 px a 1280 px) permiten cerrar el bucle. Pausa y reanudación comprobadas con el botón.
+- Teclado: Shift+Tab desde el control lleva al enlace de Digifianz, muestra la lista estática con desplazamiento nativo y permite activarlo con Enter. El duplicado tiene seis enlaces con tabindex -1 y aria-hidden en el grupo. Las reglas de movimiento reducido y el estado sin JavaScript conservan la lista original desplazable; revisión estática de esas alternativas.
+- Una revisión independiente detectó el desplazamiento del logo al recibir foco por clic; se corrigió usando :has(a:focus-visible) para el modo teclado. El clic en ADS Mexicana a 320 px abre el contenido correcto del lector.
+- Sin desborde horizontal de página a 1280 y 320 px. Captura de la sección institucional en `outputs/home-clients-20261103/digifianz-desktop.jpg`, fuera del repo website.
+- Build, sintaxis JavaScript y diff check correctos. Se conservaron las páginas internas sin cambios. Entrega local.
