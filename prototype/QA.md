@@ -560,3 +560,12 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Se reemplaza el Hero navy por una cabecera blanca, centrada y breve. Se retiran collage y CTA redundante; las cards mantienen su contenido y enlaces. Build y diff check correctos. El diff de los HTML generados queda limitado al índice.
 - Revisión visual a 1440 y 390 px CSS; medidas a 1024, 768 y 320 px sin desbordes horizontales ni de contenido del encabezado. Altura desktop de 269 px frente a los 786 px anteriores; en 390 px, 237 px. Consola sin errores ni advertencias.
 - Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/cases-compact-opening-20261103/desktop.jpg` y `mobile.jpg`. Entrega local.
+
+
+## Caso ConsorcioAbierto con imagen aportada · 3 de noviembre de 2026
+
+- Imagen recibida del usuario copiada intacta: 610 × 253 px, 81.589 bytes, SHA-256 `894dc1bc1f405ae57fa6a6349cc98289e05277542a8ceff15793807845ca9f94`. Carga y ampliación comprobadas en navegador; la pestaña de prueba se cerró después. Se identifica como contexto de la plataforma del cliente.
+- Revisión visual independiente del Hero desktop/mobile y página completa: portada, ficha, decisión técnica, solución y resultados coherentes con Despegar y REVIANZ. Diagrama horizontal en escritorio y vertical en móvil; logos HubSpot, AWS con sonrisa naranja y Odoo cargados.
+- Comprobaciones a 1440, 1024, 768, 390 y 320 px CSS; sin desbordes de página ni componentes en los cuatro anchos menores. Imagen completa con proporción original, sin generación o modificación visual.
+- Auditoría de contenido: 14 párrafos y 7 ítems preservados, oración de apertura trasladada una sola vez e intacta a Solución. H1 actualizado para priorizar el resultado. Las otras diez páginas son idénticas a HEAD antes de esta entrega; content.json cambia únicamente caso-properix.
+- Las once páginas mantienen H1 e IDs únicos y rutas, fragmentos y assets válidos. Build y diff check correctos. Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/consorcio-case-redesign-20261103/`. Entrega local.

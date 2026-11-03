@@ -30,7 +30,9 @@ def build_properix(meta, intro, sections, routes):
     opening = _paragraphs(intro)
     problem_title, problem = _section(sections, 'El problema')
     approach_title, approach = _section(sections, 'Una arquitectura')
+    approach_copy = _paragraphs(approach)
     solution_title, solution = _section(sections, 'La solución')
+    solution_copy = _paragraphs(solution)
     results_title, results = _section(sections, 'Resultados')
     result_copy = _paragraphs(results)
     contact_title, contact = _section(sections, '¿Tu facturación')
@@ -42,20 +44,16 @@ def build_properix(meta, intro, sections, routes):
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es/casos">Casos</a></li><li aria-current="page">ConsorcioAbierto</li></ol></nav>
     <div class="billing-hero-grid">
       <div class="billing-hero-copy">
-        <div class="billing-identity"><img src="/assets/brand/consorcio-abierto-official.svg" alt="ConsorcioAbierto" width="156" height="20"><p>Integración y automatización de procesos</p></div>
+        <div class="billing-identity"><div class="billing-client-logo"><img src="/assets/brand/consorcio-abierto-official.svg" alt="ConsorcioAbierto" width="156" height="20"></div><p>Integración y automatización de procesos</p></div>
         <h1 id="billing-title">{html.escape(meta['H1'])}</h1>
         <div class="billing-lead">{opening[0]}</div>
       </div>
-      <figure class="billing-flow">
-        <p class="billing-flow-title">Del acuerdo comercial a la factura</p>
-        <ol class="billing-flow-steps" aria-label="Flujo de facturación">
-          <li><div class="billing-flow-brand"><img class="billing-hubspot" src="/assets/brand/hubspot-official.svg" alt="HubSpot" width="1256" height="356" decoding="async"></div><div class="billing-flow-copy"><strong>Membresías</strong><span>Acuerdos, productos y condiciones comerciales</span></div></li>
-          <li><div class="billing-flow-brand"><img class="billing-aws" src="/assets/aws/aws-logo-color.svg" alt="AWS" width="304" height="182" decoding="async"></div><div class="billing-flow-copy"><strong>Reglas de facturación</strong><span>Step Functions y Lambda aplican las condiciones de cada contrato</span></div></li>
-          <li><div class="billing-flow-brand"><img class="billing-odoo" src="/assets/brand/odoo-official.svg" alt="Odoo" width="919" height="495" decoding="async"></div><div class="billing-flow-copy"><strong>Facturas</strong><span>Importes según período, descuentos y país</span></div></li>
-        </ol>
-        <figcaption>Esquema de la integración desarrollada para ConsorcioAbierto.</figcaption>
+      <figure class="billing-product">
+        <a class="billing-product-image" href="/assets/projects/consorcioabierto-plataforma-usuario.png" target="_blank" rel="noopener" aria-label="Ampliar imagen de la plataforma de ConsorcioAbierto (nueva pestaña)"><img src="/assets/projects/consorcioabierto-plataforma-usuario.png" alt="Plataforma de ConsorcioAbierto: resumen de fondos, pagos, reclamos y agenda de una administración." width="610" height="253" fetchpriority="high" decoding="async"></a>
+        <figcaption>Plataforma de ConsorcioAbierto. Imagen de contexto del cliente.</figcaption>
       </figure>
     </div>
+    <dl class="billing-project-facts"><div><dt>Trabajo de Cloudfianz</dt><dd>Integración y automatización de la facturación</dd></div><div><dt>Plataformas conectadas</dt><dd>HubSpot, AWS y Odoo</dd></div><div><dt>Alcance</dt><dd>Argentina, Uruguay, Paraguay y Colombia</dd></div></dl>
   </div>
 </section>
 
@@ -64,16 +62,24 @@ def build_properix(meta, intro, sections, routes):
   <div class="billing-challenge-copy"><p class="billing-section-label">El desafío</p><h2 id="billing-problem-title">{_short_title(problem_title)}</h2><div class="page-prose">{problem}</div></div>
 </section>
 
-<section class="billing-approach" id="enfoque" aria-labelledby="billing-approach-title"><div class="container billing-approach-grid">
-  <div><p class="billing-section-label">El enfoque</p><h2 id="billing-approach-title">{approach_title}</h2></div>
-  <div class="page-prose">{approach}</div>
+<section class="billing-approach" id="enfoque" aria-labelledby="billing-approach-title"><div class="container">
+  <div class="billing-approach-heading"><p class="billing-section-label">La decisión técnica</p><h2 id="billing-approach-title">{approach_title}</h2></div>
+  <div class="billing-decision"><div><h3>Lo que evaluamos</h3><div class="page-prose">{approach_copy[0]}</div></div><div><h3>Cómo lo resolvimos</h3><div class="page-prose">{''.join(approach_copy[1:])}</div></div></div>
 </div></section>
 
-<section class="container billing-solution" id="solucion" aria-labelledby="billing-solution-title">
-  <div class="billing-solution-heading"><p class="billing-section-label">La solución</p><h2 id="billing-solution-title">{_short_title(solution_title)}</h2></div>
+<section class="billing-solution" id="solucion" aria-labelledby="billing-solution-title"><div class="container">
+  <div class="billing-solution-heading"><div><p class="billing-section-label">La solución</p><h2 id="billing-solution-title">{_short_title(solution_title)}</h2></div><div class="page-prose">{solution_copy[0]}</div></div>
+  <figure class="billing-flow">
+    <ol class="billing-flow-steps" aria-label="Flujo de facturación">
+      <li><div class="billing-flow-brand"><img class="billing-hubspot" src="/assets/brand/hubspot-official.svg" alt="HubSpot" width="1256" height="356" loading="lazy" decoding="async"></div><div class="billing-flow-copy"><strong>Membresías y productos</strong><span>Acuerdos y condiciones comerciales</span></div></li>
+      <li><div class="billing-flow-brand"><img class="billing-aws" src="/assets/aws/aws-logo-color.svg" alt="AWS" width="304" height="182" loading="lazy" decoding="async"></div><div class="billing-flow-copy"><strong>Reglas de cada contrato</strong><span>Step Functions y Lambda</span></div></li>
+      <li><div class="billing-flow-brand"><img class="billing-odoo" src="/assets/brand/odoo-official.svg" alt="Odoo" width="919" height="495" loading="lazy" decoding="async"></div><div class="billing-flow-copy"><strong>Facturas generadas</strong><span>Importes según período y país</span></div></li>
+    </ol>
+    <figcaption>Esquema de la integración desarrollada por Cloudfianz.</figcaption>
+  </figure>
   <ol class="billing-rules">{rules}</ol>
-  <div class="billing-delivery"><p class="billing-section-label">Implementación</p><div class="page-prose">{''.join(_paragraphs(solution))}</div></div>
-</section>
+  <div class="billing-delivery"><h3>Ordenar las reglas también fue parte del proyecto.</h3><div class="page-prose">{''.join(solution_copy[1:])}</div></div>
+</div></section>
 
 <section class="billing-results" id="resultados" aria-labelledby="billing-results-title"><div class="container">
   <p class="billing-section-label">Los resultados</p>

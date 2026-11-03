@@ -1,137 +1,162 @@
-/* ConsorcioAbierto: real contract rules and the flow between three platforms. */
-.properix-page .billing-hero{background:var(--mist);border-bottom:1px solid var(--line)}
-.billing-hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;gap:64px;padding-block:28px 80px}
+/* ConsorcioAbierto follows the case-study system: client context, decision, flow and outcome. */
+.properix-page .billing-hero{background:var(--navy);color:#fff}
+.billing-hero .breadcrumbs,.billing-hero .breadcrumbs [aria-current]{color:#c1cfdb}
+.billing-hero .breadcrumbs li+li::before{color:#75919f}
+.billing-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);align-items:center;gap:64px;padding-block:26px 56px}
 .billing-hero-copy{min-width:0}
-.billing-identity{margin-bottom:28px}
-.billing-identity>img{width:250px;height:auto;max-width:100%}
-.billing-identity>p{font-size:13px;color:var(--muted);margin-top:18px}
-.properix-page .billing-hero h1{font-size:clamp(40px,3.6vw,52px);line-height:1.16;letter-spacing:-1.7px;text-wrap:pretty;max-width:720px}
-.billing-lead{font-size:17px;color:var(--muted);line-height:1.8;max-width:670px;margin-top:26px}
-.billing-flow{min-width:0;padding:28px;background:#fff;border:1px solid #dfe5eb;border-radius:14px}
-.billing-flow-title{font-family:var(--heading);font-size:19px;font-weight:600;line-height:1.5;color:var(--navy);max-width:330px}
-.billing-flow-steps{list-style:none;padding:0;margin:24px 0 0}
-.billing-flow-steps>li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:18px;align-items:center;position:relative;min-height:96px}
-.billing-flow-steps>li+li{margin-top:30px}
-.billing-flow-steps>li+li::before{content:'↓';position:absolute;left:50px;top:-31px;font-size:20px;line-height:30px;color:#08796f}
-.billing-flow-brand{display:flex;justify-content:center;align-items:center;min-width:0;height:76px}
-.billing-flow-brand img{height:auto;max-width:100%;object-fit:contain}
-.billing-hubspot{width:112px}
-.billing-aws{width:69px}
-.billing-odoo{width:140px}
-.billing-flow-copy{min-width:0}
-.billing-flow-copy strong{display:block;font-size:14px;font-weight:600;line-height:1.5;color:var(--navy)}
-.billing-flow-copy span{display:block;font-size:12px;line-height:1.65;color:var(--muted);margin-top:5px}
-.billing-flow figcaption{font-size:11px;color:var(--muted);line-height:1.65;border-top:1px solid var(--line);margin-top:24px;padding-top:16px}
+.billing-identity{margin-bottom:27px}
+.billing-client-logo{display:inline-flex;padding:12px 16px;border-radius:4px;background:#fff}
+.billing-client-logo>img{width:218px;max-width:100%;height:auto}
+.billing-identity>p{font-size:13px;line-height:1.6;color:#c1cfdb;margin-top:16px}
+.properix-page .billing-hero h1{font-size:clamp(40px,3.4vw,49px);line-height:1.13;letter-spacing:-1.6px;color:#fff;text-wrap:pretty;max-width:640px}
+.billing-lead{font-size:18px;line-height:1.75;color:#c1cfdb;max-width:570px;margin-top:25px}
+.billing-product{min-width:0;width:100%;max-width:610px;justify-self:end;margin:0}
+.billing-product-image{display:block;padding:38px 16px 0;background:var(--mint);border-radius:14px;overflow:hidden;cursor:zoom-in}
+.billing-product-image>img{display:block;width:100%;height:auto}
+.billing-product figcaption{font-size:12px;line-height:1.65;color:#c1cfdb;margin-top:14px;max-width:520px}
+.billing-hero a:focus-visible{outline-color:#89e1d3}
+.billing-project-facts{display:grid;grid-template-columns:1.15fr .85fr 1fr;gap:52px;margin:0;padding-block:27px 32px;border-top:1px solid #345065}
+.billing-project-facts dt{font-size:12px;color:#a6bacb;margin-bottom:7px}
+.billing-project-facts dd{font-size:14px;color:#fff;line-height:1.6;margin:0}
 .billing-section-label{font-size:13px;line-height:1.6;color:#08796f}
 .billing-challenge,.billing-approach,.billing-solution,.billing-results{scroll-margin-top:24px}
-.billing-challenge{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:90px;padding-block:86px;align-items:start}
-.billing-client{padding-top:6px;max-width:340px}
+
+/* The client's scale is context; the challenge explains the work commissioned. */
+.billing-challenge{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:100px;padding-block:80px;align-items:start}
+.billing-client{max-width:330px;padding-top:6px}
 .properix-page .billing-client h2{font-size:18px;line-height:1.5;letter-spacing:-.2px}
-.billing-client>p{font-size:15px;line-height:1.85;color:var(--muted);margin-top:18px}
-.properix-page .billing-challenge-copy h2{font-size:38px;line-height:1.2;letter-spacing:-1.1px;text-wrap:pretty;margin-top:16px}
-.billing-challenge-copy .page-prose{font-size:16px;line-height:1.85;margin-top:28px}
+.billing-client>p{font-size:16px;line-height:1.8;color:var(--muted);margin-top:18px}
+.properix-page .billing-challenge-copy h2{font-size:38px;line-height:1.2;letter-spacing:-1.1px;text-wrap:pretty;margin-top:15px;max-width:710px}
+.billing-challenge-copy .page-prose{font-size:16px;line-height:1.8;margin-top:26px;max-width:710px}
 .billing-challenge-copy .page-prose p+p{margin-top:20px}
-.billing-approach{background:var(--mint);padding-block:72px}
-.billing-approach-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:90px;align-items:start}
-.properix-page .billing-approach h2{font-size:38px;line-height:1.2;letter-spacing:-1.1px;text-wrap:pretty;margin-top:16px;max-width:500px}
-.billing-approach .page-prose{font-size:17px;line-height:1.85;color:#3f6055;padding-top:7px}
-.billing-solution{padding-block:86px}
-.properix-page .billing-solution-heading h2{font-size:44px;line-height:1.18;letter-spacing:-1.3px;margin-top:16px;text-wrap:pretty}
-.billing-rules{display:grid;grid-template-columns:1fr 1fr;gap:36px 72px;list-style:none;margin:40px 0 0;padding:0}
-.billing-rules>li{padding-top:24px;border-top:1px solid #bdcec8;min-width:0}
+
+/* One technical decision, shown as the option evaluated and the solution chosen. */
+.billing-approach{padding-block:68px 74px;background:var(--mist)}
+.billing-approach-heading{max-width:860px}
+.properix-page .billing-approach h2{font-size:40px;line-height:1.2;letter-spacing:-1.2px;text-wrap:pretty;margin-top:15px}
+.billing-decision{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:76px;margin-top:38px}
+.billing-decision>div{padding-top:24px;border-top:1px solid #bfcdd3}
+.billing-decision>div:last-child{border-top:2px solid #5ca99d;padding-top:23px}
+.properix-page .billing-decision h3{font-size:23px;line-height:1.3;letter-spacing:-.5px}
+.billing-decision .page-prose{font-size:16px;line-height:1.8;margin-top:17px}
+
+/* The system diagram belongs alongside the rules it actually applies. */
+.billing-solution{padding-block:76px;background:var(--mint)}
+.billing-solution-heading{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:76px;align-items:end}
+.properix-page .billing-solution-heading h2{font-size:44px;line-height:1.18;letter-spacing:-1.3px;margin-top:15px;text-wrap:pretty;max-width:470px}
+.billing-solution-heading .page-prose{font-size:17px;color:#466359;max-width:630px}
+.billing-flow{min-width:0;padding:30px 36px 20px;margin:38px 0 0;background:#fff;border:1px solid #ccdfd8;border-radius:14px}
+.billing-flow-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:72px;list-style:none;padding:0;margin:0}
+.billing-flow-steps>li{position:relative;min-width:0;text-align:center}
+.billing-flow-steps>li+li::before{content:'→';position:absolute;left:-53px;top:16px;font-size:30px;line-height:40px;color:#5b8c81}
+.billing-flow-brand{display:flex;justify-content:center;align-items:center;min-width:0;height:76px;margin-bottom:12px}
+.billing-flow-brand img{height:auto;max-width:100%;object-fit:contain}
+.billing-hubspot{width:133px}.billing-aws{width:84px}.billing-odoo{width:155px}
+.billing-flow-copy strong{display:block;font-size:16px;font-weight:600;line-height:1.5;color:var(--navy)}
+.billing-flow-copy span{display:block;font-size:13px;line-height:1.65;color:var(--muted);margin-top:6px}
+.billing-flow figcaption{font-size:11px;color:var(--muted);line-height:1.65;border-top:1px solid #e1e9e5;margin-top:25px;padding-top:15px;text-align:center}
+.billing-rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 76px;list-style:none;margin:38px 0 0;padding:0}
+.billing-rules>li{padding-top:22px;border-top:1px solid #b6cfc6;min-width:0}
 .properix-page .billing-rules h3{font-size:25px;line-height:1.3;letter-spacing:-.6px;text-wrap:pretty}
-.billing-rules p{font-size:16px;line-height:1.8;color:var(--muted);margin-top:14px;max-width:540px}
-.billing-delivery{display:grid;grid-template-columns:200px minmax(0,1fr);gap:48px;margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}
-.billing-delivery .page-prose{font-size:16px;max-width:800px}
-.billing-results{background:var(--navy);color:#fff;padding-block:80px}
+.billing-rules p{font-size:16px;line-height:1.8;color:#466359;margin-top:13px;max-width:540px}
+.billing-delivery{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:76px;margin-top:42px;padding-top:30px;border-top:1px solid #b6cfc6}
+.properix-page .billing-delivery h3{font-size:22px;line-height:1.4;letter-spacing:-.4px;max-width:350px}
+.billing-delivery .page-prose{font-size:15px;color:#466359;max-width:760px}
+
+/* Documented volume first, followed by its operational implications. */
+.billing-results{background:var(--navy);color:#fff;padding-block:76px}
 .billing-results>.container>.billing-section-label{color:#c1cfdb}
-.billing-results-lead{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:90px;align-items:start;margin-top:30px}
+.billing-results-lead{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:90px;align-items:start;margin-top:30px}
 .billing-volume{color:#89e1d3;font-family:var(--heading)}
-.billing-volume>p:first-child{font-size:24px;line-height:1.3}
+.billing-volume>p:first-child{font-size:23px;line-height:1.3}
 .billing-volume strong{display:block;font-size:clamp(70px,7vw,98px);line-height:1.12;letter-spacing:-3px;font-weight:600;margin-block:5px}
-.billing-volume span{display:block;font-size:26px;line-height:1.4;letter-spacing:-.5px}
-.billing-volume .billing-volume-detail{font-size:15px;font-family:var(--body);color:#c1cfdb;margin-top:22px}
-.properix-page .billing-results-copy h2{color:#fff;font-size:38px;line-height:1.22;letter-spacing:-1px;text-wrap:pretty;max-width:570px}
-.billing-results-copy>p{font-size:17px;line-height:1.8;color:#c1cfdb;margin-top:24px;max-width:620px}
-.billing-outcomes-intro{font-size:15px;color:#c1cfdb;margin-top:44px;padding-top:30px;border-top:1px solid #355060}
+.billing-volume span{display:block;font-size:25px;line-height:1.4;letter-spacing:-.5px}
+.billing-volume .billing-volume-detail{font-size:15px;font-family:var(--body);color:#c1cfdb;margin-top:20px}
+.properix-page .billing-results-copy h2{color:#fff;font-size:38px;line-height:1.22;letter-spacing:-1px;text-wrap:pretty;max-width:600px}
+.billing-results-copy>p{font-size:17px;line-height:1.8;color:#c1cfdb;margin-top:24px;max-width:640px}
+.billing-outcomes-intro{font-size:15px;color:#c1cfdb;margin-top:40px;padding-top:29px;border-top:1px solid #355060}
 .billing-outcomes{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px;padding:0;margin:25px 0 0}
 .properix-page .billing-outcomes h3{color:#fff;font-size:22px;line-height:1.35;letter-spacing:-.4px;text-wrap:pretty}
 .billing-outcomes p{font-size:15px;line-height:1.8;color:#c1cfdb;margin-top:13px}
 .billing-results-note{font-size:15px;line-height:1.8;color:#c1cfdb;margin-top:32px;max-width:850px}
-.properix-page .billing-contact h2{font-size:44px;line-height:1.18;letter-spacing:-1.3px;text-wrap:pretty}
+.properix-page .billing-contact{padding-block:76px}
+.properix-page .billing-contact h2{font-size:42px;line-height:1.18;letter-spacing:-1.3px;text-wrap:pretty}
 .billing-contact p:last-of-type{font-size:15px}
 
 @media(max-width:1199px){
-  .billing-hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:36px;padding-block:20px 64px}
-  .properix-page .billing-hero h1{font-size:42px;letter-spacing:-1.4px}
-  .billing-flow{padding:22px}
-  .billing-flow-steps>li{grid-template-columns:92px minmax(0,1fr);gap:14px}
-  .billing-flow-steps>li+li::before{left:39px}
-  .billing-hubspot{width:92px}
-  .billing-aws{width:62px}
-  .billing-odoo{width:112px}
-  .billing-challenge,.billing-approach-grid,.billing-results-lead{column-gap:52px}
-  .billing-challenge,.billing-solution,.billing-results{padding-block:68px}
-  .billing-approach{padding-block:60px}
-  .properix-page .billing-challenge-copy h2,.properix-page .billing-approach h2,.properix-page .billing-results-copy h2{font-size:34px}
-  .billing-rules{column-gap:48px}
-  .billing-outcomes{gap:30px}
+  .billing-hero-grid{gap:36px;padding-bottom:44px}
+  .properix-page .billing-hero h1{font-size:42px;letter-spacing:-1.3px}
+  .billing-lead{font-size:17px}
+  .billing-product-image{padding:28px 12px 0}
+  .billing-project-facts{gap:30px}
+  .billing-challenge{gap:56px}
+  .billing-decision,.billing-solution-heading,.billing-rules,.billing-delivery{column-gap:48px}
+  .billing-flow{padding-inline:24px}
+  .billing-flow-steps{gap:50px}
+  .billing-flow-steps>li+li::before{left:-40px}
+  .billing-results-lead{gap:56px}
 }
 @media(max-width:899px){
-  .billing-hero-grid{grid-template-columns:1fr;gap:36px}
+  .billing-hero-grid{grid-template-columns:1fr;gap:32px;padding-block:20px 34px}
   .billing-hero-copy{max-width:760px}
   .properix-page .billing-hero h1{font-size:46px;max-width:760px}
-  .billing-lead{max-width:700px}
-  .billing-flow{max-width:650px;width:100%;padding:28px}
-  .billing-flow-title{max-width:none}
-  .billing-flow-steps>li{grid-template-columns:138px minmax(0,1fr);gap:26px;min-height:80px}
-  .billing-flow-steps>li+li{margin-top:20px}
-  .billing-flow-steps>li+li::before{left:61px;top:-25px;font-size:18px}
-  .billing-hubspot{width:115px}.billing-aws{width:67px}.billing-odoo{width:138px}
-  .billing-flow-copy strong{font-size:15px}.billing-flow-copy span{font-size:13px}
-  .billing-challenge{grid-template-columns:1fr;gap:36px}
-  .billing-client{max-width:700px;padding-top:0}
-  .billing-client>p{max-width:650px}
-  .billing-challenge-copy{max-width:750px}
-  .billing-approach-grid,.billing-results-lead{grid-template-columns:1fr;gap:30px}
-  .billing-approach-grid .page-prose{padding-top:0;max-width:750px}
-  .billing-results-copy{max-width:750px}
-  .billing-delivery{grid-template-columns:1fr;gap:16px}
-  .billing-outcomes{grid-template-columns:1fr;gap:26px}
-  .billing-outcomes>li{max-width:720px}
+  .billing-lead{max-width:680px}
+  .billing-product{max-width:610px;justify-self:start}
+  .billing-challenge{grid-template-columns:1fr;gap:32px}
+  .billing-client{max-width:650px;padding-top:0}
+  .billing-challenge,.billing-approach,.billing-solution,.billing-results{padding-block:58px}
+  .billing-solution-heading{grid-template-columns:1fr;gap:22px}
+  .properix-page .billing-solution-heading h2{max-width:none}
+  .billing-solution-heading .page-prose{max-width:700px}
+  .billing-decision,.billing-rules{gap:28px 36px}
+  .billing-delivery{grid-template-columns:1fr;gap:18px}
+  .billing-delivery h3{max-width:none}
+  .billing-results-lead{grid-template-columns:1fr;gap:30px}
+  .billing-outcomes{grid-template-columns:1fr;gap:25px}
+  .billing-outcomes>li{max-width:680px}
 }
 @media(max-width:599px){
-  .billing-hero-grid{padding-block:16px 46px;gap:30px}
-  .billing-identity{margin-bottom:23px}.billing-identity>img{width:230px}.billing-identity>p{font-size:12px;margin-top:15px}
-  .properix-page .billing-hero h1{font-size:38px;line-height:1.18;letter-spacing:-1px}
-  .billing-lead{font-size:16px;margin-top:23px}
-  .billing-flow{padding:22px;border-radius:10px}
-  .billing-flow-title{font-size:18px;max-width:320px}
-  .billing-flow-steps{margin-top:20px}
-  .billing-flow-steps>li{grid-template-columns:100px minmax(0,1fr);gap:18px;min-height:98px}
-  .billing-flow-steps>li+li{margin-top:22px}
-  .billing-flow-steps>li+li::before{left:43px;top:-27px}
-  .billing-hubspot{width:100px}.billing-aws{width:63px}.billing-odoo{width:124px}
-  .billing-flow-copy strong{font-size:13px}.billing-flow-copy span{font-size:12px}
-  .billing-flow figcaption{font-size:10px;margin-top:20px;padding-top:14px}
-  .billing-challenge,.billing-solution,.billing-results{padding-block:50px}
-  .billing-approach{padding-block:48px}
+  .billing-hero-grid{padding-block:14px 28px;gap:28px}
+  .billing-identity{margin-bottom:23px}
+  .billing-client-logo{padding:10px 12px}.billing-client-logo>img{width:210px}
+  .billing-identity>p{font-size:12px;margin-top:14px}
+  .properix-page .billing-hero h1{font-size:36px;line-height:1.17;letter-spacing:-1px}
+  .billing-lead{font-size:16px;margin-top:22px}
+  .billing-product-image{padding:24px 10px 0;border-radius:10px}
+  .billing-product figcaption{font-size:10px;margin-top:12px}
+  .billing-project-facts{grid-template-columns:1fr;gap:17px;padding-block:24px 28px}
+  .billing-project-facts>div{display:grid;grid-template-columns:105px minmax(0,1fr);gap:16px}
+  .billing-project-facts dt{margin:0;font-size:11px}.billing-project-facts dd{font-size:12px}
+  .billing-challenge,.billing-approach,.billing-solution,.billing-results,.properix-page .billing-contact{padding-block:48px}
   .billing-client>p{font-size:15px;margin-top:13px}
   .properix-page .billing-challenge-copy h2,.properix-page .billing-approach h2,.properix-page .billing-results-copy h2{font-size:31px;letter-spacing:-.8px}
-  .billing-challenge-copy .page-prose{margin-top:23px}.billing-approach .page-prose{font-size:16px}
-  .properix-page .billing-solution-heading h2,.properix-page .billing-contact h2{font-size:35px;letter-spacing:-1px}
-  .billing-rules{grid-template-columns:1fr;gap:26px;margin-top:30px}
-  .billing-rules>li{padding-top:22px}.properix-page .billing-rules h3{font-size:23px}.billing-rules p{font-size:15px;margin-top:11px}
-  .billing-delivery{margin-top:34px;padding-top:26px}.billing-delivery .page-prose{font-size:15px}
+  .billing-challenge-copy .page-prose{font-size:15px;margin-top:22px}
+  .billing-decision{grid-template-columns:1fr;gap:26px;margin-top:28px}
+  .billing-decision .page-prose{font-size:15px;margin-top:14px}
+  .properix-page .billing-decision h3{font-size:22px}
+  .properix-page .billing-solution-heading h2,.properix-page .billing-contact h2{font-size:34px;letter-spacing:-1px}
+  .billing-solution-heading .page-prose{font-size:16px}
+  .billing-flow{padding:20px 18px 16px;margin-top:28px;border-radius:10px}
+  .billing-flow-steps{grid-template-columns:1fr;gap:28px}
+  .billing-flow-steps>li{display:grid;grid-template-columns:90px minmax(0,1fr);gap:18px;align-items:center;text-align:left;min-height:85px}
+  .billing-flow-steps>li+li::before{content:'↓';left:35px;top:-30px;font-size:20px;line-height:26px}
+  .billing-flow-brand{height:64px;margin:0}
+  .billing-hubspot{width:90px}.billing-aws{width:62px}.billing-odoo{width:104px}
+  .billing-flow-copy strong{font-size:13px}.billing-flow-copy span{font-size:12px}
+  .billing-flow figcaption{font-size:10px;margin-top:20px;padding-top:14px;text-align:left}
+  .billing-rules{grid-template-columns:1fr;gap:26px;margin-top:28px}
+  .billing-rules>li{padding-top:20px}.properix-page .billing-rules h3{font-size:23px}.billing-rules p{font-size:15px;margin-top:11px}
+  .billing-delivery{margin-top:30px;padding-top:24px}.properix-page .billing-delivery h3{font-size:21px}
   .billing-volume>p:first-child{font-size:21px}.billing-volume strong{font-size:76px;letter-spacing:-2.6px}.billing-volume span{font-size:24px}.billing-volume .billing-volume-detail{font-size:14px;margin-top:16px}
-  .billing-results-copy>p{font-size:16px;margin-top:22px}.billing-outcomes-intro{margin-top:32px;padding-top:25px}
+  .billing-results-copy>p{font-size:16px;margin-top:22px}.billing-outcomes-intro{margin-top:30px;padding-top:25px}
   .properix-page .billing-outcomes h3{font-size:22px}.billing-results-note{margin-top:28px}
 }
 @media(max-width:359px){
-  .properix-page .billing-hero h1{font-size:34px}
-  .billing-flow{padding:18px}
-  .billing-flow-steps>li{grid-template-columns:82px minmax(0,1fr);gap:14px}
-  .billing-flow-steps>li+li::before{left:34px}
-  .billing-hubspot{width:82px}.billing-aws{width:60px}.billing-odoo{width:100px}
+  .properix-page .billing-hero h1{font-size:32px}
+  .billing-client-logo>img{width:190px}
+  .billing-flow{padding-inline:14px}
+  .billing-flow-steps>li{grid-template-columns:74px minmax(0,1fr);gap:13px}
+  .billing-flow-steps>li+li::before{left:28px}
+  .billing-hubspot{width:74px}.billing-aws{width:54px}.billing-odoo{width:90px}
   .billing-volume strong{font-size:66px}
 }

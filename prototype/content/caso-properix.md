@@ -8,9 +8,9 @@
 
 **Texto de contexto:** ConsorcioAbierto · Integración y automatización de procesos
 
-**H1:** ConsorcioAbierto: más de 15.000 facturas mensuales con HubSpot y Odoo conectados.
+**H1:** Más de 15.000 facturas al mes, con las reglas de cada contrato.
 
-Cloudfianz desarrolló un flujo que automatiza la facturación mensual de ConsorcioAbierto. La solución toma las membresías de HubSpot y genera las facturas en Odoo, aplicando los descuentos, períodos y condiciones de cada contrato en Argentina, Uruguay, Paraguay y Colombia.
+Cloudfianz desarrolló un flujo que automatiza la facturación mensual de ConsorcioAbierto.
 
 ConsorcioAbierto ofrece una plataforma de gestión administrativa y financiera para administraciones de consorcios. Su operación comprende más de 2.000 administraciones y 16.000 consorcios, con acuerdos comerciales que varían por cliente y país.
 
@@ -29,6 +29,8 @@ El enfoque inicial contemplaba el módulo de suscripciones de HubSpot. Durante l
 Cloudfianz diseñó una alternativa: representar las membresías mediante negocios en pipelines de HubSpot y procesar sus reglas con AWS Step Functions y funciones Lambda. Esto permitió conservar la información comercial en el CRM y resolver la lógica particular de facturación fuera de sus limitaciones nativas.
 
 ## La solución: de la membresía a la factura
+
+La solución toma las membresías de HubSpot y genera las facturas en Odoo, aplicando los descuentos, períodos y condiciones de cada contrato en Argentina, Uruguay, Paraguay y Colombia.
 
 - **Membresías dentro de HubSpot.** Cada negocio registra el acuerdo comercial y su estado.
 - **Condiciones por período.** Las líneas de producto representan la duración y el descuento correspondiente, separando el precio de las condiciones particulares del contrato.

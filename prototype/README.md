@@ -78,3 +78,9 @@ Revisión de REVIANZ: el sitio usa los mockups ilustrativos del producto, portad
 El índice abre con título y bajada centrados sobre blanco, en una cabecera compacta. La primera fila de proyectos aporta el recurso visual inmediatamente después de la introducción. La grilla y las páginas individuales conservan su arquitectura.
 
 Todas las vistas generales del cotizador usan `assets/hero/despegar-cotizador-hero-v1.jpg`, la variante limpia confirmada por el usuario: sin logo Digifianz ni líneas azules junto a las marcas. Aparece en Home, Hero y portfolio de Desarrollo, portfolio de Automatizaciones, card del índice, y Hero y Solución del caso Despegar. Sus ampliaciones abren el mismo JPG; los pies la identifican como vista adaptada. El PNG original queda como archivo histórico.
+
+## Caso ConsorcioAbierto · revisión visual
+
+La página individual adopta el sistema editorial de Despegar y REVIANZ: portada navy con resultado principal, imagen aportada por el usuario, ficha de trabajo/plataformas/alcance y capítulos diferenciados. El desafío conserva el contexto del cliente; el enfoque explica qué se evaluó y qué decisión tomó Cloudfianz. La sección mint de Solución reúne el esquema HubSpot → AWS → Odoo, las cuatro reglas y la implementación. El resultado mensual y sus beneficios operativos cierran la historia antes del contacto.
+
+`assets/projects/consorcioabierto-plataforma-usuario.png` se conserva intacto, se puede ampliar y se identifica como contexto del producto del cliente. No representa la integración desarrollada por Cloudfianz. Fuente, dimensiones y hash en el registro de imágenes de proyectos.

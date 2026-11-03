@@ -113,3 +113,12 @@ El usuario confirmó que la imagen correcta es la variante limpia, sin Digifianz
 Tras el rechazo del Hero navy, el índice adopta una apertura blanca con H1 y bajada centrados. Se elimina la composición superpuesta, las vistas repetidas y el botón que bajaba a la grilla. El breadcrumb permanece alineado a la izquierda. La primera fila de casos es la evidencia visual de la página y aparece inmediatamente debajo.
 
 El H1 usa Manrope a 64 px en escritorio y escala hasta 36 px en móvil. La cabecera ocupa aproximadamente 269 px a 1440 px de ancho y 237 px a 390 px. Se mantienen los textos, seis cards, destinos nativos y la versión limpia del cotizador. La primera imagen del índice carga con prioridad alta por estar ahora en el primer pantallazo.
+
+
+## ConsorcioAbierto con jerarquía de caso completo · 3 de noviembre de 2026
+
+La página toma como referencia la portada de Despegar y la lectura editorial de REVIANZ. El Hero navy combina la marca original, «Más de 15.000 facturas al mes, con las reglas de cada contrato» y la imagen del cliente aportada en el chat, sobre una única superficie mint. La ficha inferior resume trabajo, plataformas y países. La imagen mantiene su proporción y transparencia; su leyenda distingue el contexto del cliente de la integración desarrollada.
+
+El contexto y desafío comparten una sección blanca de dos columnas. La decisión técnica se presenta sobre mist en dos bloques: qué se evaluó y cómo se resolvió. El esquema de integración sale del Hero y acompaña la explicación de Solución: tres plataformas conectadas en horizontal en escritorio, con recorrido vertical en móvil. Las cuatro reglas y la nota de implementación completan ese capítulo. Resultados conserva la cifra documentada y sus tres beneficios, sobre navy; el cierre mantiene los enlaces a consulta, servicios e índice.
+
+Los párrafos y listas aprobados se conservan. La segunda oración de la apertura se traslada a la introducción de Solución, sin alterar sus hechos. El cambio de H1 concentra el resultado y evita repetir el nombre que ya identifica el logo.

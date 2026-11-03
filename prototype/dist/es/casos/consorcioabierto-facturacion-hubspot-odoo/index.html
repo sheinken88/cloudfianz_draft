@@ -25,20 +25,16 @@
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es/casos">Casos</a></li><li aria-current="page">ConsorcioAbierto</li></ol></nav>
     <div class="billing-hero-grid">
       <div class="billing-hero-copy">
-        <div class="billing-identity"><img src="/assets/brand/consorcio-abierto-official.svg" alt="ConsorcioAbierto" width="156" height="20"><p>Integración y automatización de procesos</p></div>
-        <h1 id="billing-title">ConsorcioAbierto: más de 15.000 facturas mensuales con HubSpot y Odoo conectados.</h1>
-        <div class="billing-lead"><p>Cloudfianz desarrolló un flujo que automatiza la facturación mensual de ConsorcioAbierto. La solución toma las membresías de HubSpot y genera las facturas en Odoo, aplicando los descuentos, períodos y condiciones de cada contrato en Argentina, Uruguay, Paraguay y Colombia.</p></div>
+        <div class="billing-identity"><div class="billing-client-logo"><img src="/assets/brand/consorcio-abierto-official.svg" alt="ConsorcioAbierto" width="156" height="20"></div><p>Integración y automatización de procesos</p></div>
+        <h1 id="billing-title">Más de 15.000 facturas al mes, con las reglas de cada contrato.</h1>
+        <div class="billing-lead"><p>Cloudfianz desarrolló un flujo que automatiza la facturación mensual de ConsorcioAbierto.</p></div>
       </div>
-      <figure class="billing-flow">
-        <p class="billing-flow-title">Del acuerdo comercial a la factura</p>
-        <ol class="billing-flow-steps" aria-label="Flujo de facturación">
-          <li><div class="billing-flow-brand"><img class="billing-hubspot" src="/assets/brand/hubspot-official.svg" alt="HubSpot" width="1256" height="356" decoding="async"></div><div class="billing-flow-copy"><strong>Membresías</strong><span>Acuerdos, productos y condiciones comerciales</span></div></li>
-          <li><div class="billing-flow-brand"><img class="billing-aws" src="/assets/aws/aws-logo-color.svg" alt="AWS" width="304" height="182" decoding="async"></div><div class="billing-flow-copy"><strong>Reglas de facturación</strong><span>Step Functions y Lambda aplican las condiciones de cada contrato</span></div></li>
-          <li><div class="billing-flow-brand"><img class="billing-odoo" src="/assets/brand/odoo-official.svg" alt="Odoo" width="919" height="495" decoding="async"></div><div class="billing-flow-copy"><strong>Facturas</strong><span>Importes según período, descuentos y país</span></div></li>
-        </ol>
-        <figcaption>Esquema de la integración desarrollada para ConsorcioAbierto.</figcaption>
+      <figure class="billing-product">
+        <a class="billing-product-image" href="/assets/projects/consorcioabierto-plataforma-usuario.png" target="_blank" rel="noopener" aria-label="Ampliar imagen de la plataforma de ConsorcioAbierto (nueva pestaña)"><img src="/assets/projects/consorcioabierto-plataforma-usuario.png" alt="Plataforma de ConsorcioAbierto: resumen de fondos, pagos, reclamos y agenda de una administración." width="610" height="253" fetchpriority="high" decoding="async"></a>
+        <figcaption>Plataforma de ConsorcioAbierto. Imagen de contexto del cliente.</figcaption>
       </figure>
     </div>
+    <dl class="billing-project-facts"><div><dt>Trabajo de Cloudfianz</dt><dd>Integración y automatización de la facturación</dd></div><div><dt>Plataformas conectadas</dt><dd>HubSpot, AWS y Odoo</dd></div><div><dt>Alcance</dt><dd>Argentina, Uruguay, Paraguay y Colombia</dd></div></dl>
   </div>
 </section>
 
@@ -49,17 +45,24 @@
 <p>La implementación de HubSpot con Digifianz comenzó con un objetivo concreto: conectar la gestión de las membresías con la facturación en Odoo.</p></div></div>
 </section>
 
-<section class="billing-approach" id="enfoque" aria-labelledby="billing-approach-title"><div class="container billing-approach-grid">
-  <div><p class="billing-section-label">El enfoque</p><h2 id="billing-approach-title">Una arquitectura adaptada a la complejidad de los contratos</h2></div>
-  <div class="page-prose"><p>El enfoque inicial contemplaba el módulo de suscripciones de HubSpot. Durante la implementación se comprobó que no permitía representar todas las condiciones con el detalle necesario.</p>
-<p>Cloudfianz diseñó una alternativa: representar las membresías mediante negocios en pipelines de HubSpot y procesar sus reglas con AWS Step Functions y funciones Lambda. Esto permitió conservar la información comercial en el CRM y resolver la lógica particular de facturación fuera de sus limitaciones nativas.</p></div>
+<section class="billing-approach" id="enfoque" aria-labelledby="billing-approach-title"><div class="container">
+  <div class="billing-approach-heading"><p class="billing-section-label">La decisión técnica</p><h2 id="billing-approach-title">Una arquitectura adaptada a la complejidad de los contratos</h2></div>
+  <div class="billing-decision"><div><h3>Lo que evaluamos</h3><div class="page-prose"><p>El enfoque inicial contemplaba el módulo de suscripciones de HubSpot. Durante la implementación se comprobó que no permitía representar todas las condiciones con el detalle necesario.</p></div></div><div><h3>Cómo lo resolvimos</h3><div class="page-prose"><p>Cloudfianz diseñó una alternativa: representar las membresías mediante negocios en pipelines de HubSpot y procesar sus reglas con AWS Step Functions y funciones Lambda. Esto permitió conservar la información comercial en el CRM y resolver la lógica particular de facturación fuera de sus limitaciones nativas.</p></div></div></div>
 </div></section>
 
-<section class="container billing-solution" id="solucion" aria-labelledby="billing-solution-title">
-  <div class="billing-solution-heading"><p class="billing-section-label">La solución</p><h2 id="billing-solution-title">De la membresía a la factura</h2></div>
+<section class="billing-solution" id="solucion" aria-labelledby="billing-solution-title"><div class="container">
+  <div class="billing-solution-heading"><div><p class="billing-section-label">La solución</p><h2 id="billing-solution-title">De la membresía a la factura</h2></div><div class="page-prose"><p>La solución toma las membresías de HubSpot y genera las facturas en Odoo, aplicando los descuentos, períodos y condiciones de cada contrato en Argentina, Uruguay, Paraguay y Colombia.</p></div></div>
+  <figure class="billing-flow">
+    <ol class="billing-flow-steps" aria-label="Flujo de facturación">
+      <li><div class="billing-flow-brand"><img class="billing-hubspot" src="/assets/brand/hubspot-official.svg" alt="HubSpot" width="1256" height="356" loading="lazy" decoding="async"></div><div class="billing-flow-copy"><strong>Membresías y productos</strong><span>Acuerdos y condiciones comerciales</span></div></li>
+      <li><div class="billing-flow-brand"><img class="billing-aws" src="/assets/aws/aws-logo-color.svg" alt="AWS" width="304" height="182" loading="lazy" decoding="async"></div><div class="billing-flow-copy"><strong>Reglas de cada contrato</strong><span>Step Functions y Lambda</span></div></li>
+      <li><div class="billing-flow-brand"><img class="billing-odoo" src="/assets/brand/odoo-official.svg" alt="Odoo" width="919" height="495" loading="lazy" decoding="async"></div><div class="billing-flow-copy"><strong>Facturas generadas</strong><span>Importes según período y país</span></div></li>
+    </ol>
+    <figcaption>Esquema de la integración desarrollada por Cloudfianz.</figcaption>
+  </figure>
   <ol class="billing-rules"><li><h3>Membresías dentro de HubSpot</h3><p>Cada negocio registra el acuerdo comercial y su estado.</p></li><li><h3>Condiciones por período</h3><p>Las líneas de producto representan la duración y el descuento correspondiente, separando el precio de las condiciones particulares del contrato.</p></li><li><h3>Precios actualizados</h3><p>El proceso utiliza los productos de HubSpot para contemplar las actualizaciones mensuales, incluso en acuerdos anteriores.</p></li><li><h3>Facturación en Odoo</h3><p>El flujo de AWS toma esa información, aplica las reglas del contrato y del país, y genera la facturación correspondiente.</p></li></ol>
-  <div class="billing-delivery"><p class="billing-section-label">Implementación</p><div class="page-prose"><p>El proyecto llevó un año y medio de punta a punta. Además del desarrollo, requirió ordenar y documentar criterios de descuento y facturación que antes se aplicaban manualmente. La estandarización de esas reglas fue parte central de la solución.</p></div></div>
-</section>
+  <div class="billing-delivery"><h3>Ordenar las reglas también fue parte del proyecto.</h3><div class="page-prose"><p>El proyecto llevó un año y medio de punta a punta. Además del desarrollo, requirió ordenar y documentar criterios de descuento y facturación que antes se aplicaban manualmente. La estandarización de esas reglas fue parte central de la solución.</p></div></div>
+</div></section>
 
 <section class="billing-results" id="resultados" aria-labelledby="billing-results-title"><div class="container">
   <p class="billing-section-label">Los resultados</p>

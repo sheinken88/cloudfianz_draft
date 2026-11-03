@@ -65,3 +65,12 @@ En esa revisión, la homepage retiró las dos imágenes públicas anteriores y u
 ## Galería compacta de REVIANZ en el inicio
 
 2 de noviembre de 2026. Tres vistas sustituyen el mockup único de alcance: detalle de servicios de `ScopeDefinitionMockup`, `LiveMarginFlowMockup` e `InvoiceMatchFlowMockup`. Se mantienen los textos, servicios, importes, cifras y geometría del gráfico existentes. La variante `scope-services` omite el panel de margen para evitar duplicarlo con la segunda vista; su descripción accesible se ajusta al contenido visible. Se conservan la identificación de datos ilustrativos y las vistas completas en las páginas internas.
+
+
+## ConsorcioAbierto · imagen aportada por el usuario
+
+- Archivo: `consorcioabierto-plataforma-usuario.png`, 610 × 253 px, 81.589 bytes.
+- Recibida el 3 de noviembre de 2026 como adjunto `codex-clipboard-c5cd8fa8-a405-4c37-821c-ba5c9f36fdb9.png`.
+- SHA-256: `894dc1bc1f405ae57fa6a6349cc98289e05277542a8ceff15793807845ca9f94`.
+- Copia exacta, sin recortar, ampliar por generación ni alterar la interfaz. Se conserva la transparencia del PNG.
+- Muestra la plataforma del cliente (resumen administrativo y financiero). Su uso en el caso se identifica como imagen de contexto; no representa la integración HubSpot–AWS–Odoo desarrollada por Cloudfianz ni resultados de facturación del proyecto.
