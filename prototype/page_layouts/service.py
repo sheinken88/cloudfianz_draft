@@ -1,8 +1,26 @@
-"""Service journey: value, fit, evidence, approach, offers and confidence."""
+"""One service architecture, with capability-specific copy and project evidence."""
 import re
+from page_layouts.service_cases import BRANDS, case_media
+
+SERVICES = {
+    'servicio-desarrollo-software': {
+        'name': 'Desarrollo de software a medida',
+        'cases': [('despegar', 'Desarrollo a medida · Cotización comercial'), ('revianz', 'Desarrollo a medida · Para Digifianz')],
+    },
+    'servicio-integracion-sistemas': {
+        'name': 'Integración de sistemas',
+        'cases': [('properix', 'Integración · HubSpot y Odoo'), ('escala24x7', 'Integración · Operación comercial')],
+    },
+    'servicio-automatizacion-procesos': {
+        'name': 'Automatización de procesos',
+        'cases': [('properix', 'Automatización · Facturación'), ('despegar', 'Automatización · Documentos comerciales')],
+    },
+}
 
 
-def build_service(meta, intro, sections, routes):
+def build_service(key, meta, intro, sections):
+    service = SERVICES[key]
+
     def section(prefix):
         return next((title, copy) for title, copy in sections.items() if title.startswith(prefix))
 
@@ -13,31 +31,37 @@ def build_service(meta, intro, sections, routes):
         parts = re.split(r'<h3>(.*?)</h3>', copy)
         return parts[0], [(parts[i], parts[i + 1]) for i in range(1, len(parts), 2)]
 
-    needs_title, needs = section('Cuando tus herramientas')
-    parts = re.split(r'<h3>(.*?)</h3>', needs)
-    needs_intro = parts[0]
-    applications = [(parts[i], parts[i + 1]) for i in range(1, len(parts), 2)]
+    needs_title, needs = section('Qué podemos')
+    needs_intro, applications = subsections(needs)
     application_columns = []
     for title, copy in applications:
         description, example = paragraphs(copy)
         example = example.removeprefix('<p><strong>Ejemplo:</strong> ').removesuffix('</p>')
         application_columns.append(f'<article class="service-application"><h3>{title}</h3><div class="application-description">{description}</div><div class="application-example"><p class="application-example-label">Por ejemplo</p><p>{example}</p></div></article>')
-    projects_title, projects = section('Nuestro trabajo')
+
+    projects_title, projects = section('Casos reales')
     projects_intro, projects = subsections(projects)
-    escala, photonix = projects
-    escala_paragraphs = paragraphs(escala[1])
-    escala_copy = ''.join(escala_paragraphs[:-1])
-    _, escala_description = escala[0].split(': ', 1)
-    escala_title = escala_description[0].upper() + escala_description[1:]
-    escala_link = re.search(r'<a ([^>]+)>(.*?)</a>', escala_paragraphs[-1]).group(0)
-    escala_link = escala_link.replace('<a ', '<a class="case-button" ', 1)
-    photonix_paragraphs = paragraphs(photonix[1])
-    photonix_copy = ''.join(photonix_paragraphs[:-1])
-    _, photonix_description = photonix[0].split(': ', 1)
-    photonix_title = photonix_description[0].upper() + photonix_description[1:]
-    photonix_link = re.search(r'<a ([^>]+)>(.*?)</a>', photonix_paragraphs[-1]).group(0)
-    photonix_link = photonix_link.replace('<a ', '<a class="case-button" ', 1)
-    approach_title, approach = section('Cómo podés')
+    if len(projects) != len(service['cases']):
+        raise ValueError(f'Project copy and visual configuration differ for {key}')
+    case_cards = []
+    for (heading, copy), (case, category) in zip(projects, service['cases']):
+        parts = paragraphs(copy)
+        description = ''.join(parts[:-1])
+        title = heading.split(': ', 1)[1]
+        title = title[0].upper() + title[1:]
+        link = re.search(r'<a [^>]+>.*?</a>', parts[-1]).group(0)
+        link = link.replace('<a ', '<a class="case-button" ', 1)
+        case_cards.append(f'''<article class="service-case" id="proyecto-{case}" aria-labelledby="{case}-service-title">
+        <div class="service-case-copy">
+          <div class="service-case-brandline">{BRANDS[case]}<p class="service-case-category">{category}</p></div>
+          <h3 id="{case}-service-title">{title}</h3>
+          <div class="service-case-description">{description}</div>
+          <div class="service-case-actions">{link}</div>
+        </div>
+        {case_media(case)}
+      </article>''')
+
+    approach_title, approach = section('Cómo trabajamos')
     approach_intro, offers = subsections(approach)
     hints = ['Evaluar las alternativas', 'Definir el alcance', 'Construir y poner en uso', 'Acompañar la operación']
     approach_tabs, approach_panels = [], []
@@ -50,26 +74,19 @@ def build_service(meta, intro, sections, routes):
         delivery_copy = delivery_copy[0].upper() + delivery_copy[1:]
         approach_tabs.append(f'<button type="button" role="tab" id="approach-tab-{i}" aria-controls="approach-panel-{i}" aria-selected="{str(i == 1).lower()}" tabindex="{0 if i == 1 else -1}"><span class="approach-tab-name">{label}</span><span class="approach-tab-hint">{hint}</span></button>')
         approach_panels.append(f'<div class="approach-panel" id="approach-panel-{i}" role="tabpanel" aria-labelledby="approach-tab-{i}" tabindex="0"><h3>{title}</h3><div class="approach-panel-body"><div class="approach-step-copy">{description}</div><aside class="approach-delivery" aria-labelledby="approach-delivery-{i}"><h4 id="approach-delivery-{i}">{delivery_label}</h4><p>{delivery_copy}</p></aside></div></div>')
-    faq_title, faq = section('Antes de empezar')
-    parts = re.split(r'<h3>(.*?)</h3>', faq)
-    faqs = ''.join(f'<details name="service-questions"{" open" if i == 1 else ""}><summary>{parts[i]}<span class="plus" aria-hidden="true"></span></summary>{parts[i + 1]}</details>' for i in range(1, len(parts), 2))
-    backing_title, backing = section('Experiencia de negocio')
-    cta_title, cta = section('Hablemos de lo que')
+
+    faq_title, faq = section('Preguntas frecuentes')
+    _, questions = subsections(faq)
+    faqs = ''.join(f'<details name="service-questions"{" open" if i == 0 else ""}><summary>{question}<span class="plus" aria-hidden="true"></span></summary>{answer}</details>' for i, (question, answer) in enumerate(questions))
+    cta_title, cta = section('Hablemos')
     cta_context, cta_reassurance = paragraphs(cta)
     return f'''
 <section class="service-hero">
   <div class="container">
-    <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es#soluciones">Soluciones</a></li><li aria-current="page">Desarrollo de software a medida</li></ol></nav>
+    <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es#soluciones">Soluciones</a></li><li aria-current="page">{service['name']}</li></ol></nav>
     <div class="service-hero-grid">
-      <div class="service-hero-copy">
-        <h1>{meta['H1']}</h1>
-        {paragraphs(intro)[0]}
-        <div class="page-actions"><a class="button button-dark" href="/es#contacto">Hablemos de tu negocio</a><a class="text-link" href="#proyectos">Ver proyectos reales</a></div>
-      </div>
-      <figure class="service-product">
-        <a class="service-product-image" href="/assets/projects/despegar-cotizador-original.png" target="_blank" rel="noopener" aria-label="Ampliar captura original del cotizador de Despegar (nueva pestaña)"><img src="/assets/projects/despegar-cotizador-original.png" alt="Cotizador de Despegar con presupuesto, distribución por marca y país y paneles de productos en una campaña de prueba." width="1633" height="887" fetchpriority="high" decoding="async"></a>
-        <figcaption><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"><div><p>Cotizador a medida integrado con HubSpot.</p><a class="text-link" href="{routes['caso-despegar']}">Conocé el caso Despegar</a></div></figcaption>
-      </figure>
+      <div class="service-hero-copy"><h1>{meta['H1']}</h1></div>
+      <div class="service-hero-intro">{paragraphs(intro)[0]}<div class="page-actions"><a class="button button-dark" href="/es#consulta">Contanos qué necesitás</a><a class="text-link" href="#proyectos">Ver proyectos reales</a></div></div>
     </div>
   </div>
 </section>
@@ -80,46 +97,7 @@ def build_service(meta, intro, sections, routes):
 <section class="service-projects page-section" id="proyectos" aria-labelledby="projects-heading">
   <div class="container">
     <div class="service-section-intro service-projects-intro"><h2 id="projects-heading">{projects_title}</h2>{projects_intro}</div>
-    <div class="service-case-list">
-      <article class="service-case" id="proyecto-escala24x7" aria-labelledby="escala-service-title">
-        <div class="service-case-copy">
-          <div class="service-case-brandline">
-            <img class="service-case-logo-escala" src="/assets/brand/escala24x7-original.avif" alt="Escala24x7" width="1275" height="784" loading="lazy">
-            <p class="service-case-category">Integración a medida · Operación comercial</p>
-          </div>
-          <h3 id="escala-service-title">{escala_title}</h3>
-          <div class="service-case-description">{escala_copy}</div>
-          <div class="service-case-actions">{escala_link}</div>
-        </div>
-        <figure class="service-case-media">
-          <div class="service-case-stage service-integration-stage">
-            <p class="service-integration-label">Sincronización bidireccional</p>
-            <div class="service-integration-flow">
-              <div class="service-integration-system"><div class="service-integration-brand"><img src="/assets/brand/hubspot-official.svg" alt="HubSpot" width="1256" height="356" loading="lazy" decoding="async"></div><span>CRM comercial</span></div>
-              <span class="service-integration-arrows" aria-hidden="true">⇄</span>
-              <div class="service-integration-system"><div class="service-integration-brand"><img class="service-integration-aws" src="/assets/aws/aws-logo-color.svg" alt="AWS" width="304" height="182" loading="lazy" decoding="async"></div><span>Partner Central</span></div>
-            </div>
-            <p class="service-integration-result">Oportunidades actualizadas<br>en ambas plataformas</p>
-          </div>
-          <figcaption>Esquema de la integración desarrollada para Escala24x7.</figcaption>
-        </figure>
-      </article>
-      <article class="service-case" aria-labelledby="photonix-service-title">
-        <div class="service-case-copy">
-          <div class="service-case-brandline">
-            <img class="service-case-logo-photonix" src="/assets/brand/photonix-official.svg" alt="Photonix" width="170" height="54" loading="lazy">
-            <p class="service-case-category">Desarrollo a medida · Servicio técnico</p>
-          </div>
-          <h3 id="photonix-service-title">{photonix_title}</h3>
-          <div class="service-case-description">{photonix_copy}</div>
-          <div class="service-case-actions">{photonix_link}</div>
-        </div>
-        <figure class="service-case-media">
-          <div class="service-case-stage"><img src="/assets/brand/photonix-ethos-official.jpg" alt="Equipo de radioterapia Ethos, en una imagen institucional publicada por Photonix." width="1920" height="1080" loading="lazy" decoding="async"></div>
-          <figcaption>Equipamiento de radioterapia. Imagen institucional de Photonix.</figcaption>
-        </figure>
-      </article>
-    </div>
+    <div class="service-case-list">{''.join(case_cards)}</div>
     <div class="service-portfolio-link"><a class="text-link" href="#indice-casos" data-content="indice-casos">Ver todos los casos</a></div>
   </div>
 </section>
@@ -130,7 +108,6 @@ def build_service(meta, intro, sections, routes):
     <div class="approach-panels">{''.join(approach_panels)}</div>
   </div>
 </section>
-<section class="service-backing" id="respaldo" aria-labelledby="backing-heading"><div class="container"><div class="service-backing-brand"><img src="/assets/brand/digifianz-official.svg" alt="Digifianz" width="226" height="80" loading="lazy"><p class="service-backing-credential">Elite Partner de HubSpot</p><a class="text-link light-link" href="https://www.digifianz.com/es/" target="_blank" rel="noopener noreferrer" aria-label="Conocé la empresa: Digifianz (nueva pestaña)">Conocé la empresa</a></div><div class="service-backing-copy"><h2 id="backing-heading">{backing_title}</h2>{backing}</div></div></section>
 <section class="container faq service-faq page-section" id="preguntas-frecuentes" aria-labelledby="questions-heading"><div class="section-intro"><h2 id="questions-heading">{faq_title}</h2></div><div class="faq-list">{faqs}</div></section>
 <section class="page-contact service-closing" id="conversemos" aria-labelledby="next-title"><div class="container service-closing-inner"><div class="service-closing-heading"><h2 id="next-title">{cta_title}</h2><div class="service-closing-reassurance">{cta_reassurance}</div></div><div class="service-closing-action">{cta_context}<a class="button" href="/es#consulta">Contanos qué necesitás</a></div></div></section>
 '''

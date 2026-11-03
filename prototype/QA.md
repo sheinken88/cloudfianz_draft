@@ -507,3 +507,13 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 
 - SVG original con letras oscuras y sonrisa naranja en el esquema de Escala24x7. Archivo preservado intacto, SHA-256 comprobado y procedencia documentada, incluyendo la comparación con los trazados del repositorio AWS Samples. El logo monocromo de Home conserva su recurso existente.
 - Carga comprobada y revisión visual del esquema a 1280 px CSS; se mantiene la anchura de 80 px y la proporción del logo. Consola sin errores ni avisos. Build y diff check correctos. Captura en `/Users/sheinken/Desktop/Cloudfianz/outputs/solutions-nav-aws-20261103/escala-aws-color.jpg`.
+
+
+## Tres servicios con identidad propia y estructura común · 3 de noviembre de 2026
+
+- Desarrollo, Integraciones y Automatizaciones comparten Hero → Problemas y soluciones → Casos reales → Cómo trabajamos → FAQ → CTA. Cada página tiene titular, tres aplicaciones con ejemplos, resumen de dos casos, metodología, cinco preguntas y cierre propios. Desarrollo destaca Despegar y REVIANZ; Integraciones, ConsorcioAbierto y Escala24x7; Automatizaciones, ConsorcioAbierto y Despegar.
+- Se comprobó el contenido contra los casos aprobados. Las imágenes conservan sus aclaraciones: captura real de Despegar, mockup ilustrativo de REVIANZ, contexto de plataforma de Properix y esquema de integración de Escala24x7. El esquema mantiene HubSpot oficial y AWS con sonrisa naranja. Revisión independiente de copy, builder y CSS sin hallazgos funcionales.
+- Revisión de las tres páginas a 1280, 1024, 768, 390 y 320 px CSS. Se corrigió un desborde de 2 px en la pestaña «Implementación» a 320 px; comprobación posterior sin desbordes de página o pestañas. Revisión visual adicional del mockup REVIANZ y el esquema Escala en móvil, con contenido e imágenes dentro de sus marcos.
+- Pestañas comprobadas con clic, flechas, Home y End, con un único panel activo. Las preguntas frecuentes abren una respuesta por vez. Los CTA navegan a Despegar y REVIANZ o abren los lectores correctos de ConsorcioAbierto y Escala24x7. El cierre lleva a `/es#consulta`; no se envió el formulario. Consola sin errores ni avisos.
+- Build y diff check correctos. Verificaciones estáticas: un H1, IDs únicos, enlaces y recursos locales válidos, cuatro pestañas y cinco preguntas por servicio. La Home y las páginas completas de casos conservan su HTML anterior. La interfaz local de revisión incluye las seis páginas.
+- Capturas de Hero, casos, metodología y vistas móviles en `/Users/sheinken/Desktop/Cloudfianz/outputs/service-capabilities-20261103/`. Entrega local, sin publicación.

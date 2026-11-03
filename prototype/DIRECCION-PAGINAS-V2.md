@@ -57,3 +57,20 @@ Por pedido del usuario, Escala24x7 reemplaza a REVIANZ en «Nuestro trabajo» de
 El esquema de Escala24x7 incorpora los logos originales de HubSpot (SVG naranja de su sitio oficial) y AWS (variante monocroma oficial utilizada en la Home). Se conservan sin filtros ni recoloraciones, dentro de módulos blancos de igual jerarquía y con tamaños ópticos equilibrados. Las etiquetas «CRM comercial» y «Partner Central» aclaran la función de cada extremo.
 
 Por preferencia posterior del usuario, el esquema de Escala24x7 adopta la variante oficial histórica de AWS con letras oscuras y sonrisa naranja. El SVG original se conserva intacto y con procedencia documentada en assets/aws/SOURCES.md. Se mantiene el tamaño y la disposición del esquema.
+
+
+## Arquitectura compartida y capacidades específicas · 3 de noviembre de 2026
+
+La nueva evaluación del usuario reemplaza la selección anterior de proyectos: Desarrollo vuelve a destacar Despegar y REVIANZ. Escala24x7 pasa a Integraciones, junto con ConsorcioAbierto. Automatizaciones muestra ConsorcioAbierto y Despegar con foco en facturación y documentos comerciales.
+
+Los tres servicios comparten Hero → Problemas y soluciones → Casos reales → Cómo trabajamos → Preguntas frecuentes → CTA. La Home presenta Cloudfianz; cada servicio explica una capacidad con aplicaciones y ejemplos propios. Los titulares son:
+
+- Desarrollo: «Construimos herramientas cuando el software existente no alcanza».
+- Integraciones: «Conectá tus sistemas y dejá de cargar la misma información dos veces».
+- Automatizaciones: «Automatizá las tareas que se repiten todos los días».
+
+El Hero usa título a la izquierda y explicación con CTA a la derecha, sobre mist. Los recursos de los proyectos se reservan para los casos. Tres aplicaciones presentan la situación, la solución y un ejemplo concreto. Las cards de casos conservan el sistema de la Home: marco neutro, identidad del cliente, resumen breve, CTA mint y una única vista. Despegar usa una captura real ampliable; REVIANZ, un mockup ilustrativo de alcance; ConsorcioAbierto, una imagen de contexto identificada; Escala, el esquema HubSpot ↔ AWS con sonrisa naranja.
+
+La metodología aparece una sola vez, con cuatro pestañas y entregables adaptados a cada servicio. Las preguntas frecuentes y el cierre también son específicos. La explicación institucional de Digifianz permanece en la Home y el pie compartido. Las páginas completas de casos mantienen su contenido.
+
+Un único constructor (`page_layouts/service.py`) y una hoja de estilos (`dist/service-page.css`) sostienen esta arquitectura. `page_layouts/service_cases.py` concentra los recursos de casos. Se retiran el constructor y CSS duplicados de capacidades; el contenido de cada servicio sigue editable en Markdown.

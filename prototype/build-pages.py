@@ -59,9 +59,9 @@ def page(key, body, kind):
     meta, _, _ = document(key)
     title, description = html.escape(meta['Title'], quote=True), html.escape(meta['Meta description'], quote=True)
     canonical = 'https://cloudfianz.com' + routes[key]
-    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css', 'capability-page': 'capability-page.css'}
+    page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css'}
     extra_css = f'<link rel="stylesheet" href="/{page_styles[kind]}">'
-    if kind == 'revianz-page':
+    if kind == 'revianz-page' or key == 'servicio-desarrollo-software':
         extra_css += '<link rel="stylesheet" href="/revianz-mockups.css">'
     return f'''<!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#0B1D3A">
@@ -75,9 +75,6 @@ def page(key, body, kind):
 
 from page_layouts.service import build_service
 
-meta, intro, sections = document('servicio-desarrollo-software')
-service_body = build_service(meta, intro, sections, routes)
-
 from page_layouts.case import build_case
 
 meta, intro, sections = document('caso-despegar')
@@ -88,12 +85,10 @@ from page_layouts.revianz import build_revianz
 meta, intro, sections = document('caso-revianz')
 revianz_body = build_revianz(meta, intro, sections, routes)
 
-from page_layouts.capability import build_capability
-
-pages = [('servicio-desarrollo-software', service_body, 'service-page'), ('caso-despegar', case_body, 'case-page'), ('caso-revianz', revianz_body, 'revianz-page')]
-for key in ['servicio-integracion-sistemas', 'servicio-automatizacion-procesos']:
+pages = [('caso-despegar', case_body, 'case-page'), ('caso-revianz', revianz_body, 'revianz-page')]
+for key in ['servicio-desarrollo-software', 'servicio-integracion-sistemas', 'servicio-automatizacion-procesos']:
     meta, intro, sections = document(key)
-    pages.append((key, build_capability(key, meta, intro, sections), 'capability-page'))
+    pages.append((key, build_service(key, meta, intro, sections), 'service-page'))
 
 for key, body, kind in pages:
     output = DIST / routes[key].lstrip('/') / 'index.html'

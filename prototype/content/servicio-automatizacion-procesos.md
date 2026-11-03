@@ -1,112 +1,127 @@
 # Automatización de procesos
 
-Versión 1 · Texto aprobado el 23 de octubre de 2026 · Preparado para diseño
+Versión 2 · Capacidad y ejemplos revisados el 3 de noviembre de 2026
 
-**URL propuesta:** `/es/automatizacion-de-procesos`  
-**Title:** Automatización de procesos empresariales | Cloudfianz  
-**Meta description:** Automatizamos procesos comerciales, administrativos y operativos para mejorar su ejecución y seguimiento. Evaluemos dónde puede aportar valor a tu negocio.
+**URL propuesta:** `/es/automatizacion-de-procesos`
+**Title:** Automatización de procesos empresariales | Cloudfianz
+**Meta description:** Automatizamos facturación, generación de documentos, aprobaciones y notificaciones para reducir tareas repetitivas, con reglas y controles definidos.
 
 ## Apertura
 
-**Texto de contexto:** Automatización de procesos empresariales · Cloudfianz, una unidad de Digifianz
+**Texto de contexto:** Automatización de procesos empresariales
 
-**H1:** Automatizá procesos para mejorar la operación y el seguimiento de tu negocio.
+**H1:** Automatizá las tareas que se repiten todos los días
 
-Diseñamos e implementamos flujos para que las ventas, la administración y la operación avancen con reglas claras. El objetivo es mejorar tiempos de respuesta, aprovechar la capacidad del equipo y tener visibilidad sobre lo que sucede en cada paso.
+Automatizamos cálculos y generación de documentos, y coordinamos aprobaciones y avisos mediante flujos definidos. Tu equipo puede dedicar menos tiempo a repetir pasos y concentrarse en las decisiones y excepciones que necesitan su intervención.
 
-**Botón principal:** Hablemos de tu negocio  
-**Texto de apoyo:** Contanos cómo funciona hoy el proceso y qué resultado querés mejorar.  
-**Enlace secundario:** Ver ejemplos de procesos automatizados
+**Botón principal:** Contanos qué necesitás
+**Texto de apoyo:** Contanos qué tarea se repite, cómo la resolvés hoy y dónde se demora.
+**Enlace secundario:** Ver proyectos reales
 
-## Qué puede mejorar cuando el proceso tiene continuidad
+## Qué podemos automatizar
 
-### Que una oportunidad comercial avance
+Cuando una tarea se repite con reglas conocidas, podemos evaluar qué pasos automatizar y qué controles conviene mantener.
 
-Preparar una propuesta, validar condiciones o completar un traspaso interno puede demorar la respuesta al cliente. Evaluamos qué pasos pueden resolverse con reglas y qué decisiones necesitan una persona, para que el equipo pueda concentrarse en la conversación comercial.
+### Facturación según las reglas de cada contrato
 
-### Que la operación acompañe el volumen de trabajo
+Revisar descuentos y períodos a mano cada mes consume tiempo y puede generar diferencias. Automatizamos los cálculos y la generación de facturas a partir de los acuerdos registrados, contemplando las condiciones de cada cliente.
 
-Una venta puede activar la creación de un abono, una tarea operativa o un circuito de facturación. Automatizamos las acciones acordadas para reducir recargas y dar continuidad al trabajo entre áreas, contemplando los controles que requiere cada proceso.
+**Ejemplo:** Facturas mensuales que aplican descuentos por período y condiciones distintas según el país.
 
-### Que la gestión tenga información para actuar
+### Documentos sin volver a cargar los datos
 
-Los responsables necesitan saber qué está pendiente, qué se completó y dónde apareció una excepción. Incorporamos registros y estados que permitan revisar el proceso y decidir sobre situaciones concretas.
+Preparar una propuesta o una orden suele exigir copiar información entre planillas y documentos. Conectamos los datos disponibles con las reglas y plantillas necesarias para generar el documento dentro del mismo proceso.
 
-## Empezamos por el resultado que querés lograr
+**Ejemplo:** Una orden de inserción que se genera a partir de la cotización y queda vinculada al negocio en el CRM.
 
-Revisamos cómo funciona el proceso: qué lo inicia, quién participa, qué información necesita, qué decisiones se toman y qué excepciones aparecen. Con ese mapa identificamos una mejora que pueda implementarse con un alcance definido.
+### Aprobaciones y avisos con responsables claros
 
-Para priorizar, consideramos el impacto esperado, la frecuencia del trabajo, los sistemas disponibles y la claridad de las reglas. Según el caso, la solución puede apoyarse en funciones existentes, integraciones o software a medida.
+Un proceso puede quedar detenido porque alguien tiene que pedir una revisión o recordar el próximo paso. Definimos flujos que solicitan la aprobación correspondiente, registran su estado y avisan a quienes deben intervenir.
 
-## Ejemplos de aplicación
+**Ejemplo:** Una propuesta que requiere aprobación antes de continuar y notifica al responsable cuando está lista para revisar.
 
-### ConsorcioAbierto: del acuerdo comercial a la facturación mensual
+## Casos reales
 
-Un flujo conecta las membresías de HubSpot con Odoo y genera más de 15.000 facturas mensuales. Aplica condiciones por período y país, sin calcular y cargar cada factura a mano.
+Procesos que ya aplican reglas del negocio para reducir cálculos, cargas y preparación manual de documentos.
+
+### ConsorcioAbierto: facturación mensual con reglas por contrato
+
+Cada membresía tiene descuentos, períodos y condiciones que deben aplicarse al facturar. Desarrollamos un flujo que toma esos acuerdos de HubSpot y genera las facturas en Odoo.
+
+La solución procesa más de 15.000 facturas mensuales en cuestión de horas, contemplando las reglas de cuatro países. El equipo mantiene los acuerdos en el CRM sin calcular y cargar cada factura por separado.
 
 [Conocé el caso ConsorcioAbierto](caso-properix.md).
 
-### Despegar: reglas comerciales aplicadas a la cotización
+### Despegar: cálculos y documentos dentro de la cotización
 
-Un cotizador conectado con HubSpot automatiza cálculos y permite ajustar una propuesta a un presupuesto objetivo dentro de los límites de precios definidos. La cotización se devuelve al CRM para continuar el proceso comercial.
+El cotizador de Despegar aplica reglas de precios y presupuestos, valida la distribución entre marcas y países y genera la orden de inserción. La propuesta queda vinculada al negocio en HubSpot.
+
+El equipo pasó de preparar cotizaciones en horas a resolverlas en minutos. Los cálculos y la documentación comercial forman parte del mismo recorrido.
 
 [Conocé el caso Despegar](caso-despegar.md).
 
-### REVIANZ: reglas de proyecto conectadas con costos y facturación
+## Cómo trabajamos
 
-En la plataforma desarrollada para Digifianz, los servicios y las asignaciones alimentan el cálculo de costos y rentabilidad. La facturación y los pagos a colaboradores siguen ese contexto, con instancias de revisión y aprobación.
+Auditoría, diseño, implementación y soporte se pueden contratar por separado. Podemos ayudarte a elegir un primer proceso o trabajar sobre una automatización que ya está definida, con alcance y entregables acordados.
 
-[Conocé el caso REVIANZ](caso-revianz.md).
+### Auditoría
 
-## Controles y responsables dentro del flujo
+**Elegir qué conviene automatizar**
 
-Definimos qué puede ejecutarse automáticamente y en qué momentos hace falta una revisión o aprobación. También acordamos cómo se registran los pasos y qué sucede cuando falta información o aparece un error.
+Revisamos la frecuencia de las tareas, el esfuerzo que requieren, las demoras y los errores habituales. Identificamos qué pasos tienen reglas claras y qué información o herramientas hacen falta para resolverlos.
 
-El equipo participa en la validación con situaciones representativas de su trabajo. Esto permite comprobar tanto el recorrido habitual como las excepciones relevantes antes de poner la solución en uso.
+**Recibís:** un diagnóstico con prioridades y una recomendación para el proceso elegido.
 
-Cuando el circuito involucra varias herramientas, la [integración de sistemas](servicio-integracion-sistemas.md) conecta la información que necesita cada paso.
+### Diseño
 
-## Una mejora que podamos observar
+**Definir el flujo y sus controles**
 
-Antes de implementar, acordamos qué señal del negocio vamos a seguir y qué información tenemos como punto de partida. Puede ser el tiempo hasta responder una solicitud, la cantidad de intervenciones necesarias, las correcciones en un circuito de facturación o los casos que quedan pendientes.
+Documentamos qué inicia el proceso, qué acciones se ejecutan, quién aprueba y cómo se tratan las excepciones. Acordamos los criterios de aceptación y una señal para evaluar la mejora, como el tiempo de respuesta o las intervenciones manuales necesarias.
 
-Además de comprobar que el flujo funciona, revisamos esa señal con la información disponible. Así podemos evaluar la mejora y decidir qué conviene ajustar o abordar después.
+**Recibís:** el diseño del flujo, sus reglas, responsables y criterios de validación.
 
-## Podés avanzar por etapas
+### Implementación
 
-Si necesitás elegir el primer proceso, una auditoría permite identificar prioridades y comparar alternativas. El diseño define el flujo, sus reglas y los criterios de aceptación. La implementación pone en funcionamiento lo acordado y lo transfiere a tu equipo. El soporte permite atender incidentes y ajustes menores con una capacidad mensual definida.
+**Poner el proceso en funcionamiento**
 
-Son servicios que podés contratar por separado. Si ya tenés un proceso y una solución suficientemente definidos, evaluamos directamente qué hace falta para implementarlos.
+Construimos o configuramos el flujo acordado y lo probamos con situaciones habituales y excepciones relevantes. Validamos su funcionamiento con tu equipo y transferimos lo necesario para operarlo; si ya tenés un diseño, evaluamos esos insumos antes de comenzar.
 
-## Antes de automatizar
+**Recibís:** la automatización acordada, con pruebas, documentación y el traspaso a quienes la van a operar.
 
-### ¿Cómo elegimos el primer proceso?
+### Soporte
 
-Buscamos una necesidad relevante para el negocio que pueda delimitarse y verificarse. Revisamos su frecuencia, el esfuerzo que demanda, los errores o demoras que presenta y los sistemas involucrados. Un primer alcance acotado permite poner una mejora en uso y aprender antes de ampliar el trabajo.
+**Atender incidentes y ajustes del flujo**
+
+Acompañamos una automatización en uso con una capacidad mensual acordada. Atendemos incidentes, mantenimiento y ajustes menores; los cambios que amplían el alcance se evalúan y presupuestan por separado.
+
+**Incluye:** atención y mantenimiento de los flujos definidos en el servicio contratado.
+
+## Preguntas frecuentes
 
 ### ¿Podemos automatizar si todavía usamos planillas?
 
-Las planillas pueden formar parte del circuito. Primero revisamos cómo se mantienen los datos, quién los modifica y qué decisiones dependen de ellos. A partir de eso evaluamos qué conviene conservar, conectar u ordenar para que la automatización funcione.
+Sí, las planillas pueden formar parte del circuito. Revisamos cómo se mantienen los datos, quién los modifica y qué decisiones dependen de ellos. Con ese contexto evaluamos qué conviene conservar, conectar u ordenar para que el flujo pueda funcionar.
 
 ### ¿Todo el proceso tiene que quedar automático?
 
-Podemos combinar acciones automáticas con validaciones humanas. Por ejemplo, preparar la información de una propuesta y solicitar una aprobación antes de continuar. El diseño establece esas responsabilidades según las reglas de tu empresa.
+No. Podemos combinar acciones automáticas con revisiones humanas. Por ejemplo, preparar una propuesta y solicitar una aprobación antes de continuar. El diseño establece qué decisiones toma el sistema y cuáles corresponden a tu equipo.
+
+### ¿Qué pasa si falta información o falla un paso?
+
+Definimos cómo detectar y registrar esas situaciones, quién debe revisarlas y cómo se retoma el proceso. El tratamiento de errores y las alertas se acuerdan según el alcance; no todos los problemas pueden resolverse automáticamente.
 
 ### ¿Qué pasa si cambian las reglas del negocio?
 
-Documentamos las reglas y el funcionamiento del flujo para facilitar su revisión. Los ajustes se evalúan según su alcance: algunos pueden atenderse dentro del soporte contratado y otros requieren una nueva implementación.
+Documentamos las reglas para facilitar su revisión. Algunos ajustes pueden atenderse dentro del soporte contratado; los cambios de alcance o las funciones nuevas requieren una evaluación y una propuesta antes de implementarse.
 
-### ¿De qué depende el costo y el tiempo de implementación?
+### ¿De qué dependen el costo y el tiempo de implementación?
 
-De la cantidad de pasos, sistemas, decisiones y excepciones, además de la calidad de los datos y la definición disponible. La propuesta establece un alcance, entregables y calendario. También identifica las herramientas y los costos de terceros necesarios para operar la solución.
+De la cantidad de pasos, sistemas, decisiones y excepciones, además de la calidad de los datos y la definición disponible. La propuesta establece entregables y calendario, e identifica las herramientas y los costos de terceros necesarios para operar la solución.
 
-## El respaldo de Digifianz
+## Hablemos de las tareas que hoy resolvés a mano
 
-Cloudfianz es la unidad de desarrollo de software de Digifianz. Conectamos la comprensión de los procesos del negocio con la capacidad de diseñar e implementar soluciones tecnológicas.
+Contanos qué se repite, cuánto trabajo demanda y dónde aparecen demoras o correcciones. Evaluemos qué parte del proceso conviene automatizar.
 
-## ¿Qué proceso necesita funcionar mejor para que tu empresa avance?
+Podés empezar por una sola tarea, sin automatizar toda la operación de una vez.
 
-Contanos qué querés lograr, qué pasa hoy y cómo afecta al negocio. Podemos ayudarte a identificar un primer paso y definir una mejora concreta.
-
-**Botón:** Hablemos de tu negocio  
-**Alternativa:** Prefiero enviar una consulta
+**Botón:** Contanos qué necesitás
