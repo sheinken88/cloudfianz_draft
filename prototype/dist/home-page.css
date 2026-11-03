@@ -50,7 +50,13 @@
 .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:clamp(36px,3.5vw,48px);line-height:1.16;letter-spacing:-1.6px}
 .home-section-heading>p{font-size:16px;line-height:1.8;color:var(--muted);max-width:480px}
 .home-service-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
-.home-service-path{display:flex;flex-direction:column;align-items:start;min-width:0;padding-top:24px;border-top:2px solid #64b6aa}
+/* Keep the introduction together and identify the three capabilities visually. */
+.home-solutions .home-solutions-heading{grid-template-columns:1fr;gap:18px;align-items:start;margin-bottom:44px}
+.home-solutions-heading>p{max-width:700px}
+.home-service-path{display:flex;flex-direction:column;align-items:start;min-width:0;padding-top:24px;border-top:1px solid #c2d9d3}
+.home-service-identity{display:flex;align-items:center;gap:16px;margin-bottom:22px;min-height:64px}
+.home-service-icon{width:64px;height:64px;flex:none;color:var(--navy);background:var(--mint);border-radius:14px;padding:4px}
+.home-service-identity>span{font-size:14px;font-weight:600;color:var(--home-accent);line-height:1.4}
 .home-service-path h3{font-size:27px;line-height:1.25;letter-spacing:-.8px;max-width:340px}
 .home-service-path>p{font-size:15px;line-height:1.8;color:var(--muted);margin-block:20px 24px}
 .home-service-action{margin-top:auto;min-height:48px;padding:12px 17px;background:transparent;border-color:#8fb6ae;color:#17665e;font-size:13px;text-align:left}
@@ -188,6 +194,9 @@
   .home-backing{padding-block:64px}.home-backing-layout{grid-template-columns:1fr;gap:32px}.home-backing-brand{flex-direction:row;align-items:center;justify-content:space-between;gap:24px}
   .home-section{padding-block:64px}.home-opening h1{font-size:50px;letter-spacing:-2px}.home-opening-copy>p{font-size:16px}
   .home-section-heading h2,.home-work-heading h2,.home-judgment h2{font-size:38px;letter-spacing:-1.3px}.home-section-heading{margin-bottom:36px}
+  .home-solutions .home-solutions-heading{margin-bottom:32px}
+  .home-solutions-heading h2 br{display:none}
+  .home-service-identity{margin-bottom:20px}
   .home-service-paths{grid-template-columns:1fr;gap:32px}.home-service-path{padding-top:22px}.home-service-path h3{font-size:27px;max-width:520px}.home-service-path>p{font-size:15px;max-width:600px;margin-block:16px 20px}.home-service-action{font-size:13px}
   .home-work-heading{margin-bottom:32px}.home-case{grid-template-columns:1fr;scroll-margin-top:100px}.home-case-intro{padding:26px 28px 24px}.home-case-brandline{flex-direction:row;align-items:center;justify-content:space-between;gap:24px;margin-bottom:20px}.home-case-category{text-align:right;max-width:170px}.home-case-story>h3{font-size:29px;max-width:580px}.home-case-description>p{font-size:15px;max-width:600px}
   .home-case-media{margin:0 24px 24px}.home-case-stage{min-height:0;padding:24px}.home-case-stage>img{max-height:260px}.home-rv-preview .revianz-mockup-stage{min-height:0}
