@@ -1,6 +1,5 @@
 """Service journey: value, fit, evidence, approach, offers and confidence."""
 import re
-from page_layouts.revianz_mockups import mockup
 
 
 def build_service(meta, intro, sections, routes):
@@ -25,11 +24,13 @@ def build_service(meta, intro, sections, routes):
         application_columns.append(f'<article class="service-application"><h3>{title}</h3><div class="application-description">{description}</div><div class="application-example"><p class="application-example-label">Por ejemplo</p><p>{example}</p></div></article>')
     projects_title, projects = section('Nuestro trabajo')
     projects_intro, projects = subsections(projects)
-    revianz, photonix = projects
-    revianz_paragraphs = paragraphs(revianz[1])
-    revianz_copy = ''.join(revianz_paragraphs[:-1])
-    _, revianz_description = revianz[0].split(': ', 1)
-    revianz_title = revianz_description[0].upper() + revianz_description[1:]
+    escala, photonix = projects
+    escala_paragraphs = paragraphs(escala[1])
+    escala_copy = ''.join(escala_paragraphs[:-1])
+    _, escala_description = escala[0].split(': ', 1)
+    escala_title = escala_description[0].upper() + escala_description[1:]
+    escala_link = re.search(r'<a ([^>]+)>(.*?)</a>', escala_paragraphs[-1]).group(0)
+    escala_link = escala_link.replace('<a ', '<a class="case-button" ', 1)
     photonix_paragraphs = paragraphs(photonix[1])
     photonix_copy = ''.join(photonix_paragraphs[:-1])
     _, photonix_description = photonix[0].split(': ', 1)
@@ -80,17 +81,28 @@ def build_service(meta, intro, sections, routes):
   <div class="container">
     <div class="service-section-intro service-projects-intro"><h2 id="projects-heading">{projects_title}</h2>{projects_intro}</div>
     <div class="service-case-list">
-      <article class="service-case" id="proyecto-revianz" aria-labelledby="revianz-service-title">
+      <article class="service-case" id="proyecto-escala24x7" aria-labelledby="escala-service-title">
         <div class="service-case-copy">
           <div class="service-case-brandline">
-            <span class="service-rv-logo" role="img" aria-label="Revianz"><span class="service-rv-logo-symbol" aria-hidden="true">RZ</span><span class="service-rv-logo-wordmark" aria-hidden="true">Revianz</span></span>
-            <p class="service-case-category">Desarrollo a medida · Para Digifianz</p>
+            <img class="service-case-logo-escala" src="/assets/brand/escala24x7-original.avif" alt="Escala24x7" width="1275" height="784" loading="lazy">
+            <p class="service-case-category">Integración a medida · Operación comercial</p>
           </div>
-          <h3 id="revianz-service-title">{revianz_title}</h3>
-          <div class="service-case-description">{revianz_copy}</div>
-          <div class="service-case-actions"><a class="case-button" href="{routes['caso-revianz']}">Conocé el caso REVIANZ</a><a class="text-link" href="https://revianz.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar revianz.com (nueva pestaña)">Visitar revianz.com</a></div>
+          <h3 id="escala-service-title">{escala_title}</h3>
+          <div class="service-case-description">{escala_copy}</div>
+          <div class="service-case-actions">{escala_link}</div>
         </div>
-        {mockup('scope', 'Vista ilustrativa de REVIANZ: servicios, importes y margen de un proyecto.', 'service-case-media service-case-mockup')}
+        <figure class="service-case-media">
+          <div class="service-case-stage service-integration-stage">
+            <p class="service-integration-label">Sincronización bidireccional</p>
+            <div class="service-integration-flow">
+              <div class="service-integration-system"><strong>HubSpot</strong><span>CRM comercial</span></div>
+              <span class="service-integration-arrows" aria-hidden="true">⇄</span>
+              <div class="service-integration-system"><strong>AWS</strong><span>Partner Central</span></div>
+            </div>
+            <p class="service-integration-result">Oportunidades actualizadas<br>en ambas plataformas</p>
+          </div>
+          <figcaption>Esquema de la integración desarrollada para Escala24x7.</figcaption>
+        </figure>
       </article>
       <article class="service-case" aria-labelledby="photonix-service-title">
         <div class="service-case-copy">

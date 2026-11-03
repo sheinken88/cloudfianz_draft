@@ -41,6 +41,7 @@
 .service-case-copy{padding:32px;min-width:0}
 .service-case-brandline{display:flex;flex-direction:column;align-items:start;gap:12px;margin-bottom:22px}
 .service-case-logo-photonix{display:block;width:155px;height:auto;max-width:100%}
+.service-case-logo-escala{display:block;width:110px;height:auto;max-width:100%}
 .service-case-category{font-size:12px;line-height:1.5;color:var(--muted)}
 .service-case h3{font-size:30px;line-height:1.25;letter-spacing:-.8px;max-width:510px;text-wrap:pretty}
 .service-case-description{font-size:15px;line-height:1.8;color:var(--muted);margin-top:18px;max-width:570px}
@@ -48,29 +49,19 @@
 .service-case-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 22px;margin-top:24px}
 .service-case-actions .text-link{font-size:13px}
 .service-page .service-case-media{margin:24px 24px 24px 0;min-width:0}
-.service-case-stage,.service-page .service-case-mockup .revianz-mockup-stage{display:flex;align-items:center;justify-content:center;min-height:320px;padding:20px;background:#f1f4f6;border:0;border-radius:10px}
+.service-case-stage{display:flex;align-items:center;justify-content:center;min-height:320px;padding:20px;background:#f1f4f6;border:0;border-radius:10px}
 .service-case-stage>img{display:block;width:100%;height:auto;max-width:100%;max-height:340px;object-fit:contain;border-radius:6px}
 .service-page .service-case-media>figcaption{font-size:11px;line-height:1.6;color:var(--muted);margin:12px 4px 0}
-/* The original REVIANZ preview stays readable inside the shared neutral frame. */
-.service-page .service-case-mockup .revianz-mockup{width:100%;min-width:0}
-.service-page .service-case-mockup .rm-paper{padding:20px;border-radius:14px;box-shadow:0 12px 28px #0d1f170d}
-.service-page .service-case-mockup .rm-scope-header{gap:12px;flex-wrap:wrap;padding-bottom:16px}
-.service-page .service-case-mockup .rm-scope-header .rm-title{font-size:17px;max-width:330px}
-.service-page .service-case-mockup .rm-label{font-size:10px;letter-spacing:0;text-transform:none}
-.service-page .service-case-mockup .rm-status{font-size:10px;padding:6px 9px;max-width:none}
-.service-page .service-case-mockup .rm-scope-body{grid-template-columns:minmax(0,1fr);gap:14px;margin-top:16px}
-.service-page .service-case-mockup .rm-services{gap:8px}
-.service-page .service-case-mockup .rm-service{font-size:12px;padding:12px;gap:10px;border-radius:10px}
-.service-page .service-case-mockup .rm-economics{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;align-items:center;padding:18px;border-radius:12px}
-.service-page .service-case-mockup .rm-economics>.rm-label{grid-column:1}
-.service-page .service-case-mockup .rm-percentage{grid-column:1;grid-row:2 / span 2;font-size:34px;margin:0}
-.service-page .service-case-mockup .rm-progress{grid-column:1 / -1;grid-row:4;margin:8px 0 0;height:6px}
-.service-page .service-case-mockup .rm-amount{grid-column:2;gap:10px;font-size:11px;flex-wrap:wrap}
-.service-page .service-case-mockup .rm-amount+.rm-amount{margin-top:2px}
-.service-page .service-case-mockup .rm-economics .rm-label,.service-page .service-case-mockup .rm-amount>span{color:#bdc9be}
-.service-rv-logo{display:inline-flex;align-items:center;gap:12.5px;flex:none;font-family:Inter,sans-serif;color:#0d1f17;line-height:1}
-.service-rv-logo-symbol{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12.2px;background:#c4f751;color:#0d1f17;font-size:11.1px;font-weight:900;letter-spacing:-.04em;box-shadow:inset 0 0 0 1px #ffffff47}
-.service-rv-logo-wordmark{font-size:21.1px;font-weight:700;letter-spacing:-.03em}
+/* An explanatory diagram of the actual integration, not a product screenshot. */
+.service-case-stage.service-integration-stage{flex-direction:column;gap:28px;padding:36px 24px}
+.service-integration-label{font-size:12px;font-weight:600;color:var(--muted);text-align:center}
+.service-integration-flow{display:grid;grid-template-columns:minmax(0,1fr) 42px minmax(0,1fr);align-items:center;width:100%}
+.service-integration-system{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-height:104px;padding:18px 8px;background:#fff;border:1px solid #dfe5eb;border-radius:10px;text-align:center}
+.service-integration-system strong{font-family:var(--heading);font-size:23px;font-weight:700;color:var(--navy);letter-spacing:-.5px}
+.service-integration-system span{font-size:12px;line-height:1.5;color:var(--muted)}
+.service-integration-arrows{font-size:30px;line-height:1;color:#08796f;text-align:center}
+.service-integration-result{font-size:13px;line-height:1.65;text-align:center;color:var(--navy)}
+@media(max-width:479px){.service-case-stage.service-integration-stage{padding:28px 12px;gap:22px}.service-integration-flow{grid-template-columns:minmax(0,1fr) 32px minmax(0,1fr)}.service-integration-system{min-height:96px}.service-integration-system strong{font-size:20px}.service-integration-system span{font-size:11px}.service-integration-arrows{font-size:26px}}
 .service-portfolio-link{margin-top:28px;text-align:right}
 
 /* One section combines how we work with what the client can contract. */
@@ -137,7 +128,7 @@
   .service-applications{column-gap:36px}
   .service-page .service-application h3{font-size:24px}
   .application-example{padding:20px}
-  .service-case-copy{padding:28px}.service-case h3{font-size:28px}.service-case-description{font-size:14px}.service-page .service-case-media{margin-right:20px}.service-case-stage,.service-page .service-case-mockup .revianz-mockup-stage{padding:16px}.service-page .service-case-mockup .rm-paper{padding:18px}
+  .service-case-copy{padding:28px}.service-case h3{font-size:28px}.service-case-description{font-size:14px}.service-page .service-case-media{margin-right:20px}.service-case-stage{padding:16px}
   .service-page .service-approach .service-section-intro{gap:48px}
   .approach-tabs>button{padding:22px 18px}
   .approach-tab-name{font-size:21px}
@@ -169,7 +160,7 @@
   .service-page .service-needs .service-section-intro{margin-bottom:44px}
   .service-page .service-needs .service-section-intro>h2{max-width:620px;text-wrap:pretty}
   .service-page .service-needs .service-section-intro>p{max-width:620px}
-  .service-case{grid-template-columns:1fr}.service-case-copy{padding:28px}.service-case h3{font-size:29px;max-width:600px}.service-case-description{font-size:15px;max-width:650px}.service-page .service-case-media{margin:0 24px 24px}.service-case-stage,.service-page .service-case-mockup .revianz-mockup-stage{padding:24px;min-height:0}.service-case-stage>img{max-height:340px}.service-page .service-case-mockup .revianz-mockup{max-width:520px}.service-case-actions{gap:12px 22px}.service-page .service-projects-intro{margin-bottom:32px}
+  .service-case{grid-template-columns:1fr}.service-case-copy{padding:28px}.service-case h3{font-size:29px;max-width:600px}.service-case-description{font-size:15px;max-width:650px}.service-page .service-case-media{margin:0 24px 24px}.service-case-stage{padding:24px;min-height:0}.service-case-stage>img{max-height:340px}.service-case-actions{gap:12px 22px}.service-page .service-projects-intro{margin-bottom:32px}
   .service-portfolio-link{text-align:left;margin-top:24px}
   .service-page .service-approach .service-section-intro{grid-template-columns:1fr;gap:20px;margin-bottom:28px}
   .approach-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
@@ -193,7 +184,7 @@
   .service-page .page-section h2,.service-page .page-contact h2{font-size:32px;letter-spacing:-.8px}
   .service-page .service-section-intro{margin-bottom:28px}
   .service-page .service-needs .service-section-intro>h2{font-size:32px;letter-spacing:-.8px}
-  .service-case{border-radius:12px}.service-case-copy{padding:22px}.service-case h3{font-size:27px}.service-case-description{font-size:14px}.service-case-category{font-size:11px}.service-case-brandline{margin-bottom:18px}.service-case-actions{margin-top:20px}.service-case-actions .text-link{font-size:12px}.service-page .service-case-media{margin:0 14px 20px}.service-case-stage,.service-page .service-case-mockup .revianz-mockup-stage{padding:12px;border-radius:8px}.service-page .service-case-media>figcaption{font-size:10px}.service-page .service-case-mockup .rm-paper{padding:14px}.service-page .service-case-mockup .rm-service{font-size:11px;padding:10px;gap:7px}.service-page .service-case-mockup .rm-scope-header .rm-status{margin-top:10px}.service-page .service-case-mockup .rm-economics{padding:14px;gap:8px 12px}.service-page .service-case-mockup .rm-percentage{font-size:30px}.service-page .service-case-mockup .rm-amount{display:block}.service-page .service-case-mockup .rm-amount strong{display:block}
+  .service-case{border-radius:12px}.service-case-copy{padding:22px}.service-case h3{font-size:27px}.service-case-description{font-size:14px}.service-case-category{font-size:11px}.service-case-brandline{margin-bottom:18px}.service-case-actions{margin-top:20px}.service-case-actions .text-link{font-size:12px}.service-page .service-case-media{margin:0 14px 20px}.service-case-stage{padding:12px;border-radius:8px}.service-page .service-case-media>figcaption{font-size:10px}
   .approach-tabs>button{padding:18px 12px}
   .approach-tab-name{font-size:clamp(17px,4.6vw,18px)}
   .approach-delivery{padding:20px}

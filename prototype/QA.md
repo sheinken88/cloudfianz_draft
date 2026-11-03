@@ -477,3 +477,11 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Revisión visual desktop y móvil. Sin desbordes de página ni del contenido de las cards a 320, 390, 1024 y 1280 px CSS en el servicio; Home también revisada a 320 y 1280 px. El CTA largo de ConsorcioAbierto se adapta a dos líneas a 320 px. Los titulares no desbordan.
 - Build y diff check correctos. H1 único, IDs únicos y assets existentes en ambas páginas. El lector generado cambia únicamente el H1 del servicio. Los párrafos aprobados de los proyectos y sus aclaraciones permanecen; no cambia el contenido de las páginas de casos.
 - Capturas de los dos Hero, casos de Home y servicio, y vista móvil en `/Users/sheinken/Desktop/Cloudfianz/outputs/cases-consistency-20261103/`. Cambios locales.
+
+
+## Escala24x7 en Desarrollo a Medida · 3 de noviembre de 2026
+
+- Escala24x7 reemplaza a REVIANZ únicamente en el portfolio del servicio; Photonix conserva contenido y presentación. Copy contrastado con el caso aprobado. Logo original cargado y esquema identificado como integración, sin interfaces ni métricas inventadas.
+- CTA mint abre el contenido correcto en el lector y el cierre devuelve a la página. Revisión visual de escritorio y móvil; medidas a 1280, 390 y 320 px CSS sin desbordes en la página ni en la card nueva. Consola sin errores ni avisos.
+- Build y diff check correctos. H1 e IDs únicos y recursos locales presentes. Solo cambia la entrada del servicio en content.json; Home y las demás páginas internas no cambian. Se retira del servicio el CSS de mockups REVIANZ ya innecesario.
+- Capturas guardadas en `/Users/sheinken/Desktop/Cloudfianz/outputs/service-escala-20261103/`. Viewport restablecido y página de servicio abierta en «Nuestro trabajo». Entrega local.

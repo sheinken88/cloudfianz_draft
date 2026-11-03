@@ -61,7 +61,7 @@ def page(key, body, kind):
     canonical = 'https://cloudfianz.com' + routes[key]
     page_styles = {'case-page': 'case-page.css', 'service-page': 'service-page.css', 'revianz-page': 'revianz-page.css', 'capability-page': 'capability-page.css'}
     extra_css = f'<link rel="stylesheet" href="/{page_styles[kind]}">'
-    if kind in ['service-page', 'revianz-page']:
+    if kind == 'revianz-page':
         extra_css += '<link rel="stylesheet" href="/revianz-mockups.css">'
     return f'''<!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#0B1D3A">

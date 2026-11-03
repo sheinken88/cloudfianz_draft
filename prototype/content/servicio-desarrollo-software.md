@@ -1,6 +1,6 @@
 # Desarrollo de software a medida
 
-Versión 5 · Titular complementario a la Home revisado el 3 de noviembre de 2026
+Versión 6 · Caso Escala24x7 incorporado el 3 de noviembre de 2026
 
 **URL propuesta:** `/es/desarrollo-software-a-medida`  
 **Title:** Desarrollo de software a medida para empresas | Cloudfianz  
@@ -42,13 +42,13 @@ Lanzá un servicio digital y validalo con una primera versión.
 
 ## Nuestro trabajo
 
-### REVIANZ: proyectos y seguimiento financiero para Digifianz
+### Escala24x7: oportunidades conectadas entre HubSpot y AWS
 
-Los proyectos de Digifianz reúnen equipos internos y colaboradores externos, con condiciones comerciales y costos que necesitan seguirse en conjunto. Cloudfianz desarrolló REVIANZ para conectar servicios, responsables, rentabilidad y facturación.
+Desarrollamos para Escala24x7 una integración a medida entre HubSpot y AWS Partner Central. Las oportunidades comerciales se sincronizan en ambos sentidos, con los datos adaptados a los requisitos de cada plataforma.
 
-El equipo puede consultar el margen por proyecto y período, relacionar las facturas con el trabajo y coordinar a los colaboradores desde un mismo entorno.
+Ventas y operación comparten información actualizada sin replicar cada oportunidad a mano. Los equipos pueden dar seguimiento al negocio con un pipeline conectado y menos tareas manuales.
 
-[Conocé el caso REVIANZ](caso-revianz.md).
+[Conocé el caso Escala24x7](caso-escala24x7.md).
 
 ### Photonix: una plataforma para coordinar el servicio técnico
 

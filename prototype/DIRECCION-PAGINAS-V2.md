@@ -48,3 +48,8 @@ Desarrollo de Software a Medida adopta «Software diseñado para los procesos de
 REVIANZ y Photonix comparten un artículo blanco con borde discreto y radio de 16 px, sobre el fondo mist del design system. La marca, el contexto, el título, los dos párrafos y los enlaces ocupan la columna izquierda. El producto o imagen institucional ocupa un marco neutro a la derecha. En móvil, se apilan en ese mismo orden. Las marcas mantienen sus identidades dentro de este sistema común.
 
 Ambos casos usan el CTA compartido `.case-button` verde mint de la Home. El enlace externo de REVIANZ conserva una jerarquía secundaria. Los textos aprobados y las aclaraciones de las imágenes se mantienen; el mockup de alcance de REVIANZ conserva todos sus servicios, importes y margen, con una disposición compacta de sus cifras. Photonix incorpora su logo original y su imagen se sigue identificando como contexto institucional.
+
+
+## Escala24x7 en Desarrollo a Medida · 3 de noviembre de 2026
+
+Por pedido del usuario, Escala24x7 reemplaza a REVIANZ en «Nuestro trabajo» del servicio. Mantiene el marco compartido con Photonix, el logo original, dos párrafos breves y el CTA mint. El texto resume la integración bidireccional entre HubSpot y AWS Partner Central y su beneficio operativo. La columna visual muestra un esquema tipográfico de esa conexión, identificado como tal; no representa una captura del software. El enlace abre el caso aprobado en el lector existente. Home y página del caso REVIANZ conservan su contenido.
