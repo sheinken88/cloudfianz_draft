@@ -90,3 +90,7 @@ SHA-256: `883ba903494b9eb6ae8886f05362eb3914ce1c97a9d347aa50d1fd3464f35893`.
 ## Odoo · 3 de noviembre de 2026
 
 Logo oficial positivo para el esquema de facturación de ConsorcioAbierto en el Hero de Automatizaciones. Archivo intacto: `odoo-official.svg`. [Fuente, dimensiones, hash y condiciones de presentación](ODOO-SOURCE.md).
+
+## Footer sin fondo · 3 de noviembre de 2026
+
+Se adopta el tratamiento del footer de https://cloudfianz.com/: nombre en blanco con Space Grotesk 700 y símbolo turquesa transparente. Se reutiliza `cloudfianz-symbol.png` intacto; no es una eliminación de fondo del JPG delineado. El footer deja de usar ese JPG y su soporte blanco.
