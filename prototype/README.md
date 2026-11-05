@@ -125,4 +125,4 @@ Las capturas originales de productos y los logos conservan su idioma de origen. 
 
 Validación de la implementación: las 39 páginas se abrieron a 390 px y 1440 px sin desbordamiento horizontal. Se revisaron visualmente el selector móvil y de escritorio, el cambio entre páginas equivalentes y el formulario con consentimiento traducido. No se enviaron consultas al CRM.
 
-Las imágenes de proyectos se muestran como contenido estático: no se abren al hacer clic ni ofrecen enlaces de ampliación. Se conservan sus pies descriptivos y textos alternativos en los tres idiomas.
+Las imágenes de proyectos se muestran como contenido estático: no se abren al hacer clic ni ofrecen enlaces de ampliación. Se conservan los textos alternativos en los tres idiomas. Los pies genéricos de producción se eliminan; los mockups de REVIANZ indican únicamente «Datos de ejemplo», «Sample data» o «Dados de exemplo».

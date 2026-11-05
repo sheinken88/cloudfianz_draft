@@ -22,17 +22,16 @@ def build_revianz(meta, intro, sections, routes):
     product_link = re.search(r'<a href="https://revianz\.com/"[^>]*>.*?</a>', results).group()
     product_link = product_link.replace('<a ', '<a class="button rv-product-cta" aria-label="Conocé REVIANZ (nueva pestaña)" ', 1)
     contact_title, contact = section('¿Tu operación')
-    report = mockup('scope', 'Servicios, importes y margen de un proyecto.')
-    preview = mockup('margin', 'Vista ilustrativa del margen, los ingresos y el costo de entrega.')
-    invoice = mockup('invoice', 'Vista ilustrativa de la conciliación de facturas vinculadas al proyecto.')
-    collaboration_preview = mockup('share', 'Vista ilustrativa de un alcance compartido con una empresa colaboradora.')
+    report = mockup('scope')
+    preview = mockup('margin')
+    invoice = mockup('invoice')
+    collaboration_preview = mockup('share')
     return f'''
 <section class="rv-hero">
   <div class="container">
     <nav class="breadcrumbs" aria-label="Ubicación"><ol><li><a href="/es">Inicio</a></li><li><a href="/es/casos">Casos</a></li><li aria-current="page">REVIANZ para Digifianz</li></ol></nav>
     <div class="rv-cover"><div><p class="rv-context">REVIANZ · Desarrollado para Digifianz</p><h1>{html.escape(meta['H1'])}</h1><div class="rv-summary">{opening}</div></div><dl class="rv-facts"><div><dt>Cliente</dt><dd>Digifianz</dd></div><div><dt>Trabajo de Cloudfianz</dt><dd>Desarrollo de software a medida</dd></div><div><dt>Producto</dt><dd>Gestión operativa y financiera de proyectos<br><a class="rv-product-link" href="https://revianz.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar revianz.com (nueva pestaña)">Visitar revianz.com</a></dd></div></dl></div>
     {report}
-    <p class="rv-demo-note">Vistas ilustrativas del producto. Los importes no representan resultados financieros de Digifianz.</p>
   </div>
 </section>
 <section class="rv-context-section container" id="contexto" aria-labelledby="rv-context-title"><div class="rv-context-copy"><h2 id="rv-context-title">{challenge_title.split(': ', 1)[1].capitalize()}</h2><div class="page-prose">{challenge}</div></div>{collaboration_preview}</section>

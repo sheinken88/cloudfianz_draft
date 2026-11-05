@@ -8,7 +8,7 @@ def hero_media(key):
         <div class="service-hero-preview">
           <img src="/assets/hero/despegar-cotizador-hero-v1.jpg" alt="Vista adaptada del cotizador de Despegar: presupuesto, productos y distribución por marca y país." width="1701" height="924" fetchpriority="high" decoding="async">
         </div>
-        <figcaption><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"><span><strong>Cotizador comercial a medida</strong><span>Vista adaptada del producto</span></span></figcaption>
+        <figcaption><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"></figcaption>
       </figure>'''
     if key == 'servicio-integracion-sistemas':
         return '''
@@ -22,7 +22,7 @@ def hero_media(key):
           </div>
           <div class="hero-sync-note"><span class="hero-sync-symbol" aria-hidden="true">↔</span><p>Los cambios se reflejan<br><strong>en ambos sistemas.</strong></p></div>
         </div>
-        <figcaption><img src="/assets/brand/escala24x7-original.avif" alt="Escala24x7" width="1275" height="784"><span><strong>Oportunidades conectadas</strong><span>Esquema de la integración</span></span></figcaption>
+        <figcaption><img src="/assets/brand/escala24x7-original.avif" alt="Escala24x7" width="1275" height="784"></figcaption>
       </figure>'''
     if key == 'servicio-automatizacion-procesos':
         return '''
@@ -35,6 +35,6 @@ def hero_media(key):
           <div class="hero-flow-endpoint"><img class="hero-flow-odoo" src="/assets/brand/odoo-official.svg" alt="Odoo" width="919" height="495"><span>Generación de<br><strong>facturas</strong></span><svg class="hero-invoice-stack" viewBox="0 0 48 52" fill="none" aria-hidden="true"><path d="M12 7h29v37H12z"/><path d="M6 13h29v37H6z"/><path d="M13 24h15m-15 7h15m-15 7h9"/></svg></div>
           <p class="hero-flow-result">Más de <strong>15.000 facturas</strong> al mes</p>
         </div>
-        <figcaption><img src="/assets/brand/consorcio-abierto-official.svg" alt="ConsorcioAbierto" width="216" height="28"><span><strong>Facturación automática</strong><span>Esquema del proceso</span></span></figcaption>
+        <figcaption><img src="/assets/brand/consorcio-abierto-official.svg" alt="ConsorcioAbierto" width="216" height="28"></figcaption>
       </figure>'''
     raise ValueError(f'Unsupported service hero: {key}')

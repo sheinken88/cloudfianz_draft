@@ -6,7 +6,7 @@ from pathlib import Path
 COPY = json.loads((Path(__file__).resolve().parents[1] / 'data/revianz-mockups-es.json').read_text())
 
 
-def mockup(kind, caption, class_name=''):
+def mockup(kind, class_name=''):
     if kind in ('scope', 'scope-services'):
         t = COPY['scopeDefinition']
         rows = ''.join(f'<div class="rm-service"><span>{service}</span><span>{hours}</span><strong>{amount}</strong></div>' for service, hours, amount in [('Lifecycle strategy', '48 h', '$7,200'), ('Campaign delivery', '72 h', '$10,800'), ('Reporting', '16 h', '$2,400')])
@@ -32,4 +32,4 @@ def mockup(kind, caption, class_name=''):
         body = f'''<div class="rm-paper rm-invoice"><div class="rm-invoice-heading"><p class="rm-title">{t['title']}</p><span class="rm-status">{t['matched']}</span></div><div class="rm-invoice-row"><div><strong>{t['client']}</strong><strong>$48,000</strong></div><p>{t['outgoing']}</p></div><div class="rm-match-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14m-7-7 7 7 7-7"/></svg></div><div class="rm-invoice-row rm-invoice-partner"><div><strong>{t['partner']}</strong><strong>$9,600</strong></div><p>{t['incoming']}</p></div></div>'''
     else:
         raise ValueError(f'Unknown REVIANZ mockup: {kind}')
-    return f'<figure class="rv-mockup-figure {class_name}"><div class="revianz-mockup-stage"><div class="revianz-mockup" role="img" aria-label="{html.escape(label, quote=True)}"><div aria-hidden="true">{body}</div></div></div><figcaption>{html.escape(caption)}</figcaption></figure>'
+    return f'<figure class="rv-mockup-figure {class_name}"><div class="revianz-mockup-stage"><div class="revianz-mockup" role="img" aria-label="{html.escape(label, quote=True)}"><div aria-hidden="true">{body}</div></div></div><figcaption>Datos de ejemplo</figcaption></figure>'

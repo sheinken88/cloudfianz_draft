@@ -615,3 +615,9 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Se quitaron enlaces a archivos de imagen, acciones de ampliación y cursores de zoom de los layouts compartidos. Se preservaron imágenes, recortes, estilos y pies descriptivos.
 - Las cuatro páginas afectadas (Desarrollo, Automatizaciones, Despegar y ConsorcioAbierto), en tres idiomas, se verificaron a 390 y 1440 px: 24 comprobaciones sin enlaces de ampliación, cursores de zoom ni desbordes horizontales. Revisión visual del Hero de Despegar completada.
 - Las capturas originales conservan el texto de origen, tal como aceptó el usuario. No se enviaron consultas de prueba al CRM.
+
+## 2026-11-05 · Pies de imagen simplificados
+
+- Eliminadas las leyendas genéricas de producción de Home, servicios e índice y páginas de casos. Se conservan logos de clientes y descripciones accesibles.
+- El componente compartido de mockups de REVIANZ muestra únicamente «Datos de ejemplo» y sus traducciones («Sample data», «Dados de exemplo»). Se retiró la aclaración redundante del Hero.
+- Build, cobertura i18n, sintaxis JS y diff verificados. Comprobadas las 39 páginas a 390 y 1440 px (78 comprobaciones): sin desbordes ni otros textos en los pies; cada mockup mantiene su aclaración. Revisión visual de la sección de casos de Home completada.

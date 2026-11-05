@@ -87,7 +87,6 @@ def build_case(meta, intro, sections, routes):
     <div class="case-solution-heading"><p class="case-section-label">El producto</p><h2 id="solucion-title">{_short_title(solution_title)}</h2><div class="page-prose">{solution_copy[0]}</div></div>
     <figure class="case-product-overview">
       <div class="static-image"><img src="/assets/hero/despegar-cotizador-hero-v1.jpg" alt="Vista adaptada del cotizador de Despegar con una campaña de prueba: presupuesto, distribución por marca y país y paneles de productos." width="1701" height="924" loading="lazy" decoding="async"></div>
-      <figcaption><span>Vista adaptada del cotizador: presupuesto, marcas y países.</span></figcaption>
     </figure>
     <div class="case-product-workflow page-prose">{solution_copy[1]}</div>
     <div class="case-product-rules"><div>{_feature(features[0])}</div><div>{_feature(features[2])}</div></div>
@@ -95,7 +94,6 @@ def build_case(meta, intro, sections, routes):
     <div class="case-catalog">
       <figure class="case-catalog-figure">
         <div class="case-catalog-crop"><img src="/assets/projects/despegar-catalogo-original.png" alt="Detalle de la ventana Agregar Producto: buscador, formatos publicitarios, precios unitarios y selección de productos." width="1641" height="883" loading="lazy" decoding="async"></div>
-        <figcaption><span>Detalle del catálogo del cotizador.</span></figcaption>
       </figure>
       <div class="case-catalog-copy"><div>{_feature(features[1])}</div><div>{_feature(features[3])}</div></div>
     </div>

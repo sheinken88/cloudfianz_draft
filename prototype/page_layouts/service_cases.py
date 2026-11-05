@@ -12,16 +12,14 @@ BRANDS = {
 
 def case_media(case):
     if case == 'revianz':
-        return mockup('scope', 'Vista ilustrativa de REVIANZ. Servicios, importes y margen con datos de ejemplo.', 'service-case-media service-case-mockup')
+        return mockup('scope', 'service-case-media service-case-mockup')
     if case == 'despegar':
         return '''<figure class="service-case-media">
           <div class="service-case-stage"><div class="static-image"><img src="/assets/hero/despegar-cotizador-hero-v1.jpg" alt="Vista adaptada del cotizador de Despegar: presupuesto y productos distribuidos por marca y país." width="1701" height="924" loading="lazy" decoding="async"></div></div>
-          <figcaption>Vista adaptada del cotizador desarrollado para Despegar.</figcaption>
         </figure>'''
     if case == 'properix':
         return '''<figure class="service-case-media">
           <div class="service-case-stage"><img src="/assets/brand/properix-product-context.png" alt="Interfaz de administración de Properix, como contexto del negocio de ConsorcioAbierto." width="610" height="253" loading="lazy" decoding="async"></div>
-          <figcaption>Plataforma de Properix. Imagen de contexto del cliente, no de la integración.</figcaption>
         </figure>'''
     if case == 'escala24x7':
         return '''<figure class="service-case-media">
@@ -34,6 +32,5 @@ def case_media(case):
             </div>
             <p class="service-integration-result">Oportunidades actualizadas<br>en ambas plataformas</p>
           </div>
-          <figcaption>Esquema de la integración desarrollada para Escala24x7.</figcaption>
         </figure>'''
     raise ValueError(f'Unsupported service case: {case}')

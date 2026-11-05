@@ -50,7 +50,6 @@ def build_properix(meta, intro, sections, routes):
       </div>
       <figure class="billing-product">
         <div class="billing-product-image"><img src="/assets/projects/consorcioabierto-plataforma-usuario.png" alt="Plataforma de ConsorcioAbierto: resumen de fondos, pagos, reclamos y agenda de una administración." width="610" height="253" fetchpriority="high" decoding="async"></div>
-        <figcaption>Plataforma de ConsorcioAbierto. Imagen de contexto del cliente.</figcaption>
       </figure>
     </div>
     <dl class="billing-project-facts"><div><dt>Trabajo de Cloudfianz</dt><dd>Integración y automatización de la facturación</dd></div><div><dt>Plataformas conectadas</dt><dd>HubSpot, AWS y Odoo</dd></div><div><dt>Alcance</dt><dd>Argentina, Uruguay, Paraguay y Colombia</dd></div></dl>
@@ -75,7 +74,6 @@ def build_properix(meta, intro, sections, routes):
       <li><div class="billing-flow-brand"><img class="billing-aws" src="/assets/aws/aws-logo-color.svg" alt="AWS" width="304" height="182" loading="lazy" decoding="async"></div><div class="billing-flow-copy"><strong>Reglas de cada contrato</strong><span>Step Functions y Lambda</span></div></li>
       <li><div class="billing-flow-brand"><img class="billing-odoo" src="/assets/brand/odoo-official.svg" alt="Odoo" width="919" height="495" loading="lazy" decoding="async"></div><div class="billing-flow-copy"><strong>Facturas generadas</strong><span>Importes según período y país</span></div></li>
     </ol>
-    <figcaption>Esquema de la integración desarrollada por Cloudfianz.</figcaption>
   </figure>
   <ol class="billing-rules">{rules}</ol>
   <div class="billing-delivery"><h3>Ordenar las reglas también fue parte del proyecto.</h3><div class="page-prose">{''.join(solution_copy[1:])}</div></div>

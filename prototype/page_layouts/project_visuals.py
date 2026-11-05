@@ -20,7 +20,6 @@ def hero_visual(key):
     if key == 'caso-photonix':
         return '''<figure class="pv-figure pv-hero pv-hero-photo">
           <div class="pv-photo-stage"><img src="/assets/brand/photonix-ethos-official.jpg" alt="Equipamiento de radioterapia Ethos en una imagen institucional de Photonix." width="1920" height="1080" fetchpriority="high" decoding="async"></div>
-          <figcaption>Equipamiento de radioterapia. Imagen de contexto de la actividad de Photonix.</figcaption>
         </figure>'''
     if key == 'caso-escala24x7':
         return f'''<figure class="pv-figure pv-hero pv-hero-integration">
@@ -33,7 +32,6 @@ def hero_visual(key):
             </div>
             <p class="pv-cover-note">La información comercial se actualiza en ambos sentidos.</p>
           </div>
-          <figcaption>Esquema de la integración desarrollada para Escala24x7.</figcaption>
         </figure>'''
     if key == 'caso-ads-mexicana':
         return f'''<figure class="pv-figure pv-hero pv-hero-quotation">
@@ -46,7 +44,6 @@ def hero_visual(key):
             </div>
             <p class="pv-cover-note">La cotización queda registrada en el negocio de HubSpot.</p>
           </div>
-          <figcaption>Esquema del proceso comercial de ADS Mexicana, no una captura del software.</figcaption>
         </figure>'''
     raise ValueError(f'Unsupported project hero: {key}')
 
@@ -64,7 +61,6 @@ def solution_visual(key, items=None):
             </div>
             <p class="pv-operation-note">La bitácora interna queda separada de la orden que recibe el cliente.</p>
           </div>
-          <figcaption>Esquema del sistema desarrollado para Photonix: dos vistas sobre la misma información.</figcaption>
         </figure>'''
     if key == 'caso-escala24x7':
         exchange_copy = items if items is not None else [
@@ -84,7 +80,6 @@ def solution_visual(key, items=None):
             </ul>
             <p class="pv-exchanges-note">Los campos de HubSpot se adaptan a la estructura que requiere AWS Partner Central.</p>
           </div>
-          <figcaption>Intercambios de la integración de Escala24x7. Esquema explicativo.</figcaption>
         </figure>'''
     if key == 'caso-ads-mexicana':
         return f'''<figure class="pv-figure pv-solution pv-quotation">
@@ -96,6 +91,5 @@ def solution_visual(key, items=None):
               <li><p class="pv-step-label">Registro en HubSpot</p><strong>La propuesta queda asociada</strong><p>Se crea la cotización y se vincula al negocio correspondiente.</p></li>
             </ol>
           </div>
-          <figcaption>Esquema del flujo del cotizador de ADS Mexicana.</figcaption>
         </figure>'''
     raise ValueError(f'Unsupported project solution: {key}')
