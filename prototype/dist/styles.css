@@ -72,3 +72,6 @@ dialog{color:var(--ink);border:0;border-radius:12px;box-shadow:0 25px 100px #000
   .nav-solutions-links a{font-size:14px;min-height:48px;padding:12px 14px}
 }
 @media(max-width:479px){.main-nav{max-height:calc(100dvh - 74px)}}
+
+/* Shared HubSpot embed on Home and Contact. */
+.hubspot-form-container{min-width:0;width:100%;margin-top:24px}.hubspot-form-container iframe{max-width:100%;width:100%;border:0}#hubspot-form-status{font-size:14px;line-height:1.6;margin-top:16px}

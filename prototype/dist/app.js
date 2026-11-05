@@ -127,19 +127,43 @@ document.addEventListener('click', (event) => {
   if (event.target.closest('[data-go-form]')) {
     event.preventDefault(); infoDialog.close();
     document.getElementById('consulta').scrollIntoView({ behavior: 'instant', block: 'start' });
-    document.getElementById('name').focus({ preventScroll: true });
+    document.getElementById('hubspot-form-container')?.focus({ preventScroll: true });
   }
   if (event.target.closest('[data-privacy]')) {
-    document.querySelector('#info-content').innerHTML = '<p class="info-caption">Propuesta local</p><h2 id="info-title">Privacidad</h2><p>Este prototipo no envía ni guarda los datos del formulario y no incluye herramientas de analítica.</p><p>La política de privacidad y los avisos del sitio se completarán al definir la recepción de consultas, la agenda y la medición, antes de publicar.</p>';
+    document.querySelector('#info-content').innerHTML = '<p class="info-caption">Propuesta local</p><h2 id="info-title">Privacidad</h2><p>El formulario de contacto es provisto por HubSpot. Al enviarlo, los datos que ingreses se comparten con Cloudfianz a través de HubSpot para gestionar tu consulta.</p><p>La política de privacidad y los avisos del sitio se completarán antes de publicar el sitio.</p>';
     showDialog(infoDialog);
   }
 });
 
-document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const status = document.querySelector('#form-status');
-  status.textContent = 'Prueba completada. En el sitio publicado recibirías la confirmación de tu consulta y el equipo continuaría la conversación por email. Esta prueba no envió ni guardó tus datos.';
-  status.hidden = false;
-  status.scrollIntoView({ behavior: 'instant', block: 'nearest' });
-});
-document.querySelector('#contact-form')?.addEventListener('input', () => { document.querySelector('#form-status').hidden = true; });
+// Use the original HubSpot form on both contact entry points.
+const hubspotContainer = document.querySelector('#hubspot-form-container');
+if (hubspotContainer) {
+  const status = document.querySelector('#hubspot-form-status');
+  const showError = () => {
+    status.hidden = false;
+    status.textContent = 'No pudimos cargar el formulario. Recargá la página para volver a intentarlo.';
+  };
+  const timeout = window.setTimeout(showError, 20000);
+  const script = document.createElement('script');
+  script.src = 'https://js.hsforms.net/forms/embed/v2.js';
+  script.async = true;
+  script.onerror = () => { window.clearTimeout(timeout); showError(); };
+  script.onload = () => {
+    try {
+      window.hbspt.forms.create({
+        portalId: '599312',
+        formId: '667182f6-5ce1-4df4-baac-b9309cfc78a4',
+        region: 'na1',
+        target: '#hubspot-form-container',
+        onFormReady: () => {
+          window.clearTimeout(timeout);
+          status.hidden = true;
+        },
+      });
+    } catch {
+      window.clearTimeout(timeout);
+      showError();
+    }
+  };
+  document.head.appendChild(script);
+}

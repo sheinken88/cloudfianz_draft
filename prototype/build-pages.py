@@ -13,6 +13,7 @@ routes = json.loads((ROOT / 'page-routes.json').read_text())
 from page_layouts.revianz_mockups import mockup
 
 home = (ROOT / 'templates/home.html').read_text()
+home = home.replace('<!-- CONTACT_FORM -->', (ROOT / 'templates/contact-form.html').read_text().strip())
 home = home.replace('<!-- SITE_FOOTER -->', (ROOT / 'templates/footer.html').read_text().strip())
 home = home.replace('<!-- REVIANZ_HOME_PREVIEW -->', mockup(
     'margin', 'Vista ilustrativa del producto. Datos de ejemplo.',

@@ -69,7 +69,7 @@ Las captions distinguen el trabajo mostrado: Despegar usa la vista adaptada del 
 
 La entrega incluye trece páginas: Home, tres servicios, índice de casos, seis casos individuales, Contacto y Cómo trabajamos. No sustituye la web actual en `src/`. Los contenidos de casos y servicios se leen en sus URLs propias; ningún enlace público abre el lector provisional.
 
-La agenda y el envío del formulario son simulaciones identificadas como tales. El formulario valida los campos y muestra una confirmación de prueba, sin enviar ni guardar los datos ingresados. No hay recepción comercial, reserva de reuniones ni medición conectadas. La política de privacidad permanece como aviso provisional.
+La agenda sigue siendo una simulación identificada como tal. El formulario de Home y Contacto está conectado al embed original de HubSpot y sus envíos son reales. No hay reserva de reuniones ni medición propia conectadas. La política de privacidad permanece como aviso provisional.
 
 El prototipo tiene `noindex, nofollow`. La recepción de consultas, la agenda, la política definitiva, la analítica, el SEO técnico de lanzamiento y el despliegue quedan para la etapa posterior a la revisión del diseño.
 
@@ -97,7 +97,7 @@ Cada solución mantiene un esquema propio: Photonix conecta técnicos y administ
 
 ## Contacto, Cómo trabajamos y pie compartido
 
-Contacto abre con una explicación breve y el formulario visible junto al título en escritorio. Reutiliza los cuatro campos y el comportamiento de prueba de la Home, con una nota explícita: no envía ni guarda datos y no tiene backend conectado. La explicación del siguiente paso acompaña el formulario sin comprometer un plazo de respuesta.
+Contacto abre con una explicación breve y el formulario visible junto al título en escritorio. Comparte con la Home el formulario original de HubSpot (portal `599312`, formulario `667182f6-5ce1-4df4-baac-b9309cfc78a4`, región `na1`). El embed se define en `templates/contact-form.html` y se carga desde `dist/app.js`, con estados de carga y error. Los envíos son reales y se gestionan en HubSpot. La explicación del siguiente paso acompaña el formulario sin comprometer un plazo de respuesta.
 
 Cómo trabajamos presenta auditoría, diseño, implementación y soporte como modalidades independientes. El selector se activa progresivamente con JavaScript; sin él, se leen todos los paneles. Cada modalidad explica actividad, entregables y participación del equipo. Los acuerdos de alcance y validación, ejemplos de proyectos y preguntas frecuentes breves completan el recorrido hacia Contacto; presupuesto, calendario y responsabilidades se definen según cada proyecto.
 
