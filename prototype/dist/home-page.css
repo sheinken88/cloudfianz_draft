@@ -135,13 +135,13 @@
 .home-method-footer>.text-link{font-size:13px;min-height:44px;display:inline-flex;align-items:center;color:var(--home-accent)}
 @media(prefers-reduced-motion:reduce){.home-method-tabs>button{transition:none}}
 
-/* Original AWS identities sit together in one service surface. */
+/* Original AWS identities illustrate the four infrastructure benefits. */
 .home-infrastructure{background:var(--mist)}
-.home-infrastructure-layout{display:grid;grid-template-columns:1fr 1.35fr;gap:64px;align-items:center}
+.home-infrastructure-layout{display:grid;grid-template-columns:1.1fr 1.3fr;gap:64px;align-items:center}
 .home-aws-brand{display:block;width:108px;height:auto;max-height:72px;object-fit:contain;object-position:left;margin-bottom:28px}
-.home-infrastructure-intro h2{font-size:clamp(36px,3.4vw,46px);line-height:1.17;letter-spacing:-1.5px;max-width:460px}
+.home-infrastructure-intro h2{font-size:clamp(36px,3vw,42px);line-height:1.17;letter-spacing:-1.5px;max-width:520px}
 .home-infrastructure-intro>p{font-size:16px;line-height:1.8;color:var(--muted);margin-top:24px;max-width:490px}
-.home-infrastructure-intro>.home-infrastructure-value{font-size:14px;line-height:1.8;margin-top:18px;color:#526772}
+.home-infrastructure-intro>.home-infrastructure-value{font-size:16px;line-height:1.8;margin-top:18px;color:#526772}
 .home-infrastructure-intro>.text-link{display:inline-flex;align-items:center;min-height:44px;font-size:13px;line-height:1.6;color:var(--home-accent);margin-top:24px}
 .home-aws-services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#e2e8ed;border:1px solid #e2e8ed;border-radius:16px;overflow:hidden;box-shadow:0 16px 40px #0b1d3a06}
 .home-aws-service{min-width:0;background:#fff;padding:30px 28px 32px}

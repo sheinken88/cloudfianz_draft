@@ -147,3 +147,10 @@ Los enlaces «Conocé el caso» de la Home reciben mayor presencia con un botón
 ## Navegación por soluciones · 3 de noviembre de 2026
 
 La cabecera incorpora un desplegable «Soluciones» con los tres accesos solicitados: «Software a medida», «Integraciones» y «Automatizaciones». Los enlaces conectan las páginas de servicio existentes. Un panel blanco con borde tenue y estados mint conserva el lenguaje del sitio; en móvil, el listado se integra en el menú principal. La cabecera es compartida con las páginas internas. Se usa un disclosure nativo, con apertura por clic/teclado y cierre por Escape, clic exterior o salida del foco.
+
+
+## AWS: infraestructura y beneficios · 5 de noviembre de 2026
+
+El texto aportado por el usuario reemplaza la introducción y los cuatro beneficios anteriores. Se mantiene íntegro el titular «Tu solución, sobre la misma infraestructura que usan las empresas más grandes del mundo.», los dos párrafos y las cuatro descripciones. La sección mantiene posición, fondo mist, tipografías, logo AWS monocromo original, superficie blanca dividida en cuatro celdas y enlace al caso ConsorcioAbierto. Se ajustan únicamente la proporción de las columnas, la escala del titular y el tamaño del párrafo de cierre para acomodar el nuevo contenido.
+
+Los beneficios se acompañan con AWS Shield, Elastic Load Balancing, AWS Auto Scaling y AWS Cost Explorer, en ese orden. Los cuatro SVG se extraen intactos del paquete oficial ya utilizado; su procedencia y hashes quedan en `dist/assets/aws/SOURCES.md`. En móvil se conserva el icono a la izquierda del texto y una sola columna de tarjetas.

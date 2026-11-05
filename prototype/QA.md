@@ -589,3 +589,13 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Revisión responsive a 320, 390, 768, 1024 y 1440 px CSS: sin desbordes horizontales de página, formulario, pestañas ni footer. Revisión visual independiente de portadas, contacto completo y footer desktop/mobile sin hallazgos pendientes.
 - Auditoría estática de las trece páginas: un H1 por página, IDs únicos, 310 enlaces locales y 195 referencias de assets válidas. Footers idénticos y hoja compartida cargada en todas las páginas. Sin enlaces públicos data-content ni CTA hacia las antiguas anclas de contacto. Las anclas de Home se conservan para compatibilidad.
 - Build, compilación de Python y diff check correctos. Capturas en `/Users/sheinken/Desktop/Cloudfianz/outputs/contact-method-footer-20261103/`. Cambios locales, sin publicación ni conexión de recepción comercial.
+
+
+## AWS: nuevo contenido e iconos oficiales · 5 de noviembre de 2026
+
+- Se incorporan íntegros el titular, los dos párrafos y los cuatro beneficios aportados por el usuario. Se conserva el CTA al caso ConsorcioAbierto, la estética y la ubicación de la sección. El HTML de la Home fuera de AWS permanece idéntico a la versión anterior; las doce páginas internas no cambian.
+- Los cuatro SVG oficiales (Shield, Elastic Load Balancing, Auto Scaling y Cost Explorer) cargan correctamente, sin transformaciones. Procedencia y hashes registrados en `dist/assets/aws/SOURCES.md`.
+- Build correcto, respuesta HTTP 200 y `git diff --check` sin problemas. IDs y referencias ARIA de AWS válidos, imágenes locales existentes y consola del navegador sin errores ni advertencias.
+- Medidas a 1440, 1024, 960, 768, 390 y 320 px CSS: sin desbordes horizontales de página o sección, sin desbordes del texto y cinco imágenes cargadas. Revisión visual de escritorio y móvil completada.
+- Capturas: `/Users/sheinken/Desktop/Cloudfianz/output/playwright/cloudfianz-aws-20261105/aws-desktop.png`, `aws-mobile.png` y `aws-mobile-viewport.png`. La captura de la sección completa en móvil oculta temporalmente la cabecera fija y el enlace de salto para evitar que se superpongan durante la captura larga; la captura del viewport conserva la interfaz real.
+- Cambios locales en el rediseño de `prototype/`; sin publicación.
