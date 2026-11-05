@@ -13,3 +13,6 @@ src/assets/videos/*.webm
 
 # Local Python page builders
 __pycache__/
+
+# Temporary report from strict localization build
+prototype/i18n/missing.json

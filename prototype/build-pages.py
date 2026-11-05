@@ -33,7 +33,7 @@ def native_links(text):
 
 home = native_links(absolute_assets(home))
 home = home.replace('</head>', '<link rel="canonical" href="https://cloudfianz.com/es">\n</head>')
-(DIST / 'index.html').write_text(home)
+documents = {'home': home}
 header = re.search(r'<header class="site-header">.*?</header>', home, re.S).group()
 footer = re.search(r'<footer\b[^>]*>.*?</footer>', home, re.S).group()
 dialogs = re.search(r'<dialog id="reader-dialog".*?</dialog>\s*<dialog id="info-dialog".*?</dialog>', home, re.S).group()
@@ -116,7 +116,8 @@ for key, builder, kind in [('pagina-contacto', build_contact, 'contact-page'), (
     pages.append((key, builder(meta, intro, sections, routes), kind))
 
 for key, body, kind in pages:
-    output = DIST / routes[key].lstrip('/') / 'index.html'
-    output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(page(key, body, kind))
+    documents[key] = page(key, body, kind)
 print(f'Built homepage and {len(pages)} standalone pages.')
+
+from i18n.render import build_locales
+build_locales(documents, DIST)

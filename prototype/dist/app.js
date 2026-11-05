@@ -1,3 +1,5 @@
+const messages = JSON.parse(document.getElementById('site-messages').textContent);
+const siteLocale = document.documentElement.lang.split('-')[0];
 const menuButton = document.querySelector('.menu-toggle');
 const menu = document.querySelector('#main-nav');
 const solutionsMenu = menu.querySelector('.nav-solutions');
@@ -91,27 +93,7 @@ dialogs.forEach((dialog) => {
   });
 });
 
-let contentRequest;
-async function openContent(key) {
-  const target = document.querySelector('#reader-content');
-  target.innerHTML = '<h1 id="reader-title">Contenido del proyecto</h1><p>Cargando el contenido…</p>';
-  showDialog(reader);
-  try {
-    contentRequest ??= fetch('/content.json').then((response) => {
-      if (!response.ok) throw new Error('No se pudo cargar el contenido');
-      return response.json();
-    }).catch((error) => { contentRequest = undefined; throw error; });
-    const contents = await contentRequest;
-    if (!contents[key]) throw new Error('Contenido no disponible');
-    target.innerHTML = contents[key];
-    reader.scrollTop = 0;
-  } catch {
-    target.innerHTML = '<h1 id="reader-title">No pudimos cargar el texto.</h1><p>Cerrá esta ventana e intentá abrir el caso o servicio de nuevo.</p>';
-  }
-}
 document.addEventListener('click', (event) => {
-  const contentLink = event.target.closest('[data-content]');
-  if (contentLink) { event.preventDefault(); openContent(contentLink.dataset.content); }
   const contactLink = event.target.closest('[data-reader-contact]');
   if (contactLink) {
     if (!document.getElementById('contacto')) return;
@@ -121,7 +103,7 @@ document.addEventListener('click', (event) => {
   }
   if (event.target.closest('[data-agenda]')) {
     event.preventDefault();
-    document.querySelector('#info-content').innerHTML = '<p class="info-caption">Vista previa de la agenda</p><h2 id="info-title">Hablemos de tu negocio.</h2><p>Contanos qué querés mejorar y evaluemos cómo podemos ayudarte.</p><p>En la web publicada, este paso permitirá coordinar una reunión con Cloudfianz. La agenda todavía no está conectada en esta propuesta local.</p><a class="button" href="#consulta" data-go-form>Prefiero enviar una consulta </a>';
+    document.querySelector('#info-content').innerHTML = messages.agenda;
     showDialog(infoDialog);
   }
   if (event.target.closest('[data-go-form]')) {
@@ -130,7 +112,7 @@ document.addEventListener('click', (event) => {
     document.getElementById('hubspot-form-container')?.focus({ preventScroll: true });
   }
   if (event.target.closest('[data-privacy]')) {
-    document.querySelector('#info-content').innerHTML = '<p class="info-caption">Propuesta local</p><h2 id="info-title">Privacidad</h2><p>El formulario de contacto es provisto por HubSpot. Al enviarlo, los datos que ingreses se comparten con Cloudfianz a través de HubSpot para gestionar tu consulta.</p><p>La política de privacidad y los avisos del sitio se completarán antes de publicar el sitio.</p>';
+    document.querySelector('#info-content').innerHTML = messages.privacy;
     showDialog(infoDialog);
   }
 });
@@ -141,7 +123,7 @@ if (hubspotContainer) {
   const status = document.querySelector('#hubspot-form-status');
   const showError = () => {
     status.hidden = false;
-    status.textContent = 'No pudimos cargar el formulario. Recargá la página para volver a intentarlo.';
+    status.textContent = messages.formError;
   };
   const timeout = window.setTimeout(showError, 20000);
   const script = document.createElement('script');
@@ -154,8 +136,31 @@ if (hubspotContainer) {
         portalId: '599312',
         formId: '667182f6-5ce1-4df4-baac-b9309cfc78a4',
         region: 'na1',
+        locale: siteLocale === 'pt' ? 'pt-br' : siteLocale,
+        translations: { [siteLocale === 'pt' ? 'pt-br' : siteLocale]: { fieldLabels: messages.fields, submitText: messages.submit } },
+        submitText: messages.submit,
+        inlineMessage: messages.thanks,
         target: '#hubspot-form-container',
-        onFormReady: () => {
+        onFormReady: ($form) => {
+          // Translate only known consent text, preserving inputs, subscription IDs,
+          // links, and the meaning of the original HubSpot configuration.
+          const form = $form?.nodeType ? $form : $form?.[0];
+          const consent = form?.querySelector('.legal-consent-container');
+          if (consent) {
+            const walker = consent.ownerDocument.createTreeWalker(consent, 4);
+            let node;
+            while ((node = walker.nextNode())) {
+              const source = node.textContent.replace(/\s+/g, ' ').trim();
+              const translated = messages.consent[source];
+              if (translated) {
+                node.textContent = node.textContent.replace(source, translated);
+                // HubSpot may insert whitespace inside a sentence.
+                if (node.textContent.replace(/\s+/g, ' ').trim() === source) {
+                  node.textContent = ` ${translated} `;
+                }
+              }
+            }
+          }
           window.clearTimeout(timeout);
           status.hidden = true;
         },
@@ -166,4 +171,27 @@ if (hubspotContainer) {
     }
   };
   document.head.appendChild(script);
+}
+
+// Native details keeps language navigation available without JavaScript.
+const languageMenu = document.querySelector('.language-switcher');
+if (languageMenu) {
+  languageMenu.addEventListener('toggle', () => { if (languageMenu.open) closeMenu(); });
+  document.addEventListener('click', (event) => {
+    if (!languageMenu.contains(event.target)) languageMenu.open = false;
+  });
+  languageMenu.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      languageMenu.open = false;
+      languageMenu.querySelector('summary').focus();
+    }
+  });
+  languageMenu.addEventListener('focusout', (event) => {
+    if (event.relatedTarget && !languageMenu.contains(event.relatedTarget)) languageMenu.open = false;
+  });
+  languageMenu.querySelectorAll('a').forEach((link) => {
+    // IDs are shared across translations, so section links remain meaningful.
+    link.hash = location.hash;
+  });
 }

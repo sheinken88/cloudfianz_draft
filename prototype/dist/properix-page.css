@@ -11,7 +11,7 @@
 .properix-page .billing-hero h1{font-size:clamp(40px,3.4vw,49px);line-height:1.13;letter-spacing:-1.6px;color:#fff;text-wrap:pretty;max-width:640px}
 .billing-lead{font-size:18px;line-height:1.75;color:#c1cfdb;max-width:570px;margin-top:25px}
 .billing-product{min-width:0;width:100%;max-width:610px;justify-self:end;margin:0}
-.billing-product-image{display:block;padding:38px 16px 0;background:var(--mint);border-radius:14px;overflow:hidden;cursor:zoom-in}
+.billing-product-image{display:block;padding:38px 16px 0;background:var(--mint);border-radius:14px;overflow:hidden}
 .billing-product-image>img{display:block;width:100%;height:auto}
 .billing-product figcaption{font-size:12px;line-height:1.65;color:#c1cfdb;margin-top:14px;max-width:520px}
 .billing-hero a:focus-visible{outline-color:#89e1d3}

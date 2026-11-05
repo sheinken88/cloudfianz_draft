@@ -14,10 +14,9 @@
 .case-hero-summary p{line-height:1.75}
 .case-hero a:focus-visible{outline-color:#89e1d3}
 .case-hero-product{min-width:0;margin:0}
-.case-hero-capture{display:block;padding:8px;background:#fff;border-radius:8px;box-shadow:0 20px 48px #020b1e40;cursor:zoom-in}
+.case-hero-capture{display:block;padding:8px;background:#fff;border-radius:8px;box-shadow:0 20px 48px #020b1e40}
 .case-hero-capture img{display:block;width:100%;height:auto;border-radius:3px}
 .case-hero-product figcaption{display:flex;justify-content:flex-end;margin-top:5px}
-.case-hero-product figcaption a{display:inline-flex;align-items:center;min-height:44px;font-size:12px;line-height:1.5;color:#c1cfdb;text-decoration:underline;text-underline-offset:4px}
 .case-section-label{font-size:14px;line-height:1.5;color:#08796f}
 .case-challenge,.case-approach,.case-solution,.case-results,.case-evolution,#resumen{scroll-margin-top:25px}
 .case-challenge{display:grid;grid-template-columns:208px minmax(0,1fr);gap:64px;padding-block:80px}
@@ -49,10 +48,9 @@
 .case-page .case-solution h2{font-size:46px;line-height:1.17;letter-spacing:-1.5px;max-width:900px;margin-top:18px;text-wrap:pretty}
 .case-solution-heading .page-prose{font-size:17px;max-width:780px;margin-top:25px;color:#466359}
 .case-product-overview{margin:40px 0 0}
-.case-product-overview>a{display:block;padding:12px;background:#fff;border-radius:9px;box-shadow:0 14px 36px #183b3512;cursor:zoom-in}
+.case-product-overview>.static-image{display:block;padding:12px;background:#fff;border-radius:9px;box-shadow:0 14px 36px #183b3512}
 .case-product-overview img{width:100%;height:auto;border-radius:4px}
 .case-solution figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:20px;font-size:12px;line-height:1.6;color:#466359;margin-top:13px}
-.case-solution figcaption>a{flex:none;min-height:44px;display:inline-flex;align-items:center;text-decoration:underline;text-underline-offset:5px;margin-block:-10px}
 .case-product-workflow{max-width:850px;font-size:17px;color:#466359;margin-top:32px}
 .case-product-rules{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;margin-top:34px}
 .case-product-rules>div{max-width:560px}
@@ -60,14 +58,13 @@
 .case-product-rules p,.case-catalog-copy p{font-size:16px;color:#466359;line-height:1.8}
 .case-catalog{display:grid;grid-template-columns:minmax(0,500px) minmax(0,1fr);gap:100px;align-items:center;margin-top:68px;padding-top:60px;border-top:1px solid #c7dcd6}
 .case-catalog-figure{min-width:0;margin:0}
-.case-catalog-crop{display:block;position:relative;aspect-ratio:600/802;overflow:hidden;border-radius:9px;background:#f7f9fb;box-shadow:0 14px 36px #183b3512;cursor:zoom-in}
+.case-catalog-crop{display:block;position:relative;aspect-ratio:600/802;overflow:hidden;border-radius:9px;background:#f7f9fb;box-shadow:0 14px 36px #183b3512}
 /* Original modal bounds: x=525, y=56, width=600, height=802 in a 1641×883 PNG. */
 .case-catalog-crop img{position:absolute;width:273.5%;max-width:none;height:auto;left:-87.5%;top:-6.9825%}
 .case-catalog-copy{max-width:520px}
 .case-catalog-copy>div+div{margin-top:44px}
 .case-page .case-catalog-copy h3{font-size:31px;line-height:1.25;letter-spacing:-.8px;margin-bottom:20px;text-wrap:pretty}
 .case-catalog-figure figcaption{display:block}
-.case-catalog-figure figcaption>a{display:flex;width:fit-content;margin-top:3px}
 
 /* One strong expression of impact; no invented statistics. */
 .case-results{background:var(--navy);color:#fff;padding-block:80px 64px}
@@ -121,7 +118,7 @@
   .case-page .case-solution h2{font-size:36px;letter-spacing:-1px}
   .case-solution-heading .page-prose{font-size:16px;margin-top:22px}
   .case-product-overview{margin-top:28px}
-  .case-product-overview>a{padding:7px;border-radius:6px}
+  .case-product-overview>.static-image{padding:7px;border-radius:6px}
   .case-product-rules{gap:32px}
   .case-page .case-product-rules h3{font-size:22px}
   .case-product-workflow{font-size:16px;margin-top:28px}
@@ -167,8 +164,7 @@
   .case-solution{padding-block:44px}
   .case-page .case-solution h2{font-size:32px;line-height:1.2;letter-spacing:-.9px}
   .case-solution figcaption{display:block;font-size:11px}
-  .case-solution figcaption>a{display:flex;width:fit-content;margin-top:2px}
-  .case-product-overview>a{padding:5px;border-radius:5px}
+  .case-product-overview>.static-image{padding:5px;border-radius:5px}
   .case-product-overview img{border-radius:2px}
   .case-page .case-product-rules h3{font-size:22px}
   .case-product-rules p,.case-catalog-copy p{font-size:15px}

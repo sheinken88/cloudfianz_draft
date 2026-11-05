@@ -34,16 +34,36 @@ layout();
 
 const pages = document.querySelector('#page');
 const openPage = document.querySelector('#open-page');
-pages.addEventListener('change', () => {
-  frame.src = pages.value;
-  openPage.href = pages.value;
-});
-frame.addEventListener('load', () => {
-  try {
-    const currentPath = frame.contentWindow.location.pathname;
-    if ([...pages.options].some(option => option.value === currentPath)) {
-      pages.value = currentPath;
-      openPage.href = currentPath;
-    }
-  } catch { /* The preview only tracks pages from this local origin. */ }
+const locale = document.querySelector('#locale');
+const originalPages = [...pages.options].map(option => ({label: option.textContent, path: option.value}));
+fetch('/localized-routes.json').then(response => response.json()).then(routes => {
+  const groups = Object.values(routes);
+  function refreshOptions(code, current) {
+    pages.replaceChildren(...originalPages.map(item => {
+      const paths = groups.find(group => group.es === item.path);
+      return new Option(item.label, paths[code]);
+    }));
+    pages.value = current;
+    openPage.href = current;
+  }
+  locale.addEventListener('change', () => {
+    const paths = groups.find(group => Object.values(group).includes(pages.value));
+    const next = paths[locale.value];
+    refreshOptions(locale.value, next);
+    frame.src = next;
+  });
+  pages.addEventListener('change', () => {
+    frame.src = pages.value;
+    openPage.href = pages.value;
+  });
+  frame.addEventListener('load', () => {
+    try {
+      const current = frame.contentWindow.location.pathname;
+      const code = current.split('/')[1];
+      if (groups.some(group => group[code] === current)) {
+        locale.value = code;
+        refreshOptions(code, current);
+      }
+    } catch { /* Only same-origin preview navigation is tracked. */ }
+  });
 });

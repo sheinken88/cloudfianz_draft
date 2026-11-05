@@ -11,7 +11,8 @@
     "deploy:prod": "npm run build && node scripts/deploy.mjs prod",
     "infra:install": "cd infra && npm install",
     "infra:synth": "cd infra && npm run synth",
-    "infra:deploy": "cd infra && npm run deploy:all"
+    "infra:deploy": "cd infra && npm run deploy:all",
+    "check:i18n": "python3 prototype/i18n/check.py"
   },
   "devDependencies": {
     "live-server": "^1.2.2"

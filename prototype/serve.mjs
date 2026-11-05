@@ -5,8 +5,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('./dist/', import.meta.url));
-const pageRoutes = JSON.parse(await readFile(new URL('./page-routes.json', import.meta.url), 'utf8'));
-const pages = new Map([['/es', 'index.html'], ...Object.values(pageRoutes).map(route => [route, `${route.slice(1)}/index.html`])]);
+const pageRoutes = JSON.parse(await readFile(new URL('./i18n/routes.json', import.meta.url), 'utf8'));
+const pages = new Map(Object.values(pageRoutes).flatMap(translations => Object.values(translations).map(route => [route, `${route.slice(1)}/index.html`])));
 const aliases = new Map([['/', '/es'], ['/index.html', '/es'], ['/es/index.html', '/es']]);
 for (const route of pages.keys()) {
   aliases.set(`${route}/`, route);

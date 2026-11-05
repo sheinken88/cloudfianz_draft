@@ -49,7 +49,7 @@ def build_properix(meta, intro, sections, routes):
         <div class="billing-lead">{opening[0]}</div>
       </div>
       <figure class="billing-product">
-        <a class="billing-product-image" href="/assets/projects/consorcioabierto-plataforma-usuario.png" target="_blank" rel="noopener" aria-label="Ampliar imagen de la plataforma de ConsorcioAbierto (nueva pestaña)"><img src="/assets/projects/consorcioabierto-plataforma-usuario.png" alt="Plataforma de ConsorcioAbierto: resumen de fondos, pagos, reclamos y agenda de una administración." width="610" height="253" fetchpriority="high" decoding="async"></a>
+        <div class="billing-product-image"><img src="/assets/projects/consorcioabierto-plataforma-usuario.png" alt="Plataforma de ConsorcioAbierto: resumen de fondos, pagos, reclamos y agenda de una administración." width="610" height="253" fetchpriority="high" decoding="async"></div>
         <figcaption>Plataforma de ConsorcioAbierto. Imagen de contexto del cliente.</figcaption>
       </figure>
     </div>

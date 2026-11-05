@@ -15,7 +15,7 @@ def case_media(case):
         return mockup('scope', 'Vista ilustrativa de REVIANZ. Servicios, importes y margen con datos de ejemplo.', 'service-case-media service-case-mockup')
     if case == 'despegar':
         return '''<figure class="service-case-media">
-          <div class="service-case-stage"><a href="/assets/hero/despegar-cotizador-hero-v1.jpg" target="_blank" rel="noopener" aria-label="Ampliar vista adaptada del cotizador de Despegar (nueva pestaña)"><img src="/assets/hero/despegar-cotizador-hero-v1.jpg" alt="Vista adaptada del cotizador de Despegar: presupuesto y productos distribuidos por marca y país." width="1701" height="924" loading="lazy" decoding="async"></a></div>
+          <div class="service-case-stage"><div class="static-image"><img src="/assets/hero/despegar-cotizador-hero-v1.jpg" alt="Vista adaptada del cotizador de Despegar: presupuesto y productos distribuidos por marca y país." width="1701" height="924" loading="lazy" decoding="async"></div></div>
           <figcaption>Vista adaptada del cotizador desarrollado para Despegar.</figcaption>
         </figure>'''
     if case == 'properix':

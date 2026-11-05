@@ -13,9 +13,8 @@
 .service-hero-grid--project .service-hero-intro{grid-area:intro}
 .service-page .service-hero-grid--project h1{font-size:clamp(40px,3.6vw,52px);line-height:1.12;letter-spacing:-1.6px}
 .service-hero-project{grid-area:project;align-self:center;min-width:0;margin:0}
-.service-hero-preview{display:block;padding:22px;background:var(--mint);border:1px solid #d6e5e0;border-radius:16px;cursor:zoom-in}
+.service-hero-preview{display:block;padding:22px;background:var(--mint);border:1px solid #d6e5e0;border-radius:16px}
 .service-hero-preview>img{display:block;width:100%;height:auto;border:1px solid #dce3e8;border-radius:8px;box-shadow:0 14px 32px #0b1d3a12}
-.service-hero-preview:focus-visible{outline:3px solid #08796f;outline-offset:5px}
 .service-hero-project figcaption{display:flex;align-items:center;gap:24px;margin-top:24px;padding-inline:6px}
 .service-hero-project figcaption>img{width:120px;height:auto;flex:none}
 .service-hero-project figcaption>span{display:grid;gap:4px;font-size:12px;line-height:1.5;color:var(--muted)}
@@ -105,8 +104,8 @@
 .service-case-actions .text-link{font-size:13px}
 .service-page .service-case-media{margin:24px 24px 24px 0;min-width:0}
 .service-case-stage,.service-page .service-case-mockup .revianz-mockup-stage{display:flex;align-items:center;justify-content:center;min-height:320px;padding:20px;background:#f1f4f6;border:0;border-radius:10px}
-.service-case-stage>a{display:block;max-width:100%;min-width:0;cursor:zoom-in}
-.service-case-stage>a>img{display:block;width:100%;height:auto;border-radius:6px}
+.service-case-stage>.static-image{display:block;max-width:100%;min-width:0}
+.service-case-stage>.static-image>img{display:block;width:100%;height:auto;border-radius:6px}
 .service-case-stage>img{display:block;width:100%;height:auto;max-width:100%;max-height:340px;object-fit:contain;border-radius:6px}
 .service-page .service-case-media>figcaption{font-size:11px;line-height:1.6;color:var(--muted);margin:12px 4px 0}
 /* The original REVIANZ preview stays readable inside the shared neutral frame. */

@@ -1,0 +1,15 @@
+/* The language control uses the site's existing Inter, navy and mint tokens. */
+.language-switcher{position:relative;flex:none;margin-left:4px;font-family:var(--body);color:var(--navy);font-size:13px;z-index:55}
+.language-switcher>summary{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);cursor:pointer;list-style:none;font-weight:600}
+.language-switcher>summary::-webkit-details-marker{display:none}
+.language-switcher>summary:hover,.language-switcher[open]>summary{background:var(--mint);border-color:#b8d7cc}
+.language-switcher>summary:focus-visible,.language-switcher a:focus-visible{outline:2px solid #08796f;outline-offset:3px}
+.language-switcher[open] .nav-chevron{transform:rotate(225deg)}
+.language-switcher>ul{position:absolute;right:0;top:calc(100% + 10px);min-width:186px;list-style:none;margin:0;padding:7px;background:#fff;border:1px solid #d6e7e1;border-radius:12px;box-shadow:0 12px 30px #0b1d3a12}
+.language-switcher li{margin:0;padding:0}
+.language-switcher a{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:44px;padding:11px 12px;border-radius:6px;text-decoration:none;color:var(--navy);font-weight:500}
+.language-switcher a>span{font-size:10px;letter-spacing:.04em;color:var(--muted)}
+.language-switcher a:hover,.language-switcher a[aria-current]{background:var(--mint);color:#126357}
+@media(min-width:800px){.header-inner{gap:20px}.main-nav{gap:24px}.brand{margin-right:auto}}
+@media(min-width:800px) and (max-width:1099px){.header-inner{gap:12px}.main-nav{gap:15px}.brand>img{width:175px}.main-nav .button{padding-inline:12px;font-size:11px}.main-nav{font-size:12px}}
+@media(max-width:799px){.header-inner{gap:10px}.brand{margin-right:auto}.language-switcher{order:2;margin-left:0}.menu-toggle{order:3}.language-switcher>summary{padding:10px;gap:6px}.language-switcher>summary>svg{display:none}.language-switcher>ul{right:-54px}.header-inner .brand>img{width:clamp(132px,32vw,170px)}}

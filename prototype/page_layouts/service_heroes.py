@@ -5,9 +5,9 @@ def hero_media(key):
     if key == 'servicio-desarrollo-software':
         return '''
       <figure class="service-hero-project">
-        <a class="service-hero-preview" href="/assets/hero/despegar-cotizador-hero-v1.jpg" target="_blank" rel="noopener" aria-label="Ampliar vista adaptada del cotizador de Despegar (nueva pestaña)">
+        <div class="service-hero-preview">
           <img src="/assets/hero/despegar-cotizador-hero-v1.jpg" alt="Vista adaptada del cotizador de Despegar: presupuesto, productos y distribución por marca y país." width="1701" height="924" fetchpriority="high" decoding="async">
-        </a>
+        </div>
         <figcaption><img src="/assets/brand/despegar-digifianz.png" alt="Despegar" width="180" height="52"><span><strong>Cotizador comercial a medida</strong><span>Vista adaptada del producto</span></span></figcaption>
       </figure>'''
     if key == 'servicio-integracion-sistemas':

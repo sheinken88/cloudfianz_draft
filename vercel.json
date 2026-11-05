@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "",
+  "buildCommand": "npm run build:proposal && npm run check:i18n",
   "installCommand": "",
   "outputDirectory": "prototype/dist",
   "trailingSlash": false,
@@ -15,55 +15,159 @@
   "rewrites": [
     {
       "source": "/es",
-      "destination": "/index.html"
+      "destination": "/es/index.html"
+    },
+    {
+      "source": "/en",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/pt",
+      "destination": "/pt/index.html"
     },
     {
       "source": "/es/desarrollo-software-a-medida",
       "destination": "/es/desarrollo-software-a-medida/index.html"
     },
     {
+      "source": "/en/custom-software-development",
+      "destination": "/en/custom-software-development/index.html"
+    },
+    {
+      "source": "/pt/desenvolvimento-de-software-sob-medida",
+      "destination": "/pt/desenvolvimento-de-software-sob-medida/index.html"
+    },
+    {
       "source": "/es/integracion-de-sistemas",
       "destination": "/es/integracion-de-sistemas/index.html"
+    },
+    {
+      "source": "/en/systems-integration",
+      "destination": "/en/systems-integration/index.html"
+    },
+    {
+      "source": "/pt/integracao-de-sistemas",
+      "destination": "/pt/integracao-de-sistemas/index.html"
     },
     {
       "source": "/es/automatizacion-de-procesos",
       "destination": "/es/automatizacion-de-procesos/index.html"
     },
     {
+      "source": "/en/process-automation",
+      "destination": "/en/process-automation/index.html"
+    },
+    {
+      "source": "/pt/automacao-de-processos",
+      "destination": "/pt/automacao-de-processos/index.html"
+    },
+    {
       "source": "/es/casos/despegar-cotizador-hubspot",
       "destination": "/es/casos/despegar-cotizador-hubspot/index.html"
+    },
+    {
+      "source": "/en/case-studies/despegar-hubspot-quoting",
+      "destination": "/en/case-studies/despegar-hubspot-quoting/index.html"
+    },
+    {
+      "source": "/pt/casos-de-sucesso/despegar-cotador-hubspot",
+      "destination": "/pt/casos-de-sucesso/despegar-cotador-hubspot/index.html"
     },
     {
       "source": "/es/casos/revianz-gestion-financiera-proyectos",
       "destination": "/es/casos/revianz-gestion-financiera-proyectos/index.html"
     },
     {
+      "source": "/en/case-studies/revianz-project-finance",
+      "destination": "/en/case-studies/revianz-project-finance/index.html"
+    },
+    {
+      "source": "/pt/casos-de-sucesso/revianz-gestao-financeira-projetos",
+      "destination": "/pt/casos-de-sucesso/revianz-gestao-financeira-projetos/index.html"
+    },
+    {
       "source": "/es/casos",
       "destination": "/es/casos/index.html"
+    },
+    {
+      "source": "/en/case-studies",
+      "destination": "/en/case-studies/index.html"
+    },
+    {
+      "source": "/pt/casos-de-sucesso",
+      "destination": "/pt/casos-de-sucesso/index.html"
     },
     {
       "source": "/es/casos/consorcioabierto-facturacion-hubspot-odoo",
       "destination": "/es/casos/consorcioabierto-facturacion-hubspot-odoo/index.html"
     },
     {
+      "source": "/en/case-studies/consorcioabierto-hubspot-odoo-billing",
+      "destination": "/en/case-studies/consorcioabierto-hubspot-odoo-billing/index.html"
+    },
+    {
+      "source": "/pt/casos-de-sucesso/consorcioabierto-faturamento-hubspot-odoo",
+      "destination": "/pt/casos-de-sucesso/consorcioabierto-faturamento-hubspot-odoo/index.html"
+    },
+    {
       "source": "/es/casos/photonix-servicio-tecnico",
       "destination": "/es/casos/photonix-servicio-tecnico/index.html"
+    },
+    {
+      "source": "/en/case-studies/photonix-field-service",
+      "destination": "/en/case-studies/photonix-field-service/index.html"
+    },
+    {
+      "source": "/pt/casos-de-sucesso/photonix-servico-tecnico",
+      "destination": "/pt/casos-de-sucesso/photonix-servico-tecnico/index.html"
     },
     {
       "source": "/es/casos/escala24x7-hubspot-aws-partner-central",
       "destination": "/es/casos/escala24x7-hubspot-aws-partner-central/index.html"
     },
     {
+      "source": "/en/case-studies/escala24x7-hubspot-aws-partner-central",
+      "destination": "/en/case-studies/escala24x7-hubspot-aws-partner-central/index.html"
+    },
+    {
+      "source": "/pt/casos-de-sucesso/escala24x7-hubspot-aws-partner-central",
+      "destination": "/pt/casos-de-sucesso/escala24x7-hubspot-aws-partner-central/index.html"
+    },
+    {
       "source": "/es/casos/ads-mexicana-cotizador-hubspot",
       "destination": "/es/casos/ads-mexicana-cotizador-hubspot/index.html"
+    },
+    {
+      "source": "/en/case-studies/ads-mexicana-hubspot-quoting",
+      "destination": "/en/case-studies/ads-mexicana-hubspot-quoting/index.html"
+    },
+    {
+      "source": "/pt/casos-de-sucesso/ads-mexicana-cotador-hubspot",
+      "destination": "/pt/casos-de-sucesso/ads-mexicana-cotador-hubspot/index.html"
     },
     {
       "source": "/es/contacto",
       "destination": "/es/contacto/index.html"
     },
     {
+      "source": "/en/contact",
+      "destination": "/en/contact/index.html"
+    },
+    {
+      "source": "/pt/contato",
+      "destination": "/pt/contato/index.html"
+    },
+    {
       "source": "/es/como-trabajamos",
       "destination": "/es/como-trabajamos/index.html"
+    },
+    {
+      "source": "/en/how-we-work",
+      "destination": "/en/how-we-work/index.html"
+    },
+    {
+      "source": "/pt/como-trabalhamos",
+      "destination": "/pt/como-trabalhamos/index.html"
     }
   ],
   "headers": [

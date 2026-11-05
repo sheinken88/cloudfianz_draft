@@ -1,0 +1,67 @@
+{
+  "home": {
+    "es": "/es",
+    "en": "/en",
+    "pt": "/pt"
+  },
+  "servicio-desarrollo-software": {
+    "es": "/es/desarrollo-software-a-medida",
+    "en": "/en/custom-software-development",
+    "pt": "/pt/desenvolvimento-de-software-sob-medida"
+  },
+  "servicio-integracion-sistemas": {
+    "es": "/es/integracion-de-sistemas",
+    "en": "/en/systems-integration",
+    "pt": "/pt/integracao-de-sistemas"
+  },
+  "servicio-automatizacion-procesos": {
+    "es": "/es/automatizacion-de-procesos",
+    "en": "/en/process-automation",
+    "pt": "/pt/automacao-de-processos"
+  },
+  "caso-despegar": {
+    "es": "/es/casos/despegar-cotizador-hubspot",
+    "en": "/en/case-studies/despegar-hubspot-quoting",
+    "pt": "/pt/casos-de-sucesso/despegar-cotador-hubspot"
+  },
+  "caso-revianz": {
+    "es": "/es/casos/revianz-gestion-financiera-proyectos",
+    "en": "/en/case-studies/revianz-project-finance",
+    "pt": "/pt/casos-de-sucesso/revianz-gestao-financeira-projetos"
+  },
+  "indice-casos": {
+    "es": "/es/casos",
+    "en": "/en/case-studies",
+    "pt": "/pt/casos-de-sucesso"
+  },
+  "caso-properix": {
+    "es": "/es/casos/consorcioabierto-facturacion-hubspot-odoo",
+    "en": "/en/case-studies/consorcioabierto-hubspot-odoo-billing",
+    "pt": "/pt/casos-de-sucesso/consorcioabierto-faturamento-hubspot-odoo"
+  },
+  "caso-photonix": {
+    "es": "/es/casos/photonix-servicio-tecnico",
+    "en": "/en/case-studies/photonix-field-service",
+    "pt": "/pt/casos-de-sucesso/photonix-servico-tecnico"
+  },
+  "caso-escala24x7": {
+    "es": "/es/casos/escala24x7-hubspot-aws-partner-central",
+    "en": "/en/case-studies/escala24x7-hubspot-aws-partner-central",
+    "pt": "/pt/casos-de-sucesso/escala24x7-hubspot-aws-partner-central"
+  },
+  "caso-ads-mexicana": {
+    "es": "/es/casos/ads-mexicana-cotizador-hubspot",
+    "en": "/en/case-studies/ads-mexicana-hubspot-quoting",
+    "pt": "/pt/casos-de-sucesso/ads-mexicana-cotador-hubspot"
+  },
+  "pagina-contacto": {
+    "es": "/es/contacto",
+    "en": "/en/contact",
+    "pt": "/pt/contato"
+  },
+  "pagina-como-trabajamos": {
+    "es": "/es/como-trabajamos",
+    "en": "/en/how-we-work",
+    "pt": "/pt/como-trabalhamos"
+  }
+}

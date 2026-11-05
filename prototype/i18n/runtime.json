@@ -1,0 +1,73 @@
+{
+  "formError": {
+    "es": "No pudimos cargar el formulario. Recargá la página para volver a intentarlo.",
+    "en": "We could not load the form. Refresh the page to try again.",
+    "pt": "Não foi possível carregar o formulário. Atualize a página para tentar novamente."
+  },
+  "submit": {
+    "es": "Enviar consulta",
+    "en": "Send inquiry",
+    "pt": "Enviar consulta"
+  },
+  "thanks": {
+    "es": "Gracias por tu consulta. Nos pondremos en contacto para continuar la conversación.",
+    "en": "Thank you for your inquiry. We will get in touch to continue the conversation.",
+    "pt": "Obrigado pela consulta. Entraremos em contato para continuar a conversa."
+  },
+  "fields": {
+    "es": {
+      "email": "Email",
+      "firstname": "Nombre",
+      "lastname": "Apellido",
+      "company": "Empresa",
+      "message": "Mensaje"
+    },
+    "en": {
+      "email": "Email",
+      "firstname": "First name",
+      "lastname": "Last name",
+      "company": "Company",
+      "message": "Message"
+    },
+    "pt": {
+      "email": "E-mail",
+      "firstname": "Nome",
+      "lastname": "Sobrenome",
+      "company": "Empresa",
+      "message": "Mensagem"
+    }
+  },
+  "agenda": {
+    "es": "<p class=\"info-caption\">Vista previa de la agenda</p><h2 id=\"info-title\">Hablemos de tu negocio.</h2><p>Contanos qué querés mejorar y evaluemos cómo podemos ayudarte.</p><p>La agenda todavía no está conectada. Podés contactarnos a través del formulario.</p><a class=\"button\" href=\"#consulta\" data-go-form>Prefiero enviar una consulta</a>",
+    "en": "<p class=\"info-caption\">Scheduling preview</p><h2 id=\"info-title\">Let’s talk about your business.</h2><p>Tell us what you want to improve and let’s assess how we can help.</p><p>Scheduling is not connected yet. You can contact us using the form.</p><a class=\"button\" href=\"#consulta\" data-go-form>I’d rather send an inquiry</a>",
+    "pt": "<p class=\"info-caption\">Prévia do agendamento</p><h2 id=\"info-title\">Vamos falar do seu negócio.</h2><p>Conte o que você quer melhorar e vamos avaliar como ajudar.</p><p>O agendamento ainda não está conectado. Você pode entrar em contato pelo formulário.</p><a class=\"button\" href=\"#consulta\" data-go-form>Prefiro enviar uma consulta</a>"
+  },
+  "privacy": {
+    "es": "<p class=\"info-caption\">Vista previa</p><h2 id=\"info-title\">Privacidad</h2><p>El formulario de contacto es provisto por HubSpot. Al enviarlo, los datos que ingreses se comparten con Cloudfianz a través de HubSpot para gestionar tu consulta.</p><p>La política de privacidad y los avisos del sitio se completarán antes de publicar el sitio.</p>",
+    "en": "<p class=\"info-caption\">Preview</p><h2 id=\"info-title\">Privacy</h2><p>The contact form is provided by HubSpot. When you submit it, your details are shared with Cloudfianz through HubSpot to handle your inquiry.</p><p>The privacy policy and site notices will be completed before the site is published.</p>",
+    "pt": "<p class=\"info-caption\">Prévia</p><h2 id=\"info-title\">Privacidade</h2><p>O formulário de contato é fornecido pelo HubSpot. Ao enviá-lo, seus dados são compartilhados com a Cloudfianz pelo HubSpot para atender à sua consulta.</p><p>A política de privacidade e os avisos serão concluídos antes da publicação do site.</p>"
+  },
+  "consent": {
+    "es": {
+      "Digifianz is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below to say how you would like us to contact you:": "Digifianz se compromete a proteger y respetar tu privacidad. Solo utilizaremos tu información personal para administrar tu cuenta y proporcionar los productos y servicios que nos solicitaste. De vez en cuando, nos gustaría contactarte sobre nuestros productos y servicios, así como sobre otros contenidos que puedan interesarte. Si aceptás que te contactemos con este fin, marcá a continuación cómo te gustaría que lo hagamos:",
+      "I agree to receive communications from Digifianz.": "Acepto recibir comunicaciones de Digifianz.",
+      "You may unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our": "Podés cancelar la suscripción a estas comunicaciones en cualquier momento. Para obtener más información sobre cómo cancelar la suscripción, nuestras prácticas de privacidad y nuestro compromiso de proteger y respetar tu privacidad, consultá nuestra",
+      "Privacy Policy": "Política de privacidad",
+      "By submitting this form, you consent to allow Digifianz to store and process the personal information submitted above to provide you the content requested.": "Al enviar este formulario, aceptás que Digifianz almacene y procese la información personal proporcionada para ofrecerte el contenido solicitado."
+    },
+    "en": {
+      "Digifianz is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below to say how you would like us to contact you:": "Digifianz is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below to say how you would like us to contact you:",
+      "I agree to receive communications from Digifianz.": "I agree to receive communications from Digifianz.",
+      "You may unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our": "You may unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our",
+      "Privacy Policy": "Privacy Policy",
+      "By submitting this form, you consent to allow Digifianz to store and process the personal information submitted above to provide you the content requested.": "By submitting this form, you consent to allow Digifianz to store and process the personal information submitted above to provide you the content requested."
+    },
+    "pt": {
+      "Digifianz is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below to say how you would like us to contact you:": "A Digifianz se compromete a proteger e respeitar sua privacidade. Usaremos suas informações pessoais apenas para administrar sua conta e fornecer os produtos e serviços solicitados. De tempos em tempos, gostaríamos de entrar em contato sobre nossos produtos e serviços, bem como outros conteúdos que possam ser do seu interesse. Se você concorda com esse contato, marque abaixo como gostaria de receber nossas comunicações:",
+      "I agree to receive communications from Digifianz.": "Concordo em receber comunicações da Digifianz.",
+      "You may unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our": "Você pode cancelar a inscrição nessas comunicações a qualquer momento. Para saber mais sobre como cancelar a inscrição, nossas práticas de privacidade e nosso compromisso de proteger e respeitar sua privacidade, consulte nossa",
+      "Privacy Policy": "Política de Privacidade",
+      "By submitting this form, you consent to allow Digifianz to store and process the personal information submitted above to provide you the content requested.": "Ao enviar este formulário, você concorda que a Digifianz armazene e processe as informações pessoais fornecidas acima para oferecer o conteúdo solicitado."
+    }
+  }
+}

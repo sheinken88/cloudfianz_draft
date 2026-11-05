@@ -607,3 +607,11 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Cabecera y pie actualizados desde sus plantillas compartidas. Las trece páginas generadas muestran exactamente dos instancias del nuevo logo; se verificó que el resto del HTML permanece idéntico a la versión anterior.
 - Se mantienen los anchos responsive y la proporción original 1378:400. Revisión visual de cabecera y pie en escritorio/móvil; medidas a 1440, 1024, 768, 390 y 320 px sin desbordes y con ambos SVG cargados correctamente. Build y diff check correctos.
 - Capturas en `/Users/sheinken/Desktop/Cloudfianz/output/playwright/cloudfianz-logo-20261105/`: `header-desktop.png`, `header-mobile.png`, `footer-desktop.png` y `footer-mobile.png`. La captura aislada del pie oculta temporalmente la cabecera fija y el enlace de salto.
+
+## 2026-11-05 · Idiomas e imágenes estáticas
+
+- Sitio generado en español, inglés y portugués de Brasil: 39 páginas, con selector de páginas equivalentes, navegación localizada y canonical/hreflang.
+- `build:proposal` y `check:i18n` pasan, incluyendo rechazo de una traducción faltante. Reglas permanentes en AGENTS.md, validación en GitHub y build de Vercel.
+- Se quitaron enlaces a archivos de imagen, acciones de ampliación y cursores de zoom de los layouts compartidos. Se preservaron imágenes, recortes, estilos y pies descriptivos.
+- Las cuatro páginas afectadas (Desarrollo, Automatizaciones, Despegar y ConsorcioAbierto), en tres idiomas, se verificaron a 390 y 1440 px: 24 comprobaciones sin enlaces de ampliación, cursores de zoom ni desbordes horizontales. Revisión visual del Hero de Despegar completada.
+- Las capturas originales conservan el texto de origen, tal como aceptó el usuario. No se enviaron consultas de prueba al CRM.
