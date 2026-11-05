@@ -599,3 +599,11 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Medidas a 1440, 1024, 960, 768, 390 y 320 px CSS: sin desbordes horizontales de página o sección, sin desbordes del texto y cinco imágenes cargadas. Revisión visual de escritorio y móvil completada.
 - Capturas: `/Users/sheinken/Desktop/Cloudfianz/output/playwright/cloudfianz-aws-20261105/aws-desktop.png`, `aws-mobile.png` y `aws-mobile-viewport.png`. La captura de la sección completa en móvil oculta temporalmente la cabecera fija y el enlace de salto para evitar que se superpongan durante la captura larga; la captura del viewport conserva la interfaz real.
 - Cambios locales en el rediseño de `prototype/`; sin publicación.
+
+
+## Logo oficial de Cloudfianz · 5 de noviembre de 2026
+
+- Se reemplaza el logo anterior por el SVG `Cloudfianz-official-01.svg` aportado directamente por el usuario. El recurso se copia intacto a `dist/assets/brand/cloudfianz-official.svg`; procedencia y SHA-256 registrados en `assets/brand/SOURCES.md`.
+- Cabecera y pie actualizados desde sus plantillas compartidas. Las trece páginas generadas muestran exactamente dos instancias del nuevo logo; se verificó que el resto del HTML permanece idéntico a la versión anterior.
+- Se mantienen los anchos responsive y la proporción original 1378:400. Revisión visual de cabecera y pie en escritorio/móvil; medidas a 1440, 1024, 768, 390 y 320 px sin desbordes y con ambos SVG cargados correctamente. Build y diff check correctos.
+- Capturas en `/Users/sheinken/Desktop/Cloudfianz/output/playwright/cloudfianz-logo-20261105/`: `header-desktop.png`, `header-mobile.png`, `footer-desktop.png` y `footer-mobile.png`. La captura aislada del pie oculta temporalmente la cabecera fija y el enlace de salto.

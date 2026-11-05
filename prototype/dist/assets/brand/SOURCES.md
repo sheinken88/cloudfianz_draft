@@ -96,3 +96,10 @@ Logo oficial positivo para el esquema de facturación de ConsorcioAbierto en el 
 `cloudfianz-original-transparent.png`: edición con transparencia a partir de `cloudfianz-original.jpg`, conservando el logo delineado y el avión como una sola imagen. Sustituye el tratamiento rechazado de texto HTML más símbolo separado. El JPEG original se conserva intacto.
 
 Herramienta: image_gen integrada, modo background-extraction, fondo transparente. Prompt: “Remove ONLY the white background, including negative spaces inside outlined letters and airplane. Preserve original Cloudfianz outlined lettering, airplane, proportions and teal color. No font replacement, redesign, added elements, shadows or clipping.”
+
+
+## Logo vigente de Cloudfianz · 5 de noviembre de 2026
+
+`cloudfianz-official.svg`: archivo oficial `Cloudfianz-official-01.svg` compartido directamente por el usuario desde `/Users/sheinken/Downloads/Cloudfianz-official-01.svg`. Copiado byte por byte, sin recolorear, recortar, rasterizar ni modificar sus trazados. SVG transparente, viewBox `0 0 137.8 40`, color original `#12b5a5`. Sustituye al logo delineado anterior en la cabecera y el pie compartidos de las trece páginas.
+
+SHA-256: `663bc23615dbcd9770dc7a7b81f7bbe28ee91b6e10300592f566227d998964cb`. Tamaño: 2885 bytes. Las dimensiones HTML mantienen la proporción 1378:400 y los anchos responsive existentes. Los recursos anteriores quedan conservados como antecedentes.
