@@ -4,6 +4,7 @@ import json
 import re
 from html.parser import HTMLParser
 from pathlib import Path
+from seo import HREFLANG, enrich_page, write_discovery_files
 
 ROOT = Path(__file__).resolve().parent
 LOCALES = {'es': ('es-AR', 'Español'), 'en': ('en', 'English'), 'pt': ('pt-BR', 'Português')}
@@ -92,7 +93,7 @@ class Localizer(HTMLParser):
 
 def switcher(locale, paths):
     label = {'es':'Cambiar idioma','en':'Change language','pt':'Alterar idioma'}[locale]
-    items = ''.join(f'<li><a href="{paths[code]}" lang="{tag}" hreflang="{tag}"' + (' aria-current="true"' if code == locale else '') + f'>{name}<span aria-hidden="true">{code.upper()}</span></a></li>' for code, (tag, name) in LOCALES.items())
+    items = ''.join(f'<li><a href="{paths[code]}" lang="{tag}" hreflang="{HREFLANG[code]}"' + (' aria-current="true"' if code == locale else '') + f'>{name}<span aria-hidden="true">{code.upper()}</span></a></li>' for code, (tag, name) in LOCALES.items())
     return f'<details class="language-switcher"><summary aria-label="{label}"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span>{locale.upper()}</span><span class="nav-chevron" aria-hidden="true"></span></summary><ul aria-label="{label}">{items}</ul></details>'
 
 
@@ -117,7 +118,7 @@ def build_locales(documents, dist):
             if parser.missing:
                 missing.setdefault(locale, set()).update(parser.missing)
             output = ''.join(parser.output)
-            alternates = ''.join(f'<link rel="alternate" hreflang="{tag}" href="https://cloudfianz.com{paths[code]}">' for code, (tag, _) in LOCALES.items())
+            alternates = ''.join(f'<link rel="alternate" hreflang="{HREFLANG[code]}" href="https://cloudfianz.com{paths[code]}">' for code in LOCALES)
             alternates += f'<link rel="alternate" hreflang="x-default" href="https://cloudfianz.com{paths["es"]}">'
             output = output.replace('</head>', alternates + '<link rel="stylesheet" href="/language-switcher.css"></head>')
             output = output.replace('<!-- LANGUAGE_SWITCHER -->', switcher(locale, paths))
@@ -130,9 +131,17 @@ def build_locales(documents, dist):
     if missing:
         (ROOT / 'missing.json').write_text(json.dumps({k: sorted(v) for k,v in missing.items()}, ensure_ascii=False, indent=2) + '\n')
         raise ValueError('Missing translations; see prototype/i18n/missing.json. Update BOTH catalogs before building.')
+    for key, paths in route_config.items():
+        for locale, route in paths.items():
+            path = dist / route.lstrip('/') / 'index.html'
+            if path in pending:
+                pending[path] = enrich_page(pending[path], key, locale, route_config)
+                if key == 'home' and locale == 'es':
+                    pending[dist / 'index.html'] = pending[path]
     for path, output in pending.items():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(output)
     (ROOT / 'missing.json').unlink(missing_ok=True)
     (dist / 'localized-routes.json').write_text(json.dumps(route_config, indent=2) + '\n')
+    write_discovery_files(dist, route_config)
     print(f'Localized {len(documents)} pages in {len(LOCALES)} languages (strict coverage).')

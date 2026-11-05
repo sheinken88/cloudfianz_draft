@@ -6,15 +6,19 @@ El rediseño actual está en `prototype/`. La configuración de `vercel.json` pu
 
 1. Importar `sheinken88/cloudfianz_draft` desde GitHub.
 2. Elegir la rama `main`, raíz del repositorio (`./`) y framework **Other**.
-3. Conservar la configuración de `vercel.json`: sin instalación ni build remoto; salida `prototype/dist`.
+3. Conservar la configuración de `vercel.json`: sin instalación de dependencias; build de páginas y controles i18n/SEO; salida `prototype/dist`.
 4. Hacer Deploy y compartir la URL resultante.
 
-La raíz redirige a `/es`. Las 13 páginas tienen rutas explícitas. No se necesitan variables de entorno ni credenciales de AWS. El formulario es una demo: no envía ni guarda consultas. Se incluye `noindex` para la revisión; no representa una restricción de acceso.
+La raíz redirige a `/es`. Las 13 páginas se generan en español, inglés y portugués: 39 rutas explícitas. No se necesitan variables de entorno ni credenciales de AWS para la preview. El formulario original de HubSpot recibe consultas reales. La preview conserva `noindex` tanto en HTML como en las cabeceras HTTP; no representa una restricción de acceso.
+
+Las mejoras técnicas de SEO/AEO y el detalle de tareas para el dominio real están en [prototype/README.md](prototype/README.md#pendientes-al-migrar-al-repositorio-y-dominio-reales). `npm run build:release` prepara un paquete indexable separado, sin publicar nada ni desproteger la preview. El `deploy:prod` histórico de abajo publica el sitio anterior y **no debe usarse para lanzar el rediseño**.
 
 ## Editar y actualizar
 
 ```sh
 npm run build:proposal
+npm run check:i18n
+npm run check:seo
 npm run dev:proposal
 ```
 
@@ -24,7 +28,7 @@ La carpeta `src/` y la infraestructura histórica se conservan como referencia; 
 
 ---
 
-# Cloudfianz — sitio web
+# Cloudfianz — referencia del sitio anterior
 
 One-page estática (HTML/CSS/JS) con i18n EN/ES, casos de éxito desde JSON y hosting en **S3 + CloudFront**.
 

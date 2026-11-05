@@ -24,3 +24,14 @@ The user requires the entire redesigned website in Spanish (`es-AR`), English (`
 5. Commit shared sources, catalogs and regenerated `prototype/dist/` outputs together. Never fix only generated HTML.
 
 The preview repository is remote `draft` (`sheinken88/cloudfianz_draft`), deployed from `main`. The original remote `origin` is a different repository. Do not push to the original by accident. A push requires a user request; a request to edit does not automatically request a push.
+
+## SEO / AEO and launch safety
+
+- The user wants to improve the existing 13 pages, not add landing pages or publish team members' names. Do not introduce either without a new request. Markets: LATAM, USA and Europe.
+- `npm run build:proposal` ALWAYS generates a protected preview. Keep HTML `noindex, nofollow` and the global HTTP `X-Robots-Tag` on the preview. Its robots.txt allows crawling so crawlers can read noindex; it does not advertise a sitemap. Never infer permission to enable indexing from Vercel's environment name (the draft project's default branch is also called Production by Vercel).
+- `npm run build:release` prepares indexable files only inside ignored `prototype/release/site`; it does not deploy, push, or change the active preview configuration. Only the repository serving the real domain may use that output and the generated production configuration after the launch checklist is addressed.
+- Run `npm run check:seo` with every website change, and validate the isolated release when changing SEO/build/deployment code. CI checks both outputs and confirms preview protection remains in place.
+- JSON-LD is built from localized visible metadata and breadcrumbs. Keep Cloudfianz and its parent Digifianz distinct; do not invent people, reviews, credentials, dates, metrics, offices or sameAs identities.
+- HTML dialect stays `es-AR`; broad Spanish search targeting uses `hreflang="es"`. English is `en`, Portuguese is `pt-BR`. Keep HTML, sitemap and language navigation consistent.
+- Regenerate `prototype/image-variants.json` and committed optimized assets with `prototype/optimize-images.py` when source images change. The SEO check rejects stale originals by hash.
+- Analytics events currently stay in memory only. Never send form field values or arbitrary query strings to analytics. A click is intent; only HubSpot's successful submission callback emits `generate_lead`. Activating a provider and measuring actual booked meetings are launch tasks documented in `prototype/README.md`.

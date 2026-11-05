@@ -1,2 +1,3 @@
+# Preview: HTML and HTTP noindex must remain enabled.
 User-agent: *
-Disallow: /
+Allow: /

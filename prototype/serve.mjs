@@ -12,7 +12,7 @@ for (const route of pages.keys()) {
   aliases.set(`${route}/`, route);
   aliases.set(`${route}/index.html`, route);
 }
-const types = {'.html':'text/html; charset=utf-8', '.css':'text/css; charset=utf-8', '.js':'text/javascript; charset=utf-8', '.json':'application/json; charset=utf-8', '.png':'image/png', '.jpg':'image/jpeg', '.jpeg':'image/jpeg', '.svg':'image/svg+xml', '.webp':'image/webp', '.avif':'image/avif', '.ico':'image/x-icon'};
+const types = {'.html':'text/html; charset=utf-8', '.css':'text/css; charset=utf-8', '.js':'text/javascript; charset=utf-8', '.json':'application/json; charset=utf-8', '.xml':'application/xml; charset=utf-8', '.txt':'text/plain; charset=utf-8', '.png':'image/png', '.jpg':'image/jpeg', '.jpeg':'image/jpeg', '.svg':'image/svg+xml', '.webp':'image/webp', '.avif':'image/avif', '.ico':'image/x-icon'};
 const notFound = '<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="robots" content="noindex,nofollow"><title>Página no encontrada | Cloudfianz</title><link rel="stylesheet" href="/styles.css"><main class="container section-pad"><p>Cloudfianz</p><h1 style="font-size:42px;margin:24px 0">No encontramos esa página.</h1><p>Podés volver al inicio para explorar nuestros servicios y proyectos.</p><a class="button" href="/es" style="margin-top:30px">Volver al inicio</a></main></html>';
 const server = http.createServer(async (req, res) => {
   res.setHeader('Cache-Control', 'no-store');
@@ -34,7 +34,6 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(301, {Location: aliases.get(pathname) + (query ? `?${query}` : '')});
     return res.end();
   }
-  if (pathname === '/robots.txt') return send(200, 'User-agent: *\nDisallow: /\n', 'text/plain; charset=utf-8');
   const file = path.resolve(root, pages.get(pathname) || `.${pathname}`);
   if (!file.startsWith(root) || !types[path.extname(file)]) return send(404, notFound);
   try {

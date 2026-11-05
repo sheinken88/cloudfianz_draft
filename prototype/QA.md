@@ -621,3 +621,13 @@ Se reemplazó el mockup de REVIANZ del hero por la imagen oficial de contexto de
 - Eliminadas las leyendas genéricas de producción de Home, servicios e índice y páginas de casos. Se conservan logos de clientes y descripciones accesibles.
 - El componente compartido de mockups de REVIANZ muestra únicamente «Datos de ejemplo» y sus traducciones («Sample data», «Dados de exemplo»). Se retiró la aclaración redundante del Hero.
 - Build, cobertura i18n, sintaxis JS y diff verificados. Comprobadas las 39 páginas a 390 y 1440 px (78 comprobaciones): sin desbordes ni otros textos en los pies; cada mockup mantiene su aclaración. Revisión visual de la sección de casos de Home completada.
+
+## 2026-11-05 · SEO/AEO técnico y separación de producción
+
+- Se conservan 13 páginas en ES/EN/PT (39 rutas), el H1 aprobado, diseño, captions y formulario original. No se añadieron páginas ni datos personales del equipo.
+- Build de preview, cobertura i18n, chequeos SEO, sintaxis JS y empaquetado indexable separados pasan. Sitemap con 39 canonicals/alternates; schema de organización, sitio, página y breadcrumbs; tarjetas sociales y metadatos localizados.
+- Verificadas 78 combinaciones en navegador (39 rutas × 390/1440 px): un H1, noindex, OG y JSON-LD presentes, sin desbordes ni imágenes visibles rotas. Revisión visual de Home ES escritorio, Home PT móvil, Desarrollo EN móvil y Despegar ES escritorio. Capturas y resultados en `outputs/seo-aeo-20261105` dentro del workspace Cloudfianz.
+- HTTP local: 39 respuestas 200 con cabecera y meta noindex; robots, sitemap y WebP con tipos correctos; ruta inexistente con 404 real. La preview permite leer noindex mediante robots.txt y conserva su protección en Vercel.
+- Pruebas negativas en copia temporal: quitar la meta noindex o quitar la cabecera HTTP de la configuración preview hace fallar la validación. La configuración de producción generada se probó con un build completo en una copia aislada; no modifica la configuración activa ni la preview.
+- Eventos verificados sin red: clic de contacto e intención de reunión separados del lead, deduplicación de éxito, entorno seguro por defecto, ausencia de queries y datos de campos. Se confirmó en navegador la carga real del formulario ES con sus campos y consentimiento. No se enviaron consultas al CRM.
+- Imágenes principales optimizadas: Home 357,2 → 117,9 KiB; Despegar 304,5 → 69,2 KiB. Originales preservados. No se midieron Core Web Vitals de campo ni se ejecutó un deploy público, Search Console o Rich Results Test remoto.

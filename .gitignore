@@ -16,3 +16,6 @@ __pycache__/
 
 # Temporary report from strict localization build
 prototype/i18n/missing.json
+
+# Explicit production packaging never overwrites the preview output.
+prototype/release/

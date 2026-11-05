@@ -141,6 +141,8 @@ if (hubspotContainer) {
         submitText: messages.submit,
         inlineMessage: messages.thanks,
         target: '#hubspot-form-container',
+        // Fires after HubSpot confirms success, not on a click or invalid submission.
+        onFormSubmitted: () => window.cloudfianzTrack?.('generate_lead'),
         onFormReady: ($form) => {
           // Translate only known consent text, preserving inputs, subscription IDs,
           // links, and the meaning of the original HubSpot configuration.

@@ -1,0 +1,82 @@
+{
+  "/assets/hero/cloudfianz-team-work-v3.jpg": {
+    "sha256": "8ed1778074cb415244e5534817b52f15faaa140f92b509a6e3d8803df203965d",
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/assets/optimized/cloudfianz-team-work-v3-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/optimized/cloudfianz-team-work-v3-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/optimized/cloudfianz-team-work-v3-1280.webp",
+        "width": 1280
+      },
+      {
+        "src": "/assets/optimized/cloudfianz-team-work-v3-1672.webp",
+        "width": 1672
+      }
+    ]
+  },
+  "/assets/hero/despegar-cotizador-hero-v1.jpg": {
+    "sha256": "1a8af7d65519ca961bf67d048cb7141d0181d575546451320e6044cae0bb9e8b",
+    "width": 1701,
+    "height": 924,
+    "variants": [
+      {
+        "src": "/assets/optimized/despegar-cotizador-hero-v1-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/optimized/despegar-cotizador-hero-v1-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/optimized/despegar-cotizador-hero-v1-1280.webp",
+        "width": 1280
+      },
+      {
+        "src": "/assets/optimized/despegar-cotizador-hero-v1-1701.webp",
+        "width": 1701
+      }
+    ]
+  },
+  "/assets/projects/consorcioabierto-plataforma-usuario.png": {
+    "sha256": "894dc1bc1f405ae57fa6a6349cc98289e05277542a8ceff15793807845ca9f94",
+    "width": 610,
+    "height": 253,
+    "variants": [
+      {
+        "src": "/assets/optimized/consorcioabierto-plataforma-usuario-610.webp",
+        "width": 610
+      }
+    ]
+  },
+  "/assets/projects/despegar-catalogo-original.png": {
+    "sha256": "57310330baee56aea98016fe5e38bcbce146753f78bfe5647889d915f55c6051",
+    "width": 1641,
+    "height": 883,
+    "variants": [
+      {
+        "src": "/assets/optimized/despegar-catalogo-original-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/optimized/despegar-catalogo-original-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/optimized/despegar-catalogo-original-1280.webp",
+        "width": 1280
+      },
+      {
+        "src": "/assets/optimized/despegar-catalogo-original-1641.webp",
+        "width": 1641
+      }
+    ]
+  }
+}

@@ -17,7 +17,14 @@ jobs:
           python-version: '3.12'
       - run: npm run build:proposal
       - run: npm run check:i18n
+      - run: npm run check:seo
       - run: node --check prototype/dist/app.js
+      - run: node --check prototype/dist/analytics.js
+      - name: Verify isolated release and preserved preview protection
+        run: |
+          python3 prototype/package-release.py
+          python3 prototype/check-seo.py --release
+          python3 prototype/check-seo.py
       - run: git diff --exit-code -- prototype/dist
       - name: Ensure generated locale files are tracked
         run: test -z "$(git ls-files --others --exclude-standard prototype/dist)"

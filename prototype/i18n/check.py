@@ -6,7 +6,9 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from render import Localizer, LOCALES
+from seo import HREFLANG
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
 routes = json.loads((ROOT / 'i18n/routes.json').read_text())
@@ -44,7 +46,7 @@ for key, group in routes.items():
         assert canonical==['https://cloudfianz.com'+path]
         alternates={a['hreflang']:a['href'] for t,a in tags if t=='link' and a.get('rel')=='alternate'}
         for language,(tag,_) in LOCALES.items():
-            assert alternates[tag]=='https://cloudfianz.com'+group[language]
+            assert alternates[HREFLANG[language]]=='https://cloudfianz.com'+group[language]
         assert any(t=='a' and a.get('aria-current')=='true' and a.get('href')==path for t,a in tags)
         for t,a in tags:
             if t!='a' or 'href' not in a: continue

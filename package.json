@@ -12,7 +12,9 @@
     "infra:install": "cd infra && npm install",
     "infra:synth": "cd infra && npm run synth",
     "infra:deploy": "cd infra && npm run deploy:all",
-    "check:i18n": "python3 prototype/i18n/check.py"
+    "check:i18n": "python3 prototype/i18n/check.py",
+    "check:seo": "python3 prototype/check-seo.py && node prototype/check-analytics.mjs",
+    "build:release": "npm run build:proposal && npm run check:i18n && npm run check:seo && python3 prototype/package-release.py && python3 prototype/check-seo.py --release"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
