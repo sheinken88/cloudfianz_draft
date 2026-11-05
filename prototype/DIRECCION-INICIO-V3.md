@@ -154,3 +154,8 @@ La cabecera incorpora un desplegable «Soluciones» con los tres accesos solicit
 El texto aportado por el usuario reemplaza la introducción y los cuatro beneficios anteriores. Se mantiene íntegro el titular «Tu solución, sobre la misma infraestructura que usan las empresas más grandes del mundo.», los dos párrafos y las cuatro descripciones. La sección mantiene posición, fondo mist, tipografías, logo AWS monocromo original, superficie blanca dividida en cuatro celdas y enlace al caso ConsorcioAbierto. Se ajustan únicamente la proporción de las columnas, la escala del titular y el tamaño del párrafo de cierre para acomodar el nuevo contenido.
 
 Los beneficios se acompañan con AWS Shield, Elastic Load Balancing, AWS Auto Scaling y AWS Cost Explorer, en ese orden. Los cuatro SVG se extraen intactos del paquete oficial ya utilizado; su procedencia y hashes quedan en `dist/assets/aws/SOURCES.md`. En móvil se conserva el icono a la izquierda del texto y una sola columna de tarjetas.
+
+
+## 5 de noviembre de 2026 · Titular comercial de la Home
+
+El H1 vigente es «Software a medida para vender mejor y operar con más control». La bajada lo acompaña con aplicaciones concretas: «Desarrollamos herramientas, conectamos tus sistemas y automatizamos procesos para que tu equipo pueda cotizar, facturar y gestionar el trabajo con menos tareas manuales.». Ambas piezas se publican en español, inglés y portugués de Brasil mediante los catálogos compartidos. Se conserva el diseño del Hero y sus CTA. Esta edición reemplaza el titular de Home documentado en las revisiones anteriores.
